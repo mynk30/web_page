@@ -262,14 +262,6 @@ function calculateTDS() {
 // --------------------------login -------------------------------------
 
 function showForm(formId) {
-    document.querySelectorAll(".form-box").forEach(f => f.classList.remove("active"));
-    const el = document.getElementById(formId);
-    if (el) el.classList.add("active");
+    document.querySelectorAll(".form-box").forEach(form => form.classList.remove("active"));
+    document.getElementById(formId).classList.add("active");
 }
-
-document.addEventListener('DOMContentLoaded', () => {
-    const loginBtn = document.getElementById('login-button');
-    if (loginBtn) {
-        loginBtn.addEventListener('click', () => showForm('login-form'));
-    }
-});

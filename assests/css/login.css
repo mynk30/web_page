@@ -1,0 +1,95 @@
+:root {
+  --primary-color: #0a1945;
+  --secondary-color: #c6a052;
+  --accent-color: #e74c3c;
+  --light-color: #ecf0f1;
+  --light-gray: #f8f9fa;
+  --dark-color: #2d3748;
+  --dark-color-2: #212529;
+  --heading-color: #0a2463;
+  --success: #2ecc71;
+}
+
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: "Poppins", sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    color: var(--dark-color);
+}
+.container {
+    margin: 0 15px;
+}
+.form-box  {
+    background: var(--light-gray);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    display: none;
+}
+.form-box.active {
+    display: block;
+}
+
+h2{
+    font-size: 34px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--heading-color);
+}
+input, select{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: var(--light-color);
+    margin-bottom: 20px;
+    font-size: 16px;
+    outline: none;
+    color: var(--dark-color);
+}
+button{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: var(--secondary-color);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    /* transition:0.5s; */
+}
+button:hover{
+    background: var(--primary-color);
+}
+p{
+    font-size: 14.5px;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+p a{
+    color: var(--heading-color);
+    text-decoration: none;
+}
+p a:hover{
+    text-decoration: underline;
+}
+.error-message{
+    padding: 12px;
+    background: #f8d7da;
+    font-size: 16px;
+    color: #a42834;
+    text-align: center;
+    margin-bottom: 20px;
+}

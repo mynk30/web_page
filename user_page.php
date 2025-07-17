@@ -1,518 +1,22 @@
+<?php
+session_start();
+if (!isset($_SESSION['email'])) {
+    header("Location: auth/login.php");
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Dashboard Panel</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        :root {
-          --primary-color: #0a1945;
-          --secondary-color: #c6a052;
-          --accent-color: #e74c3c;
-          --light-color: #ecf0f1;
-          --light-gray: #f8f9fa;
-          --dark-color: #2d3748;
-          --dark-color-2: #212529;
-          --heading-color: #0a2463;
-          --success: #2ecc71;
-          --pending: #f39c12;
-          --missing: #e74c3c;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-            color: var(--dark-color);
-            background-color: var(--light-gray);
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .container {
-            display: flex;
-            min-height: 100vh;
-        }
-        
-        /* Header Styles */
-        header {
-            background-color: white;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            padding: 15px 30px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-        
-        .logo-icon {
-            background: var(--primary-color);
-            color: white;
-            width: 40px;
-            height: 40px;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 20px;
-            font-weight: bold;
-        }
-        
-        .logo-text {
-            font-size: 22px;
-            font-weight: 700;
-            color: var(--primary-color);
-        }
-        
-        .user-info {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            cursor: pointer;
-            position: relative;
-        }
-        
-        .user-avatar {
-            width: 45px;
-            height: 45px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-        }
-        
-        .user-name {
-            font-weight: 600;
-        }
-        
-        /* Sidebar Styles */
-        .sidebar {
-            width: 260px;
-            background: var(--primary-color);
-            color: white;
-            padding: 25px 0;
-            transition: all 0.3s ease;
-            height: calc(100vh - 70px);
-            position: sticky;
-            top: 70px;
-        }
-        
-        .sidebar-menu {
-            list-style: none;
-        }
-        
-        .menu-item {
-            padding: 15px 25px;
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            cursor: pointer;
-            transition: all 0.2s;
-            font-weight: 500;
-        }
-        
-        .menu-item:hover, .menu-item.active {
-            background: rgba(255, 255, 255, 0.1);
-            border-left: 4px solid var(--secondary-color);
-        }
-        
-        .menu-item i {
-            width: 24px;
-            text-align: center;
-            font-size: 18px;
-        }
-        
-        /* Main Content Styles */
-        .main-content {
-            flex: 1;
-            padding: 30px;
-            transition: all 0.3s;
-        }
-        
-        .content-section {
-            display: none;
-        }
-        
-        .content-section.active {
-            display: block;
-        }
-        
-        .welcome-section {
-            background: white;
-            border-radius: 12px;
-            padding: 30px;
-            margin-bottom: 30px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-        }
-        
-        .welcome-title {
-            color: var(--primary-color);
-            margin-bottom: 15px;
-            font-size: 28px;
-        }
-        
-        .welcome-subtitle {
-            color: var(--dark-color);
-            margin-bottom: 25px;
-            max-width: 700px;
-            line-height: 1.6;
-        }
-        
-        .stats-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 25px;
-            margin-bottom: 30px;
-        }
-        
-        .stat-card {
-            background: white;
-            border-radius: 12px;
-            padding: 25px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .stat-card:hover {
-            transform: translateY(-5px);
-        }
-        
-        .stat-card::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 5px;
-            height: 100%;
-        }
-        
-        .total-card::before {
-            background: var(--primary-color);
-        }
-        
-        .pending-card::before {
-            background: var(--pending);
-        }
-        
-        .missing-card::before {
-            background: var(--missing);
-        }
-        
-        .completed-card::before {
-            background: var(--success);
-        }
-        
-        .stat-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 15px;
-        }
-        
-        .stat-title {
-            font-weight: 600;
-            color: var(--dark-color);
-            font-size: 16px;
-        }
-        
-        .stat-icon {
-            width: 50px;
-            height: 50px;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 22px;
-        }
-        
-        .icon-1 {
-            background: rgba(10, 25, 69, 0.1);
-            color: var(--primary-color);
-        }
-        
-        .icon-2 {
-            background: rgba(198, 160, 82, 0.1);
-            color: var(--secondary-color);
-        }
-        
-        .icon-3 {
-            background: rgba(231, 76, 60, 0.1);
-            color: var(--accent-color);
-        }
-        
-        .icon-4 {
-            background: rgba(46, 204, 113, 0.1);
-            color: var(--success);
-        }
-        
-        .stat-value {
-            font-size: 32px;
-            font-weight: 700;
-            color: var(--heading-color);
-            margin-bottom: 5px;
-        }
-        
-        .stat-diff {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            font-size: 14px;
-            font-weight: 500;
-        }
-        
-        .diff-positive {
-            color: var(--success);
-        }
-        
-        .diff-negative {
-            color: var(--accent-color);
-        }
-        
-        /* Application Table */
-        .application-table {
-            width: 100%;
-            border-collapse: collapse;
-            background: white;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-        }
-        
-        .application-table th,
-        .application-table td {
-            padding: 16px 20px;
-            text-align: left;
-            border-bottom: 1px solid var(--light-gray);
-        }
-        
-        .application-table th {
-            background-color: var(--light-gray);
-            font-weight: 600;
-            color: var(--primary-color);
-        }
-        
-        .application-table tr:last-child td {
-            border-bottom: none;
-        }
-        
-        .status-badge {
-            padding: 6px 12px;
-            border-radius: 20px;
-            font-size: 14px;
-            font-weight: 500;
-            display: inline-block;
-        }
-        
-        .status-pending {
-            background: rgba(243, 156, 18, 0.1);
-            color: var(--pending);
-        }
-        
-        .status-missing {
-            background: rgba(231, 76, 60, 0.1);
-            color: var(--missing);
-        }
-        
-        .status-completed {
-            background: rgba(46, 204, 113, 0.1);
-            color: var(--success);
-        }
-        
-        /* Profile Section */
-        .profile-section {
-            background: white;
-            border-radius: 12px;
-            padding: 30px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        .profile-header {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            margin-bottom: 30px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid var(--light-gray);
-        }
-        
-        .profile-avatar {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 28px;
-            font-weight: bold;
-        }
-        
-        .profile-info h2 {
-            color: var(--primary-color);
-            margin-bottom: 5px;
-        }
-        
-        .profile-info p {
-            color: var(--dark-color);
-        }
-        
-        .profile-form {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
-        
-        .form-group {
-            margin-bottom: 20px;
-        }
-        
-        .form-group.full-width {
-            grid-column: span 2;
-        }
-        
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 500;
-            color: var(--dark-color);
-        }
-        
-        .form-control {
-            width: 100%;
-            padding: 12px 15px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            font-size: 16px;
-            transition: all 0.3s;
-        }
-        
-        .form-control:focus {
-            border-color: var(--primary-color);
-            outline: none;
-            box-shadow: 0 0 0 3px rgba(10, 25, 69, 0.1);
-        }
-        
-        .btn {
-            padding: 12px 25px;
-            border-radius: 8px;
-            border: none;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-        }
-        
-        .btn-primary {
-            background: var(--primary-color);
-            color: white;
-        }
-        
-        .btn-primary:hover {
-            background: #08112e;
-        }
-        
-        .btn-outline {
-            background: transparent;
-            border: 1px solid var(--primary-color);
-            color: var(--primary-color);
-        }
-        
-        .btn-outline:hover {
-            background: rgba(10, 25, 69, 0.05);
-        }
-        
-        .form-actions {
-            display: flex;
-            justify-content: flex-end;
-            gap: 15px;
-            margin-top: 20px;
-        }
-        
-        /* Responsive Design */
-        @media (max-width: 992px) {
-            .sidebar {
-                width: 80px;
-            }
-            
-            .menu-item span {
-                display: none;
-            }
-            
-            .menu-item {
-                justify-content: center;
-                padding: 20px 0;
-            }
-        }
-        
-        @media (max-width: 768px) {
-            .stats-container {
-                grid-template-columns: 1fr;
-            }
-            
-            .welcome-section {
-                padding: 20px;
-            }
-            
-            .profile-form {
-                grid-template-columns: 1fr;
-            }
-            
-            .form-group.full-width {
-                grid-column: span 1;
-            }
-            
-            .profile-header {
-                flex-direction: column;
-                text-align: center;
-            }
-        }
-        
-        @media (max-width: 576px) {
-            header {
-                padding: 15px;
-            }
-            
-            .main-content {
-                padding: 20px 15px;
-            }
-            
-            .form-actions {
-                flex-direction: column;
-                gap: 10px;
-            }
-            
-            .btn {
-                width: 100%;
-                justify-content: center;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="assests/css/user.css">
 </head>
+
 <body>
     <header>
         <div class="logo">
@@ -520,17 +24,25 @@
             <div class="logo-text">DashboardPro</div>
         </div>
         <div class="user-info">
-            <div class="user-avatar" id="user-avatar">JS</div>
-            <div class="user-name" id="user-name">John Smith</div>
+            <div class="user-avatar" id="user-avatar">
+                <?php
+                $nameParts = explode(' ', $_SESSION['name']);
+                $firstInitial = strtoupper(substr($nameParts[0], 0, 1));
+                $secondInitial = isset($nameParts[1]) ? strtoupper(substr($nameParts[1], 0, 1)) : '';
+                echo $firstInitial . $secondInitial;
+                ?>
+            </div>
+            <div class="user-name" id="user-name"><?php echo $_SESSION['name']; ?></div>
             <i class="fas fa-chevron-down"></i>
         </div>
     </header>
-    
+
+
     <div class="container">
         <aside class="sidebar">
             <ul class="sidebar-menu">
                 <li class="menu-item active" data-target="dashboard">
-                    <i class="fas fa-home"></i> 
+                    <i class="fas fa-home"></i>
                     <span>Dashboard</span>
                 </li>
                 <li class="menu-item" data-target="profile">
@@ -542,20 +54,23 @@
                     <span>My Applications</span>
                 </li>
                 <li class="menu-item" id="logout-btn">
-                    <i class="fas fa-sign-out-alt"></i>
-                    <span>Logout</span>
+                    <a href="auth/logout.php" style="display: flex; align-items: center; gap: 10px; color: white; text-decoration: none;">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <span>Logout</span>
+                    </a>
                 </li>
+
             </ul>
         </aside>
-        
+
         <main class="main-content">
             <!-- Dashboard Section -->
             <section id="dashboard" class="content-section active">
                 <div class="welcome-section">
-                    <h1 class="welcome-title">Welcome back, <span id="welcome-name">John</span>!</h1>
+                    <h1 class="welcome-title">Welcome back, <span id="welcome-name"><?php echo explode(' ', $_SESSION['name'])[0]; ?></span>!</h1>
                     <p class="welcome-subtitle">Here's an overview of your application status. You have <strong>3 pending applications</strong> that require your attention.</p>
                 </div>
-                
+
                 <div class="stats-container">
                     <div class="stat-card total-card">
                         <div class="stat-header">
@@ -570,7 +85,7 @@
                             <span>2 new applications this month</span>
                         </div>
                     </div>
-                    
+
                     <div class="stat-card pending-card">
                         <div class="stat-header">
                             <div class="stat-title">Pending Applications</div>
@@ -584,7 +99,7 @@
                             <span>Action required</span>
                         </div>
                     </div>
-                    
+
                     <div class="stat-card missing-card">
                         <div class="stat-header">
                             <div class="stat-title">Missing Documents</div>
@@ -598,7 +113,7 @@
                             <span>2 urgent documents needed</span>
                         </div>
                     </div>
-                    
+
                     <div class="stat-card completed-card">
                         <div class="stat-header">
                             <div class="stat-title">Completed Applications</div>
@@ -613,7 +128,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="welcome-section">
                     <h2 class="welcome-title">Recent Activity</h2>
                     <div class="activity-item">
@@ -645,18 +160,19 @@
                     </div>
                 </div>
             </section>
-            
+
             <!-- Profile Section -->
             <section id="profile" class="content-section">
                 <div class="profile-section">
                     <div class="profile-header">
-                        <div class="profile-avatar" id="profile-avatar">JS</div>
+                        <div class="profile-avatar" id="profile-avatar">
+                            <?php echo $firstInitial . $secondInitial; ?>
+                        </div>
                         <div class="profile-info">
-                            <h2 id="profile-name">John Smith</h2>
-                            <p id="profile-email">john.smith@example.com</p>
+                            <h2 id="profile-name"><?php echo $_SESSION['name']; ?></h2>
+                            <p id="profile-email"><?php echo $_SESSION['email']; ?></p>
                         </div>
                     </div>
-                    
                     <form id="profile-form">
                         <div class="profile-form">
                             <div class="form-group">
@@ -688,7 +204,7 @@
                                 <input type="text" class="form-control" id="nationality" value="American">
                             </div>
                         </div>
-                        
+
                         <div class="form-actions">
                             <button type="button" class="btn btn-outline">
                                 <i class="fas fa-times"></i> Cancel
@@ -700,14 +216,14 @@
                     </form>
                 </div>
             </section>
-            
+
             <!-- Applications Section -->
             <section id="applications" class="content-section">
                 <div class="welcome-section">
                     <h1 class="welcome-title">My Applications</h1>
                     <p class="welcome-subtitle">Here is a list of all your submitted applications. You can view details or upload missing documents.</p>
                 </div>
-                
+
                 <table class="application-table">
                     <thead>
                         <tr>
@@ -787,17 +303,13 @@
     </div>
 
     <script>
-        // User data (would typically come from a database)
         const userData = {
-            firstName: "John",
-            lastName: "Smith",
-            email: "john.smith@example.com",
-            phone: "+1 (555) 123-4567",
-            address: "123 Main Street, New York, NY 10001",
-            dob: "1985-05-15",
-            nationality: "American"
+            firstName: "<?php echo explode(' ', $_SESSION['name'])[0]; ?>",
+            lastName: "<?php echo isset(explode(' ', $_SESSION['name'])[1]) ? explode(' ', $_SESSION['name'])[1] : ''; ?>",
+            email: "<?php echo $_SESSION['email']; ?>"
         };
-        
+
+
         // Initialize the page
         document.addEventListener('DOMContentLoaded', function() {
             // Set user information
@@ -805,40 +317,40 @@
             document.getElementById('welcome-name').textContent = userData.firstName;
             document.getElementById('profile-name').textContent = `${userData.firstName} ${userData.lastName}`;
             document.getElementById('profile-email').textContent = userData.email;
-            
+
             // Set avatar initials
             const avatar = document.getElementById('user-avatar');
             const profileAvatar = document.getElementById('profile-avatar');
             const initials = `${userData.firstName.charAt(0)}${userData.lastName.charAt(0)}`;
             avatar.textContent = initials;
             profileAvatar.textContent = initials;
-            
+
             // Menu navigation
             const menuItems = document.querySelectorAll('.menu-item');
             const contentSections = document.querySelectorAll('.content-section');
-            
+
             menuItems.forEach(item => {
                 item.addEventListener('click', function() {
                     const target = this.getAttribute('data-target');
-                    
+
                     // Remove active class from all menu items
                     menuItems.forEach(i => i.classList.remove('active'));
-                    
+
                     // Add active class to clicked menu item
                     this.classList.add('active');
-                    
+
                     // Hide all content sections
                     contentSections.forEach(section => {
                         section.classList.remove('active');
                     });
-                    
+
                     // Show target section
                     if (target) {
                         document.getElementById(target).classList.add('active');
                     }
                 });
             });
-            
+
             // Logout functionality
             const logoutBtn = document.getElementById('logout-btn');
             logoutBtn.addEventListener('click', function() {
@@ -849,12 +361,12 @@
                     // window.location.href = 'login.html';
                 }
             });
-            
+
             // Profile form submission
             const profileForm = document.getElementById('profile-form');
             profileForm.addEventListener('submit', function(e) {
                 e.preventDefault();
-                
+
                 // Update user data
                 userData.firstName = document.getElementById('firstName').value;
                 userData.lastName = document.getElementById('lastName').value;
@@ -863,21 +375,22 @@
                 userData.address = document.getElementById('address').value;
                 userData.dob = document.getElementById('dob').value;
                 userData.nationality = document.getElementById('nationality').value;
-                
+
                 // Update displayed user info
                 document.getElementById('user-name').textContent = `${userData.firstName} ${userData.lastName}`;
                 document.getElementById('welcome-name').textContent = userData.firstName;
                 document.getElementById('profile-name').textContent = `${userData.firstName} ${userData.lastName}`;
                 document.getElementById('profile-email').textContent = userData.email;
-                
+
                 // Update avatar initials
                 const newInitials = `${userData.firstName.charAt(0)}${userData.lastName.charAt(0)}`;
                 avatar.textContent = newInitials;
                 profileAvatar.textContent = newInitials;
-                
+
                 alert('Profile updated successfully!');
             });
         });
     </script>
 </body>
+
 </html>
