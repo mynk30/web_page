@@ -1,6 +1,10 @@
 <?php
 session_start();
+require_once __DIR__ . '../../php/config.php';
+global $logger, $browserLogger;
 
+$logger->info('Login page accessed');
+// $logger->info('Session data: ' . json_encode($_SESSION));
 $errors = [
     'login' => $_SESSION['login_error'] ?? '',
     'register' => $_SESSION['register_error'] ?? ''

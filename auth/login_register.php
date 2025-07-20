@@ -1,49 +1,77 @@
 <?php
 session_start();
 require_once('../php/db.php');
-if (isset($_POST['register'])) {
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
-    $role = 'user'; 
+require_once('../php/config.php');
+global $logger, $browserLogger;
 
-    $checkEmail = $conn->query("SELECT * FROM user WHERE email = '$email'");
+$logger->info('Login register page accessed');
+// $logger->info('Session data: ' . json_encode($_SESSION));
+
+if (isset($_POST['register'])) {
+    $name = $conn->real_escape_string($_POST['name']);
+    $email = $conn->real_escape_string($_POST['email']);
+    $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+    $role = 'user'; // Correct role value is 'user', not 'users'
+
+
+    $checkEmail = $conn->query("SELECT * FROM users WHERE email = '$email'");
+    $logger->info("checkMail " . json_encode($checkEmail));
     if ($checkEmail->num_rows > 0) {
         $_SESSION['register_error'] = "Email already exists!";
         $_SESSION['active_form'] = "register";
         header("Location: login.php");
         exit();
     } else {
-        $conn->query("INSERT INTO user (name, email, password, role) VALUES ('$name', '$email', '$password', '$role')");
+        $stmt = $conn->prepare("INSERT INTO users (name, email, password, role) VALUES (?, ?, ?, ?)");
+        $stmt->bind_param("ssss", $name, $email, $password, $role);
+        $stmt->execute();
+        $stmt->close();
         header("Location: login.php");
         exit();
     }
 }
 
 if (isset($_POST['login'])) {
-    $email = $_POST['email'];
+    $email = $conn->real_escape_string($_POST['email']);
     $password = $_POST['password'];
 
-    $result = $conn->query("SELECT * FROM user WHERE email = '$email'");
-    if ($result->num_rows > 0) {
+    $logger->info("email " . json_encode($email));
+    $logger->info("password " . json_encode($password));
+
+    $result = $conn->query("SELECT * FROM users WHERE email = '$email'");
+    $logger->info("Executed query: SELECT * FROM users WHERE email = '$email'");
+
+    if ($result && $result->num_rows > 0) {
         $user = $result->fetch_assoc();
+        $logger->info("User Row: " . json_encode($user));
+
         if (password_verify($password, $user['password'])) {
+            $logger->info("password verify success");
+
+            $_SESSION['user_id'] = $user['id'];
             $_SESSION['name'] = $user['name'];
             $_SESSION['email'] = $user['email'];
+            $_SESSION['featured_image'] = $user['featured_image'];
             $_SESSION['role'] = $user['role'];
 
-            if ($user['role'] === 'admin') {
-                header("Location: ../admin/dashboard.php");
-                exit();
-            } else {
-                header("Location: ../user_page.php");
-                exit();
-            }
+            $logger->info("This is session after login: " . json_encode($_SESSION));
+            // $base_url = "http://" . $_SERVER['HTTP_HOST'] . "/web_page/";
+            header("Location: ../");
+            exit();
+        } else {
+            $logger->info("Invalid password.");
+            $_SESSION['login_error'] = "Invalid email or password!";
+            $_SESSION['active_form'] = "login";
+            header("Location: login.php");
+            exit();
         }
+    } else {
+        $logger->info("No user found with email: " . $email);
+        $_SESSION['login_error'] = "Invalid email or password!";
+        $_SESSION['active_form'] = "login";
+        header("Location: login.php");
+        exit();
     }
-    $_SESSION['login_error'] = "Invalid email or password!";
-    $_SESSION['active_form'] = "login";
-    header("Location: login.php");
-    exit();
 }
+
 ?>

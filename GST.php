@@ -1,19 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./assests/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./assests/fontawesome-free-6.7.2-web/css/all.min.css">
-    <link rel="stylesheet" href="./assests/css/style.css">
-    <title>GST</title>
-</head>
-<body>
-    <!-- Navigation -->
-      <div>
-        <?php include './include/header.php'; ?>
-    </div>
 
+<?php include './include/header.php' ?>
 
         <!-- Banner Section -->
         <section class="hero-gst-section">
@@ -342,11 +328,6 @@
 
 
     <!-- Footer -->
-   <div>
-        <?php include './include/footer.php'; ?>
-    </div>
-    
-<script src="./assests/js/bootstrap.bundle.min.js"></script>
-<script src="./assests/js/script.js"></script>
-</body>
-</html>
+
+    <?php include './include/footer.php'; ?>
+  

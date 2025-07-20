@@ -3,7 +3,7 @@
           <div class="row">
               <!-- Logo Column -->
               <div class="col-lg-2 col-md-4 mb-4">
-                  <img src="./assests/img/logo.png" class="footer-img" alt="Logo">
+                  <img src="<?php echo $baseURL; ?>assests/img/logo.png" class="footer-img" alt="Logo">
               </div>
   
               <!-- Company Info Column -->
@@ -22,10 +22,10 @@
               <div class="col-lg-2 col-md-6 mb-4">
                   <h5 class="mb-4">Quik Link</h5>
                   <ul class="list-unstyled">
-                      <li class="mb-2"><a href="/index.php" class="text-white text-decoration-none">Home</a></li>
-                      <li class="mb-2"><a href="/audit.php" class="text-white text-decoration-none">Audit Services</a></li>
-                      <li class="mb-2"><a href="/about.php" class="text-white text-decoration-none">About</a></li>
-                      <li class="mb-2"><a href="/Contact.php" class="text-white text-decoration-none">Contant</a></li>
+                      <li class="mb-2"><a href="<?php echo $baseURL; ?>index.php" class="text-white text-decoration-none">Home</a></li>
+                      <li class="mb-2"><a href="<?php echo $baseURL; ?>audit.php" class="text-white text-decoration-none">Audit Services</a></li>
+                      <li class="mb-2"><a href="<?php echo $baseURL; ?>about.php" class="text-white text-decoration-none">About</a></li>
+                      <li class="mb-2"><a href="<?php echo $baseURL; ?>Contact.php" class="text-white text-decoration-none">Contant</a></li>
                   </ul>
               </div>
   
@@ -47,3 +47,8 @@
           </div>
       </div>
   </footer>
+
+  <script src="<?php echo $baseURL; ?>assests/js/script.js"></script>
+    <script src="<?php echo $baseURL; ?>assests/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

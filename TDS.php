@@ -1,20 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./assests/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./assests/fontawesome-free-6.7.2-web/css/all.min.css">
-    <link rel="stylesheet" href="./assests/css/style.css">
-    <title>TDS</title>
-</head>
+    <?php include './include/header.php'; ?>
 
-<body>
-    <!-- Navigation -->
-    <div>
-        <?php include './include/header.php'; ?>
-    </div>
     <!-- Hero Section for TDS -->
     <section class="hero-section-tds">
         <div class="hero-overlay-tds">
@@ -210,14 +196,5 @@
     </section>  
 
     <!-- Footer -->
-    <div>
-        <?php include './include/footer.php'; ?>
-    </div>
 
-
-    <script src="./assests/js/bootstrap.bundle.min.js"></script>
-    <script src="./assests/js/script.js"></script>
-
-</body>
-
-</html>
+    <?php include './include/footer.php'; ?>
