@@ -106,36 +106,7 @@ try {
                     </div>
                 </div>
                 
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-header text-white">
-                            <h5 class="mb-0">Profile Picture</h5>
-                        </div>
-                        <div class="card-body text-center">
-                            <div class="mb-3">
-                                <?php if (!empty($user['profile_image'])): ?>
-                                    <img src="../uploads/profiles/<?php echo htmlspecialchars($user['profile_image']); ?>" 
-                                         alt="Profile Picture" 
-                                         class="img-thumbnail rounded-circle" 
-                                         style="width: 150px; height: 150px; object-fit: cover;">
-                                <?php else: ?>
-                                    <div class="bg-light rounded-circle d-flex align-items-center justify-content-center" 
-                                         style="width: 150px; height: 150px; margin: 0 auto;">
-                                        <i class="fas fa-user fa-4x text-muted"></i>
-                                    </div>
-                                <?php endif; ?>
-                            </div>
-                            <form action="upload_profile_picture.php" method="post" enctype="multipart/form-data">
-                                <div class="mb-3">
-                                    <input type="file" class="form-control" name="profile_picture" accept="image/*">
-                                </div>
-                                <button type="submit" class="btn custom-btn form-btn">
-                                    <i class="fas fa-upload me-1 text-white"></i> Upload New Photo
-                                </button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+             
             </div>
             <?php endif; ?>
         </main>

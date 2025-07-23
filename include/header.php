@@ -4,8 +4,8 @@ $baseURL = "http://" . $_SERVER['HTTP_HOST'] . "/web_page/";
 require_once __DIR__ . '/../php/config.php';
 global $logger, $browserLogger;
 
-$logger->info("Header included " . json_encode($_SESSION));
-$browserLogger->log("Header included " . json_encode($_SESSION));
+$logger->info("Header included this is SESSION " . json_encode($_SESSION));
+$browserLogger->log("Header included this is SESSION " . json_encode($_SESSION));
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -59,7 +59,7 @@ $browserLogger->log("Header included " . json_encode($_SESSION));
                     <div class="dropdown ms-lg-3">
                         <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="userProfileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <?php if(!empty($_SESSION['featured_image'])): ?>
-                                <img src="<?php echo htmlspecialchars($_SESSION['featured_image']); ?>" 
+                                <img src="<?php echo htmlspecialchars ($baseURL . $_SESSION['featured_image']); ?>" 
                                      alt="Profile" 
                                      class="rounded-circle me-2" 
                                      style="width: 32px; height: 32px; object-fit: cover;">

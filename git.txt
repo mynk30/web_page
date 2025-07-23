@@ -1,5 +1,5 @@
 git add .
-git commit -m "yaha pe tera message"
+git commit -m ""
 git push
 
 -------------------------------------
@@ -7,3 +7,7 @@ git push
 TASK 
 
 1.  Absolute path and relative path
+-------------------------------------------------------
+
+1. change password admin and user
+2. 
