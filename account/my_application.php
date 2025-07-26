@@ -93,18 +93,18 @@ try {
 <div class="container-fluid">
     <div class="row">
         <!-- Sidebar -->
-        <div class="col-lg-2 col-md-3 px-0">
+        <div class="col-lg-2 col-md-3 px-0 d-md-block sidebar collapse">
             <?php include 'sidebar.php'; ?>
         </div>
 
         <!-- Main Content -->
-        <div class="col-lg-10 col-md-9 py-4">
+        <div class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
             <div class="container">
-                <div class="d-flex justify-content-between align-items-center mb-4">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                     <h2>My Applications</h2>
-                    <a href="new_application.php" class="btn btn-primary">
-                        <i class="fas fa-plus me-1"></i> New Application
-                    </a>
+                    <button type="button" class="btn btn-sm custom-btn" data-bs-toggle="modal" data-bs-target="#applicationFormModal">
+                        Application Form
+                        </button>
                 </div>
 
                 <?php if (isset($_SESSION['success'])): ?>
@@ -159,9 +159,6 @@ try {
                                 </div>
                                 <h4>No applications found</h4>
                                 <p class="text-muted">You haven't submitted any applications yet.</p>
-                                <a href="new_application.php" class="btn btn-primary mt-2">
-                                    <i class="fas fa-plus me-1"></i> Create New Application
-                                </a>
                             </div>
                         <?php else: ?>
                             <div class="table-responsive">
@@ -201,15 +198,21 @@ try {
                                                 <td><?php echo htmlspecialchars($app['service_type']); ?></td>
                                                 <td><?php echo date('M j, Y', strtotime($app['created_at'])); ?></td>
                                                 <td>
-                                                    <span class="badge <?php echo $statusClass; ?>">
-                                                        <?php echo ucfirst(str_replace('_', ' ', $app['status'])); ?>
+                                                    <span class="badge rounded-pill <?php echo $statusClass; ?>">
+                                                        <?php echo ucwords(str_replace('_', ' ', $app['status'])); ?>
                                                     </span>
                                                 </td>
-                                                <td>
+                                                <td class="text-nowrap">
                                                     <a href="view_application.php?id=<?php echo $app['id']; ?>" 
-                                                       class="btn btn-sm btn-outline-primary">
-                                                        <i class="fas fa-eye"></i> View
+                                                       class="btn btn-sm btn-outline-primary me-1" title="View">
+                                                        <i class="fas fa-eye"></i>
                                                     </a>
+                                                    <button type="button" 
+                                                            class="btn btn-sm btn-outline-danger delete-application" 
+                                                            data-id="<?php echo $app['id']; ?>"
+                                                            title="Delete">
+                                                        <i class="fas fa-trash"></i>
+                                                    </button>
                                                 </td>
                                             </tr>
                                         <?php endforeach; ?>
@@ -254,5 +257,157 @@ try {
         </div>
     </div>
 </div>
+
+
+<div class="modal fade" id="applicationFormModal" tabindex="-1" aria-labelledby="applicationFormModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <?php if (isset($_SESSION['error'])): ?>
+                <div class="alert alert-danger m-3"><?php echo htmlspecialchars($_SESSION['error']); unset($_SESSION['error']); ?></div>
+            <?php endif; ?>
+            <form action="./submit_application.php" method="POST" enctype="multipart/form-data" id="applicationForm">
+                <div class="modal-header">
+                    <h5 class="modal-title text-white">Application Form</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label">Full Name</label>
+                        <input disabled value="<?php echo htmlspecialchars($_SESSION['name']); ?>" type="text" name="name" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Email Address</label>
+                        <input disabled value="<?php echo htmlspecialchars($_SESSION['email']); ?>" type="email" name="email" class="form-control" required>
+                    </div>
+                
+                    <div class="mb-3">
+                        <label class="form-label">Phone Number</label>
+                        <input type="text" name="phone" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Application Type</label>
+                        <select name="application_type" class="form-select" required>
+                            <option disabled selected>-- Select Application Type --</option>
+                            <option value="GST Registration">GST Registration</option>
+                            <option value="Digital Signature">Digital Signature</option>
+                            <option value="MSME Registration">MSME Registration</option>
+                            <option value="Income Tax Filing">Income Tax Filing</option>
+                            <option value="Trademark Registration">Trademark Registration</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Upload Documents (PDF, JPG, PNG)</label>
+                        <input type="file" name="document[]" class="form-control" multiple required>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn custom-btn" data-bs-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn custom-btn">Submit Application</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Delete Confirmation Modal -->
+<div class="modal fade" id="deleteConfirmationModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-danger text-white">
+                <h5 class="modal-title"><i class="fas fa-exclamation-triangle me-2"></i>Confirm Deletion</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to delete this application? This action cannot be undone.</p>
+                <p class="text-muted small">All associated documents will also be permanently deleted.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <a href="#" id="confirmDeleteBtn" class="btn btn-danger">
+                    <i class="fas fa-trash me-1"></i> Delete Application
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+// Enhanced delete functionality with fallback
+function handleDeleteClick(e) {
+    e.preventDefault();
+    
+    // Get application ID from data attribute
+    const applicationId = this.getAttribute('data-id');
+    if (!applicationId) {
+        console.error('No application ID found');
+        return false;
+    }
+    
+    const deleteUrl = 'delete_application.php?id=' + encodeURIComponent(applicationId);
+    
+    // Try to use Bootstrap modal if available
+    try {
+        const deleteModalEl = document.getElementById('deleteConfirmationModal');
+        if (deleteModalEl && typeof bootstrap !== 'undefined' && bootstrap.Modal) {
+            const confirmBtn = document.getElementById('confirmDeleteBtn');
+            if (confirmBtn) {
+                confirmBtn.href = deleteUrl;
+                const deleteModal = new bootstrap.Modal(deleteModalEl);
+                deleteModal.show();
+                return true;
+            }
+        }
+        
+        // Fallback to native confirm dialog if Bootstrap modal fails
+        if (confirm('Are you sure you want to delete this application? This action cannot be undone.')) {
+            window.location.href = deleteUrl;
+        }
+    } catch (error) {
+        console.error('Error showing delete confirmation:', error);
+        // Fallback to native confirm if there's an error with the modal
+        if (confirm('Are you sure you want to delete this application? This action cannot be undone.')) {
+            window.location.href = deleteUrl;
+        }
+    }
+    
+    return false;
+}
+
+// Initialize delete handlers when DOM is ready
+document.addEventListener('DOMContentLoaded', function() {
+    // Add click handlers to existing delete buttons
+    document.querySelectorAll('.delete-application').forEach(button => {
+        button.addEventListener('click', handleDeleteClick);
+    });
+    
+    // Also handle dynamically added delete buttons
+    const observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+            mutation.addedNodes.forEach(function(node) {
+                if (node.nodeType === 1) { // Element node
+                    const newButtons = node.matches('.delete-application') ? [node] : 
+                                    (node.querySelectorAll ? node.querySelectorAll('.delete-application') : []);
+                    newButtons.forEach(button => {
+                        button.addEventListener('click', handleDeleteClick);
+                    });
+                }
+            });
+        });
+    });
+    
+    // Start observing the document with the configured parameters
+    observer.observe(document.body, { childList: true, subtree: true });
+});
+
+// Fallback for jQuery if it's loaded after this script
+if (typeof jQuery !== 'undefined') {
+    jQuery(document).ready(function($) {
+        $(document).off('click', '.delete-application').on('click', '.delete-application', handleDeleteClick);
+    });
+}
+</script>
 
 <?php include '../include/footer.php'; ?>

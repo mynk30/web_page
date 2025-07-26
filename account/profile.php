@@ -24,8 +24,8 @@ try {
     if ($result->num_rows > 0) {
         $user = $result->fetch_assoc();
         
-        // Fetch latest application data for phone and address
-        $appStmt = $conn->prepare("SELECT phone, address FROM applications WHERE user_id = ? ORDER BY created_at DESC LIMIT 1");
+        // Fetch latest application data for phone 
+        $appStmt = $conn->prepare("SELECT phone FROM applications WHERE user_id = ? ORDER BY created_at DESC LIMIT 1");
         $appStmt->bind_param("i", $userId);
         $appStmt->execute();
         $appResult = $appStmt->get_result();
@@ -34,7 +34,6 @@ try {
             $appData = $appResult->fetch_assoc();
             // Merge application data with user data
             $user['phone'] = $appData['phone'];
-            $user['address'] = $appData['address'];
         }
         
         $appStmt->close();
@@ -90,10 +89,6 @@ try {
                             <div class="row mb-3">
                                 <div class="col-md-4 fw-bold">Phone:</div>
                                 <div class="col-md-8"><?php echo htmlspecialchars($user['phone'] ?? 'Not set'); ?></div>
-                            </div>
-                            <div class="row mb-3">
-                                <div class="col-md-4 fw-bold">Address:</div>
-                                <div class="col-md-8"><?php echo htmlspecialchars($user['address'] ?? 'Not set'); ?></div>
                             </div>
                             <div class="row">
                                 <div class="col-12">

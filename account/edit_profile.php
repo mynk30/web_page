@@ -18,7 +18,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_profile'])) {
     $name = $_POST['name'];
     $email = $_SESSION['email'];
     $phone = $_POST['phone'] ?? '';
-    $address = $_POST['address'] ?? '';
 
     $hasError = false;
 
@@ -31,7 +30,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_profile'])) {
     $logger->info("Name: " . $name);
     $logger->info("Email: " . $email);
     $logger->info("Phone: " . $phone);
-    $logger->info("Address: " . $address);
     $logger->info("Has Error: " . ($hasError ? 'Yes' : 'No'));
 
     $file_uploaded = isset($_FILES['profile_picture']) && $_FILES['profile_picture']['error'] !== UPLOAD_ERR_NO_FILE;
@@ -148,16 +146,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_profile'])) {
 
             // Update application data with upsert (ALWAYS update, even if empty)
             $appStmt = $conn->prepare("
-                INSERT INTO applications (user_id, phone, address) 
-                VALUES (?, ?, ?)
+                INSERT INTO applications (user_id, phone) 
+                VALUES (?, ?)
                 ON DUPLICATE KEY UPDATE 
-                phone = VALUES(phone), 
-                address = VALUES(address)
+                phone = VALUES(phone)   
             ");
             if ($appStmt === false) {
                 throw new Exception('Prepare failed for application update: ' . $conn->error);
             }
-            $appStmt->bind_param("iss", $user_id, $phone, $address);
+            $appStmt->bind_param("is", $user_id, $phone);
             if (!$appStmt->execute()) {
                 throw new Exception('Execute failed for application update: ' . $appStmt->error);
             }
@@ -213,7 +210,7 @@ $profile_picture = $stmt->get_result()->fetch_assoc();
 $stmt->close();
 
 // Get application data
-$appStmt = $conn->prepare("SELECT phone, address FROM applications WHERE user_id = ? ORDER BY created_at DESC LIMIT 1");
+$appStmt = $conn->prepare("SELECT phone FROM applications WHERE user_id = ? ORDER BY created_at DESC LIMIT 1");
 if ($appStmt === false) {
     die('Prepare failed: ' . $conn->error);
 }
@@ -223,7 +220,6 @@ $appData = $appStmt->get_result()->fetch_assoc();
 $appStmt->close();
 
 $phone = $appData['phone'] ?? '';
-$address = $appData['address'] ?? '';
 
 $baseUrl = 'http://localhost/web_page/';
 $imagePath = $profile_picture ? $profile_picture['file_path'] : 'uploads/profiles/default.png';
@@ -275,12 +271,6 @@ $imageSrc = $baseUrl . $imagePath;
                                     <label class="form-label">Phone</label>
                                     <input type="text" class="form-control" name="phone"
                                            value="<?php echo htmlspecialchars($phone); ?>">
-                                </div>
-
-                                <div class="mb-3">
-                                    <label class="form-label">Address</label>
-                                    <input type="text" class="form-control" name="address"
-                                           value="<?php echo htmlspecialchars($address); ?>">
                                 </div>
 
                                 <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-4">

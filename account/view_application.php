@@ -24,6 +24,16 @@ $stmt->execute();
 $result = $stmt->get_result();
 $application = $result->fetch_assoc();
 
+$requiredDocs = [];
+
+if (!empty($application['required_documents'])) {
+    $requiredDocs = json_decode($application['required_documents'], true);
+    if (!is_array($requiredDocs)) {
+        $requiredDocs = [];
+    }
+}
+
+
 if (!$application) {
     $_SESSION['error'] = 'Application not found or you do not have permission to view it';
     header('Location: dashboard.php');
@@ -80,7 +90,6 @@ switch ($application['status']) {
                     <p><strong>Name:</strong> <?php echo htmlspecialchars($application['name']); ?></p>
                     <p><strong>Email:</strong> <?php echo htmlspecialchars($application['email']); ?></p>
                     <p><strong>Phone:</strong> <?php echo htmlspecialchars($application['phone']); ?></p>
-                    <p><strong>Address:</strong> <?php echo nl2br(htmlspecialchars($application['address'])); ?></p>
                 </div>
             </div>
         </div>
@@ -126,8 +135,30 @@ switch ($application['status']) {
         </div>
     </div>
 
+    <!-- Required Documents from Admin -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h5 class="mb-0 text-white">Required Documents (as marked by Admin)</h5>
+    </div>
+    <div class="card-body">
+        <?php if (empty($requiredDocs)): ?>
+            <p class="text-muted">No specific documents requested.</p>
+        <?php else: ?>
+            <ul class="list-group">
+                <?php foreach ($requiredDocs as $doc): ?>
+                    <li class="list-group-item">
+                        <i class="fas fa-exclamation-circle text-warning me-2"></i>
+                        <?= htmlspecialchars($doc) ?>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+        <?php endif; ?>
+    </div>
+</div>
+
+
     <!-- Action Buttons -->
-    <div class="card mb-4">
+    <!-- <div class="card mb-4">
         <div class="card-header">
             <h5 class="mb-0 text-white">Actions</h5>
         </div>
@@ -150,11 +181,11 @@ switch ($application['status']) {
                 </a>
             </div>
         </div>
-    </div>
+    </div> -->
 </div>
 
 <!-- Submit Modal -->
-<div class="modal fade" id="submitForReviewModal" tabindex="-1" aria-labelledby="submitForReviewModalLabel" aria-hidden="true">
+<!-- <div class="modal fade" id="submitForReviewModal" tabindex="-1" aria-labelledby="submitForReviewModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <form action="submit_application.php" method="post" class="modal-content">
             <input type="hidden" name="application_id" value="<?php echo $applicationId; ?>">
@@ -177,6 +208,6 @@ switch ($application['status']) {
             </div>
         </form>
     </div>
-</div>
+</div> -->
 
 <?php include '../include/footer.php'; ?>
