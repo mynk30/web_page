@@ -17,8 +17,8 @@ unset($_SESSION['message'], $_SESSION['error']);
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_profile'])) {
     $name = $_POST['name'];
     $email = $_SESSION['email'];
-    $phone = $_POST['phone'] ?? ''; // Handle empty values
-    $address = $_POST['address'] ?? ''; // Handle empty values
+    $phone = $_POST['phone'] ?? '';
+    $address = $_POST['address'] ?? '';
 
     $hasError = false;
 
@@ -134,6 +134,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_profile'])) {
             } else {
                 // Update only name
                 $stmt = $conn->prepare("UPDATE users SET name = ? WHERE id = ?");
+                                                    
                 if ($stmt === false) {
                     throw new Exception('Prepare failed for user update: ' . $conn->error);
                 }

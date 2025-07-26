@@ -10,4 +10,6 @@ TASK
 -------------------------------------------------------
 
 1. change password admin and user
-2. 
+2. user dashboard - change profile 
+3. manage database tables
+4. 
