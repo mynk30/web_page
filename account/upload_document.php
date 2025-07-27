@@ -4,47 +4,63 @@ require_once '../php/db.php';
 require_once '../php/config.php';
 global $logger, $browserLogger;
 
+// Set JSON header
+header('Content-Type: application/json');
+
 // Check if user is logged in
 if (!isset($_SESSION['user_id'])) {
-    header('Content-Type: application/json');
     echo json_encode(['success' => false, 'message' => 'Unauthorized']);
     exit();
 }
 
 // Check if required parameters are provided
-if (!isset($_POST['application_id']) || !isset($_FILES['document_file']) || !isset($_POST['document_type'])) {
-    header('Content-Type: application/json');
+if (!isset($_POST['application_id']) || !isset($_FILES['document_file']) || !isset($_POST['document_name'])) {
     echo json_encode(['success' => false, 'message' => 'Missing required parameters']);
     exit();
 }
 
 $applicationId = intval($_POST['application_id']);
-$documentType = $_POST['document_type'];
+$documentName = trim($_POST['document_name']);
 $userId = $_SESSION['user_id'];
 
-// Verify that the application belongs to the user
-$stmt = $conn->prepare("SELECT id FROM applications WHERE id = ? AND user_id = ?");
+// Verify that the application belongs to the user and get current status
+$stmt = $conn->prepare("SELECT id, status FROM applications WHERE id = ? AND user_id = ?");
 $stmt->bind_param('ii', $applicationId, $userId);
 $stmt->execute();
 $result = $stmt->get_result();
 
 if ($result->num_rows === 0) {
-    header('Content-Type: application/json');
     echo json_encode(['success' => false, 'message' => 'Application not found or access denied']);
     exit();
 }
 
+$application = $result->fetch_assoc();
+
 // Get document info
 $file = $_FILES['document_file'];
-$fileName = $file['name'];
+$originalName = basename($file['name']);
 $fileTmpName = $file['tmp_name'];
 $fileSize = $file['size'];
 $fileError = $file['error'];
-$fileExt = strtolower(pathinfo($fileName, PATHINFO_EXTENSION));
+$fileExt = strtolower(pathinfo($originalName, PATHINFO_EXTENSION));
+
+// Sanitize the original filename
+$sanitizedOriginalName = preg_replace("/[^a-zA-Z0-9_.]/", "_", $originalName);
+$sanitizedDocumentName = preg_replace("/[^a-zA-Z0-9_\- ]/", "_", $documentName);
 
 // Validate file
 $allowedExtensions = ['pdf', 'jpg', 'jpeg', 'png'];
 $maxFileSize = 5 * 1024 * 1024; // 5MB
+
+// Create uploads directory if it doesn't exist
+$uploadDir = '../uploads/';
+if (!file_exists($uploadDir)) {
+    if (!mkdir($uploadDir, 0777, true)) {
+        $logger->error("Failed to create upload directory: $uploadDir");
+        echo json_encode(['success' => false, 'message' => 'Failed to create upload directory']);
+        exit();
+    }
+}
 
 if (!in_array($fileExt, $allowedExtensions)) {
     header('Content-Type: application/json');
@@ -65,100 +81,135 @@ if ($fileError !== UPLOAD_ERR_OK) {
             $errorMessage = 'The uploaded file exceeds the upload_max_filesize directive in php.ini';
             break;
         case UPLOAD_ERR_FORM_SIZE:
-            $errorMessage = 'The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in the HTML form';
+            $errorMessage = 'The uploaded file is too large. Maximum size: 5MB';
             break;
         case UPLOAD_ERR_PARTIAL:
             $errorMessage = 'The uploaded file was only partially uploaded';
             break;
         case UPLOAD_ERR_NO_FILE:
-            $errorMessage = 'No file was uploaded';
+            $errorMessage = 'No file was selected for upload';
             break;
         case UPLOAD_ERR_NO_TMP_DIR:
-            $errorMessage = 'Missing a temporary folder';
+            $errorMessage = 'Missing temporary folder';
             break;
         case UPLOAD_ERR_CANT_WRITE:
             $errorMessage = 'Failed to write file to disk';
             break;
         case UPLOAD_ERR_EXTENSION:
-            $errorMessage = 'A PHP extension stopped the file upload';
+            $errorMessage = 'File upload stopped by PHP extension';
             break;
     }
     
-    header('Content-Type: application/json');
+    $logger->error("File upload error ($fileError): $errorMessage");
     echo json_encode(['success' => false, 'message' => $errorMessage]);
     exit();
 }
 
-// Create uploads directory if it doesn't exist
-$uploadDir = '../uploads/documents/';
-if (!file_exists($uploadDir)) {
-    mkdir($uploadDir, 0777, true);
-}
-
-// Generate unique filename
-$newFileName = uniqid('doc_', true) . '.' . $fileExt;
+// Generate unique filename with original extension
+$uniqueId = uniqid('', true);
+$newFileName = "app_{$applicationId}_" . substr(md5($sanitizedDocumentName . $uniqueId), 0, 8) . ".$fileExt";
 $destination = $uploadDir . $newFileName;
+
+// Ensure the filename is unique
+$counter = 1;
+while (file_exists($destination)) {
+    $newFileName = "app_{$applicationId}_" . substr(md5($sanitizedDocumentName . $uniqueId . $counter), 0, 8) . ".$fileExt";
+    $destination = $uploadDir . $newFileName;
+    $counter++;
+}
 
 // Move the uploaded file
 if (!move_uploaded_file($fileTmpName, $destination)) {
-    header('Content-Type: application/json');
+    $logger->error("Failed to move uploaded file to $destination");
     echo json_encode(['success' => false, 'message' => 'Failed to save uploaded file']);
     exit();
 }
 
-// Check if document already exists for this application and document type
-$stmt = $conn->prepare("SELECT id, file_path FROM application_documents WHERE application_id = ? AND document_type = ?");
-$stmt->bind_param('is', $applicationId, $documentType);
-$stmt->execute();
-$result = $stmt->get_result();
+// Set file permissions
+chmod($destination, 0644);
 
-if ($result->num_rows > 0) {
-    // Update existing document
-    $row = $result->fetch_assoc();
-    $oldFilePath = $uploadDir . $row['file_path'];
-    
-    // Delete old file
-    if (file_exists($oldFilePath)) {
-        unlink($oldFilePath);
+// Begin transaction
+$conn->begin_transaction();
+
+try {
+    // Check if document already exists for this application and document name
+    $stmt = $conn->prepare("SELECT id, file_path FROM files WHERE model_type = 'application' AND model_id = ? AND document_name = ?");
+    $stmt->bind_param('is', $applicationId, $documentName);
+    $stmt->execute();
+    $result = $stmt->get_result();
+
+    if ($result->num_rows > 0) {
+        // Update existing document
+        $row = $result->fetch_assoc();
+        $oldFilePath = $uploadDir . $row['file_path'];
+        
+        // Delete old file
+        if (file_exists($oldFilePath)) {
+            if (!unlink($oldFilePath)) {
+                throw new Exception('Failed to remove old file');
+            }
+        }
+        
+        $stmt = $conn->prepare("UPDATE files SET file_path = ?, original_name = ?, uploaded_at = NOW() WHERE id = ?");
+        $stmt->bind_param('ssi', $newFileName, $sanitizedOriginalName, $row['id']);
+    } else {
+        // Insert new document
+        $stmt = $conn->prepare("INSERT INTO files (model_type, model_id, document_name, file_path, original_name, uploaded_at) VALUES ('application', ?, ?, ?, ?, NOW())");
+        $stmt->bind_param('isss', $applicationId, $documentName, $newFileName, $sanitizedOriginalName);
     }
-    
-    $stmt = $conn->prepare("UPDATE application_documents SET file_path = ?, original_filename = ?, uploaded_at = NOW() WHERE id = ?");
-    $stmt->bind_param('ssi', $newFileName, $fileName, $row['id']);
-} else {
-    // Insert new document
-    $stmt = $conn->prepare("INSERT INTO application_documents (application_id, document_type, document_name, file_path, original_filename, uploaded_at) VALUES (?, ?, ?, ?, ?, NOW())");
-    
-    // Get document name from required_documents
-    $docStmt = $conn->prepare("SELECT document_name FROM required_documents WHERE document_type = ? LIMIT 1");
-    $docStmt->bind_param('s', $documentType);
-    $docStmt->execute();
-    $docResult = $docStmt->get_result();
-    $docName = $docResult->num_rows > 0 ? $docResult->fetch_assoc()['document_name'] : $documentType;
-    
-    $stmt->bind_param('issss', $applicationId, $documentType, $docName, $newFileName, $fileName);
-}
 
-if ($stmt->execute()) {
+    if (!$stmt->execute()) {
+        throw new Exception('Failed to save document information to database');
+    }
+
     // Update application status if it was rejected or missing documents
-    $updateStmt = $conn->prepare("UPDATE applications SET status = 'pending' WHERE id = ? AND (status = 'rejected' OR status = 'missing_document')");
-    $updateStmt->bind_param('i', $applicationId);
-    $updateStmt->execute();
-    
-    // Log the upload
-    $logger->info("Document uploaded for application #$applicationId: $documentType");
-    $browserLogger->log("Document uploaded for application #$applicationId: $documentType");
-    
-    header('Content-Type: application/json');
-    echo json_encode(['success' => true, 'message' => 'Document uploaded successfully']);
-} else {
-    // Delete the uploaded file if database update fails
-    if (file_exists($destination)) {
-        unlink($destination);
+    if (in_array($application['status'], ['rejected', 'missing_document'])) {
+        $updateStmt = $conn->prepare("UPDATE applications SET status = 'pending', updated_at = NOW() WHERE id = ?");
+        $updateStmt->bind_param('i', $applicationId);
+        if (!$updateStmt->execute()) {
+            throw new Exception('Failed to update application status');
+        }
     }
     
-    header('Content-Type: application/json');
-    echo json_encode(['success' => false, 'message' => 'Failed to save document information to database']);
+    // Commit transaction
+    $conn->commit();
+    
+    // Log the successful upload
+    $logger->info("Document '$documentName' uploaded for application #$applicationId");
+    
+    // Return success response
+    echo json_encode([
+        'success' => true, 
+        'message' => 'Document uploaded successfully',
+        'document' => [
+            'name' => $documentName,
+            'original_name' => $sanitizedOriginalName,
+            'file_path' => $newFileName,
+            'uploaded_at' => date('Y-m-d H:i:s')
+        ]
+    ]);
+    
+} catch (Exception $e) {
+    // Rollback transaction on error
+    $conn->rollback();
+    
+    // Delete the uploaded file if it exists
+    if (file_exists($destination)) {
+        @unlink($destination);
+    }
+    
+    // Log the error
+    $errorMsg = $e->getMessage();
+    $logger->error("Document upload failed: $errorMsg");
+    
+    // Return error response
+    http_response_code(500);
+    echo json_encode([
+        'success' => false, 
+        'message' => 'Failed to process document upload: ' . $errorMsg
+    ]);
 }
 
+// Close database connection
 $conn->close();
 ?>

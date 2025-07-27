@@ -8,7 +8,9 @@ if (!isset($_SESSION['user_id'])) {
     exit();
 }
 
+// $applicationId = isset($_GET['id']) ? intval($_GET['id']) : 0;
 $applicationId = isset($_GET['id']) ? intval($_GET['id']) : 0;
+$logger->info("this is application id: ", $applicationId);
 $userId = $_SESSION['user_id'];
 
 if ($applicationId <= 0) {
@@ -24,9 +26,8 @@ $stmt = $conn->prepare("SELECT a.*,
               u.mobile as mobile
               FROM applications a 
               LEFT JOIN users u ON a.user_id = u.id
-              WHERE a.user_id = ?");
-
-$stmt->bind_param('i', $userId);
+              WHERE a.id = ? AND a.user_id = ?");
+$stmt->bind_param('ii', $applicationId, $userId);
 $stmt->execute();
 $result = $stmt->get_result();
 $application = $result->fetch_assoc();
@@ -39,6 +40,7 @@ if (!empty($application['required_documents'])) {
         $requiredDocs = [];
     }
 }
+$logger->info("Application details fetched: ", json_encode($requiredDocs));
 
 
 if (!$application) {
@@ -151,17 +153,214 @@ switch ($application['status']) {
         <?php if (empty($requiredDocs)): ?>
             <p class="text-muted">No specific documents requested.</p>
         <?php else: ?>
-            <ul class="list-group">
-                <?php foreach ($requiredDocs as $doc): ?>
-                    <li class="list-group-item">
-                        <i class="fas fa-exclamation-circle text-warning me-2"></i>
-                        <?= htmlspecialchars($doc) ?>
-                    </li>
-                <?php endforeach; ?>
-            </ul>
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Document Name</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php 
+                        // Get list of uploaded document names for comparison
+                        $uploadedDocNames = array_map(function($doc) {
+                            return pathinfo($doc['original_name'], PATHINFO_FILENAME);
+                        }, $uploadedDocs);
+                        
+                        foreach ($requiredDocs as $doc): 
+                            $isUploaded = false;
+                            $uploadedDocId = null;
+                            // Check if this document is already uploaded
+                            foreach ($uploadedDocs as $uploaded) {
+                                if (strpos(strtolower($uploaded['original_name']), strtolower($doc)) !== false) {
+                                    $isUploaded = true;
+                                    $uploadedDocId = $uploaded['id'];
+                                    break;
+                                }
+                            }
+                        ?>
+                            <tr>
+                                <td><?= htmlspecialchars($doc) ?></td>
+                                <td>
+                                    <?php if ($isUploaded): ?>
+                                        <span class="badge bg-success">Uploaded</span>
+                                    <?php else: ?>
+                                        <span class="badge bg-warning">Missing</span>
+                                    <?php endif; ?>
+                                </td>
+                                <td>
+                                    <?php if ($isUploaded): ?>
+                                        <a href="../uploads<?= htmlspecialchars($uploaded['file_path']) ?>" 
+                                           target="_blank" 
+                                           class="btn btn-sm btn-outline-primary">
+                                            <i class="fas fa-eye me-1"></i> View
+                                        </a>
+                                    <?php else: ?>
+                                        <button type="button" 
+                                                class="btn btn-sm btn-primary" 
+                                                data-bs-toggle="modal" 
+                                                data-bs-target="#uploadDocumentModal"
+                                                data-doc-name="<?= htmlspecialchars($doc) ?>">
+                                            <i class="fas fa-upload me-1"></i> Upload
+                                        </button>
+                                    <?php endif; ?>
+                                </td>
+                            </tr>
+                        <?php endforeach; ?>
+                    </tbody>
+                </table>
+            </div>
         <?php endif; ?>
     </div>
 </div>
+
+<!-- Upload Document Modal -->
+<div class="modal fade" id="uploadDocumentModal" tabindex="-1" aria-labelledby="uploadDocumentModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form action="upload_document.php" method="post" enctype="multipart/form-data">
+                <input type="hidden" name="application_id" value="<?= $applicationId ?>">
+                <input type="hidden" name="document_name" id="documentNameInput">
+                
+                <div class="modal-header">
+                    <h5 class="modal-title" id="uploadDocumentModalLabel">Upload Document</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="documentFile" class="form-label">Select file to upload</label>
+                        <input class="form-control" type="file" id="documentFile" name="document_file" required>
+                        <div class="form-text">
+                            <p id="documentNameText" class="mb-1"></p>
+                            Accepted file types: PDF, JPG, PNG (Max: 5MB)
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Upload</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var uploadModal = document.getElementById('uploadDocumentModal');
+    var uploadForm = uploadModal.querySelector('form');
+    var uploadButton = uploadForm.querySelector('button[type="submit"]');
+    var originalUploadButtonText = uploadButton.innerHTML;
+    
+    // Handle modal show event
+    uploadModal.addEventListener('show.bs.modal', function (event) {
+        var button = event.relatedTarget;
+        var docName = button.getAttribute('data-doc-name');
+        
+        var modalTitle = uploadModal.querySelector('.modal-title');
+        var docNameInput = document.getElementById('documentNameInput');
+        var docNameText = document.getElementById('documentNameText');
+        
+        modalTitle.textContent = 'Upload ' + docName;
+        docNameInput.value = docName;
+        docNameText.textContent = 'Document: ' + docName;
+        
+        // Reset form
+        uploadForm.reset();
+        
+        // Remove any previous error/success messages
+        var existingAlerts = uploadModal.querySelectorAll('.alert');
+        existingAlerts.forEach(function(alert) {
+            alert.remove();
+        });
+        
+        // Reset button state
+        uploadButton.disabled = false;
+        uploadButton.innerHTML = originalUploadButtonText;
+    });
+    
+    // Handle form submission
+    uploadForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        var formData = new FormData(uploadForm);
+        var fileInput = uploadForm.querySelector('input[type="file"]');
+        
+        // Validate file
+        if (fileInput.files.length === 0) {
+            showAlert('Please select a file to upload', 'danger');
+            return;
+        }
+        
+        // Show loading state
+        uploadButton.disabled = true;
+        uploadButton.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Uploading...';
+        
+        // Submit form via AJAX
+        fetch('upload_document.php', {
+            method: 'POST',
+            body: formData,
+            credentials: 'same-origin'
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                // Show success message
+                showAlert('Document uploaded successfully!', 'success');
+                
+                // Close modal after 1.5 seconds
+                setTimeout(function() {
+                    var modal = bootstrap.Modal.getInstance(uploadModal);
+                    modal.hide();
+                    
+                    // Reload the page to show updated document list
+                    window.location.reload();
+                }, 1500);
+            } else {
+                // Show error message
+                showAlert(data.message || 'Failed to upload document', 'danger');
+                uploadButton.disabled = false;
+                uploadButton.innerHTML = originalUploadButtonText;
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            showAlert('An error occurred while uploading the document', 'danger');
+            uploadButton.disabled = false;
+            uploadButton.innerHTML = originalUploadButtonText;
+        });
+    });
+    
+    // Helper function to show alert messages
+    function showAlert(message, type) {
+        // Remove any existing alerts
+        var existingAlerts = uploadModal.querySelectorAll('.alert');
+        existingAlerts.forEach(function(alert) {
+            alert.remove();
+        });
+        
+        // Create new alert
+        var alertDiv = document.createElement('div');
+        alertDiv.className = `alert alert-${type} alert-dismissible fade show mt-3`;
+        alertDiv.role = 'alert';
+        alertDiv.innerHTML = `
+            ${message}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        `;
+        
+        // Insert alert after the form
+        uploadForm.parentNode.insertBefore(alertDiv, uploadForm.nextSibling);
+        
+        // Auto-dismiss after 5 seconds
+        setTimeout(() => {
+            var bsAlert = new bootstrap.Alert(alertDiv);
+            bsAlert.close();
+        }, 5000);
+    }
+});
+</script>
 
 
     <!-- Action Buttons -->
