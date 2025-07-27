@@ -335,6 +335,7 @@ try {
 </div>
 
 <script>
+    // meet kar lo
 // Enhanced delete functionality with fallback
 function handleDeleteClick(e) {
     e.preventDefault();

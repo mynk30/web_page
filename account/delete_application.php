@@ -40,7 +40,7 @@ try {
     $checkStmt->execute();
     $result = $checkStmt->get_result();
     $logger->info("Result: " . $result->num_rows);
-    return;
+    // return;
     
     if ($result->num_rows === 0) {
         throw new Exception("Application not found or you don't have permission to delete it.");

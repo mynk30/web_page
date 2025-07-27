@@ -16,7 +16,7 @@ unset($_SESSION['message'], $_SESSION['error']);
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_profile'])) {
     $name = $_POST['name'];
-    $email = $_SESSION['email'];
+    $email = $_POST['email'];
     $phone = $_POST['phone'] ?? '';
 
     $hasError = false;
@@ -124,19 +124,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_profile'])) {
             // Update user name and featured_image (always update, even if no new file)
             if ($new_image_path) {
                 // Update with new image path
-                $stmt = $conn->prepare("UPDATE users SET name = ?, featured_image = ? WHERE id = ?");
+                $stmt = $conn->prepare("UPDATE users SET name = ?, email = ?, featured_image = ? WHERE id = ?");    
                 if ($stmt === false) {
                     throw new Exception('Prepare failed for user update: ' . $conn->error);
                 }
-                $stmt->bind_param("ssi", $name, $new_image_path, $user_id);
+                $stmt->bind_param("sssi", $name, $email, $new_image_path, $user_id);
             } else {
                 // Update only name
-                $stmt = $conn->prepare("UPDATE users SET name = ? WHERE id = ?");
-                                                    
+                $stmt = $conn->prepare("UPDATE users SET name = ?, email = ? WHERE id = ?");                                                        
                 if ($stmt === false) {
                     throw new Exception('Prepare failed for user update: ' . $conn->error);
                 }
-                $stmt->bind_param("si", $name, $user_id);
+                $stmt->bind_param("ssi", $name, $email, $user_id);
             }
             
             if (!$stmt->execute()) {
@@ -263,14 +262,14 @@ $imageSrc = $baseUrl . $imagePath;
 
                                 <div class="mb-3">
                                     <label class="form-label">Email Address</label>
-                                    <input disabled type="email" class="form-control"
-                                           value="<?php echo htmlspecialchars($user['email']); ?>" required>
+                                    <input type="email" name="email" class="form-control"
+                                        value="<?php echo htmlspecialchars($user['email']); ?>" required>
                                 </div>
 
                                 <div class="mb-3">
                                     <label class="form-label">Phone</label>
                                     <input type="text" class="form-control" name="phone"
-                                           value="<?php echo htmlspecialchars($phone); ?>">
+                                        value="<?php echo htmlspecialchars($phone); ?>">
                                 </div>
 
                                 <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-4">

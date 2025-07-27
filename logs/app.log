@@ -65,3 +65,87 @@
 [2025-07-27 01:11:06] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user"}
 [2025-07-26 21:41:37] [INFO] [::1] Application initialized
 [2025-07-27 01:11:37] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user"}
+[2025-07-27 08:12:47] [INFO] [::1] Application initialized
+[2025-07-27 11:42:47] [INFO] [::1] Attempting to delete application ID: 34 by user ID: 32
+[2025-07-27 11:42:47] [INFO] [::1] Result: 1
+[2025-07-27 11:42:47] [INFO] [::1] Successfully deleted application ID: 34 by user ID: 32
+[2025-07-27 08:12:47] [INFO] [::1] Application initialized
+[2025-07-27 11:42:47] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user","success":"Application deleted successfully."}
+[2025-07-27 08:13:50] [INFO] [::1] Application initialized
+[2025-07-27 11:43:50] [INFO] [::1] Attempting to delete application ID: 32 by user ID: 32
+[2025-07-27 11:43:50] [INFO] [::1] Result: 1
+[2025-07-27 11:43:50] [INFO] [::1] Successfully deleted application ID: 32 by user ID: 32
+[2025-07-27 08:13:50] [INFO] [::1] Application initialized
+[2025-07-27 11:43:50] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user","success":"Application deleted successfully."}
+[2025-07-27 08:14:10] [INFO] [::1] Application initialized
+[2025-07-27 11:44:10] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user"}
+[2025-07-27 08:14:19] [INFO] [::1] Application initialized
+[2025-07-27 11:44:19] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user"}
+[2025-07-27 08:18:04] [INFO] [::1] Application initialized
+[2025-07-27 11:48:04] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user"}
+[2025-07-27 08:18:13] [INFO] [::1] Application initialized
+[2025-07-27 11:48:13] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user"}
+[2025-07-27 08:18:30] [INFO] [::1] Application initialized
+[2025-07-27 08:18:30] [INFO] [::1] Application initialized
+[2025-07-27 11:48:30] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user"}
+[2025-07-27 08:18:57] [INFO] [::1] Application initialized
+[2025-07-27 11:48:57] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user"}
+[2025-07-27 08:19:00] [INFO] [::1] Application initialized
+[2025-07-27 11:49:00] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user"}
+[2025-07-27 08:19:03] [INFO] [::1] Application initialized
+[2025-07-27 11:49:03] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user"}
+[2025-07-27 08:19:04] [INFO] [::1] Application initialized
+[2025-07-27 11:49:04] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user"}
+[2025-07-27 08:19:05] [INFO] [::1] Application initialized
+[2025-07-27 11:49:05] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user"}
+[2025-07-27 08:19:07] [INFO] [::1] Application initialized
+[2025-07-27 11:49:07] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user"}
+[2025-07-27 08:19:08] [INFO] [::1] Application initialized
+[2025-07-27 11:49:08] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user"}
+[2025-07-27 08:19:10] [INFO] [::1] Application initialized
+[2025-07-27 11:49:10] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user"}
+[2025-07-27 08:19:12] [INFO] [::1] Application initialized
+[2025-07-27 11:49:12] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user"}
+[2025-07-27 08:19:13] [INFO] [::1] Application initialized
+[2025-07-27 11:49:13] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user"}
+[2025-07-27 08:19:27] [INFO] [::1] Application initialized
+[2025-07-27 11:49:27] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user"}
+[2025-07-27 08:19:32] [INFO] [::1] Application initialized
+[2025-07-27 11:49:32] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user"}
+[2025-07-27 08:19:44] [INFO] [::1] Application initialized
+[2025-07-27 11:49:44] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user"}
+[2025-07-27 11:49:44] [INFO] [::1] Name: Aman Verma
+[2025-07-27 11:49:44] [INFO] [::1] Email: aman@example.com
+[2025-07-27 11:49:44] [INFO] [::1] Phone: 9000000015
+[2025-07-27 11:49:44] [INFO] [::1] Has Error: No
+[2025-07-27 11:49:44] [INFO] [::1] File uploaded: Yes
+[2025-07-27 11:49:44] [INFO] [::1] File inserted successfully.
+[2025-07-27 11:49:44] [ERROR] [::1] Profile update error: Field 'email' doesn't have a default value
+[2025-07-27 08:19:44] [INFO] [::1] Application initialized
+[2025-07-27 11:49:44] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user","error":"Field 'email' doesn't have a default value"}
+[2025-07-27 08:28:42] [INFO] [::1] Application initialized
+[2025-07-27 11:58:42] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user"}
+[2025-07-27 08:28:51] [INFO] [::1] Application initialized
+[2025-07-27 11:58:51] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user"}
+[2025-07-27 11:58:51] [INFO] [::1] Name: Aman Verma
+[2025-07-27 11:58:51] [INFO] [::1] Email: 9000000015
+[2025-07-27 11:58:51] [INFO] [::1] Phone: 
+[2025-07-27 11:58:51] [INFO] [::1] Has Error: No
+[2025-07-27 11:58:51] [INFO] [::1] File uploaded: Yes
+[2025-07-27 11:58:51] [INFO] [::1] File inserted successfully.
+[2025-07-27 11:58:51] [ERROR] [::1] Profile update error: Field 'email' doesn't have a default value
+[2025-07-27 08:28:51] [INFO] [::1] Application initialized
+[2025-07-27 11:58:51] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user","error":"Field 'email' doesn't have a default value"}
+[2025-07-27 08:30:27] [INFO] [::1] Application initialized
+[2025-07-27 12:00:27] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user"}
+[2025-07-27 08:30:34] [INFO] [::1] Application initialized
+[2025-07-27 12:00:34] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user"}
+[2025-07-27 12:00:34] [INFO] [::1] Name: Aman Verma
+[2025-07-27 12:00:34] [INFO] [::1] Email: aman@example.com
+[2025-07-27 12:00:34] [INFO] [::1] Phone: 9000000015
+[2025-07-27 12:00:34] [INFO] [::1] Has Error: No
+[2025-07-27 12:00:34] [INFO] [::1] File uploaded: Yes
+[2025-07-27 12:00:34] [INFO] [::1] File inserted successfully.
+[2025-07-27 12:00:34] [ERROR] [::1] Profile update error: Field 'email' doesn't have a default value
+[2025-07-27 08:30:34] [INFO] [::1] Application initialized
+[2025-07-27 12:00:34] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user","error":"Field 'email' doesn't have a default value"}
