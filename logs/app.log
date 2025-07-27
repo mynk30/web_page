@@ -1,38 +1,348 @@
-[2025-07-27 11:04:49] [INFO] [::1] Application initialized
-[2025-07-27 14:34:49] [INFO] [::1] base url: http://localhost/web_page/
-[2025-07-27 14:34:49] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user"}
-[2025-07-27 14:34:49] [INFO] [::1] Name: Aman Verma
-[2025-07-27 14:34:49] [INFO] [::1] Email: aman@example.com
-[2025-07-27 14:34:49] [INFO] [::1] Phone: 9000000015
-[2025-07-27 14:34:49] [INFO] [::1] Has Error: No
-[2025-07-27 14:34:49] [INFO] [::1] File uploaded: Yes
-[2025-07-27 14:34:49] [INFO] [::1] File inserted successfully.
-[2025-07-27 14:34:49] [ERROR] [::1] Profile update error: Field 'email' doesn't have a default value
-[2025-07-27 11:04:49] [INFO] [::1] Application initialized
-[2025-07-27 14:34:49] [INFO] [::1] base url: http://localhost/web_page/
-[2025-07-27 14:34:49] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user","error":"Field 'email' doesn't have a default value"}
-[2025-07-27 11:07:34] [INFO] [::1] Application initialized
-[2025-07-27 14:37:34] [INFO] [::1] base url: http://localhost/web_page/
-[2025-07-27 14:37:34] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user"}
-[2025-07-27 11:07:44] [INFO] [::1] Application initialized
-[2025-07-27 14:37:44] [INFO] [::1] base url: http://localhost/web_page/
-[2025-07-27 14:37:44] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user"}
-[2025-07-27 11:07:47] [INFO] [::1] Application initialized
-[2025-07-27 14:37:47] [INFO] [::1] base url: http://localhost/web_page/
-[2025-07-27 14:37:47] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user"}
-[2025-07-27 14:37:47] [INFO] [::1] Dashboard accessed
-[2025-07-27 14:37:47] [INFO] [::1] User ID: 32
-[2025-07-27 14:37:47] [INFO] [::1] Application statistics fetched: {"total_applications":2,"pending_applications":"1","approved_applications":"0","missing_document_applications":"1","rejected_applications":"0"}
-[2025-07-27 14:37:47] [INFO] [::1] Recent applications fetched: [{"id":35,"application_number":null,"user_id":32,"assigned_to":0,"name":"Aman Verma","email":"aman@example.com","phone":"9000000015","address":null,"service_type":"Income Tax Filing","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-27 11:48:30","updated_at":"2025-07-27 11:48:30","required_documents":null},{"id":33,"application_number":null,"user_id":32,"assigned_to":0,"name":"Aman Verma","email":"aman@example.com","phone":"9000000015","address":null,"service_type":"GST Registration","status":"missing_document","reviewed_by":"Anjali Kushwah admin","reviewed_at":"2025-07-26 23:16:51","created_at":"2025-07-26 23:15:51","updated_at":"2025-07-26 23:16:51","required_documents":"[\"aadhar\", \"pencard\"]"}]
-[2025-07-27 11:48:35] [INFO] [::1] Application initialized
-[2025-07-27 15:18:35] [INFO] [::1] base url: http://localhost/web_page/
-[2025-07-27 15:18:35] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user"}
-[2025-07-27 11:51:30] [INFO] [::1] Application initialized
-[2025-07-27 15:21:30] [INFO] [::1] base url: http://localhost/web_page/
-[2025-07-27 15:21:30] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user"}
-[2025-07-27 11:51:33] [INFO] [::1] Application initialized
-[2025-07-27 15:21:33] [INFO] [::1] base url: http://localhost/web_page/
-[2025-07-27 15:21:33] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user"}
-[2025-07-27 11:52:06] [INFO] [::1] Application initialized
-[2025-07-27 15:22:06] [INFO] [::1] base url: http://localhost/web_page/
-[2025-07-27 15:22:06] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user"}
+[2025-07-27 11:56:53] [INFO] [::1] Application initialized
+[2025-07-27 15:26:53] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 15:26:53] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user"}
+[2025-07-27 11:57:02] [INFO] [::1] Application initialized
+[2025-07-27 15:27:02] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 15:27:02] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user"}
+[2025-07-27 11:57:31] [INFO] [::1] Application initialized
+[2025-07-27 15:27:31] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 15:27:31] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user"}
+[2025-07-27 12:00:15] [INFO] [::1] Application initialized
+[2025-07-27 15:30:15] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 15:30:15] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user"}
+[2025-07-27 12:00:30] [INFO] [::1] Application initialized
+[2025-07-27 15:30:30] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 15:30:30] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user"}
+[2025-07-27 12:00:43] [INFO] [::1] Application initialized
+[2025-07-27 15:30:43] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 15:30:43] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user"}
+[2025-07-27 12:01:31] [INFO] [::1] Application initialized
+[2025-07-27 15:31:31] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 15:31:31] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user"}
+[2025-07-27 12:06:13] [INFO] [::1] Application initialized
+[2025-07-27 15:36:13] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 15:36:13] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user"}
+[2025-07-27 12:07:38] [INFO] [::1] Application initialized
+[2025-07-27 15:37:38] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 15:37:38] [INFO] [::1] Header included this is SESSION []
+[2025-07-27 12:07:40] [INFO] [::1] Application initialized
+[2025-07-27 15:37:40] [INFO] [::1] Login page accessed
+[2025-07-27 12:11:14] [INFO] [::1] Application initialized
+[2025-07-27 15:41:14] [INFO] [::1] Login page accessed
+[2025-07-27 12:11:32] [INFO] [::1] Application initialized
+[2025-07-27 15:41:32] [INFO] [::1] Login page accessed
+[2025-07-27 12:14:43] [INFO] [::1] Application initialized
+[2025-07-27 15:44:43] [INFO] [::1] Login register page accessed
+[2025-07-27 15:44:43] [INFO] [::1] checkMail {}
+[2025-07-27 12:15:15] [INFO] [::1] Application initialized
+[2025-07-27 15:45:15] [INFO] [::1] Login page accessed
+[2025-07-27 12:15:22] [INFO] [::1] Application initialized
+[2025-07-27 15:45:22] [INFO] [::1] Login register page accessed
+[2025-07-27 15:45:22] [INFO] [::1] checkMail {}
+[2025-07-27 12:15:22] [INFO] [::1] Application initialized
+[2025-07-27 15:45:22] [INFO] [::1] Login page accessed
+[2025-07-27 12:15:49] [INFO] [::1] Application initialized
+[2025-07-27 15:45:49] [INFO] [::1] Login register page accessed
+[2025-07-27 15:45:49] [INFO] [::1] email "pooja@example.com"
+[2025-07-27 15:45:49] [INFO] [::1] password "12345"
+[2025-07-27 15:45:49] [INFO] [::1] Executed query: SELECT * FROM users WHERE email = 'pooja@example.com'
+[2025-07-27 15:45:49] [INFO] [::1] User Row: {"id":"35","name":"Pooja Singh","email":"pooja@example.com","mobile":"9876543212 ","password":"$2y$10$lH1dZZgD.uk9WIZm92I4Re.lS.yz42QZuIMrpID10VViSwb4xB68O","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-27 15:45:22","updated_at":"2025-07-27 15:45:22"}
+[2025-07-27 15:45:49] [INFO] [::1] password verify success
+[2025-07-27 15:45:49] [INFO] [::1] This is session after login: {"user_id":"35","name":"Pooja Singh","email":"pooja@example.com","mobile":"9876543212 ","featured_image":null,"role":"user"}
+[2025-07-27 12:15:49] [INFO] [::1] Application initialized
+[2025-07-27 15:45:49] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 15:45:49] [INFO] [::1] Header included this is SESSION {"user_id":"35","name":"Pooja Singh","email":"pooja@example.com","mobile":"9876543212 ","featured_image":null,"role":"user"}
+[2025-07-27 12:15:54] [INFO] [::1] Application initialized
+[2025-07-27 15:45:54] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 15:45:54] [INFO] [::1] Header included this is SESSION {"user_id":"35","name":"Pooja Singh","email":"pooja@example.com","mobile":"9876543212 ","featured_image":null,"role":"user"}
+[2025-07-27 15:45:54] [INFO] [::1] Dashboard accessed
+[2025-07-27 15:45:54] [INFO] [::1] User ID: 35
+[2025-07-27 15:45:54] [INFO] [::1] Application statistics fetched: {"total_applications":0,"pending_applications":null,"approved_applications":null,"missing_document_applications":null,"rejected_applications":null}
+[2025-07-27 15:45:54] [INFO] [::1] Recent applications fetched: []
+[2025-07-27 12:15:56] [INFO] [::1] Application initialized
+[2025-07-27 15:45:56] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 15:45:56] [INFO] [::1] Header included this is SESSION {"user_id":"35","name":"Pooja Singh","email":"pooja@example.com","mobile":"9876543212 ","featured_image":null,"role":"user"}
+[2025-07-27 12:15:59] [INFO] [::1] Application initialized
+[2025-07-27 15:45:59] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 15:45:59] [INFO] [::1] Header included this is SESSION {"user_id":"35","name":"Pooja Singh","email":"pooja@example.com","mobile":"9876543212 ","featured_image":null,"role":"user"}
+[2025-07-27 12:16:01] [INFO] [::1] Application initialized
+[2025-07-27 15:46:01] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 15:46:01] [INFO] [::1] Header included this is SESSION {"user_id":"35","name":"Pooja Singh","email":"pooja@example.com","mobile":"9876543212 ","featured_image":null,"role":"user"}
+[2025-07-27 15:46:01] [INFO] [::1] Dashboard accessed
+[2025-07-27 15:46:01] [INFO] [::1] User ID: 35
+[2025-07-27 15:46:01] [INFO] [::1] Application statistics fetched: {"total_applications":0,"pending_applications":null,"approved_applications":null,"missing_document_applications":null,"rejected_applications":null}
+[2025-07-27 15:46:01] [INFO] [::1] Recent applications fetched: []
+[2025-07-27 12:16:31] [INFO] [::1] Application initialized
+[2025-07-27 15:46:31] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 15:46:31] [INFO] [::1] Header included this is SESSION []
+[2025-07-27 12:17:05] [INFO] [::1] Application initialized
+[2025-07-27 15:47:05] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 15:47:05] [INFO] [::1] Header included this is SESSION []
+[2025-07-27 12:17:10] [INFO] [::1] Application initialized
+[2025-07-27 15:47:10] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 15:47:10] [INFO] [::1] Header included this is SESSION []
+[2025-07-27 12:17:30] [INFO] [::1] Application initialized
+[2025-07-27 15:47:30] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 15:47:30] [INFO] [::1] Header included this is SESSION []
+[2025-07-27 12:17:46] [INFO] [::1] Application initialized
+[2025-07-27 15:47:46] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 15:47:46] [INFO] [::1] Header included this is SESSION []
+[2025-07-27 12:17:48] [INFO] [::1] Application initialized
+[2025-07-27 15:47:48] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 15:47:48] [INFO] [::1] Header included this is SESSION []
+[2025-07-27 12:17:59] [INFO] [::1] Application initialized
+[2025-07-27 15:47:59] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 15:47:59] [INFO] [::1] Header included this is SESSION []
+[2025-07-27 12:18:04] [INFO] [::1] Application initialized
+[2025-07-27 15:48:04] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 15:48:04] [INFO] [::1] Header included this is SESSION []
+[2025-07-27 12:18:06] [INFO] [::1] Application initialized
+[2025-07-27 15:48:06] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 15:48:06] [INFO] [::1] Header included this is SESSION []
+[2025-07-27 12:18:10] [INFO] [::1] Application initialized
+[2025-07-27 15:48:10] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 15:48:10] [INFO] [::1] Header included this is SESSION []
+[2025-07-27 12:18:13] [INFO] [::1] Application initialized
+[2025-07-27 15:48:13] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 15:48:13] [INFO] [::1] Header included this is SESSION []
+[2025-07-27 12:20:22] [INFO] [::1] Application initialized
+[2025-07-27 15:50:22] [INFO] [::1] Login page accessed
+[2025-07-27 12:21:52] [INFO] [::1] Application initialized
+[2025-07-27 15:51:52] [INFO] [::1] Login register page accessed
+[2025-07-27 15:51:52] [INFO] [::1] checkMail {}
+[2025-07-27 12:21:52] [INFO] [::1] Application initialized
+[2025-07-27 15:51:52] [INFO] [::1] Login page accessed
+[2025-07-27 12:22:10] [INFO] [::1] Application initialized
+[2025-07-27 15:52:10] [INFO] [::1] Login page accessed
+[2025-07-27 12:22:12] [INFO] [::1] Application initialized
+[2025-07-27 15:52:12] [INFO] [::1] Login page accessed
+[2025-07-27 12:22:27] [INFO] [::1] Application initialized
+[2025-07-27 15:52:27] [INFO] [::1] Login page accessed
+[2025-07-27 12:26:25] [INFO] [::1] Application initialized
+[2025-07-27 15:56:25] [INFO] [::1] Login page accessed
+[2025-07-27 12:27:19] [INFO] [::1] Application initialized
+[2025-07-27 15:57:19] [INFO] [::1] Login page accessed
+[2025-07-27 12:27:56] [INFO] [::1] Application initialized
+[2025-07-27 15:57:56] [INFO] [::1] Login register page accessed
+[2025-07-27 15:57:56] [INFO] [::1] checkMail {}
+[2025-07-27 12:27:56] [INFO] [::1] Application initialized
+[2025-07-27 15:57:56] [INFO] [::1] Login page accessed
+[2025-07-27 12:28:28] [INFO] [::1] Application initialized
+[2025-07-27 15:58:28] [INFO] [::1] Login register page accessed
+[2025-07-27 15:58:28] [INFO] [::1] email "riya@gmail.com"
+[2025-07-27 15:58:28] [INFO] [::1] password "12345"
+[2025-07-27 15:58:28] [INFO] [::1] Executed query: SELECT * FROM users WHERE email = 'riya@gmail.com'
+[2025-07-27 15:58:28] [INFO] [::1] User Row: {"id":"37","name":"Riya Patel","email":"riya@gmail.com","mobile":"07770958768","password":"$2y$10$i\/KxqDlw8AN3tMAI0nBeEO7Ziy9q6XIUgB2C.pY2yGvPubjXYgsD.","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-27 15:57:56","updated_at":"2025-07-27 15:57:56"}
+[2025-07-27 15:58:28] [INFO] [::1] password verify success
+[2025-07-27 15:58:28] [INFO] [::1] This is session after login: {"user_id":"37","name":"Riya Patel","email":"riya@gmail.com","mobile":"07770958768","featured_image":null,"role":"user","login_success":"Login successful! Welcome back Riya Patel"}
+[2025-07-27 12:28:28] [INFO] [::1] Application initialized
+[2025-07-27 15:58:28] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 15:58:28] [INFO] [::1] Header included this is SESSION {"user_id":"37","name":"Riya Patel","email":"riya@gmail.com","mobile":"07770958768","featured_image":null,"role":"user","login_success":"Login successful! Welcome back Riya Patel"}
+[2025-07-27 12:28:36] [INFO] [::1] Application initialized
+[2025-07-27 15:58:36] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 15:58:36] [INFO] [::1] Header included this is SESSION []
+[2025-07-27 12:28:38] [INFO] [::1] Application initialized
+[2025-07-27 15:58:38] [INFO] [::1] Login page accessed
+[2025-07-27 12:28:44] [INFO] [::1] Application initialized
+[2025-07-27 15:58:44] [INFO] [::1] Login register page accessed
+[2025-07-27 15:58:44] [INFO] [::1] email "riya@gmail.com"
+[2025-07-27 15:58:44] [INFO] [::1] password "123"
+[2025-07-27 15:58:44] [INFO] [::1] Executed query: SELECT * FROM users WHERE email = 'riya@gmail.com'
+[2025-07-27 15:58:44] [INFO] [::1] User Row: {"id":"37","name":"Riya Patel","email":"riya@gmail.com","mobile":"07770958768","password":"$2y$10$i\/KxqDlw8AN3tMAI0nBeEO7Ziy9q6XIUgB2C.pY2yGvPubjXYgsD.","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-27 15:57:56","updated_at":"2025-07-27 15:57:56"}
+[2025-07-27 15:58:44] [INFO] [::1] Invalid password.
+[2025-07-27 12:28:44] [INFO] [::1] Application initialized
+[2025-07-27 15:58:44] [INFO] [::1] Login page accessed
+[2025-07-27 12:29:15] [INFO] [::1] Application initialized
+[2025-07-27 15:59:15] [INFO] [::1] Login register page accessed
+[2025-07-27 15:59:16] [INFO] [::1] checkMail {}
+[2025-07-27 12:29:16] [INFO] [::1] Application initialized
+[2025-07-27 15:59:16] [INFO] [::1] Login page accessed
+[2025-07-27 12:29:44] [INFO] [::1] Application initialized
+[2025-07-27 15:59:44] [INFO] [::1] Login page accessed
+[2025-07-27 12:29:49] [INFO] [::1] Application initialized
+[2025-07-27 15:59:49] [INFO] [::1] Login register page accessed
+[2025-07-27 15:59:49] [INFO] [::1] email "kushwahanjali89@gmail.com"
+[2025-07-27 15:59:49] [INFO] [::1] password "12"
+[2025-07-27 15:59:49] [INFO] [::1] Executed query: SELECT * FROM users WHERE email = 'kushwahanjali89@gmail.com'
+[2025-07-27 15:59:49] [INFO] [::1] No user found with email: kushwahanjali89@gmail.com
+[2025-07-27 12:29:49] [INFO] [::1] Application initialized
+[2025-07-27 15:59:49] [INFO] [::1] Login page accessed
+[2025-07-27 12:30:08] [INFO] [::1] Application initialized
+[2025-07-27 16:00:08] [INFO] [::1] Login register page accessed
+[2025-07-27 16:00:08] [INFO] [::1] email "ankush@gmail.com"
+[2025-07-27 16:00:08] [INFO] [::1] password "23"
+[2025-07-27 16:00:08] [INFO] [::1] Executed query: SELECT * FROM users WHERE email = 'ankush@gmail.com'
+[2025-07-27 16:00:08] [INFO] [::1] No user found with email: ankush@gmail.com
+[2025-07-27 12:30:08] [INFO] [::1] Application initialized
+[2025-07-27 16:00:08] [INFO] [::1] Login page accessed
+[2025-07-27 12:30:39] [INFO] [::1] Application initialized
+[2025-07-27 16:00:39] [INFO] [::1] Login page accessed
+[2025-07-27 12:32:31] [INFO] [::1] Application initialized
+[2025-07-27 16:02:31] [INFO] [::1] Login register page accessed
+[2025-07-27 16:02:31] [INFO] [::1] email "aman@example.com"
+[2025-07-27 16:02:31] [INFO] [::1] password "12345"
+[2025-07-27 16:02:31] [INFO] [::1] Executed query: SELECT * FROM users WHERE email = 'aman@example.com'
+[2025-07-27 16:02:31] [INFO] [::1] User Row: {"id":"32","name":"Aman Verma","email":"aman@example.com","mobile":"","password":"$2y$10$60jShrQsDXGIPq8SvEx3g.BmPa\/a2FlSTWqZ172tsaUSu\/f5Og6kW","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-26 23:15:14","updated_at":"2025-07-26 23:15:14"}
+[2025-07-27 16:02:31] [INFO] [::1] password verify success
+[2025-07-27 16:02:31] [INFO] [::1] This is session after login: {"user_id":"32","name":"Aman Verma","email":"aman@example.com","mobile":"","featured_image":null,"role":"user"}
+[2025-07-27 12:32:31] [INFO] [::1] Application initialized
+[2025-07-27 16:02:31] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 16:02:31] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","mobile":"","featured_image":null,"role":"user"}
+[2025-07-27 12:32:36] [INFO] [::1] Application initialized
+[2025-07-27 16:02:36] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 16:02:36] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","mobile":"","featured_image":null,"role":"user"}
+[2025-07-27 16:02:36] [INFO] [::1] Dashboard accessed
+[2025-07-27 16:02:36] [INFO] [::1] User ID: 32
+[2025-07-27 16:02:36] [INFO] [::1] Application statistics fetched: {"total_applications":2,"pending_applications":"1","approved_applications":"0","missing_document_applications":"1","rejected_applications":"0"}
+[2025-07-27 16:02:36] [INFO] [::1] Recent applications fetched: [{"id":35,"application_number":null,"user_id":32,"assigned_to":0,"name":"Aman Verma","email":"aman@example.com","phone":"9000000015","address":null,"service_type":"Income Tax Filing","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-27 11:48:30","updated_at":"2025-07-27 11:48:30","required_documents":null},{"id":33,"application_number":null,"user_id":32,"assigned_to":0,"name":"Aman Verma","email":"aman@example.com","phone":"9000000015","address":null,"service_type":"GST Registration","status":"missing_document","reviewed_by":"Anjali Kushwah admin","reviewed_at":"2025-07-26 23:16:51","created_at":"2025-07-26 23:15:51","updated_at":"2025-07-26 23:16:51","required_documents":"[\"aadhar\", \"pencard\"]"}]
+[2025-07-27 12:32:37] [INFO] [::1] Application initialized
+[2025-07-27 16:02:37] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 16:02:37] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","mobile":"","featured_image":null,"role":"user"}
+[2025-07-27 12:32:39] [INFO] [::1] Application initialized
+[2025-07-27 16:02:39] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 16:02:39] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","mobile":"","featured_image":null,"role":"user"}
+[2025-07-27 12:32:50] [INFO] [::1] Application initialized
+[2025-07-27 16:02:50] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 16:02:50] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","mobile":"","featured_image":null,"role":"user"}
+[2025-07-27 16:02:50] [INFO] [::1] Name: Aman Verma
+[2025-07-27 16:02:50] [INFO] [::1] Email: aman@example.com
+[2025-07-27 16:02:50] [INFO] [::1] Phone: 9000000015
+[2025-07-27 16:02:50] [INFO] [::1] Has Error: No
+[2025-07-27 16:02:50] [INFO] [::1] File uploaded: Yes
+[2025-07-27 16:02:50] [INFO] [::1] File inserted successfully.
+[2025-07-27 16:02:50] [ERROR] [::1] Profile update error: Field 'email' doesn't have a default value
+[2025-07-27 12:32:50] [INFO] [::1] Application initialized
+[2025-07-27 16:02:50] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 16:02:50] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","mobile":"","featured_image":null,"role":"user","error":"Field 'email' doesn't have a default value"}
+[2025-07-27 12:33:06] [INFO] [::1] Application initialized
+[2025-07-27 16:03:06] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 16:03:06] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","mobile":"","featured_image":null,"role":"user"}
+[2025-07-27 16:03:06] [INFO] [::1] Dashboard accessed
+[2025-07-27 16:03:06] [INFO] [::1] User ID: 32
+[2025-07-27 16:03:07] [INFO] [::1] Application statistics fetched: {"total_applications":2,"pending_applications":"1","approved_applications":"0","missing_document_applications":"1","rejected_applications":"0"}
+[2025-07-27 16:03:07] [INFO] [::1] Recent applications fetched: [{"id":35,"application_number":null,"user_id":32,"assigned_to":0,"name":"Aman Verma","email":"aman@example.com","phone":"9000000015","address":null,"service_type":"Income Tax Filing","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-27 11:48:30","updated_at":"2025-07-27 11:48:30","required_documents":null},{"id":33,"application_number":null,"user_id":32,"assigned_to":0,"name":"Aman Verma","email":"aman@example.com","phone":"9000000015","address":null,"service_type":"GST Registration","status":"missing_document","reviewed_by":"Anjali Kushwah admin","reviewed_at":"2025-07-26 23:16:51","created_at":"2025-07-26 23:15:51","updated_at":"2025-07-26 23:16:51","required_documents":"[\"aadhar\", \"pencard\"]"}]
+[2025-07-27 12:36:28] [INFO] [::1] Application initialized
+[2025-07-27 16:06:28] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 16:06:28] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","mobile":"","featured_image":null,"role":"user"}
+[2025-07-27 16:06:28] [INFO] [::1] Dashboard accessed
+[2025-07-27 16:06:28] [INFO] [::1] User ID: 32
+[2025-07-27 16:06:28] [INFO] [::1] Application statistics fetched: {"total_applications":2,"pending_applications":"1","approved_applications":"0","missing_document_applications":"1","rejected_applications":"0"}
+[2025-07-27 16:06:28] [INFO] [::1] Recent applications fetched: [{"id":35,"application_number":null,"user_id":32,"assigned_to":0,"name":"Aman Verma","email":"aman@example.com","phone":"9000000015","address":null,"service_type":"Income Tax Filing","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-27 11:48:30","updated_at":"2025-07-27 11:48:30","required_documents":null},{"id":33,"application_number":null,"user_id":32,"assigned_to":0,"name":"Aman Verma","email":"aman@example.com","phone":"9000000015","address":null,"service_type":"GST Registration","status":"missing_document","reviewed_by":"Anjali Kushwah admin","reviewed_at":"2025-07-26 23:16:51","created_at":"2025-07-26 23:15:51","updated_at":"2025-07-26 23:16:51","required_documents":"[\"aadhar\", \"pencard\"]"}]
+[2025-07-27 12:42:49] [INFO] [::1] Application initialized
+[2025-07-27 16:12:49] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 16:12:49] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","mobile":"","featured_image":null,"role":"user"}
+[2025-07-27 16:12:49] [INFO] [::1] Dashboard accessed
+[2025-07-27 16:12:49] [INFO] [::1] User ID: 32
+[2025-07-27 16:12:49] [INFO] [::1] Application statistics fetched: {"total_applications":2,"pending_applications":"1","approved_applications":"0","missing_document_applications":"1","rejected_applications":"0"}
+[2025-07-27 16:12:49] [INFO] [::1] Recent applications fetched: [{"id":35,"application_number":null,"user_id":32,"assigned_to":0,"name":"Aman Verma","email":"aman@example.com","phone":"9000000015","address":null,"service_type":"Income Tax Filing","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-27 11:48:30","updated_at":"2025-07-27 11:48:30","required_documents":null},{"id":33,"application_number":null,"user_id":32,"assigned_to":0,"name":"Aman Verma","email":"aman@example.com","phone":"9000000015","address":null,"service_type":"GST Registration","status":"missing_document","reviewed_by":"Anjali Kushwah admin","reviewed_at":"2025-07-26 23:16:51","created_at":"2025-07-26 23:15:51","updated_at":"2025-07-26 23:16:51","required_documents":"[\"aadhar\", \"pencard\"]"}]
+[2025-07-27 12:44:44] [INFO] [::1] Application initialized
+[2025-07-27 16:14:44] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 16:14:44] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","mobile":"","featured_image":null,"role":"user"}
+[2025-07-27 16:14:44] [INFO] [::1] Dashboard accessed
+[2025-07-27 16:14:44] [INFO] [::1] User ID: 32
+[2025-07-27 16:14:44] [INFO] [::1] Application statistics fetched: {"total_applications":2,"pending_applications":"1","approved_applications":"0","missing_document_applications":"1","rejected_applications":"0"}
+[2025-07-27 16:14:44] [INFO] [::1] Recent applications fetched: [{"id":35,"application_number":null,"user_id":32,"assigned_to":0,"name":"Aman Verma","email":"aman@example.com","phone":"9000000015","address":null,"service_type":"Income Tax Filing","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-27 11:48:30","updated_at":"2025-07-27 11:48:30","required_documents":null},{"id":33,"application_number":null,"user_id":32,"assigned_to":0,"name":"Aman Verma","email":"aman@example.com","phone":"9000000015","address":null,"service_type":"GST Registration","status":"missing_document","reviewed_by":"Anjali Kushwah admin","reviewed_at":"2025-07-26 23:16:51","created_at":"2025-07-26 23:15:51","updated_at":"2025-07-26 23:16:51","required_documents":"[\"aadhar\", \"pencard\"]"}]
+[2025-07-27 12:45:51] [INFO] [::1] Application initialized
+[2025-07-27 16:15:51] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 16:15:51] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","mobile":"","featured_image":null,"role":"user"}
+[2025-07-27 16:15:51] [INFO] [::1] Dashboard accessed
+[2025-07-27 16:15:51] [INFO] [::1] User ID: 32
+[2025-07-27 16:15:51] [INFO] [::1] Application statistics fetched: {"total_applications":2,"pending_applications":"1","approved_applications":"0","missing_document_applications":"1","rejected_applications":"0"}
+[2025-07-27 16:15:51] [INFO] [::1] Recent applications fetched: [{"id":35,"application_number":null,"user_id":32,"assigned_to":0,"name":"Aman Verma","email":"aman@example.com","phone":"9000000015","address":null,"service_type":"Income Tax Filing","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-27 11:48:30","updated_at":"2025-07-27 11:48:30","required_documents":null},{"id":33,"application_number":null,"user_id":32,"assigned_to":0,"name":"Aman Verma","email":"aman@example.com","phone":"9000000015","address":null,"service_type":"GST Registration","status":"missing_document","reviewed_by":"Anjali Kushwah admin","reviewed_at":"2025-07-26 23:16:51","created_at":"2025-07-26 23:15:51","updated_at":"2025-07-26 23:16:51","required_documents":"[\"aadhar\", \"pencard\"]"}]
+[2025-07-27 12:45:57] [INFO] [::1] Application initialized
+[2025-07-27 16:15:57] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 16:15:57] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","mobile":"","featured_image":null,"role":"user"}
+[2025-07-27 16:15:57] [INFO] [::1] Dashboard accessed
+[2025-07-27 16:15:57] [INFO] [::1] User ID: 32
+[2025-07-27 16:15:57] [INFO] [::1] Application statistics fetched: {"total_applications":2,"pending_applications":"1","approved_applications":"0","missing_document_applications":"1","rejected_applications":"0"}
+[2025-07-27 16:15:57] [INFO] [::1] Recent applications fetched: [{"id":35,"application_number":null,"user_id":32,"assigned_to":0,"name":"Aman Verma","email":"aman@example.com","phone":"9000000015","address":null,"service_type":"Income Tax Filing","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-27 11:48:30","updated_at":"2025-07-27 11:48:30","required_documents":null},{"id":33,"application_number":null,"user_id":32,"assigned_to":0,"name":"Aman Verma","email":"aman@example.com","phone":"9000000015","address":null,"service_type":"GST Registration","status":"missing_document","reviewed_by":"Anjali Kushwah admin","reviewed_at":"2025-07-26 23:16:51","created_at":"2025-07-26 23:15:51","updated_at":"2025-07-26 23:16:51","required_documents":"[\"aadhar\", \"pencard\"]"}]
+[2025-07-27 12:46:43] [INFO] [::1] Application initialized
+[2025-07-27 16:16:43] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 16:16:43] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","mobile":"","featured_image":null,"role":"user"}
+[2025-07-27 16:16:43] [INFO] [::1] Dashboard accessed
+[2025-07-27 16:16:43] [INFO] [::1] User ID: 32
+[2025-07-27 16:16:43] [INFO] [::1] Application statistics fetched: {"total_applications":2,"pending_applications":"1","approved_applications":"0","missing_document_applications":"1","rejected_applications":"0"}
+[2025-07-27 16:16:43] [INFO] [::1] Recent applications fetched: [{"id":35,"application_number":null,"user_id":32,"assigned_to":0,"name":"Aman Verma","email":"aman@example.com","phone":"9000000015","address":null,"service_type":"Income Tax Filing","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-27 11:48:30","updated_at":"2025-07-27 11:48:30","required_documents":null},{"id":33,"application_number":null,"user_id":32,"assigned_to":0,"name":"Aman Verma","email":"aman@example.com","phone":"9000000015","address":null,"service_type":"GST Registration","status":"missing_document","reviewed_by":"Anjali Kushwah admin","reviewed_at":"2025-07-26 23:16:51","created_at":"2025-07-26 23:15:51","updated_at":"2025-07-26 23:16:51","required_documents":"[\"aadhar\", \"pencard\"]"}]
+[2025-07-27 12:47:06] [INFO] [::1] Application initialized
+[2025-07-27 16:17:06] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 16:17:06] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","mobile":"","featured_image":null,"role":"user"}
+[2025-07-27 16:17:06] [INFO] [::1] Dashboard accessed
+[2025-07-27 16:17:06] [INFO] [::1] User ID: 32
+[2025-07-27 16:17:06] [INFO] [::1] Application statistics fetched: {"total_applications":2,"pending_applications":"1","approved_applications":"0","missing_document_applications":"1","rejected_applications":"0"}
+[2025-07-27 16:17:06] [INFO] [::1] Recent applications fetched: [{"id":35,"application_number":null,"user_id":32,"assigned_to":0,"name":"Aman Verma","email":"aman@example.com","phone":"9000000015","address":null,"service_type":"Income Tax Filing","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-27 11:48:30","updated_at":"2025-07-27 11:48:30","required_documents":null},{"id":33,"application_number":null,"user_id":32,"assigned_to":0,"name":"Aman Verma","email":"aman@example.com","phone":"9000000015","address":null,"service_type":"GST Registration","status":"missing_document","reviewed_by":"Anjali Kushwah admin","reviewed_at":"2025-07-26 23:16:51","created_at":"2025-07-26 23:15:51","updated_at":"2025-07-26 23:16:51","required_documents":"[\"aadhar\", \"pencard\"]"}]
+[2025-07-27 12:47:36] [INFO] [::1] Application initialized
+[2025-07-27 16:17:36] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 16:17:36] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","mobile":"","featured_image":null,"role":"user"}
+[2025-07-27 16:17:36] [INFO] [::1] Dashboard accessed
+[2025-07-27 16:17:36] [INFO] [::1] User ID: 32
+[2025-07-27 16:17:36] [INFO] [::1] Application statistics fetched: {"total_applications":2,"pending_applications":"1","approved_applications":"0","missing_document_applications":"1","rejected_applications":"0"}
+[2025-07-27 16:17:36] [INFO] [::1] Recent applications fetched: [{"id":35,"application_number":null,"user_id":32,"assigned_to":0,"name":"Aman Verma","email":"aman@example.com","phone":"9000000015","address":null,"service_type":"Income Tax Filing","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-27 11:48:30","updated_at":"2025-07-27 11:48:30","required_documents":null},{"id":33,"application_number":null,"user_id":32,"assigned_to":0,"name":"Aman Verma","email":"aman@example.com","phone":"9000000015","address":null,"service_type":"GST Registration","status":"missing_document","reviewed_by":"Anjali Kushwah admin","reviewed_at":"2025-07-26 23:16:51","created_at":"2025-07-26 23:15:51","updated_at":"2025-07-26 23:16:51","required_documents":"[\"aadhar\", \"pencard\"]"}]
+[2025-07-27 12:49:54] [INFO] [::1] Application initialized
+[2025-07-27 16:19:54] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 16:19:54] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","mobile":"","featured_image":null,"role":"user"}
+[2025-07-27 16:19:54] [INFO] [::1] Dashboard accessed
+[2025-07-27 16:19:54] [INFO] [::1] User ID: 32
+[2025-07-27 16:19:54] [INFO] [::1] Application statistics fetched: {"total_applications":2,"pending_applications":"1","approved_applications":"0","missing_document_applications":"1","rejected_applications":"0"}
+[2025-07-27 16:19:54] [INFO] [::1] Recent applications fetched: [{"id":35,"application_number":null,"user_id":32,"assigned_to":0,"name":"Aman Verma","email":"aman@example.com","phone":"9000000015","address":null,"service_type":"Income Tax Filing","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-27 11:48:30","updated_at":"2025-07-27 11:48:30","required_documents":null},{"id":33,"application_number":null,"user_id":32,"assigned_to":0,"name":"Aman Verma","email":"aman@example.com","phone":"9000000015","address":null,"service_type":"GST Registration","status":"missing_document","reviewed_by":"Anjali Kushwah admin","reviewed_at":"2025-07-26 23:16:51","created_at":"2025-07-26 23:15:51","updated_at":"2025-07-26 23:16:51","required_documents":"[\"aadhar\", \"pencard\"]"}]
+[2025-07-27 12:50:46] [INFO] [::1] Application initialized
+[2025-07-27 16:20:46] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 16:20:46] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","mobile":"","featured_image":null,"role":"user"}
+[2025-07-27 16:20:46] [INFO] [::1] Dashboard accessed
+[2025-07-27 16:20:46] [INFO] [::1] User ID: 32
+[2025-07-27 16:20:46] [INFO] [::1] Application statistics fetched: {"total_applications":2,"pending_applications":"1","approved_applications":"0","missing_document_applications":"1","rejected_applications":"0"}
+[2025-07-27 16:20:46] [INFO] [::1] Recent applications fetched: [{"id":35,"application_number":null,"user_id":32,"assigned_to":0,"name":"Aman Verma","email":"aman@example.com","phone":"9000000015","address":null,"service_type":"Income Tax Filing","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-27 11:48:30","updated_at":"2025-07-27 11:48:30","required_documents":null},{"id":33,"application_number":null,"user_id":32,"assigned_to":0,"name":"Aman Verma","email":"aman@example.com","phone":"9000000015","address":null,"service_type":"GST Registration","status":"missing_document","reviewed_by":"Anjali Kushwah admin","reviewed_at":"2025-07-26 23:16:51","created_at":"2025-07-26 23:15:51","updated_at":"2025-07-26 23:16:51","required_documents":"[\"aadhar\", \"pencard\"]"}]
+[2025-07-27 12:51:50] [INFO] [::1] Application initialized
+[2025-07-27 16:21:50] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 16:21:50] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","mobile":"","featured_image":null,"role":"user"}
+[2025-07-27 16:21:50] [INFO] [::1] Dashboard accessed
+[2025-07-27 16:21:50] [INFO] [::1] User ID: 32
+[2025-07-27 16:21:50] [INFO] [::1] Application statistics fetched: {"total_applications":2,"pending_applications":"1","approved_applications":"0","missing_document_applications":"1","rejected_applications":"0"}
+[2025-07-27 16:21:50] [INFO] [::1] Recent applications fetched: [{"id":35,"application_number":null,"user_id":32,"assigned_to":0,"name":"Aman Verma","email":"aman@example.com","phone":"9000000015","address":null,"service_type":"Income Tax Filing","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-27 11:48:30","updated_at":"2025-07-27 11:48:30","required_documents":null},{"id":33,"application_number":null,"user_id":32,"assigned_to":0,"name":"Aman Verma","email":"aman@example.com","phone":"9000000015","address":null,"service_type":"GST Registration","status":"missing_document","reviewed_by":"Anjali Kushwah admin","reviewed_at":"2025-07-26 23:16:51","created_at":"2025-07-26 23:15:51","updated_at":"2025-07-26 23:16:51","required_documents":"[\"aadhar\", \"pencard\"]"}]
+[2025-07-27 12:51:52] [INFO] [::1] Application initialized
+[2025-07-27 16:21:52] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 16:21:52] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","mobile":"","featured_image":null,"role":"user"}
+[2025-07-27 16:21:52] [INFO] [::1] Dashboard accessed
+[2025-07-27 16:21:52] [INFO] [::1] User ID: 32
+[2025-07-27 16:21:52] [INFO] [::1] Application statistics fetched: {"total_applications":2,"pending_applications":"1","approved_applications":"0","missing_document_applications":"1","rejected_applications":"0"}
+[2025-07-27 16:21:52] [INFO] [::1] Recent applications fetched: [{"id":35,"application_number":null,"user_id":32,"assigned_to":0,"name":"Aman Verma","email":"aman@example.com","phone":"9000000015","address":null,"service_type":"Income Tax Filing","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-27 11:48:30","updated_at":"2025-07-27 11:48:30","required_documents":null},{"id":33,"application_number":null,"user_id":32,"assigned_to":0,"name":"Aman Verma","email":"aman@example.com","phone":"9000000015","address":null,"service_type":"GST Registration","status":"missing_document","reviewed_by":"Anjali Kushwah admin","reviewed_at":"2025-07-26 23:16:51","created_at":"2025-07-26 23:15:51","updated_at":"2025-07-26 23:16:51","required_documents":"[\"aadhar\", \"pencard\"]"}]
+[2025-07-27 12:53:28] [INFO] [::1] Application initialized
+[2025-07-27 16:23:28] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 16:23:28] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","mobile":"","featured_image":null,"role":"user"}
+[2025-07-27 16:23:28] [INFO] [::1] Dashboard accessed
+[2025-07-27 16:23:28] [INFO] [::1] User ID: 32
+[2025-07-27 16:23:28] [INFO] [::1] Application statistics fetched: {"total_applications":2,"pending_applications":"1","approved_applications":"0","missing_document_applications":"1","rejected_applications":"0"}
+[2025-07-27 16:23:28] [INFO] [::1] Recent applications fetched: [{"id":35,"application_number":null,"user_id":32,"assigned_to":0,"name":"Aman Verma","email":"aman@example.com","phone":"9000000015","address":null,"service_type":"Income Tax Filing","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-27 11:48:30","updated_at":"2025-07-27 11:48:30","required_documents":null},{"id":33,"application_number":null,"user_id":32,"assigned_to":0,"name":"Aman Verma","email":"aman@example.com","phone":"9000000015","address":null,"service_type":"GST Registration","status":"missing_document","reviewed_by":"Anjali Kushwah admin","reviewed_at":"2025-07-26 23:16:51","created_at":"2025-07-26 23:15:51","updated_at":"2025-07-26 23:16:51","required_documents":"[\"aadhar\", \"pencard\"]"}]
+[2025-07-27 12:53:47] [INFO] [::1] Application initialized
+[2025-07-27 16:23:47] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 16:23:47] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","mobile":"","featured_image":null,"role":"user"}
+[2025-07-27 16:23:47] [INFO] [::1] Dashboard accessed
+[2025-07-27 16:23:47] [INFO] [::1] User ID: 32
+[2025-07-27 16:23:47] [INFO] [::1] Application statistics fetched: {"total_applications":2,"pending_applications":"1","approved_applications":"0","missing_document_applications":"1","rejected_applications":"0"}
+[2025-07-27 16:23:47] [INFO] [::1] Recent applications fetched: [{"id":35,"application_number":null,"user_id":32,"assigned_to":0,"name":"Aman Verma","email":"aman@example.com","phone":"9000000015","address":null,"service_type":"Income Tax Filing","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-27 11:48:30","updated_at":"2025-07-27 11:48:30","required_documents":null},{"id":33,"application_number":null,"user_id":32,"assigned_to":0,"name":"Aman Verma","email":"aman@example.com","phone":"9000000015","address":null,"service_type":"GST Registration","status":"missing_document","reviewed_by":"Anjali Kushwah admin","reviewed_at":"2025-07-26 23:16:51","created_at":"2025-07-26 23:15:51","updated_at":"2025-07-26 23:16:51","required_documents":"[\"aadhar\", \"pencard\"]"}]
+[2025-07-27 12:54:00] [INFO] [::1] Application initialized
+[2025-07-27 16:24:00] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 16:24:00] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","mobile":"","featured_image":null,"role":"user"}
+[2025-07-27 16:24:00] [INFO] [::1] Dashboard accessed
+[2025-07-27 16:24:00] [INFO] [::1] User ID: 32
+[2025-07-27 16:24:00] [INFO] [::1] Application statistics fetched: {"total_applications":2,"pending_applications":"1","approved_applications":"0","missing_document_applications":"1","rejected_applications":"0"}
+[2025-07-27 16:24:00] [INFO] [::1] Recent applications fetched: [{"id":35,"application_number":null,"user_id":32,"assigned_to":0,"name":"Aman Verma","email":"aman@example.com","phone":"9000000015","address":null,"service_type":"Income Tax Filing","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-27 11:48:30","updated_at":"2025-07-27 11:48:30","required_documents":null},{"id":33,"application_number":null,"user_id":32,"assigned_to":0,"name":"Aman Verma","email":"aman@example.com","phone":"9000000015","address":null,"service_type":"GST Registration","status":"missing_document","reviewed_by":"Anjali Kushwah admin","reviewed_at":"2025-07-26 23:16:51","created_at":"2025-07-26 23:15:51","updated_at":"2025-07-26 23:16:51","required_documents":"[\"aadhar\", \"pencard\"]"}]
+[2025-07-27 12:54:11] [INFO] [::1] Application initialized
+[2025-07-27 16:24:11] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 16:24:11] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","mobile":"","featured_image":null,"role":"user"}
+[2025-07-27 12:54:13] [INFO] [::1] Application initialized
+[2025-07-27 16:24:13] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 16:24:13] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","mobile":"","featured_image":null,"role":"user"}
+[2025-07-27 12:54:14] [INFO] [::1] Application initialized
+[2025-07-27 16:24:14] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 16:24:14] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","mobile":"","featured_image":null,"role":"user"}
+[2025-07-27 16:24:14] [INFO] [::1] Dashboard accessed
+[2025-07-27 16:24:14] [INFO] [::1] User ID: 32
+[2025-07-27 16:24:14] [INFO] [::1] Application statistics fetched: {"total_applications":2,"pending_applications":"1","approved_applications":"0","missing_document_applications":"1","rejected_applications":"0"}
+[2025-07-27 16:24:14] [INFO] [::1] Recent applications fetched: [{"id":35,"application_number":null,"user_id":32,"assigned_to":0,"name":"Aman Verma","email":"aman@example.com","phone":"9000000015","address":null,"service_type":"Income Tax Filing","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-27 11:48:30","updated_at":"2025-07-27 11:48:30","required_documents":null},{"id":33,"application_number":null,"user_id":32,"assigned_to":0,"name":"Aman Verma","email":"aman@example.com","phone":"9000000015","address":null,"service_type":"GST Registration","status":"missing_document","reviewed_by":"Anjali Kushwah admin","reviewed_at":"2025-07-26 23:16:51","created_at":"2025-07-26 23:15:51","updated_at":"2025-07-26 23:16:51","required_documents":"[\"aadhar\", \"pencard\"]"}]
+[2025-07-27 13:13:05] [INFO] [::1] Application initialized
+[2025-07-27 16:43:05] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 16:43:05] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","mobile":"","featured_image":null,"role":"user"}
+[2025-07-27 16:43:05] [INFO] [::1] Dashboard accessed
+[2025-07-27 16:43:05] [INFO] [::1] User ID: 32
+[2025-07-27 16:43:05] [INFO] [::1] Application statistics fetched: {"total_applications":2,"pending_applications":"1","approved_applications":"0","missing_document_applications":"1","rejected_applications":"0"}
+[2025-07-27 16:43:05] [INFO] [::1] Recent applications fetched: [{"id":35,"application_number":null,"user_id":32,"assigned_to":0,"name":"Aman Verma","email":"aman@example.com","phone":"9000000015","address":null,"service_type":"Income Tax Filing","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-27 11:48:30","updated_at":"2025-07-27 11:48:30","required_documents":null},{"id":33,"application_number":null,"user_id":32,"assigned_to":0,"name":"Aman Verma","email":"aman@example.com","phone":"9000000015","address":null,"service_type":"GST Registration","status":"missing_document","reviewed_by":"Anjali Kushwah admin","reviewed_at":"2025-07-26 23:16:51","created_at":"2025-07-26 23:15:51","updated_at":"2025-07-26 23:16:51","required_documents":"[\"aadhar\", \"pencard\"]"}]
