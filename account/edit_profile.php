@@ -238,8 +238,9 @@ $imageSrc = $baseUrl . $imagePath;
                     <div class="col-md-4 text-center mb-4">
                         <div class="mb-3">
                             <img id="preview" src="<?php echo $imageSrc; ?>"
-                                 class="img-fluid rounded-circle mb-3"
-                                 style="width: 200px; height: 200px; object-fit: cover;">
+                            class="img-fluid rounded-circle mb-3"
+                            style="width: 200px; height: 200px; object-fit: cover;">
+                            <!-- /upload/prole/prile_34567 -->
                             <div>
                                 <label for="profile_picture" class="btn btn-outline-primary btn-sm">Change Photo</label>
                                 <input type="file" class="d-none" id="profile_picture" name="profile_picture"

@@ -100,6 +100,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
         .match-success { color: #198754; }
         .match-error { color: #dc3545; }
+        .card .card-header {
+            background-color: var(--primary-color) !important;
+            border: none;
+            color: white;
+        }
     </style>
 </head>
 <body>

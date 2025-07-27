@@ -1,9 +1,11 @@
 <?php
 session_start();
 $baseURL = "http://" . $_SERVER['HTTP_HOST'] . "/web_page/";
+
 require_once __DIR__ . '/../php/config.php';
 global $logger, $browserLogger;
 
+$logger ->info("base url: " . $baseURL);
 $logger->info("Header included this is SESSION " . json_encode($_SESSION));
 $browserLogger->log("Header included this is SESSION " . json_encode($_SESSION));
 ?>
