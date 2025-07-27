@@ -9,6 +9,7 @@ $logger->info('Login register page accessed');
 
 if (isset($_POST['register'])) {
     $name = $conn->real_escape_string($_POST['name']);
+    $mobile = $conn->real_escape_string($_POST['mobile']);
     $email = $conn->real_escape_string($_POST['email']);
     $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
     $role = 'user'; // Correct role value is 'user', not 'users'
@@ -22,8 +23,8 @@ if (isset($_POST['register'])) {
         header("Location: login.php");
         exit();
     } else {
-        $stmt = $conn->prepare("INSERT INTO users (name, email, password, role) VALUES (?, ?, ?, ?)");
-        $stmt->bind_param("ssss", $name, $email, $password, $role);
+        $stmt = $conn->prepare("INSERT INTO users (name, mobile, email, password, role) VALUES (?, ?, ?, ?, ?)");
+        $stmt->bind_param("sssss", $name, $mobile, $email, $password, $role);
         $stmt->execute();
         $stmt->close();
         header("Location: login.php");
@@ -51,11 +52,11 @@ if (isset($_POST['login'])) {
             $_SESSION['user_id'] = $user['id'];
             $_SESSION['name'] = $user['name'];
             $_SESSION['email'] = $user['email'];
+            $_SESSION['mobile'] = $user['mobile'];
             $_SESSION['featured_image'] = $user['featured_image'];
             $_SESSION['role'] = $user['role'];
 
             $logger->info("This is session after login: " . json_encode($_SESSION));
-            // $base_url = "http://" . $_SERVER['HTTP_HOST'] . "/web_page/";
             header("Location: ../");
             exit();
         } else {

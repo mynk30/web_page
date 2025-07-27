@@ -49,6 +49,7 @@ function isActiveForm($formName, $activeForm) {
                 <?= showError($errors['register']); ?>
                 <input type="text" name="name" placeholder="Name" required>
                 <input type="email" name="email" id="email" placeholder="Email" required>
+                <input type="tel" name="mobile" id="mobile" placeholder="Mobile" required>   
                 <input type="password" name="password" id="password" placeholder="Password" required>
                 <button type="submit" name="register">Register</button>
                 <p>Already have an account? <a href="#" onclick="showForm('login-form')">Login</a></p>

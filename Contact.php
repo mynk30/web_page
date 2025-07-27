@@ -101,7 +101,9 @@
                 later.
               </div>
 
-              <form class="contact-form" id="contactForm" action="php/insert.php" method="POST">
+              <form class="contact-form" id="contactForm" method="POST">
+                <input type="hidden" name="forms" value="contact">
+                <input type="hidden" name="ajax_submit" value="1">
                 <div class="contact-form__row">
                   <div class="contact-form__group">
                     <label class="contact-form__label" for="firstName"> Full Name *</label>
@@ -181,4 +183,3 @@
     <!-- Footer -->
    
         <?php include './include/footer.php'; ?>
-    

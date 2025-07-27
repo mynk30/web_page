@@ -154,7 +154,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="./about.html" class="custom-btn about-btn ">Schedule Consultation</a>
+                    <a href="./about.php" class="custom-btn about-btn ">Schedule Consultation</a>
                 </div>
             </div>
         </div>

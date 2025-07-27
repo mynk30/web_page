@@ -85,9 +85,9 @@ COLUMNS -----   id
 FRONTEND TASK
 
 
-1. Contact form / service form proper inserted.
-2. service_form insert to contact_form table.
-3. register form add mobile number.  column name mobile rakhna hai
+1. Contact form / service form proper inserted.---done
+2. service_form insert to contact_form table.---done
+3. register form add mobile number.  column name mobile rakhna hai---done
 4. profile edit me mobile ko show karana hai edit karte time.
 5. login kare to sessino me uski sari details store karani hai
 6. profile photo upload and show in screen  (absolute path, relative path)
