@@ -24,8 +24,8 @@ try {
     if ($result->num_rows > 0) {
         $user = $result->fetch_assoc();
         
-        // Fetch latest application data for phone and address
-        $appStmt = $conn->prepare("SELECT phone, address FROM applications WHERE user_id = ? ORDER BY created_at DESC LIMIT 1");
+        // Fetch latest application data for phone 
+        $appStmt = $conn->prepare("SELECT phone FROM applications WHERE user_id = ? ORDER BY created_at DESC LIMIT 1");
         $appStmt->bind_param("i", $userId);
         $appStmt->execute();
         $appResult = $appStmt->get_result();
@@ -34,7 +34,6 @@ try {
             $appData = $appResult->fetch_assoc();
             // Merge application data with user data
             $user['phone'] = $appData['phone'];
-            $user['address'] = $appData['address'];
         }
         
         $appStmt->close();
@@ -91,10 +90,6 @@ try {
                                 <div class="col-md-4 fw-bold">Phone:</div>
                                 <div class="col-md-8"><?php echo htmlspecialchars($user['phone'] ?? 'Not set'); ?></div>
                             </div>
-                            <div class="row mb-3">
-                                <div class="col-md-4 fw-bold">Address:</div>
-                                <div class="col-md-8"><?php echo htmlspecialchars($user['address'] ?? 'Not set'); ?></div>
-                            </div>
                             <div class="row">
                                 <div class="col-12">
                                     <a href="edit_profile.php" class="btn custom-btn form-btn ">
@@ -106,36 +101,7 @@ try {
                     </div>
                 </div>
                 
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-header text-white">
-                            <h5 class="mb-0">Profile Picture</h5>
-                        </div>
-                        <div class="card-body text-center">
-                            <div class="mb-3">
-                                <?php if (!empty($user['profile_image'])): ?>
-                                    <img src="../uploads/profiles/<?php echo htmlspecialchars($user['profile_image']); ?>" 
-                                         alt="Profile Picture" 
-                                         class="img-thumbnail rounded-circle" 
-                                         style="width: 150px; height: 150px; object-fit: cover;">
-                                <?php else: ?>
-                                    <div class="bg-light rounded-circle d-flex align-items-center justify-content-center" 
-                                         style="width: 150px; height: 150px; margin: 0 auto;">
-                                        <i class="fas fa-user fa-4x text-muted"></i>
-                                    </div>
-                                <?php endif; ?>
-                            </div>
-                            <form action="upload_profile_picture.php" method="post" enctype="multipart/form-data">
-                                <div class="mb-3">
-                                    <input type="file" class="form-control" name="profile_picture" accept="image/*">
-                                </div>
-                                <button type="submit" class="btn custom-btn form-btn">
-                                    <i class="fas fa-upload me-1 text-white"></i> Upload New Photo
-                                </button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+             
             </div>
             <?php endif; ?>
         </main>
