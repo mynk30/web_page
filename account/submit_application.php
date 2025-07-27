@@ -1,12 +1,30 @@
 <?php
 session_start();
-require_once '../php/db.php';
 require_once '../php/config.php';
-global $logger, $browserLogger;
+require_once '../php/db.php';
+global $logger;
 
-header('Content-Type: application/json');
+// header('Content-Type: application/json');
 
 $response = ['success' => false, 'message' => ''];
+
+function generateNewApplicationNumber($conn): string {
+    try {
+        $query = "SELECT application_number FROM applications ORDER BY id DESC LIMIT 1";
+        $result = $conn->query($query);
+
+        if ($result && $row = $result->fetch_assoc()) {
+            $lastNumber = (int)$row['application_number'];
+            $newNumber = $lastNumber + 1;
+        } else {
+            $newNumber = 1;
+        }
+
+        return str_pad((string)$newNumber, 6, '0', STR_PAD_LEFT);
+    } catch (Exception $e) {
+        return '000101'; 
+    }
+}
 
 try {
     if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
@@ -15,33 +33,39 @@ try {
 
     // Start transaction
     if (!$conn->begin_transaction()) {
-        throw new Exception('Failed to start transaction');
+        throw new Exception('Failed to start transaction'); 
     }
+    
 
     // Validate phone and application_type
-    $phone = trim($_POST['phone'] ?? '');
+  
     $serviceType = trim($_POST['application_type'] ?? '');
+    $logger->info("Service type: " . $serviceType);
 
-    if (empty($phone) || empty($serviceType)) {
-        throw new Exception('Phone number and application type are required');
+    if (empty($serviceType)) {
+        throw new Exception('Application type is required');
     }
 
+    $logger->info("session...." . json_encode($_SESSION));
     // Get data from session
     $userId = $_SESSION['user_id'] ?? null;
-    $userName = $_SESSION['name'] ?? '';
-    $email = $_SESSION['email'] ?? '';
 
+   
+
+    $logger->info("User ID: " . $userId);
+    $logger->info("I AM HERE...................");
     if (!$userId) {
         throw new Exception('User not logged in');
     }
 
-    $assignedTo = 0;
-    $status = 'Pending';
+    $applicationNumber = generateNewApplicationNumber($conn);
+    $logger->info("Application number: " . $applicationNumber);
 
+    $logger->info("AFTER....");
     // Insert application
-    $stmt = $conn->prepare("INSERT INTO applications (user_id, name, email, phone, service_type, status, assigned_to, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, NOW(), NOW())");
+    $stmt = $conn->prepare("INSERT INTO applications (application_number, user_id, service_type, created_at, updated_at) VALUES (?, ?, ?, NOW(), NOW())");
 
-    if (!$stmt || !$stmt->bind_param("isssssi", $userId, $userName, $email, $phone, $serviceType, $status, $assignedTo) || !$stmt->execute()) {
+    if (!$stmt || !$stmt->bind_param("sis", $applicationNumber, $userId, $serviceType) || !$stmt->execute()) {
         throw new Exception('Failed to insert application');
     }
 
@@ -72,7 +96,8 @@ try {
             $modelType = 'application';
 
             $stmt = $conn->prepare("INSERT INTO files (original_name, file_name, file_path, file_size, model_type, model_id) VALUES (?, ?, ?, ?, ?, ?)");
-            if (!$stmt || !$stmt->bind_param("sssssi", $originalName, $uniqueName, $targetPath, $fileSize, $modelType, $applicationId) || !$stmt->execute()) {
+            // FIXED: Changed "ssssssi" to "sssisi" to match 6 parameters: string, string, string, integer, string, integer
+            if (!$stmt || !$stmt->bind_param("sssisi", $originalName, $uniqueName, $targetPath, $fileSize, $modelType, $applicationId) || !$stmt->execute()) {
                 throw new Exception('Failed to save file: ' . $originalName);
             }
 
@@ -96,6 +121,8 @@ try {
         'message' => 'Error: ' . $e->getMessage()
     ];
     header('Location: ' . $response['redirect']);
+    $logger->info("This is error : " . $e->getMessage());
+
     exit();
 }
 

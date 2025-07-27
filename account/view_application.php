@@ -18,8 +18,15 @@ if ($applicationId <= 0) {
 }
 
 // Fetch application details
-$stmt = $conn->prepare("SELECT * FROM applications WHERE id = ?");
-$stmt->bind_param('i', $applicationId);
+$stmt = $conn->prepare("SELECT a.*, 
+              u.name as customer_name , 
+              u.email as email , 
+              u.mobile as mobile
+              FROM applications a 
+              LEFT JOIN users u ON a.user_id = u.id
+              WHERE a.user_id = ?");
+
+$stmt->bind_param('i', $userId);
 $stmt->execute();
 $result = $stmt->get_result();
 $application = $result->fetch_assoc();
@@ -75,7 +82,7 @@ switch ($application['status']) {
 
     <div class="card mb-4">
         <div class="card-header d-flex justify-content-between text-white align-items-center">
-            <h5 class="mb-0">Application #<?php echo htmlspecialchars($application['id']); ?></h5>
+            <h5 class="mb-0">Application <?php echo htmlspecialchars($application['application_number']); ?></h5>
             <span class="badge <?php echo $statusClass; ?> p-2">
                 <?php echo ucfirst(str_replace('_', ' ', $application['status'])); ?>
             </span>
@@ -87,9 +94,9 @@ switch ($application['status']) {
                     <p><strong>Submitted On:</strong> <?php echo date('F j, Y, g:i a', strtotime($application['created_at'])); ?></p>
                 </div>
                 <div class="col-md-6">
-                    <p><strong>Name:</strong> <?php echo htmlspecialchars($application['name']); ?></p>
+                    <p><strong>Name:</strong> <?php echo htmlspecialchars($application['customer_name']); ?></p>
                     <p><strong>Email:</strong> <?php echo htmlspecialchars($application['email']); ?></p>
-                    <p><strong>Phone:</strong> <?php echo htmlspecialchars($application['phone']); ?></p>
+                    <p><strong>Phone:</strong> <?php echo htmlspecialchars($application['mobile']); ?></p>
                 </div>
             </div>
         </div>
@@ -119,10 +126,10 @@ switch ($application['status']) {
                                     <td><?php echo htmlspecialchars($doc['original_name']); ?></td>
                                     <td><?php echo date('M j, Y', strtotime($doc['uploaded_at'])); ?></td>
                                     <td>
-                                        <a href="../<?php echo htmlspecialchars($doc['file_path']); ?>" target="_blank" class="btn btn-sm btn-outline-primary">
+                                        <a href="../uploads/<?php echo htmlspecialchars($doc['file_path']); ?>" target="_blank" class="btn btn-sm btn-outline-primary">
                                             <i class="fas fa-eye me-1"></i> View
                                         </a>
-                                        <a href="../<?php echo htmlspecialchars($doc['file_path']); ?>" download class="btn btn-sm btn-outline-secondary">
+                                        <a href="../uploads/<?php echo htmlspecialchars($doc['file_path']); ?>" download class="btn btn-sm btn-outline-secondary">
                                             <i class="fas fa-download me-1"></i> Download
                                         </a>
                                     </td>

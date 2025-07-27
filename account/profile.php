@@ -10,43 +10,6 @@ if (!isset($_SESSION['user_id'])) {
     header('Location: ../login.php');
     exit();
 }
-
-$userId = $_SESSION['user_id'];
-$user = null;
-
-try {
-    // Fetch user data from users table
-    $stmt = $conn->prepare("SELECT * FROM users WHERE id = ?");
-    $stmt->bind_param("i", $userId);
-    $stmt->execute();
-    $result = $stmt->get_result();
-    
-    if ($result->num_rows > 0) {
-        $user = $result->fetch_assoc();
-        
-        // Fetch latest application data for phone 
-        $appStmt = $conn->prepare("SELECT phone FROM applications WHERE user_id = ? ORDER BY created_at DESC LIMIT 1");
-        $appStmt->bind_param("i", $userId);
-        $appStmt->execute();
-        $appResult = $appStmt->get_result();
-        
-        if ($appResult->num_rows > 0) {
-            $appData = $appResult->fetch_assoc();
-            // Merge application data with user data
-            $user['phone'] = $appData['phone'];
-        }
-        
-        $appStmt->close();
-    } else {
-        throw new Exception("User not found");
-    }
-    
-    $stmt->close();
-} catch (Exception $e) {
-    $logger->error("Error fetching user profile: " . $e->getMessage());
-    $browserLogger->log("Error fetching user profile: " . $e->getMessage());
-    $_SESSION['error'] = "Error loading profile. Please try again later.";
-}
 ?>
 
 <div class="container-fluid">
@@ -70,7 +33,7 @@ try {
                 <div class="alert alert-danger"><?php echo $_SESSION['error']; unset($_SESSION['error']); ?></div>
             <?php endif; ?>
 
-            <?php if ($user): ?>
+            <?php if ($_SESSION['user_id']): ?>
             <div class="row">
                 <div class="col-md-8">
                     <div class="card mb-4">
@@ -80,15 +43,15 @@ try {
                         <div class="card-body">
                             <div class="row mb-3">
                                 <div class="col-md-4 fw-bold">Full Name:</div>
-                                <div class="col-md-8"><?php echo htmlspecialchars($user['name'] ?? 'Not set'); ?></div>
+                                <div class="col-md-8"><?php echo htmlspecialchars($_SESSION['name'] ?? 'Not set'); ?></div>
                             </div>
                             <div class="row mb-3">
                                 <div class="col-md-4 fw-bold">Email:</div>
-                                <div class="col-md-8"><?php echo htmlspecialchars($user['email'] ?? 'Not set'); ?></div>
+                                <div class="col-md-8"><?php echo htmlspecialchars($_SESSION['email'] ?? 'Not set'); ?></div>
                             </div>
                             <div class="row mb-3">
                                 <div class="col-md-4 fw-bold">Phone:</div>
-                                <div class="col-md-8"><?php echo htmlspecialchars($user['phone'] ?? 'Not set'); ?></div>
+                                <div class="col-md-8"><?php echo htmlspecialchars($_SESSION['mobile'] ?? 'Not set'); ?></div>
                             </div>
                             <div class="row">
                                 <div class="col-12">

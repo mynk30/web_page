@@ -1,13 +1,22 @@
 <?php
 session_start();
+global $baseURL;
 $baseURL = "http://" . $_SERVER['HTTP_HOST'] . "/web_page/";
+
+
 
 require_once __DIR__ . '/../php/config.php';
 global $logger, $browserLogger;
 
-$logger ->info("base url: " . $baseURL);
-$logger->info("Header included this is SESSION " . json_encode($_SESSION));
-$browserLogger->log("Header included this is SESSION " . json_encode($_SESSION));
+$logger->info("base usr is in header: ". $baseURL);
+$imageSrc;
+
+if(isset($_SESSION["user_id"]) && isset($_SESSION["featured_image"])){
+    $imageSrc  = $baseURL . $_SESSION["featured_image"];
+}else{
+    $imageSrc = $baseURL . "uploads/profiles/user-avatar.png";
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -38,8 +47,8 @@ $browserLogger->log("Header included this is SESSION " . json_encode($_SESSION))
                     <li class="nav-item">
                         <a class="nav-link active" href="<?php echo $baseURL; ?>index.php">Home</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#services" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <li class="nav-item dropdown  ">
+                        <a class="nav-link dropdown-toggle  text-white" href="#services" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Services
                         </a>
                         <ul class="dropdown-menu no-radius" aria-labelledby="servicesDropdown">
@@ -50,29 +59,23 @@ $browserLogger->log("Header included this is SESSION " . json_encode($_SESSION))
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?php echo $baseURL; ?>about.php">About</a>
+                        <a class="nav-link  text-white" href="<?php echo $baseURL; ?>about.php">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?php echo $baseURL; ?>Contact.php">Contact</a>
+                        <a class="nav-link  text-white" href="<?php echo $baseURL; ?>Contact.php">Contact</a>
                     </li>
                 </ul>
                 <?php if(isset($_SESSION['user_id'])): ?>   
                     <!-- User Profile Dropdown -->
                     <div class="dropdown ms-lg-3">
-                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="userProfileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <?php if(!empty($_SESSION['featured_image'])): ?>
-                                <img src="<?php echo htmlspecialchars ($baseURL . $_SESSION['featured_image']); ?>" 
+                        <a class="nav-link dropdown-toggle d-flex text-white align-items-center" href="#" id="userProfileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          
+                                <img src="<?php echo htmlspecialchars ($imageSrc); ?>" 
                                      alt="Profile" 
                                      class="rounded-circle me-2" 
                                      style="width: 32px; height: 32px; object-fit: cover;">
-                            <?php else: ?>
-                                <!-- Default avatar if no profile image -->
-                                <div class="rounded-circle bg-light text-dark d-flex align-items-center justify-content-center me-2" 
-                                     style="width: 32px; height: 32px; font-weight: bold;">
-                                    <?php echo isset($_SESSION['name']) ? strtoupper(substr($_SESSION['name'], 0, 1)) : 'U'; ?>
-                                </div>
-                            <?php endif; ?>
-                            <span class="text-light"><?php echo isset($_SESSION['name']) ? htmlspecialchars($_SESSION['name']) : 'User'; ?></span>
+                          
+                            <span class="text-white"><?php echo isset($_SESSION['name']) ? htmlspecialchars($_SESSION['name']) : 'User'; ?></span>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end no-radius" aria-labelledby="userProfileDropdown">
                             <li><a class="dropdown-item" href="<?php echo $baseURL; ?>account/dashboard.php">
@@ -122,7 +125,7 @@ $browserLogger->log("Header included this is SESSION " . json_encode($_SESSION))
 
 .navbar-nav .dropdown-toggle::after {
     display: none; /* Hide the default bootstrap dropdown arrow */
-}
+
 
 /* Custom dropdown arrow for user profile */
 #userProfileDropdown::after {

@@ -201,8 +201,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                 
                                 <!-- Submit Button -->
                                 <div class="d-grid gap-2 mt-4">
-                                    <button type="submit" class="btn btn-primary btn-lg" id="submitBtn">
-                                        <i class="fas fa-save me-2"></i>Update Password
+                                    <button type="submit" class="form-btn custom-btn  btn-lg" id="submitBtn">
+                                        <i class="fas fa-save me-2 text-white"></i>Update Password
                                     </button>
                                 </div>
                             </form>
