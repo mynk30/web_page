@@ -8,6 +8,7 @@ if (!isset($_SESSION['user_id'])) {
     exit();
 }
 
+
 // $applicationId = isset($_GET['id']) ? intval($_GET['id']) : 0;
 $applicationId = isset($_GET['id']) ? intval($_GET['id']) : 0;
 $logger->info("this is application id: ", $applicationId);
@@ -31,6 +32,7 @@ $stmt->bind_param('ii', $applicationId, $userId);
 $stmt->execute();
 $result = $stmt->get_result();
 $application = $result->fetch_assoc();
+
 
 $requiredDocs = [];
 
@@ -128,6 +130,7 @@ switch ($application['status']) {
                                     <td><?php echo htmlspecialchars($doc['original_name']); ?></td>
                                     <td><?php echo date('M j, Y', strtotime($doc['uploaded_at'])); ?></td>
                                     <td>
+                                        <!-- <?php $baseURL . $doc['file_path']; ?> -->
                                         <a href="../uploads/<?php echo htmlspecialchars($doc['file_path']); ?>" target="_blank" class="btn btn-sm btn-outline-primary">
                                             <i class="fas fa-eye me-1"></i> View
                                         </a>
@@ -145,109 +148,41 @@ switch ($application['status']) {
     </div>
 
     <!-- Required Documents from Admin -->
+    <?php if (!empty($requiredDocs)): ?>
 <div class="card mb-4">
     <div class="card-header">
         <h5 class="mb-0 text-white">Required Documents (as marked by Admin)</h5>
     </div>
     <div class="card-body">
-        <?php if (empty($requiredDocs)): ?>
-            <p class="text-muted">No specific documents requested.</p>
-        <?php else: ?>
-            <div class="table-responsive">
-                <table class="table table-hover">
-                    <thead>
-                        <tr>
-                            <th>Document Name</th>
-                            <th>Status</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php 
-                        // Get list of uploaded document names for comparison
-                        $uploadedDocNames = array_map(function($doc) {
-                            return pathinfo($doc['original_name'], PATHINFO_FILENAME);
-                        }, $uploadedDocs);
-                        
-                        foreach ($requiredDocs as $doc): 
-                            $isUploaded = false;
-                            $uploadedDocId = null;
-                            // Check if this document is already uploaded
-                            foreach ($uploadedDocs as $uploaded) {
-                                if (strpos(strtolower($uploaded['original_name']), strtolower($doc)) !== false) {
-                                    $isUploaded = true;
-                                    $uploadedDocId = $uploaded['id'];
-                                    break;
-                                }
-                            }
-                        ?>
-                            <tr>
-                                <td><?= htmlspecialchars($doc) ?></td>
-                                <td>
-                                    <?php if ($isUploaded): ?>
-                                        <span class="badge bg-success">Uploaded</span>
-                                    <?php else: ?>
-                                        <span class="badge bg-warning">Missing</span>
-                                    <?php endif; ?>
-                                </td>
-                                <td>
-                                    <?php if ($isUploaded): ?>
-                                        <a href="../uploads<?= htmlspecialchars($uploaded['file_path']) ?>" 
-                                           target="_blank" 
-                                           class="btn btn-sm btn-outline-primary">
-                                            <i class="fas fa-eye me-1"></i> View
-                                        </a>
-                                    <?php else: ?>
-                                        <button type="button" 
-                                                class="btn btn-sm btn-primary" 
-                                                data-bs-toggle="modal" 
-                                                data-bs-target="#uploadDocumentModal"
-                                                data-doc-name="<?= htmlspecialchars($doc) ?>">
-                                            <i class="fas fa-upload me-1"></i> Upload
-                                        </button>
-                                    <?php endif; ?>
-                                </td>
-                            </tr>
-                        <?php endforeach; ?>
-                    </tbody>
-                </table>
+        <p>Please upload the following documents before proceeding the application: <strong><?php echo implode(', ', $requiredDocs); ?></strong></p>
+        <form action="upload_document.php" method="post" enctype="multipart/form-data">
+                <input type="hidden" name="application_id" value="<?= $application['id'] ?>">
+                <div class="mb-3">
+            <label for="documentFile" class="form-label">Select file to upload</label>
+            <input class="form-control" type="file" id="documentFile" name="document_file[]" multiple required>
+            <div class="form-text">
+                <p id="documentNameText" class="mb-1"></p>
+                Accepted file types: PDF, JPG, PNG (Max: 5MB)
             </div>
-        <?php endif; ?>
-    </div>
-</div>
-
-<!-- Upload Document Modal -->
-<div class="modal fade" id="uploadDocumentModal" tabindex="-1" aria-labelledby="uploadDocumentModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <form action="upload_document.php" method="post" enctype="multipart/form-data">
-                <input type="hidden" name="application_id" value="<?= $applicationId ?>">
-                <input type="hidden" name="document_name" id="documentNameInput">
-                
-                <div class="modal-header">
-                    <h5 class="modal-title" id="uploadDocumentModalLabel">Upload Document</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="mb-3">
-                        <label for="documentFile" class="form-label">Select file to upload</label>
-                        <input class="form-control" type="file" id="documentFile" name="document_file" required>
-                        <div class="form-text">
-                            <p id="documentNameText" class="mb-1"></p>
-                            Accepted file types: PDF, JPG, PNG (Max: 5MB)
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                    <button type="submit" class="btn btn-primary">Upload</button>
-                </div>
-            </form>
         </div>
+
+                    <button type="submit" onSubmit="handleSubmit()" class="btn btn-primary">Upload</button>
+
+            </form>
     </div>
 </div>
+<?php endif; ?>
+    </div>
 
 <script>
+function handleSubmit() {
+    console.log("submit");
+    // log the files here
+    console.log(document.getElementById("documentFile").files);
+}
+</script>
+
+<!-- <script>
 document.addEventListener('DOMContentLoaded', function() {
     var uploadModal = document.getElementById('uploadDocumentModal');
     var uploadForm = uploadModal.querySelector('form');
@@ -360,60 +295,10 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 5000);
     }
 });
-</script>
+</script> -->
 
-
-    <!-- Action Buttons -->
-    <!-- <div class="card mb-4">
-        <div class="card-header">
-            <h5 class="mb-0 text-white">Actions</h5>
-        </div>
-        <div class="card-body">
-            <div class="d-flex gap-2">
-                <?php if ($application['status'] === 'pending' || $application['status'] === 'missing_document'): ?>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#submitForReviewModal">
-                        <i class="fas fa-paper-plane me-1"></i> Submit for Review
-                    </button>
-                <?php endif; ?>
-
-                <?php if ($application['status'] === 'approved'): ?>
-                    <a href="#" class="btn btn-success">
-                        <i class="fas fa-file-invoice me-1"></i> Download Certificate
-                    </a>
-                <?php endif; ?>
-
-                <a href="my_application.php" class="btn btn-outline-secondary ms-auto">
-                    <i class="fas fa-list me-1"></i> View All Applications
-                </a>
-            </div>
-        </div>
-    </div> -->
 </div>
 
-<!-- Submit Modal -->
-<!-- <div class="modal fade" id="submitForReviewModal" tabindex="-1" aria-labelledby="submitForReviewModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <form action="submit_application.php" method="post" class="modal-content">
-            <input type="hidden" name="application_id" value="<?php echo $applicationId; ?>">
-            <div class="modal-header">
-                <h5 class="modal-title">Submit for Review</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-            </div>
-            <div class="modal-body">
-                <p>Are you sure you want to submit this application for review?</p>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="confirmSubmit" required>
-                    <label class="form-check-label" for="confirmSubmit">
-                        I confirm that all information provided is accurate to the best of my knowledge.
-                    </label>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                <button class="btn btn-primary" type="submit">Submit for Review</button>
-            </div>
-        </form>
-    </div>
-</div> -->
+
 
 <?php include '../include/footer.php'; ?>
