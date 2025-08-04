@@ -1,458 +1,514 @@
-[2025-07-28 09:38:17] [INFO] [::1] Application initialized
-[2025-07-28 13:08:17] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 13:08:17] [INFO] [::1] this is application id: 
-[2025-07-28 13:08:17] [INFO] [::1] Application details fetched: 
-[2025-07-28 09:38:17] [INFO] [::1] Application initialized
-[2025-07-28 13:08:17] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 13:08:17] [INFO] [::1] this is application id: 
-[2025-07-28 13:08:17] [INFO] [::1] Application details fetched: 
-[2025-07-28 09:38:17] [INFO] [::1] Application initialized
-[2025-07-28 13:08:17] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 13:08:17] [INFO] [::1] this is application id: 
-[2025-07-28 13:08:17] [INFO] [::1] Application details fetched: 
-[2025-07-28 09:38:18] [INFO] [::1] Application initialized
-[2025-07-28 13:08:18] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 13:08:18] [INFO] [::1] this is application id: 
-[2025-07-28 13:08:18] [INFO] [::1] Application details fetched: 
-[2025-07-28 09:38:18] [INFO] [::1] Application initialized
-[2025-07-28 13:08:18] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 13:08:18] [INFO] [::1] this is application id: 
-[2025-07-28 13:08:18] [INFO] [::1] Application details fetched: 
-[2025-07-28 09:38:18] [INFO] [::1] Application initialized
-[2025-07-28 13:08:18] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 13:08:18] [INFO] [::1] this is application id: 
-[2025-07-28 13:08:18] [INFO] [::1] Application details fetched: 
-[2025-07-28 09:38:18] [INFO] [::1] Application initialized
-[2025-07-28 13:08:18] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 13:08:18] [INFO] [::1] this is application id: 
-[2025-07-28 13:08:18] [INFO] [::1] Application details fetched: 
-[2025-07-28 09:38:37] [INFO] [::1] Application initialized
-[2025-07-28 13:08:37] [INFO] [::1] Application ID: in the upload document39
-[2025-07-28 13:08:37] [INFO] [::1] Timestamp: 20250728130837
-[2025-07-28 13:08:37] [INFO] [::1] Extension: pdf
-[2025-07-28 13:08:37] [INFO] [::1] Base: Anjali - Resume-update24
-[2025-07-28 13:08:37] [INFO] [::1] Original Name: Anjali - Resume-update24.pdf
-[2025-07-28 13:08:37] [INFO] [::1] Unique Name: Anjali - Resume-update24_20250728130837.pdf
-[2025-07-28 13:08:37] [INFO] [::1] Target Path: ../uploads/Anjali - Resume-update24_20250728130837.pdf
-[2025-07-28 13:08:37] [INFO] [::1] File size: 619983
-[2025-07-28 13:08:37] [INFO] [::1] Model type: application
-[2025-07-28 13:08:37] [INFO] [::1] Timestamp: 20250728130837
-[2025-07-28 13:08:37] [INFO] [::1] Extension: docx
-[2025-07-28 13:08:37] [INFO] [::1] Base: Mrs. Swati Mehta.pdf
-[2025-07-28 13:08:37] [INFO] [::1] Original Name: Mrs. Swati Mehta.pdf.docx
-[2025-07-28 13:08:37] [INFO] [::1] Unique Name: Mrs. Swati Mehta.pdf_20250728130837.docx
-[2025-07-28 13:08:37] [INFO] [::1] Target Path: ../uploads/Mrs. Swati Mehta.pdf_20250728130837.docx
-[2025-07-28 13:08:37] [INFO] [::1] File size: 20412
-[2025-07-28 13:08:37] [INFO] [::1] Model type: application
-[2025-07-28 09:38:37] [INFO] [::1] Application initialized
-[2025-07-28 13:08:37] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 13:08:37] [INFO] [::1] this is application id: 
-[2025-07-28 13:08:37] [INFO] [::1] Application details fetched: 
-[2025-07-28 09:39:00] [INFO] [::1] Application initialized
-[2025-07-28 13:09:00] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 13:09:00] [INFO] [::1] this is application id: 
-[2025-07-28 13:09:00] [INFO] [::1] Application details fetched: 
-[2025-07-28 09:39:03] [INFO] [::1] Application initialized
-[2025-07-28 13:09:03] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 13:09:03] [INFO] [::1] Dashboard accessed
-[2025-07-28 13:09:03] [INFO] [::1] User ID: 39
-[2025-07-28 13:09:03] [INFO] [::1] Application statistics fetched: {"total_applications":2,"pending_applications":"2","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
-[2025-07-28 13:09:03] [INFO] [::1] Recent applications fetched: [{"id":39,"application_number":"000002","user_id":39,"service_type":"GST Registration","status":"pending","reviewed_by":"Anjali Kushwah admin","reviewed_at":"2025-07-28 00:45:16","created_at":"2025-07-28 00:14:43","updated_at":"2025-07-28 13:08:37","required_documents":null},{"id":38,"application_number":"000001","user_id":39,"service_type":"Digital Signature","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-27 23:24:16","updated_at":"2025-07-27 23:24:16","required_documents":null}]
-[2025-07-28 09:39:05] [INFO] [::1] Application initialized
-[2025-07-28 13:09:05] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 13:09:05] [INFO] [::1] Dashboard accessed
-[2025-07-28 13:09:05] [INFO] [::1] User ID: 39
-[2025-07-28 13:09:05] [INFO] [::1] Application statistics fetched: {"total_applications":2,"pending_applications":"2","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
-[2025-07-28 13:09:05] [INFO] [::1] Recent applications fetched: [{"id":39,"application_number":"000002","user_id":39,"service_type":"GST Registration","status":"pending","reviewed_by":"Anjali Kushwah admin","reviewed_at":"2025-07-28 00:45:16","created_at":"2025-07-28 00:14:43","updated_at":"2025-07-28 13:08:37","required_documents":null},{"id":38,"application_number":"000001","user_id":39,"service_type":"Digital Signature","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-27 23:24:16","updated_at":"2025-07-27 23:24:16","required_documents":null}]
-[2025-07-28 09:39:06] [INFO] [::1] Application initialized
-[2025-07-28 13:09:06] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 13:09:06] [INFO] [::1] this is application id: 
-[2025-07-28 13:09:06] [INFO] [::1] Application details fetched: 
-[2025-07-28 09:39:13] [INFO] [::1] Application initialized
-[2025-07-28 13:09:13] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 13:09:13] [INFO] [::1] Dashboard accessed
-[2025-07-28 13:09:13] [INFO] [::1] User ID: 39
-[2025-07-28 13:09:13] [INFO] [::1] Application statistics fetched: {"total_applications":2,"pending_applications":"2","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
-[2025-07-28 13:09:13] [INFO] [::1] Recent applications fetched: [{"id":39,"application_number":"000002","user_id":39,"service_type":"GST Registration","status":"pending","reviewed_by":"Anjali Kushwah admin","reviewed_at":"2025-07-28 00:45:16","created_at":"2025-07-28 00:14:43","updated_at":"2025-07-28 13:08:37","required_documents":null},{"id":38,"application_number":"000001","user_id":39,"service_type":"Digital Signature","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-27 23:24:16","updated_at":"2025-07-27 23:24:16","required_documents":null}]
-[2025-07-28 09:39:15] [INFO] [::1] Application initialized
-[2025-07-28 13:09:15] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 13:09:15] [INFO] [::1] this is application id: 
-[2025-07-28 13:09:15] [INFO] [::1] Application details fetched: 
-[2025-07-28 09:42:28] [INFO] [::1] Application initialized
-[2025-07-28 13:12:28] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 13:12:28] [INFO] [::1] this is application id: 
-[2025-07-28 13:12:28] [INFO] [::1] Application details fetched: 
-[2025-07-28 09:42:35] [INFO] [::1] Application initialized
-[2025-07-28 13:12:35] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 09:42:38] [INFO] [::1] Application initialized
-[2025-07-28 13:12:38] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 09:42:39] [INFO] [::1] Application initialized
-[2025-07-28 13:12:39] [INFO] [::1] Login page accessed
-[2025-07-28 09:42:46] [INFO] [::1] Application initialized
-[2025-07-28 13:12:46] [INFO] [::1] Login register page accessed
-[2025-07-28 13:12:46] [INFO] [::1] email "riya@gmail.com"
-[2025-07-28 13:12:46] [INFO] [::1] password "123456"
-[2025-07-28 13:12:46] [INFO] [::1] Executed query: SELECT * FROM users WHERE email = 'riya@gmail.com'
-[2025-07-28 13:12:46] [INFO] [::1] User Row: {"id":"39","name":"riya gupta","email":"riya@gmail.com","mobile":"07770958768","password":"$2y$10$Y4q6mB309iKRMdJcbid6pufJoKU9gR2s.\/q944p6LJDnqYS5MPOmu","role":"user","status":"active","featured_image":"uploads\/profiles\/6886723579df7.jpg","reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-27 17:32:18","updated_at":"2025-07-28 00:15:18"}
-[2025-07-28 13:12:46] [INFO] [::1] password verify success
-[2025-07-28 13:12:46] [INFO] [::1] This is session after login: {"user_id":"39","name":"riya gupta","email":"riya@gmail.com","mobile":"07770958768","featured_image":"uploads\/profiles\/6886723579df7.jpg","role":"user"}
-[2025-07-28 09:42:46] [INFO] [::1] Application initialized
-[2025-07-28 13:12:46] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 09:42:52] [INFO] [::1] Application initialized
-[2025-07-28 13:12:52] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 09:42:54] [INFO] [::1] Application initialized
-[2025-07-28 13:12:54] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 13:12:54] [INFO] [::1] this is application id: 
-[2025-07-28 13:12:54] [INFO] [::1] Application details fetched: 
-[2025-07-28 09:43:11] [INFO] [::1] Application initialized
-[2025-07-28 13:13:11] [INFO] [::1] Application ID: in the upload document39
-[2025-07-28 13:13:11] [INFO] [::1] Timestamp: 20250728131311
-[2025-07-28 13:13:11] [INFO] [::1] Extension: jpg
-[2025-07-28 13:13:11] [INFO] [::1] Base: College ID_1
-[2025-07-28 13:13:11] [INFO] [::1] Original Name: College ID_1.jpg
-[2025-07-28 13:13:11] [INFO] [::1] Unique Name: College ID_1_20250728131311.jpg
-[2025-07-28 13:13:11] [INFO] [::1] Target Path: ../uploads/College ID_1_20250728131311.jpg
-[2025-07-28 13:13:11] [INFO] [::1] File size: 217524
-[2025-07-28 13:13:11] [INFO] [::1] Model type: application
-[2025-07-28 09:43:11] [INFO] [::1] Application initialized
-[2025-07-28 13:13:11] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 13:13:11] [INFO] [::1] this is application id: 
-[2025-07-28 13:13:11] [INFO] [::1] Application details fetched: 
-[2025-07-28 10:43:24] [INFO] [::1] Application initialized
-[2025-07-28 14:13:24] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 14:13:24] [INFO] [::1] Dashboard accessed
-[2025-07-28 14:13:24] [INFO] [::1] User ID: 1
-[2025-07-28 14:13:24] [INFO] [::1] Application statistics fetched: {"total_applications":0,"pending_applications":null,"approved_applications":null,"missing_document_applications":null,"rejected_applications":null}
-[2025-07-28 14:13:24] [INFO] [::1] Recent applications fetched: []
-[2025-07-28 10:47:55] [INFO] [::1] Application initialized
-[2025-07-28 14:17:55] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 14:17:55] [INFO] [::1] Dashboard accessed
-[2025-07-28 14:17:55] [INFO] [::1] User ID: 1
-[2025-07-28 14:17:55] [INFO] [::1] Application statistics fetched: {"total_applications":0,"pending_applications":null,"approved_applications":null,"missing_document_applications":null,"rejected_applications":null}
-[2025-07-28 14:17:55] [INFO] [::1] Recent applications fetched: []
-[2025-07-28 10:47:57] [INFO] [::1] Application initialized
-[2025-07-28 14:17:57] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 14:17:57] [INFO] [::1] Dashboard accessed
-[2025-07-28 14:17:57] [INFO] [::1] User ID: 1
-[2025-07-28 14:17:57] [INFO] [::1] Application statistics fetched: {"total_applications":0,"pending_applications":null,"approved_applications":null,"missing_document_applications":null,"rejected_applications":null}
-[2025-07-28 14:17:57] [INFO] [::1] Recent applications fetched: []
-[2025-07-28 10:47:58] [INFO] [::1] Application initialized
-[2025-07-28 14:17:58] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 14:17:58] [INFO] [::1] Dashboard accessed
-[2025-07-28 14:17:58] [INFO] [::1] User ID: 1
-[2025-07-28 14:17:58] [INFO] [::1] Application statistics fetched: {"total_applications":0,"pending_applications":null,"approved_applications":null,"missing_document_applications":null,"rejected_applications":null}
-[2025-07-28 14:17:58] [INFO] [::1] Recent applications fetched: []
-[2025-07-28 10:48:30] [INFO] [::1] Application initialized
-[2025-07-28 14:18:30] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 14:18:30] [INFO] [::1] Dashboard accessed
-[2025-07-28 14:18:30] [INFO] [::1] User ID: 1
-[2025-07-28 14:18:30] [INFO] [::1] Application statistics fetched: {"total_applications":0,"pending_applications":null,"approved_applications":null,"missing_document_applications":null,"rejected_applications":null}
-[2025-07-28 14:18:30] [INFO] [::1] Recent applications fetched: []
-[2025-07-28 10:48:32] [INFO] [::1] Application initialized
-[2025-07-28 14:18:32] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 10:48:51] [INFO] [::1] Application initialized
-[2025-07-28 14:18:51] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 10:49:08] [INFO] [::1] Application initialized
-[2025-07-28 14:19:08] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 13:49:14] [INFO] [::1] Application initialized
-[2025-07-28 17:19:14] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 13:49:16] [INFO] [::1] Application initialized
-[2025-07-28 17:19:16] [INFO] [::1] Login page accessed
-[2025-07-28 13:49:23] [INFO] [::1] Application initialized
-[2025-07-28 17:19:23] [INFO] [::1] Login register page accessed
-[2025-07-28 17:19:23] [INFO] [::1] email "riya@gmail.com"
-[2025-07-28 17:19:23] [INFO] [::1] password "123456"
-[2025-07-28 17:19:23] [INFO] [::1] Executed query: SELECT * FROM users WHERE email = 'riya@gmail.com'
-[2025-07-28 17:19:23] [INFO] [::1] User Row: {"id":"39","name":"riya gupta","email":"riya@gmail.com","mobile":"07770958768","password":"$2y$10$Y4q6mB309iKRMdJcbid6pufJoKU9gR2s.\/q944p6LJDnqYS5MPOmu","role":"user","status":"active","featured_image":"uploads\/profiles\/6886723579df7.jpg","reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-27 17:32:18","updated_at":"2025-07-28 00:15:18"}
-[2025-07-28 17:19:23] [INFO] [::1] password verify success
-[2025-07-28 17:19:23] [INFO] [::1] This is session after login: {"user_id":"39","name":"riya gupta","email":"riya@gmail.com","mobile":"07770958768","featured_image":"uploads\/profiles\/6886723579df7.jpg","role":"user"}
-[2025-07-28 13:49:23] [INFO] [::1] Application initialized
-[2025-07-28 17:19:23] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 13:49:27] [INFO] [::1] Application initialized
-[2025-07-28 17:19:27] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 13:49:29] [INFO] [::1] Application initialized
-[2025-07-28 17:19:29] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 17:19:29] [INFO] [::1] Dashboard accessed
-[2025-07-28 17:19:29] [INFO] [::1] User ID: 39
-[2025-07-28 17:19:29] [INFO] [::1] Application statistics fetched: {"total_applications":2,"pending_applications":"2","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
-[2025-07-28 17:19:29] [INFO] [::1] Recent applications fetched: [{"id":39,"application_number":"000002","user_id":39,"service_type":"GST Registration","status":"pending","reviewed_by":"Anjali Kushwah admin","reviewed_at":"2025-07-28 13:12:21","created_at":"2025-07-28 00:14:43","updated_at":"2025-07-28 13:13:11","required_documents":null},{"id":38,"application_number":"000001","user_id":39,"service_type":"Digital Signature","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-27 23:24:16","updated_at":"2025-07-27 23:24:16","required_documents":null}]
-[2025-07-28 13:49:30] [INFO] [::1] Application initialized
-[2025-07-28 17:19:30] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 13:49:32] [INFO] [::1] Application initialized
-[2025-07-28 17:19:32] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 13:49:35] [INFO] [::1] Application initialized
-[2025-07-28 17:19:35] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 13:49:38] [INFO] [::1] Application initialized
-[2025-07-28 17:19:38] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 17:19:38] [INFO] [::1] this is application id: 
-[2025-07-28 17:19:38] [INFO] [::1] Application details fetched: 
-[2025-07-28 13:49:46] [INFO] [::1] Application initialized
-[2025-07-28 17:19:46] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 17:19:46] [INFO] [::1] Dashboard accessed
-[2025-07-28 17:19:46] [INFO] [::1] User ID: 39
-[2025-07-28 17:19:46] [INFO] [::1] Application statistics fetched: {"total_applications":2,"pending_applications":"2","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
-[2025-07-28 17:19:46] [INFO] [::1] Recent applications fetched: [{"id":39,"application_number":"000002","user_id":39,"service_type":"GST Registration","status":"pending","reviewed_by":"Anjali Kushwah admin","reviewed_at":"2025-07-28 13:12:21","created_at":"2025-07-28 00:14:43","updated_at":"2025-07-28 13:13:11","required_documents":null},{"id":38,"application_number":"000001","user_id":39,"service_type":"Digital Signature","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-27 23:24:16","updated_at":"2025-07-27 23:24:16","required_documents":null}]
-[2025-07-28 13:52:01] [INFO] [::1] Application initialized
-[2025-07-28 17:22:01] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 13:52:02] [INFO] [::1] Application initialized
-[2025-07-28 17:22:02] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 13:52:40] [INFO] [::1] Application initialized
-[2025-07-28 17:22:40] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 14:31:52] [INFO] [::1] Application initialized
-[2025-07-28 18:01:52] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 14:32:19] [INFO] [::1] Application initialized
-[2025-07-28 18:02:19] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 14:32:23] [INFO] [::1] Application initialized
-[2025-07-28 18:02:23] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 14:32:27] [INFO] [::1] Application initialized
-[2025-07-28 18:02:27] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 14:41:35] [INFO] [::1] Application initialized
-[2025-07-28 18:11:35] [INFO] [::1] Login page accessed
-[2025-07-28 14:41:42] [INFO] [::1] Application initialized
-[2025-07-28 18:11:42] [INFO] [::1] Login register page accessed
-[2025-07-28 18:11:42] [INFO] [::1] email "riya@gmail.com"
-[2025-07-28 18:11:42] [INFO] [::1] password "123456"
-[2025-07-28 18:11:42] [INFO] [::1] Executed query: SELECT * FROM users WHERE email = 'riya@gmail.com'
-[2025-07-28 18:11:42] [INFO] [::1] User Row: {"id":"39","name":"riya gupta","email":"riya@gmail.com","mobile":"07770958768","password":"$2y$10$Y4q6mB309iKRMdJcbid6pufJoKU9gR2s.\/q944p6LJDnqYS5MPOmu","role":"user","status":"active","featured_image":"uploads\/profiles\/6886723579df7.jpg","reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-27 17:32:18","updated_at":"2025-07-28 00:15:18"}
-[2025-07-28 18:11:42] [INFO] [::1] password verify success
-[2025-07-28 18:11:42] [INFO] [::1] This is session after login: {"user_id":"39","name":"riya gupta","email":"riya@gmail.com","mobile":"07770958768","featured_image":"uploads\/profiles\/6886723579df7.jpg","role":"user"}
-[2025-07-28 14:41:42] [INFO] [::1] Application initialized
-[2025-07-28 18:11:42] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 14:41:47] [INFO] [::1] Application initialized
-[2025-07-28 18:11:47] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 14:41:54] [INFO] [::1] Application initialized
-[2025-07-28 18:11:54] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 18:11:54] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
-[2025-07-28 18:11:54] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/6886723579df7.jpg
-[2025-07-28 14:43:36] [INFO] [::1] Application initialized
-[2025-07-28 18:13:36] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 18:13:36] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
-[2025-07-28 18:13:36] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/user-avatar.png
-[2025-07-28 14:44:28] [INFO] [::1] Application initialized
-[2025-07-28 18:14:28] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 14:44:34] [INFO] [::1] Application initialized
-[2025-07-28 18:14:34] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 14:44:49] [INFO] [::1] Application initialized
-[2025-07-28 18:14:49] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 14:44:50] [INFO] [::1] Application initialized
-[2025-07-28 18:14:50] [INFO] [::1] Login page accessed
-[2025-07-28 14:44:57] [INFO] [::1] Application initialized
-[2025-07-28 18:14:57] [INFO] [::1] Login register page accessed
-[2025-07-28 18:14:57] [INFO] [::1] email "riya@gmail.com"
-[2025-07-28 18:14:57] [INFO] [::1] password "123456"
-[2025-07-28 18:14:57] [INFO] [::1] Executed query: SELECT * FROM users WHERE email = 'riya@gmail.com'
-[2025-07-28 18:14:57] [INFO] [::1] User Row: {"id":"39","name":"riya gupta","email":"riya@gmail.com","mobile":"07770958768","password":"$2y$10$Y4q6mB309iKRMdJcbid6pufJoKU9gR2s.\/q944p6LJDnqYS5MPOmu","role":"user","status":"active","featured_image":"uploads\/profiles\/6886723579df7.jpg","reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-27 17:32:18","updated_at":"2025-07-28 00:15:18"}
-[2025-07-28 18:14:57] [INFO] [::1] password verify success
-[2025-07-28 18:14:57] [INFO] [::1] This is session after login: {"user_id":"39","name":"riya gupta","email":"riya@gmail.com","mobile":"07770958768","featured_image":"uploads\/profiles\/6886723579df7.jpg","role":"user"}
-[2025-07-28 14:44:57] [INFO] [::1] Application initialized
-[2025-07-28 18:14:57] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 14:45:02] [INFO] [::1] Application initialized
-[2025-07-28 18:15:02] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 14:45:34] [INFO] [::1] Application initialized
-[2025-07-28 18:15:34] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 14:45:34] [INFO] [::1] Application initialized
-[2025-07-28 18:15:34] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 14:45:34] [INFO] [::1] Application initialized
-[2025-07-28 18:15:34] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 14:45:37] [INFO] [::1] Application initialized
-[2025-07-28 18:15:37] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 14:46:33] [INFO] [::1] Application initialized
-[2025-07-28 18:16:33] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 14:46:34] [INFO] [::1] Application initialized
-[2025-07-28 18:16:34] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 18:16:34] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
-[2025-07-28 18:16:34] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/6886723579df7.jpg
-[2025-07-28 14:46:39] [INFO] [::1] Application initialized
-[2025-07-28 18:16:39] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 18:16:39] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
-[2025-07-28 18:16:39] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/6886723579df7.jpg
-[2025-07-28 14:46:55] [INFO] [::1] Application initialized
-[2025-07-28 18:16:55] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 18:16:55] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
-[2025-07-28 18:16:55] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/6886723579df7.jpg
-[2025-07-28 14:46:57] [INFO] [::1] Application initialized
-[2025-07-28 18:16:57] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 18:16:57] [INFO] [::1] Dashboard accessed
-[2025-07-28 18:16:57] [INFO] [::1] User ID: 39
-[2025-07-28 18:16:57] [INFO] [::1] Application statistics fetched: {"total_applications":2,"pending_applications":"2","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
-[2025-07-28 18:16:57] [INFO] [::1] Recent applications fetched: [{"id":39,"application_number":"000002","user_id":39,"service_type":"GST Registration","status":"pending","reviewed_by":"Anjali Kushwah admin","reviewed_at":"2025-07-28 13:12:21","created_at":"2025-07-28 00:14:43","updated_at":"2025-07-28 13:13:11","required_documents":null},{"id":38,"application_number":"000001","user_id":39,"service_type":"Digital Signature","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-27 23:24:16","updated_at":"2025-07-27 23:24:16","required_documents":null}]
-[2025-07-28 14:46:58] [INFO] [::1] Application initialized
-[2025-07-28 18:16:58] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 14:47:02] [INFO] [::1] Application initialized
-[2025-07-28 18:17:02] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 18:17:02] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
-[2025-07-28 18:17:02] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/6886723579df7.jpg
-[2025-07-28 14:47:08] [INFO] [::1] Application initialized
-[2025-07-28 18:17:08] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 18:17:08] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
-[2025-07-28 18:17:08] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/6886723579df7.jpg
-[2025-07-28 14:49:44] [INFO] [::1] Application initialized
-[2025-07-28 18:19:44] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 18:19:44] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
-[2025-07-28 18:19:44] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/6886723579df7.jpg
-[2025-07-28 14:49:50] [INFO] [::1] Application initialized
-[2025-07-28 18:19:50] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 14:49:54] [INFO] [::1] Application initialized
-[2025-07-28 18:19:54] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 18:19:54] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
-[2025-07-28 18:19:54] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/6886723579df7.jpg
-[2025-07-28 14:52:57] [INFO] [::1] Application initialized
-[2025-07-28 18:22:57] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 18:22:57] [INFO] [::1] Dashboard accessed
-[2025-07-28 18:22:57] [INFO] [::1] User ID: 39
-[2025-07-28 18:22:57] [INFO] [::1] Application statistics fetched: {"total_applications":2,"pending_applications":"2","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
-[2025-07-28 18:22:57] [INFO] [::1] Recent applications fetched: [{"id":39,"application_number":"000002","user_id":39,"service_type":"GST Registration","status":"pending","reviewed_by":"Anjali Kushwah admin","reviewed_at":"2025-07-28 13:12:21","created_at":"2025-07-28 00:14:43","updated_at":"2025-07-28 13:13:11","required_documents":null},{"id":38,"application_number":"000001","user_id":39,"service_type":"Digital Signature","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-27 23:24:16","updated_at":"2025-07-27 23:24:16","required_documents":null}]
-[2025-07-28 14:52:58] [INFO] [::1] Application initialized
-[2025-07-28 18:22:58] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 18:22:58] [INFO] [::1] Dashboard accessed
-[2025-07-28 18:22:58] [INFO] [::1] User ID: 39
-[2025-07-28 18:22:58] [INFO] [::1] Application statistics fetched: {"total_applications":2,"pending_applications":"2","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
-[2025-07-28 18:22:58] [INFO] [::1] Recent applications fetched: [{"id":39,"application_number":"000002","user_id":39,"service_type":"GST Registration","status":"pending","reviewed_by":"Anjali Kushwah admin","reviewed_at":"2025-07-28 13:12:21","created_at":"2025-07-28 00:14:43","updated_at":"2025-07-28 13:13:11","required_documents":null},{"id":38,"application_number":"000001","user_id":39,"service_type":"Digital Signature","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-27 23:24:16","updated_at":"2025-07-27 23:24:16","required_documents":null}]
-[2025-07-28 14:52:59] [INFO] [::1] Application initialized
-[2025-07-28 18:22:59] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 18:22:59] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
-[2025-07-28 18:22:59] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/6886723579df7.jpg
-[2025-07-28 14:53:16] [INFO] [::1] Application initialized
-[2025-07-28 18:23:16] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 18:23:16] [INFO] [::1] Name: riya gupta
-[2025-07-28 18:23:16] [INFO] [::1] Email: riya@gmail.com
-[2025-07-28 18:23:16] [INFO] [::1] Mobile: 07770958768
-[2025-07-28 18:23:16] [INFO] [::1] Has Error: No
-[2025-07-28 18:23:16] [INFO] [::1] File uploaded: Yes
-[2025-07-28 18:23:16] [INFO] [::1] File inserted successfully.
-[2025-07-28 18:23:16] [INFO] [::1] Session image path updated successfully.
-[2025-07-28 18:23:16] [INFO] [::1] Complete session information after update profile: {"user_id":"39","name":"riya gupta","email":"riya@gmail.com","mobile":"07770958768","featured_image":"uploads\/profiles\/688772bcbeff2.png","role":"user"}
-[2025-07-28 14:53:16] [INFO] [::1] Application initialized
-[2025-07-28 18:23:16] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 18:23:16] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
-[2025-07-28 18:23:16] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/688772bcbeff2.png
-[2025-07-28 14:53:19] [INFO] [::1] Application initialized
-[2025-07-28 18:23:19] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 18:23:19] [INFO] [::1] Dashboard accessed
-[2025-07-28 18:23:19] [INFO] [::1] User ID: 39
-[2025-07-28 18:23:19] [INFO] [::1] Application statistics fetched: {"total_applications":2,"pending_applications":"2","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
-[2025-07-28 18:23:19] [INFO] [::1] Recent applications fetched: [{"id":39,"application_number":"000002","user_id":39,"service_type":"GST Registration","status":"pending","reviewed_by":"Anjali Kushwah admin","reviewed_at":"2025-07-28 13:12:21","created_at":"2025-07-28 00:14:43","updated_at":"2025-07-28 13:13:11","required_documents":null},{"id":38,"application_number":"000001","user_id":39,"service_type":"Digital Signature","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-27 23:24:16","updated_at":"2025-07-27 23:24:16","required_documents":null}]
-[2025-07-28 14:53:22] [INFO] [::1] Application initialized
-[2025-07-28 18:23:22] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 18:23:22] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
-[2025-07-28 18:23:22] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/688772bcbeff2.png
-[2025-07-28 14:53:29] [INFO] [::1] Application initialized
-[2025-07-28 18:23:29] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 18:23:29] [INFO] [::1] Name: riya gupta
-[2025-07-28 18:23:29] [INFO] [::1] Email: riya@gmail.com
-[2025-07-28 18:23:29] [INFO] [::1] Mobile: 07770958768
-[2025-07-28 18:23:29] [INFO] [::1] Has Error: No
-[2025-07-28 18:23:29] [INFO] [::1] File uploaded: Yes
-[2025-07-28 18:23:29] [INFO] [::1] File inserted successfully.
-[2025-07-28 18:23:29] [INFO] [::1] Session image path updated successfully.
-[2025-07-28 18:23:29] [INFO] [::1] Complete session information after update profile: {"user_id":"39","name":"riya gupta","email":"riya@gmail.com","mobile":"07770958768","featured_image":"uploads\/profiles\/688772c98ccc6.jpg","role":"user"}
-[2025-07-28 14:53:29] [INFO] [::1] Application initialized
-[2025-07-28 18:23:29] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 18:23:29] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
-[2025-07-28 18:23:29] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/688772c98ccc6.jpg
-[2025-07-28 14:53:32] [INFO] [::1] Application initialized
-[2025-07-28 18:23:32] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 18:23:32] [INFO] [::1] Dashboard accessed
-[2025-07-28 18:23:32] [INFO] [::1] User ID: 39
-[2025-07-28 18:23:32] [INFO] [::1] Application statistics fetched: {"total_applications":2,"pending_applications":"2","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
-[2025-07-28 18:23:32] [INFO] [::1] Recent applications fetched: [{"id":39,"application_number":"000002","user_id":39,"service_type":"GST Registration","status":"pending","reviewed_by":"Anjali Kushwah admin","reviewed_at":"2025-07-28 13:12:21","created_at":"2025-07-28 00:14:43","updated_at":"2025-07-28 13:13:11","required_documents":null},{"id":38,"application_number":"000001","user_id":39,"service_type":"Digital Signature","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-27 23:24:16","updated_at":"2025-07-27 23:24:16","required_documents":null}]
-[2025-07-28 14:53:34] [INFO] [::1] Application initialized
-[2025-07-28 18:23:34] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 18:23:34] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
-[2025-07-28 18:23:34] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/688772c98ccc6.jpg
-[2025-07-28 14:54:04] [INFO] [::1] Application initialized
-[2025-07-28 18:24:04] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 18:24:04] [INFO] [::1] Dashboard accessed
-[2025-07-28 18:24:04] [INFO] [::1] User ID: 39
-[2025-07-28 18:24:04] [INFO] [::1] Application statistics fetched: {"total_applications":2,"pending_applications":"2","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
-[2025-07-28 18:24:04] [INFO] [::1] Recent applications fetched: [{"id":39,"application_number":"000002","user_id":39,"service_type":"GST Registration","status":"pending","reviewed_by":"Anjali Kushwah admin","reviewed_at":"2025-07-28 13:12:21","created_at":"2025-07-28 00:14:43","updated_at":"2025-07-28 13:13:11","required_documents":null},{"id":38,"application_number":"000001","user_id":39,"service_type":"Digital Signature","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-27 23:24:16","updated_at":"2025-07-27 23:24:16","required_documents":null}]
-[2025-07-28 14:54:06] [INFO] [::1] Application initialized
-[2025-07-28 18:24:06] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 18:24:06] [INFO] [::1] Dashboard accessed
-[2025-07-28 18:24:06] [INFO] [::1] User ID: 39
-[2025-07-28 18:24:06] [INFO] [::1] Application statistics fetched: {"total_applications":2,"pending_applications":"2","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
-[2025-07-28 18:24:06] [INFO] [::1] Recent applications fetched: [{"id":39,"application_number":"000002","user_id":39,"service_type":"GST Registration","status":"pending","reviewed_by":"Anjali Kushwah admin","reviewed_at":"2025-07-28 13:12:21","created_at":"2025-07-28 00:14:43","updated_at":"2025-07-28 13:13:11","required_documents":null},{"id":38,"application_number":"000001","user_id":39,"service_type":"Digital Signature","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-27 23:24:16","updated_at":"2025-07-27 23:24:16","required_documents":null}]
-[2025-07-28 14:54:08] [INFO] [::1] Application initialized
-[2025-07-28 18:24:08] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 18:24:08] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
-[2025-07-28 18:24:08] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/688772c98ccc6.jpg
-[2025-07-28 14:54:12] [INFO] [::1] Application initialized
-[2025-07-28 18:24:12] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 18:24:12] [INFO] [::1] Dashboard accessed
-[2025-07-28 18:24:12] [INFO] [::1] User ID: 39
-[2025-07-28 18:24:12] [INFO] [::1] Application statistics fetched: {"total_applications":2,"pending_applications":"2","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
-[2025-07-28 18:24:12] [INFO] [::1] Recent applications fetched: [{"id":39,"application_number":"000002","user_id":39,"service_type":"GST Registration","status":"pending","reviewed_by":"Anjali Kushwah admin","reviewed_at":"2025-07-28 13:12:21","created_at":"2025-07-28 00:14:43","updated_at":"2025-07-28 13:13:11","required_documents":null},{"id":38,"application_number":"000001","user_id":39,"service_type":"Digital Signature","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-27 23:24:16","updated_at":"2025-07-27 23:24:16","required_documents":null}]
-[2025-07-28 14:54:13] [INFO] [::1] Application initialized
-[2025-07-28 18:24:13] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 18:24:13] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
-[2025-07-28 18:24:13] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/688772c98ccc6.jpg
-[2025-07-28 14:54:15] [INFO] [::1] Application initialized
-[2025-07-28 18:24:15] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 18:24:15] [INFO] [::1] Dashboard accessed
-[2025-07-28 18:24:15] [INFO] [::1] User ID: 39
-[2025-07-28 18:24:15] [INFO] [::1] Application statistics fetched: {"total_applications":2,"pending_applications":"2","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
-[2025-07-28 18:24:15] [INFO] [::1] Recent applications fetched: [{"id":39,"application_number":"000002","user_id":39,"service_type":"GST Registration","status":"pending","reviewed_by":"Anjali Kushwah admin","reviewed_at":"2025-07-28 13:12:21","created_at":"2025-07-28 00:14:43","updated_at":"2025-07-28 13:13:11","required_documents":null},{"id":38,"application_number":"000001","user_id":39,"service_type":"Digital Signature","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-27 23:24:16","updated_at":"2025-07-27 23:24:16","required_documents":null}]
-[2025-07-28 14:54:16] [INFO] [::1] Application initialized
-[2025-07-28 18:24:16] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 14:54:19] [INFO] [::1] Application initialized
-[2025-07-28 18:24:19] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 18:24:19] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
-[2025-07-28 18:24:19] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/688772c98ccc6.jpg
-[2025-07-28 14:57:23] [INFO] [::1] Application initialized
-[2025-07-28 18:27:23] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 18:27:23] [INFO] [::1] Dashboard accessed
-[2025-07-28 18:27:23] [INFO] [::1] User ID: 39
-[2025-07-28 18:27:23] [INFO] [::1] Application statistics fetched: {"total_applications":2,"pending_applications":"2","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
-[2025-07-28 18:27:23] [INFO] [::1] Recent applications fetched: [{"id":39,"application_number":"000002","user_id":39,"service_type":"GST Registration","status":"pending","reviewed_by":"Anjali Kushwah admin","reviewed_at":"2025-07-28 13:12:21","created_at":"2025-07-28 00:14:43","updated_at":"2025-07-28 13:13:11","required_documents":null},{"id":38,"application_number":"000001","user_id":39,"service_type":"Digital Signature","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-27 23:24:16","updated_at":"2025-07-27 23:24:16","required_documents":null}]
-[2025-07-28 14:57:28] [INFO] [::1] Application initialized
-[2025-07-28 18:27:28] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 18:27:28] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
-[2025-07-28 18:27:28] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/688772c98ccc6.jpg
-[2025-07-28 14:57:31] [INFO] [::1] Application initialized
-[2025-07-28 18:27:31] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 18:27:31] [INFO] [::1] Dashboard accessed
-[2025-07-28 18:27:31] [INFO] [::1] User ID: 39
-[2025-07-28 18:27:31] [INFO] [::1] Application statistics fetched: {"total_applications":2,"pending_applications":"2","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
-[2025-07-28 18:27:31] [INFO] [::1] Recent applications fetched: [{"id":39,"application_number":"000002","user_id":39,"service_type":"GST Registration","status":"pending","reviewed_by":"Anjali Kushwah admin","reviewed_at":"2025-07-28 13:12:21","created_at":"2025-07-28 00:14:43","updated_at":"2025-07-28 13:13:11","required_documents":null},{"id":38,"application_number":"000001","user_id":39,"service_type":"Digital Signature","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-27 23:24:16","updated_at":"2025-07-27 23:24:16","required_documents":null}]
-[2025-07-28 15:29:33] [INFO] [::1] Application initialized
-[2025-07-28 18:59:33] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 18:59:33] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
-[2025-07-28 18:59:33] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/688772c98ccc6.jpg
-[2025-07-28 15:29:35] [INFO] [::1] Application initialized
-[2025-07-28 18:59:35] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 18:59:35] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
-[2025-07-28 18:59:35] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/688772c98ccc6.jpg
-[2025-07-28 15:30:17] [INFO] [::1] Application initialized
-[2025-07-28 19:00:17] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 19:00:17] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
-[2025-07-28 19:00:17] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/688772c98ccc6.jpg
-[2025-07-28 18:38:24] [INFO] [::1] Application initialized
-[2025-07-28 22:08:24] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 18:59:15] [INFO] [::1] Application initialized
-[2025-07-28 22:29:15] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 18:59:19] [INFO] [::1] Application initialized
-[2025-07-28 22:29:19] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 18:59:20] [INFO] [::1] Application initialized
-[2025-07-28 22:29:20] [INFO] [::1] Login page accessed
-[2025-07-28 18:59:29] [INFO] [::1] Application initialized
-[2025-07-28 22:29:29] [INFO] [::1] Login register page accessed
-[2025-07-28 22:29:29] [INFO] [::1] email "riya@gmail.com"
-[2025-07-28 22:29:29] [INFO] [::1] password "123456"
-[2025-07-28 22:29:29] [INFO] [::1] Executed query: SELECT * FROM users WHERE email = 'riya@gmail.com'
-[2025-07-28 22:29:29] [INFO] [::1] User Row: {"id":"39","name":"riya gupta","email":"riya@gmail.com","mobile":"07770958768","password":"$2y$10$Y4q6mB309iKRMdJcbid6pufJoKU9gR2s.\/q944p6LJDnqYS5MPOmu","role":"user","status":"active","featured_image":"uploads\/profiles\/688772c98ccc6.jpg","reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-27 17:32:18","updated_at":"2025-07-28 18:23:29"}
-[2025-07-28 22:29:29] [INFO] [::1] password verify success
-[2025-07-28 22:29:29] [INFO] [::1] This is session after login: {"user_id":"39","name":"riya gupta","email":"riya@gmail.com","mobile":"07770958768","featured_image":"uploads\/profiles\/688772c98ccc6.jpg","role":"user"}
-[2025-07-28 18:59:29] [INFO] [::1] Application initialized
-[2025-07-28 22:29:29] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 18:59:33] [INFO] [::1] Application initialized
-[2025-07-28 22:29:33] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 22:29:33] [INFO] [::1] Dashboard accessed
-[2025-07-28 22:29:33] [INFO] [::1] User ID: 39
-[2025-07-28 22:29:33] [INFO] [::1] Application statistics fetched: {"total_applications":2,"pending_applications":"2","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
-[2025-07-28 22:29:33] [INFO] [::1] Recent applications fetched: [{"id":39,"application_number":"000002","user_id":39,"service_type":"GST Registration","status":"pending","reviewed_by":"Anjali Kushwah ","reviewed_at":"2025-07-28 22:28:50","created_at":"2025-07-28 00:14:43","updated_at":"2025-07-28 22:28:50","required_documents":"[\"aadhar\", \"pencard\"]"},{"id":38,"application_number":"000001","user_id":39,"service_type":"Digital Signature","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-27 23:24:16","updated_at":"2025-07-27 23:24:16","required_documents":null}]
-[2025-07-28 18:59:35] [INFO] [::1] Application initialized
-[2025-07-28 22:29:35] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-07-28 22:29:35] [INFO] [::1] this is application id: 
-[2025-07-28 22:29:35] [INFO] [::1] Application details fetched: 
-[2025-07-28 19:00:10] [INFO] [::1] Application initialized
-[2025-07-28 22:30:10] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 09:36:39] [INFO] [::1] Application initialized
+[2025-07-29 13:06:39] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 09:36:49] [INFO] [::1] Application initialized
+[2025-07-29 13:06:49] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 09:37:22] [INFO] [::1] Application initialized
+[2025-07-29 13:07:22] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 09:37:27] [INFO] [::1] Application initialized
+[2025-07-29 13:07:27] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 09:37:36] [INFO] [::1] Application initialized
+[2025-07-29 13:07:36] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 09:41:07] [INFO] [::1] Application initialized
+[2025-07-29 13:11:07] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 09:42:42] [INFO] [::1] Application initialized
+[2025-07-29 13:12:42] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 09:55:26] [INFO] [::1] Application initialized
+[2025-07-29 13:25:26] [INFO] [::1] Login page accessed
+[2025-07-29 11:38:38] [INFO] [::1] Application initialized
+[2025-07-29 15:08:38] [INFO] [::1] Login register page accessed
+[2025-07-29 15:08:38] [INFO] [::1] email "riya@gmail.com"
+[2025-07-29 15:08:38] [INFO] [::1] password "123"
+[2025-07-29 15:08:38] [INFO] [::1] Executed query: SELECT * FROM users WHERE email = 'riya@gmail.com'
+[2025-07-29 15:08:38] [INFO] [::1] User Row: {"id":"39","name":"riya gupta","email":"riya@gmail.com","mobile":"07770958768","password":"$2y$10$Y4q6mB309iKRMdJcbid6pufJoKU9gR2s.\/q944p6LJDnqYS5MPOmu","role":"user","status":"active","featured_image":"uploads\/profiles\/688772c98ccc6.jpg","reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-27 17:32:18","updated_at":"2025-07-29 11:16:09"}
+[2025-07-29 15:08:38] [INFO] [::1] Invalid password.
+[2025-07-29 11:38:38] [INFO] [::1] Application initialized
+[2025-07-29 15:08:38] [INFO] [::1] Login page accessed
+[2025-07-29 11:38:47] [INFO] [::1] Application initialized
+[2025-07-29 15:08:47] [INFO] [::1] Login register page accessed
+[2025-07-29 15:08:47] [INFO] [::1] email "riya@gmail.com"
+[2025-07-29 15:08:47] [INFO] [::1] password "12345"
+[2025-07-29 15:08:47] [INFO] [::1] Executed query: SELECT * FROM users WHERE email = 'riya@gmail.com'
+[2025-07-29 15:08:47] [INFO] [::1] User Row: {"id":"39","name":"riya gupta","email":"riya@gmail.com","mobile":"07770958768","password":"$2y$10$Y4q6mB309iKRMdJcbid6pufJoKU9gR2s.\/q944p6LJDnqYS5MPOmu","role":"user","status":"active","featured_image":"uploads\/profiles\/688772c98ccc6.jpg","reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-27 17:32:18","updated_at":"2025-07-29 11:16:09"}
+[2025-07-29 15:08:47] [INFO] [::1] Invalid password.
+[2025-07-29 11:38:47] [INFO] [::1] Application initialized
+[2025-07-29 15:08:47] [INFO] [::1] Login page accessed
+[2025-07-29 11:38:55] [INFO] [::1] Application initialized
+[2025-07-29 15:08:55] [INFO] [::1] Login register page accessed
+[2025-07-29 15:08:55] [INFO] [::1] email "abhishek@example.com"
+[2025-07-29 15:08:55] [INFO] [::1] password "12345"
+[2025-07-29 15:08:55] [INFO] [::1] Executed query: SELECT * FROM users WHERE email = 'abhishek@example.com'
+[2025-07-29 15:08:55] [INFO] [::1] User Row: {"id":"48","name":"abhishek yadav","email":"abhishek@example.com","mobile":"2345678556","password":"$2y$10$YCOsDEaaa1tWC9Fve4t3yu7FOFdEc4GDUJAIC33wWrah.XEoFJGrO","role":"user","status":"active","featured_image":"uploads\/profiles\/68885fc293adb.png","reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-29 11:14:10","updated_at":"2025-07-29 11:14:34"}
+[2025-07-29 15:08:55] [INFO] [::1] password verify success
+[2025-07-29 15:08:55] [INFO] [::1] This is session after login: {"user_id":"48","name":"abhishek yadav","email":"abhishek@example.com","mobile":"2345678556","featured_image":"uploads\/profiles\/68885fc293adb.png","role":"user"}
+[2025-07-29 11:38:55] [INFO] [::1] Application initialized
+[2025-07-29 15:08:55] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 12:05:37] [INFO] [::1] Application initialized
+[2025-07-29 15:35:37] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 15:35:37] [INFO] [::1] Dashboard accessed
+[2025-07-29 15:35:37] [INFO] [::1] User ID: 1
+[2025-07-29 15:35:37] [INFO] [::1] Application statistics fetched: {"total_applications":0,"pending_applications":null,"approved_applications":null,"missing_document_applications":null,"rejected_applications":null}
+[2025-07-29 15:35:37] [INFO] [::1] Recent applications fetched: []
+[2025-07-29 12:05:53] [INFO] [::1] Application initialized
+[2025-07-29 15:35:53] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 15:35:53] [INFO] [::1] Dashboard accessed
+[2025-07-29 15:35:53] [INFO] [::1] User ID: 
+[2025-07-29 15:35:53] [INFO] [::1] Application statistics fetched: {"total_applications":0,"pending_applications":null,"approved_applications":null,"missing_document_applications":null,"rejected_applications":null}
+[2025-07-29 15:35:53] [INFO] [::1] Recent applications fetched: []
+[2025-07-29 12:14:13] [INFO] [::1] Application initialized
+[2025-07-29 15:44:13] [INFO] [::1] Login page accessed
+[2025-07-29 12:14:20] [INFO] [::1] Application initialized
+[2025-07-29 15:44:20] [INFO] [::1] Login register page accessed
+[2025-07-29 15:44:20] [INFO] [::1] email "abhishek@example.com"
+[2025-07-29 15:44:20] [INFO] [::1] password "12345"
+[2025-07-29 15:44:20] [INFO] [::1] Executed query: SELECT * FROM users WHERE email = 'abhishek@example.com'
+[2025-07-29 15:44:20] [INFO] [::1] User Row: {"id":"48","name":"abhishek yadav","email":"abhishek@example.com","mobile":"2345678556","password":"$2y$10$YCOsDEaaa1tWC9Fve4t3yu7FOFdEc4GDUJAIC33wWrah.XEoFJGrO","role":"user","status":"active","featured_image":"uploads\/profiles\/68885fc293adb.png","reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-29 11:14:10","updated_at":"2025-07-29 11:14:34"}
+[2025-07-29 15:44:20] [INFO] [::1] password verify success
+[2025-07-29 15:44:20] [INFO] [::1] This is session after login: {"user_id":"48","name":"abhishek yadav","email":"abhishek@example.com","mobile":"2345678556","featured_image":"uploads\/profiles\/68885fc293adb.png","role":"user"}
+[2025-07-29 12:14:20] [INFO] [::1] Application initialized
+[2025-07-29 15:44:20] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 12:14:25] [INFO] [::1] Application initialized
+[2025-07-29 15:44:25] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 15:44:25] [INFO] [::1] Dashboard accessed
+[2025-07-29 15:44:25] [INFO] [::1] User ID: 48
+[2025-07-29 15:44:25] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-07-29 15:44:25] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-07-29 12:14:29] [INFO] [::1] Application initialized
+[2025-07-29 15:44:29] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 15:44:29] [INFO] [::1] this is application id: 
+[2025-07-29 15:44:29] [INFO] [::1] Application details fetched: 
+[2025-07-29 12:14:32] [INFO] [::1] Application initialized
+[2025-07-29 15:44:32] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 15:44:32] [INFO] [::1] Dashboard accessed
+[2025-07-29 15:44:32] [INFO] [::1] User ID: 48
+[2025-07-29 15:44:32] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-07-29 15:44:32] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-07-29 12:14:34] [INFO] [::1] Application initialized
+[2025-07-29 15:44:34] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 15:44:34] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-07-29 15:44:34] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68885fc293adb.png
+[2025-07-29 12:14:37] [INFO] [::1] Application initialized
+[2025-07-29 15:44:37] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 12:14:39] [INFO] [::1] Application initialized
+[2025-07-29 15:44:39] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 12:14:41] [INFO] [::1] Application initialized
+[2025-07-29 15:44:41] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 15:44:41] [INFO] [::1] Dashboard accessed
+[2025-07-29 15:44:41] [INFO] [::1] User ID: 48
+[2025-07-29 15:44:41] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-07-29 15:44:41] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-07-29 12:15:19] [INFO] [::1] Application initialized
+[2025-07-29 15:45:19] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 15:45:19] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-07-29 15:45:19] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68885fc293adb.png
+[2025-07-29 12:15:21] [INFO] [::1] Application initialized
+[2025-07-29 15:45:21] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 12:15:25] [INFO] [::1] Application initialized
+[2025-07-29 15:45:25] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 12:15:31] [INFO] [::1] Application initialized
+[2025-07-29 15:45:31] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 15:45:31] [INFO] [::1] Dashboard accessed
+[2025-07-29 15:45:31] [INFO] [::1] User ID: 48
+[2025-07-29 15:45:31] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-07-29 15:45:31] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-07-29 12:15:33] [INFO] [::1] Application initialized
+[2025-07-29 15:45:33] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 15:45:33] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-07-29 15:45:33] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68885fc293adb.png
+[2025-07-29 13:11:03] [INFO] [::1] Application initialized
+[2025-07-29 16:41:03] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 13:11:11] [INFO] [::1] Application initialized
+[2025-07-29 16:41:11] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 13:11:27] [INFO] [::1] Application initialized
+[2025-07-29 16:41:27] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 13:13:58] [INFO] [::1] Application initialized
+[2025-07-29 16:43:58] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 13:25:36] [INFO] [::1] Application initialized
+[2025-07-29 16:55:36] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 13:40:47] [INFO] [::1] Application initialized
+[2025-07-29 17:10:47] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 13:41:42] [INFO] [::1] Application initialized
+[2025-07-29 17:11:42] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 13:42:31] [INFO] [::1] Application initialized
+[2025-07-29 17:12:31] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 13:42:56] [INFO] [::1] Application initialized
+[2025-07-29 17:12:56] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 13:42:57] [INFO] [::1] Application initialized
+[2025-07-29 17:12:57] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 13:42:57] [INFO] [::1] Application initialized
+[2025-07-29 17:12:57] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 13:47:27] [INFO] [::1] Application initialized
+[2025-07-29 17:17:27] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 13:48:10] [INFO] [::1] Application initialized
+[2025-07-29 17:18:10] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 13:48:11] [INFO] [::1] Application initialized
+[2025-07-29 17:18:11] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 13:48:12] [INFO] [::1] Application initialized
+[2025-07-29 17:18:12] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 13:48:52] [INFO] [::1] Application initialized
+[2025-07-29 17:18:52] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 13:49:33] [INFO] [::1] Application initialized
+[2025-07-29 17:19:33] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 13:51:24] [INFO] [::1] Application initialized
+[2025-07-29 17:21:24] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 13:53:53] [INFO] [::1] Application initialized
+[2025-07-29 17:23:53] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 13:56:35] [INFO] [::1] Application initialized
+[2025-07-29 17:26:35] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 13:59:14] [INFO] [::1] Application initialized
+[2025-07-29 17:29:14] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 14:03:42] [INFO] [::1] Application initialized
+[2025-07-29 17:33:42] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 14:10:13] [INFO] [::1] Application initialized
+[2025-07-29 17:40:13] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 14:11:25] [INFO] [::1] Application initialized
+[2025-07-29 17:41:25] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 14:14:36] [INFO] [::1] Application initialized
+[2025-07-29 17:44:36] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 14:14:54] [INFO] [::1] Application initialized
+[2025-07-29 17:44:54] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 14:15:31] [INFO] [::1] Application initialized
+[2025-07-29 17:45:31] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 14:16:56] [INFO] [::1] Application initialized
+[2025-07-29 17:46:56] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 14:22:44] [INFO] [::1] Application initialized
+[2025-07-29 17:52:44] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 14:23:53] [INFO] [::1] Application initialized
+[2025-07-29 17:53:53] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 14:24:04] [INFO] [::1] Application initialized
+[2025-07-29 17:54:04] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 14:24:11] [INFO] [::1] Application initialized
+[2025-07-29 17:54:11] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 14:24:20] [INFO] [::1] Application initialized
+[2025-07-29 17:54:20] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 14:31:12] [INFO] [::1] Application initialized
+[2025-07-29 18:01:12] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 14:32:14] [INFO] [::1] Application initialized
+[2025-07-29 18:02:14] [INFO] [::1] Login page accessed
+[2025-07-29 14:33:09] [INFO] [::1] Application initialized
+[2025-07-29 18:03:09] [INFO] [::1] Login register page accessed
+[2025-07-29 18:03:09] [INFO] [::1] checkMail {}
+[2025-07-29 14:33:09] [INFO] [::1] Application initialized
+[2025-07-29 18:03:09] [INFO] [::1] Login page accessed
+[2025-07-29 14:33:30] [INFO] [::1] Application initialized
+[2025-07-29 18:03:30] [INFO] [::1] Login page accessed
+[2025-07-29 14:33:37] [INFO] [::1] Application initialized
+[2025-07-29 18:03:37] [INFO] [::1] Login page accessed
+[2025-07-29 14:33:48] [INFO] [::1] Application initialized
+[2025-07-29 18:03:48] [INFO] [::1] Login register page accessed
+[2025-07-29 18:03:48] [INFO] [::1] email "HOT@GMAIL.COM"
+[2025-07-29 18:03:48] [INFO] [::1] password "12345678"
+[2025-07-29 18:03:48] [INFO] [::1] Executed query: SELECT * FROM users WHERE email = 'HOT@GMAIL.COM'
+[2025-07-29 18:03:48] [INFO] [::1] User Row: {"id":"49","name":"KELLO","email":"HOT@GMAIL.COM","mobile":"7521254785","password":"$2y$10$XADCbw4IPKUXlJUSZDghWeJWHbBz6CkCnXwEU7voRQCAJ63Dt2QYm","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-29 18:03:09","updated_at":"2025-07-29 18:03:09"}
+[2025-07-29 18:03:48] [INFO] [::1] password verify success
+[2025-07-29 18:03:48] [INFO] [::1] This is session after login: {"user_id":"49","name":"KELLO","email":"HOT@GMAIL.COM","mobile":"7521254785","featured_image":null,"role":"user"}
+[2025-07-29 14:33:48] [INFO] [::1] Application initialized
+[2025-07-29 18:03:48] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 14:34:05] [INFO] [::1] Application initialized
+[2025-07-29 18:04:05] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 18:04:05] [INFO] [::1] Dashboard accessed
+[2025-07-29 18:04:05] [INFO] [::1] User ID: 49
+[2025-07-29 18:04:05] [INFO] [::1] Application statistics fetched: {"total_applications":0,"pending_applications":null,"approved_applications":null,"missing_document_applications":null,"rejected_applications":null}
+[2025-07-29 18:04:05] [INFO] [::1] Recent applications fetched: []
+[2025-07-29 14:34:10] [INFO] [::1] Application initialized
+[2025-07-29 18:04:10] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 14:34:43] [INFO] [::1] Application initialized
+[2025-07-29 18:04:43] [INFO] [::1] Service type: GST Registration
+[2025-07-29 18:04:43] [INFO] [::1] session....{"user_id":"49","name":"KELLO","email":"HOT@GMAIL.COM","mobile":"7521254785","featured_image":null,"role":"user"}
+[2025-07-29 18:04:43] [INFO] [::1] User ID: 49
+[2025-07-29 18:04:43] [INFO] [::1] I AM HERE...................
+[2025-07-29 18:04:43] [INFO] [::1] Application number: 000005
+[2025-07-29 18:04:43] [INFO] [::1] AFTER....
+[2025-07-29 14:34:43] [INFO] [::1] Application initialized
+[2025-07-29 18:04:43] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 14:34:56] [INFO] [::1] Application initialized
+[2025-07-29 18:04:56] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 18:04:56] [INFO] [::1] this is application id: 
+[2025-07-29 18:04:56] [INFO] [::1] Application details fetched: 
+[2025-07-29 14:36:12] [INFO] [::1] Application initialized
+[2025-07-29 18:06:12] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 18:06:12] [INFO] [::1] Dashboard accessed
+[2025-07-29 18:06:12] [INFO] [::1] User ID: 1
+[2025-07-29 18:06:12] [INFO] [::1] Application statistics fetched: {"total_applications":0,"pending_applications":null,"approved_applications":null,"missing_document_applications":null,"rejected_applications":null}
+[2025-07-29 18:06:12] [INFO] [::1] Recent applications fetched: []
+[2025-07-29 14:36:26] [INFO] [::1] Application initialized
+[2025-07-29 18:06:26] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 14:36:28] [INFO] [::1] Application initialized
+[2025-07-29 18:06:28] [INFO] [::1] Login page accessed
+[2025-07-29 14:36:42] [INFO] [::1] Application initialized
+[2025-07-29 18:06:42] [INFO] [::1] Login register page accessed
+[2025-07-29 18:06:42] [INFO] [::1] email "HOT@GMAIL.COM"
+[2025-07-29 18:06:42] [INFO] [::1] password "12345678"
+[2025-07-29 18:06:42] [INFO] [::1] Executed query: SELECT * FROM users WHERE email = 'HOT@GMAIL.COM'
+[2025-07-29 18:06:42] [INFO] [::1] User Row: {"id":"49","name":"KELLO","email":"HOT@GMAIL.COM","mobile":"7521254785","password":"$2y$10$XADCbw4IPKUXlJUSZDghWeJWHbBz6CkCnXwEU7voRQCAJ63Dt2QYm","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-29 18:03:09","updated_at":"2025-07-29 18:03:09"}
+[2025-07-29 18:06:42] [INFO] [::1] password verify success
+[2025-07-29 18:06:42] [INFO] [::1] This is session after login: {"user_id":"49","name":"KELLO","email":"HOT@GMAIL.COM","mobile":"7521254785","featured_image":null,"role":"user"}
+[2025-07-29 14:36:42] [INFO] [::1] Application initialized
+[2025-07-29 18:06:42] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 14:36:48] [INFO] [::1] Application initialized
+[2025-07-29 18:06:48] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 18:06:48] [INFO] [::1] Dashboard accessed
+[2025-07-29 18:06:48] [INFO] [::1] User ID: 49
+[2025-07-29 18:06:48] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"0","approved_applications":"1","missing_document_applications":"0","rejected_applications":"0"}
+[2025-07-29 18:06:48] [INFO] [::1] Recent applications fetched: [{"id":42,"application_number":"000005","user_id":49,"service_type":"GST Registration","status":"approved","reviewed_by":"Anjali Kushwah ","reviewed_at":"2025-07-29 18:06:05","created_at":"2025-07-29 18:04:43","updated_at":"2025-07-29 18:06:05","required_documents":null}]
+[2025-07-29 14:38:34] [INFO] [::1] Application initialized
+[2025-07-29 18:08:34] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 18:08:34] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-07-29 18:08:34] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/user-avatar.png
+[2025-07-29 14:38:36] [INFO] [::1] Application initialized
+[2025-07-29 18:08:36] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 18:08:36] [INFO] [::1] Dashboard accessed
+[2025-07-29 18:08:36] [INFO] [::1] User ID: 49
+[2025-07-29 18:08:36] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"0","approved_applications":"1","missing_document_applications":"0","rejected_applications":"0"}
+[2025-07-29 18:08:36] [INFO] [::1] Recent applications fetched: [{"id":42,"application_number":"000005","user_id":49,"service_type":"GST Registration","status":"approved","reviewed_by":"Anjali Kushwah ","reviewed_at":"2025-07-29 18:06:05","created_at":"2025-07-29 18:04:43","updated_at":"2025-07-29 18:06:05","required_documents":null}]
+[2025-07-29 14:38:37] [INFO] [::1] Application initialized
+[2025-07-29 18:08:37] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 18:08:37] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-07-29 18:08:37] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/user-avatar.png
+[2025-07-29 14:38:38] [INFO] [::1] Application initialized
+[2025-07-29 18:08:38] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 14:38:41] [INFO] [::1] Application initialized
+[2025-07-29 18:08:41] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 18:08:41] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-07-29 18:08:41] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/user-avatar.png
+[2025-07-29 14:38:43] [INFO] [::1] Application initialized
+[2025-07-29 18:08:43] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 14:41:30] [INFO] [::1] Application initialized
+[2025-07-29 18:11:30] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 18:11:30] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-07-29 18:11:30] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/user-avatar.png
+[2025-07-29 14:41:33] [INFO] [::1] Application initialized
+[2025-07-29 18:11:33] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 14:46:41] [INFO] [::1] Application initialized
+[2025-07-29 18:16:41] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 14:47:19] [INFO] [::1] Application initialized
+[2025-07-29 18:17:19] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 18:17:19] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-07-29 18:17:19] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/user-avatar.png
+[2025-07-29 14:47:22] [INFO] [::1] Application initialized
+[2025-07-29 18:17:22] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 18:17:22] [INFO] [::1] Dashboard accessed
+[2025-07-29 18:17:22] [INFO] [::1] User ID: 49
+[2025-07-29 18:17:22] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"0","approved_applications":"1","missing_document_applications":"0","rejected_applications":"0"}
+[2025-07-29 18:17:22] [INFO] [::1] Recent applications fetched: [{"id":42,"application_number":"000005","user_id":49,"service_type":"GST Registration","status":"approved","reviewed_by":"Anjali Kushwah ","reviewed_at":"2025-07-29 18:06:05","created_at":"2025-07-29 18:04:43","updated_at":"2025-07-29 18:06:05","required_documents":null}]
+[2025-07-29 14:47:23] [INFO] [::1] Application initialized
+[2025-07-29 18:17:23] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 18:17:23] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-07-29 18:17:23] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/user-avatar.png
+[2025-07-29 14:47:24] [INFO] [::1] Application initialized
+[2025-07-29 18:17:24] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 14:47:25] [INFO] [::1] Application initialized
+[2025-07-29 18:17:25] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 18:17:25] [INFO] [::1] Dashboard accessed
+[2025-07-29 18:17:25] [INFO] [::1] User ID: 49
+[2025-07-29 18:17:25] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"0","approved_applications":"1","missing_document_applications":"0","rejected_applications":"0"}
+[2025-07-29 18:17:25] [INFO] [::1] Recent applications fetched: [{"id":42,"application_number":"000005","user_id":49,"service_type":"GST Registration","status":"approved","reviewed_by":"Anjali Kushwah ","reviewed_at":"2025-07-29 18:06:05","created_at":"2025-07-29 18:04:43","updated_at":"2025-07-29 18:06:05","required_documents":null}]
+[2025-07-29 14:47:27] [INFO] [::1] Application initialized
+[2025-07-29 18:17:27] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 14:47:29] [INFO] [::1] Application initialized
+[2025-07-29 18:17:29] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 14:47:31] [INFO] [::1] Application initialized
+[2025-07-29 18:17:31] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 18:17:31] [INFO] [::1] Dashboard accessed
+[2025-07-29 18:17:31] [INFO] [::1] User ID: 49
+[2025-07-29 18:17:31] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"0","approved_applications":"1","missing_document_applications":"0","rejected_applications":"0"}
+[2025-07-29 18:17:31] [INFO] [::1] Recent applications fetched: [{"id":42,"application_number":"000005","user_id":49,"service_type":"GST Registration","status":"approved","reviewed_by":"Anjali Kushwah ","reviewed_at":"2025-07-29 18:06:05","created_at":"2025-07-29 18:04:43","updated_at":"2025-07-29 18:06:05","required_documents":null}]
+[2025-07-29 14:51:56] [INFO] [::1] Application initialized
+[2025-07-29 18:21:56] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 14:52:04] [INFO] [::1] Application initialized
+[2025-07-29 18:22:04] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 18:22:04] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-07-29 18:22:04] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/user-avatar.png
+[2025-07-29 14:52:06] [INFO] [::1] Application initialized
+[2025-07-29 18:22:06] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-07-29 18:22:06] [INFO] [::1] Dashboard accessed
+[2025-07-29 18:22:06] [INFO] [::1] User ID: 49
+[2025-07-29 18:22:06] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"0","approved_applications":"1","missing_document_applications":"0","rejected_applications":"0"}
+[2025-07-29 18:22:06] [INFO] [::1] Recent applications fetched: [{"id":42,"application_number":"000005","user_id":49,"service_type":"GST Registration","status":"approved","reviewed_by":"Anjali Kushwah ","reviewed_at":"2025-07-29 18:06:05","created_at":"2025-07-29 18:04:43","updated_at":"2025-07-29 18:06:05","required_documents":null}]
+[2025-08-01 10:58:19] [INFO] [::1] Application initialized
+[2025-08-01 14:28:19] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-01 11:06:21] [INFO] [::1] Application initialized
+[2025-08-01 14:36:21] [INFO] [::1] Login page accessed
+[2025-08-01 11:06:48] [INFO] [::1] Application initialized
+[2025-08-01 14:36:48] [INFO] [::1] Login register page accessed
+[2025-08-01 14:36:48] [INFO] [::1] checkMail {}
+[2025-08-01 11:06:48] [INFO] [::1] Application initialized
+[2025-08-01 14:36:48] [INFO] [::1] Login page accessed
+[2025-08-01 11:07:04] [INFO] [::1] Application initialized
+[2025-08-01 14:37:04] [INFO] [::1] Login register page accessed
+[2025-08-01 14:37:04] [INFO] [::1] email "himanshi@gmail.com"
+[2025-08-01 14:37:04] [INFO] [::1] password "12345"
+[2025-08-01 14:37:04] [INFO] [::1] Executed query: SELECT * FROM users WHERE email = 'himanshi@gmail.com'
+[2025-08-01 14:37:04] [INFO] [::1] No user found with email: himanshi@gmail.com
+[2025-08-01 11:07:04] [INFO] [::1] Application initialized
+[2025-08-01 14:37:04] [INFO] [::1] Login page accessed
+[2025-08-01 11:10:22] [INFO] [::1] Application initialized
+[2025-08-01 14:40:22] [INFO] [::1] Login register page accessed
+[2025-08-01 14:40:22] [INFO] [::1] email "himanmshi@gmail.com"
+[2025-08-01 14:40:22] [INFO] [::1] password "12345"
+[2025-08-01 14:40:22] [INFO] [::1] Executed query: SELECT * FROM users WHERE email = 'himanmshi@gmail.com'
+[2025-08-01 14:40:22] [INFO] [::1] User Row: {"id":"50","name":"himanshi  rawat","email":"himanmshi@gmail.com","mobile":"07770958768","password":"$2y$10$m5Ouy6QJp0\/2GTnCOmATROHA5IEQAsMO2ZG0FOk0Va8q\/0vfNF8rK","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-08-01 14:36:48","updated_at":"2025-08-01 14:36:48"}
+[2025-08-01 14:40:22] [INFO] [::1] password verify success
+[2025-08-01 14:40:22] [INFO] [::1] This is session after login: {"user_id":"50","user_name":"Anjali Kushwah ","user_email":"anjalikushwaha@gmail.com","user_role":"admin","profile_picture":"688780dfd0c34.jpg","name":"himanshi  rawat","email":"himanmshi@gmail.com","mobile":"07770958768","featured_image":null,"role":"user"}
+[2025-08-01 11:10:22] [INFO] [::1] Application initialized
+[2025-08-01 14:40:22] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-01 11:10:32] [INFO] [::1] Application initialized
+[2025-08-01 14:40:32] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-01 14:40:32] [INFO] [::1] Dashboard accessed
+[2025-08-01 14:40:32] [INFO] [::1] User ID: 50
+[2025-08-01 14:40:32] [INFO] [::1] Application statistics fetched: {"total_applications":0,"pending_applications":null,"approved_applications":null,"missing_document_applications":null,"rejected_applications":null}
+[2025-08-01 14:40:32] [INFO] [::1] Recent applications fetched: []
+[2025-08-01 11:44:34] [INFO] [::1] Application initialized
+[2025-08-01 15:14:34] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-02 12:11:13] [INFO] [::1] Application initialized
+[2025-08-02 15:41:13] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-02 15:41:13] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-02 15:41:13] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/user-avatar.png
+[2025-08-02 12:11:22] [INFO] [::1] Application initialized
+[2025-08-02 15:41:22] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-02 12:11:24] [INFO] [::1] Application initialized
+[2025-08-02 15:41:24] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-02 15:41:24] [INFO] [::1] Dashboard accessed
+[2025-08-02 15:41:24] [INFO] [::1] User ID: 50
+[2025-08-02 15:41:24] [INFO] [::1] Application statistics fetched: {"total_applications":0,"pending_applications":null,"approved_applications":null,"missing_document_applications":null,"rejected_applications":null}
+[2025-08-02 15:41:24] [INFO] [::1] Recent applications fetched: []
+[2025-08-02 12:11:27] [INFO] [::1] Application initialized
+[2025-08-02 15:41:27] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-02 15:41:27] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-02 15:41:27] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/user-avatar.png
+[2025-08-02 12:11:36] [INFO] [::1] Application initialized
+[2025-08-02 15:41:36] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-02 15:41:36] [INFO] [::1] Name: himanshi  rawat
+[2025-08-02 15:41:36] [INFO] [::1] Email: himanmshi@gmail.com
+[2025-08-02 15:41:36] [INFO] [::1] Mobile: 07770958768
+[2025-08-02 15:41:36] [INFO] [::1] Has Error: No
+[2025-08-02 15:41:36] [INFO] [::1] File uploaded: Yes
+[2025-08-02 15:41:36] [INFO] [::1] File inserted successfully.
+[2025-08-02 15:41:36] [INFO] [::1] Session image path updated successfully.
+[2025-08-02 15:41:36] [INFO] [::1] Complete session information after update profile: {"user_id":"50","user_name":"Anjali Kushwah ","user_email":"anjalikushwaha@gmail.com","user_role":"admin","profile_picture":"688780dfd0c34.jpg","name":"himanshi  rawat","email":"himanmshi@gmail.com","mobile":"07770958768","featured_image":"uploads\/profiles\/688de4588ec80.jpg","role":"user","username":"JohnDoe","password":"pizza123"}
+[2025-08-02 12:11:36] [INFO] [::1] Application initialized
+[2025-08-02 15:41:36] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-02 15:41:36] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-02 15:41:36] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/688de4588ec80.jpg
+[2025-08-02 12:11:39] [INFO] [::1] Application initialized
+[2025-08-02 15:41:39] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-02 15:41:39] [INFO] [::1] Dashboard accessed
+[2025-08-02 15:41:39] [INFO] [::1] User ID: 50
+[2025-08-02 15:41:39] [INFO] [::1] Application statistics fetched: {"total_applications":0,"pending_applications":null,"approved_applications":null,"missing_document_applications":null,"rejected_applications":null}
+[2025-08-02 15:41:39] [INFO] [::1] Recent applications fetched: []
+[2025-08-02 12:12:28] [INFO] [::1] Application initialized
+[2025-08-02 15:42:28] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-02 15:42:28] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-02 15:42:28] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/688de4588ec80.jpg
+[2025-08-02 12:12:31] [INFO] [::1] Application initialized
+[2025-08-02 15:42:31] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-02 12:12:32] [INFO] [::1] Application initialized
+[2025-08-02 15:42:32] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-02 15:42:32] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-02 15:42:32] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/688de4588ec80.jpg
+[2025-08-02 12:12:45] [INFO] [::1] Application initialized
+[2025-08-02 15:42:45] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-02 15:42:45] [INFO] [::1] Name: himanshi  rawat
+[2025-08-02 15:42:45] [INFO] [::1] Email: himanmshi@gmail.com
+[2025-08-02 15:42:45] [INFO] [::1] Mobile: 7770958768
+[2025-08-02 15:42:45] [INFO] [::1] Has Error: No
+[2025-08-02 15:42:45] [INFO] [::1] File uploaded: No
+[2025-08-02 15:42:45] [INFO] [::1] Session image path updated successfully.
+[2025-08-02 15:42:45] [INFO] [::1] Complete session information after update profile: {"user_id":"50","user_name":"Anjali Kushwah ","user_email":"anjalikushwaha@gmail.com","user_role":"admin","profile_picture":"688780dfd0c34.jpg","name":"himanshi  rawat","email":"himanmshi@gmail.com","mobile":"07770958768","featured_image":"uploads\/profiles\/688de4588ec80.jpg","role":"user","username":"JohnDoe","password":"pizza123"}
+[2025-08-02 12:12:45] [INFO] [::1] Application initialized
+[2025-08-02 15:42:45] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-02 15:42:45] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-02 15:42:45] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/688de4588ec80.jpg
+[2025-08-02 18:55:54] [INFO] [::1] Application initialized
+[2025-08-02 22:25:54] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-02 18:55:57] [INFO] [::1] Application initialized
+[2025-08-02 22:25:57] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-02 22:25:57] [INFO] [::1] Dashboard accessed
+[2025-08-02 22:25:57] [INFO] [::1] User ID: 50
+[2025-08-02 22:25:57] [INFO] [::1] Application statistics fetched: {"total_applications":0,"pending_applications":null,"approved_applications":null,"missing_document_applications":null,"rejected_applications":null}
+[2025-08-02 22:25:57] [INFO] [::1] Recent applications fetched: []
+[2025-08-02 19:25:56] [INFO] [::1] Application initialized
+[2025-08-02 22:55:56] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-02 19:25:57] [INFO] [::1] Application initialized
+[2025-08-02 22:55:57] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-02 19:25:58] [INFO] [::1] Application initialized
+[2025-08-02 22:55:58] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-02 19:25:59] [INFO] [::1] Application initialized
+[2025-08-02 22:55:59] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-02 22:55:59] [INFO] [::1] Dashboard accessed
+[2025-08-02 22:55:59] [INFO] [::1] User ID: 50
+[2025-08-02 22:55:59] [INFO] [::1] Application statistics fetched: {"total_applications":0,"pending_applications":null,"approved_applications":null,"missing_document_applications":null,"rejected_applications":null}
+[2025-08-02 22:55:59] [INFO] [::1] Recent applications fetched: []
+[2025-08-04 21:42:24] [INFO] [::1] Application initialized
+[2025-08-05 01:12:24] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-04 21:43:37] [INFO] [::1] Application initialized
+[2025-08-05 01:13:37] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-04 21:43:40] [INFO] [::1] Application initialized
+[2025-08-05 01:13:40] [INFO] [::1] Login page accessed
+[2025-08-04 21:43:47] [INFO] [::1] Application initialized
+[2025-08-05 01:13:47] [INFO] [::1] Login register page accessed
+[2025-08-05 01:13:47] [INFO] [::1] email "abhishek@example.com"
+[2025-08-05 01:13:47] [INFO] [::1] password "12345"
+[2025-08-05 01:13:47] [INFO] [::1] Executed query: SELECT * FROM users WHERE email = 'abhishek@example.com'
+[2025-08-05 01:13:47] [INFO] [::1] User Row: {"id":"48","name":"abhishek yadav","email":"abhishek@example.com","mobile":"2345678556","password":"$2y$10$YCOsDEaaa1tWC9Fve4t3yu7FOFdEc4GDUJAIC33wWrah.XEoFJGrO","role":"user","status":"active","featured_image":"uploads\/profiles\/6890e8382e544.png","reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-29 11:14:10","updated_at":"2025-08-04 22:34:56","reset_otp":null,"reset_otp_expiry":null}
+[2025-08-05 01:13:47] [INFO] [::1] password verify success
+[2025-08-05 01:13:47] [INFO] [::1] This is session after login: {"user_id":"48","name":"abhishek yadav","email":"abhishek@example.com","mobile":"2345678556","featured_image":"uploads\/profiles\/6890e8382e544.png","role":"user"}
+[2025-08-04 21:43:47] [INFO] [::1] Application initialized
+[2025-08-05 01:13:47] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-04 21:43:52] [INFO] [::1] Application initialized
+[2025-08-05 01:13:52] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-05 01:13:52] [INFO] [::1] Dashboard accessed
+[2025-08-05 01:13:52] [INFO] [::1] User ID: 48
+[2025-08-05 01:13:52] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-05 01:13:52] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-04 21:43:56] [INFO] [::1] Application initialized
+[2025-08-05 01:13:56] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-04 21:44:02] [INFO] [::1] Application initialized
+[2025-08-05 01:14:02] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-05 01:14:02] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-05 01:14:02] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/6890e8382e544.png
+[2025-08-04 21:44:04] [INFO] [::1] Application initialized
+[2025-08-05 01:14:04] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-05 01:14:04] [INFO] [::1] Dashboard accessed
+[2025-08-05 01:14:04] [INFO] [::1] User ID: 48
+[2025-08-05 01:14:04] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-05 01:14:04] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-04 21:44:07] [INFO] [::1] Application initialized
+[2025-08-05 01:14:07] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-05 01:14:07] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-05 01:14:07] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/6890e8382e544.png
+[2025-08-04 21:44:16] [INFO] [::1] Application initialized
+[2025-08-05 01:14:16] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-05 01:14:16] [INFO] [::1] Name: abhishek yadav
+[2025-08-05 01:14:16] [INFO] [::1] Email: abhishek@example.com
+[2025-08-05 01:14:16] [INFO] [::1] Mobile: 2345678556
+[2025-08-05 01:14:16] [INFO] [::1] Has Error: No
+[2025-08-05 01:14:16] [INFO] [::1] File uploaded: Yes
+[2025-08-05 01:14:16] [INFO] [::1] File inserted successfully.
+[2025-08-05 01:14:16] [INFO] [::1] Session image path updated successfully.
+[2025-08-05 01:14:16] [INFO] [::1] Complete session information after update profile: {"user_id":"48","name":"abhishek yadav","email":"abhishek@example.com","mobile":"2345678556","featured_image":"uploads\/profiles\/68910d909c8fe.png","role":"user"}
+[2025-08-04 21:44:16] [INFO] [::1] Application initialized
+[2025-08-05 01:14:16] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-05 01:14:16] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-05 01:14:16] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-04 21:44:27] [INFO] [::1] Application initialized
+[2025-08-05 01:14:27] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-04 21:44:29] [INFO] [::1] Application initialized
+[2025-08-05 01:14:29] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-04 21:44:30] [INFO] [::1] Application initialized
+[2025-08-05 01:14:30] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-05 01:14:30] [INFO] [::1] Dashboard accessed
+[2025-08-05 01:14:30] [INFO] [::1] User ID: 48
+[2025-08-05 01:14:30] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-05 01:14:30] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-04 21:44:47] [INFO] [::1] Application initialized
+[2025-08-05 01:14:47] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-04 21:44:49] [INFO] [::1] Application initialized
+[2025-08-05 01:14:49] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-05 01:14:49] [INFO] [::1] this is application id: 
+[2025-08-05 01:14:49] [INFO] [::1] Application details fetched: 
+[2025-08-04 22:00:20] [INFO] [::1] Application initialized
+[2025-08-05 01:30:20] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-05 01:30:20] [INFO] [::1] this is application id: 
+[2025-08-05 01:30:20] [INFO] [::1] Application details fetched: 
+[2025-08-04 22:00:28] [INFO] [::1] Application initialized
+[2025-08-05 01:30:28] [INFO] [::1] base usr is in header: http://localhost/web_page/
