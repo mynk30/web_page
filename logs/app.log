@@ -1,38 +1,125 @@
-[2025-07-27 11:04:49] [INFO] [::1] Application initialized
-[2025-07-27 14:34:49] [INFO] [::1] base url: http://localhost/web_page/
-[2025-07-27 14:34:49] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user"}
-[2025-07-27 14:34:49] [INFO] [::1] Name: Aman Verma
-[2025-07-27 14:34:49] [INFO] [::1] Email: aman@example.com
-[2025-07-27 14:34:49] [INFO] [::1] Phone: 9000000015
-[2025-07-27 14:34:49] [INFO] [::1] Has Error: No
-[2025-07-27 14:34:49] [INFO] [::1] File uploaded: Yes
-[2025-07-27 14:34:49] [INFO] [::1] File inserted successfully.
-[2025-07-27 14:34:49] [ERROR] [::1] Profile update error: Field 'email' doesn't have a default value
-[2025-07-27 11:04:49] [INFO] [::1] Application initialized
-[2025-07-27 14:34:49] [INFO] [::1] base url: http://localhost/web_page/
-[2025-07-27 14:34:49] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user","error":"Field 'email' doesn't have a default value"}
-[2025-07-27 11:07:34] [INFO] [::1] Application initialized
-[2025-07-27 14:37:34] [INFO] [::1] base url: http://localhost/web_page/
-[2025-07-27 14:37:34] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user"}
-[2025-07-27 11:07:44] [INFO] [::1] Application initialized
-[2025-07-27 14:37:44] [INFO] [::1] base url: http://localhost/web_page/
-[2025-07-27 14:37:44] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user"}
-[2025-07-27 11:07:47] [INFO] [::1] Application initialized
-[2025-07-27 14:37:47] [INFO] [::1] base url: http://localhost/web_page/
-[2025-07-27 14:37:47] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user"}
-[2025-07-27 14:37:47] [INFO] [::1] Dashboard accessed
-[2025-07-27 14:37:47] [INFO] [::1] User ID: 32
-[2025-07-27 14:37:47] [INFO] [::1] Application statistics fetched: {"total_applications":2,"pending_applications":"1","approved_applications":"0","missing_document_applications":"1","rejected_applications":"0"}
-[2025-07-27 14:37:47] [INFO] [::1] Recent applications fetched: [{"id":35,"application_number":null,"user_id":32,"assigned_to":0,"name":"Aman Verma","email":"aman@example.com","phone":"9000000015","address":null,"service_type":"Income Tax Filing","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-27 11:48:30","updated_at":"2025-07-27 11:48:30","required_documents":null},{"id":33,"application_number":null,"user_id":32,"assigned_to":0,"name":"Aman Verma","email":"aman@example.com","phone":"9000000015","address":null,"service_type":"GST Registration","status":"missing_document","reviewed_by":"Anjali Kushwah admin","reviewed_at":"2025-07-26 23:16:51","created_at":"2025-07-26 23:15:51","updated_at":"2025-07-26 23:16:51","required_documents":"[\"aadhar\", \"pencard\"]"}]
-[2025-07-27 11:48:35] [INFO] [::1] Application initialized
-[2025-07-27 15:18:35] [INFO] [::1] base url: http://localhost/web_page/
-[2025-07-27 15:18:35] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user"}
-[2025-07-27 11:51:30] [INFO] [::1] Application initialized
-[2025-07-27 15:21:30] [INFO] [::1] base url: http://localhost/web_page/
-[2025-07-27 15:21:30] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user"}
-[2025-07-27 11:51:33] [INFO] [::1] Application initialized
-[2025-07-27 15:21:33] [INFO] [::1] base url: http://localhost/web_page/
-[2025-07-27 15:21:33] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user"}
-[2025-07-27 11:52:06] [INFO] [::1] Application initialized
-[2025-07-27 15:22:06] [INFO] [::1] base url: http://localhost/web_page/
-[2025-07-27 15:22:06] [INFO] [::1] Header included this is SESSION {"user_id":"32","name":"Aman Verma","email":"aman@example.com","featured_image":null,"role":"user"}
+[2025-07-27 13:53:51] [INFO] [::1] Application initialized
+[2025-07-27 17:23:51] [INFO] [::1] Login page accessed
+[2025-07-27 13:54:09] [INFO] [::1] Application initialized
+[2025-07-27 17:24:09] [INFO] [::1] Login register page accessed
+[2025-07-27 17:24:09] [INFO] [::1] checkMail {"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null}
+[2025-07-27 17:24:09] [INFO] [::1] name "test user"
+[2025-07-27 17:24:09] [INFO] [::1] email "test@gmail.com"
+[2025-07-27 17:24:09] [INFO] [::1] mobile "123123123"
+[2025-07-27 17:24:09] [INFO] [::1] password "$2y$10$D24CZ2QipfrrlYuLwYYk9OLA.deDDKv9PFGCfGp.5hrTrd9ZFWZyq"
+[2025-07-27 17:24:09] [INFO] [::1] role "user"
+[2025-07-27 17:24:09] [ERROR] [::1] Error in register: Call to a member function bind_param() on bool
+[2025-07-27 13:54:53] [INFO] [::1] Application initialized
+[2025-07-27 17:24:53] [INFO] [::1] Login register page accessed
+[2025-07-27 17:24:53] [INFO] [::1] checkMail {"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null}
+[2025-07-27 17:24:53] [INFO] [::1] name "test user"
+[2025-07-27 17:24:53] [INFO] [::1] email "test@gmail.com"
+[2025-07-27 17:24:53] [INFO] [::1] mobile "123123123"
+[2025-07-27 17:24:53] [INFO] [::1] password "$2y$10$v8QSRR4bLoenXOrVvE9noem4Dr.d4wjkRdsLKBsM\/\/0P43eUsKnZW"
+[2025-07-27 17:24:53] [INFO] [::1] role "user"
+[2025-07-27 17:24:53] [ERROR] [::1] Error in register: Call to a member function bind_param() on bool
+[2025-07-27 13:54:53] [INFO] [::1] Application initialized
+[2025-07-27 17:24:53] [INFO] [::1] Login register page accessed
+[2025-07-27 17:24:54] [INFO] [::1] checkMail {"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null}
+[2025-07-27 17:24:54] [INFO] [::1] name "test user"
+[2025-07-27 17:24:54] [INFO] [::1] email "test@gmail.com"
+[2025-07-27 17:24:54] [INFO] [::1] mobile "123123123"
+[2025-07-27 17:24:54] [INFO] [::1] password "$2y$10$Mm.6aGjDBddRxncnQoC04e7\/.8xU2hVmeco9eJXYYP3Zuvl0auucO"
+[2025-07-27 17:24:54] [INFO] [::1] role "user"
+[2025-07-27 17:24:54] [ERROR] [::1] Error in register: Call to a member function bind_param() on bool
+[2025-07-27 13:54:54] [INFO] [::1] Application initialized
+[2025-07-27 17:24:54] [INFO] [::1] Login register page accessed
+[2025-07-27 17:24:54] [INFO] [::1] checkMail {"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null}
+[2025-07-27 17:24:54] [INFO] [::1] name "test user"
+[2025-07-27 17:24:54] [INFO] [::1] email "test@gmail.com"
+[2025-07-27 17:24:54] [INFO] [::1] mobile "123123123"
+[2025-07-27 17:24:54] [INFO] [::1] password "$2y$10$R\/7mX2a7l5m4IZmaZCICk.mMF.5rLjQjhzvL8YkioJ6sd2s5odGQy"
+[2025-07-27 17:24:54] [INFO] [::1] role "user"
+[2025-07-27 17:24:54] [ERROR] [::1] Error in register: Call to a member function bind_param() on bool
+[2025-07-27 13:54:58] [INFO] [::1] Application initialized
+[2025-07-27 17:24:58] [INFO] [::1] Login page accessed
+[2025-07-27 13:54:58] [INFO] [::1] Application initialized
+[2025-07-27 17:24:58] [INFO] [::1] Login page accessed
+[2025-07-27 13:54:58] [INFO] [::1] Application initialized
+[2025-07-27 17:24:58] [INFO] [::1] Login page accessed
+[2025-07-27 13:54:59] [INFO] [::1] Application initialized
+[2025-07-27 17:24:59] [INFO] [::1] Login page accessed
+[2025-07-27 13:55:18] [INFO] [::1] Application initialized
+[2025-07-27 17:25:18] [INFO] [::1] Login page accessed
+[2025-07-27 13:55:18] [INFO] [::1] Application initialized
+[2025-07-27 17:25:18] [INFO] [::1] Login page accessed
+[2025-07-27 13:55:18] [INFO] [::1] Application initialized
+[2025-07-27 17:25:18] [INFO] [::1] Login page accessed
+[2025-07-27 13:55:19] [INFO] [::1] Application initialized
+[2025-07-27 17:25:19] [INFO] [::1] Login page accessed
+[2025-07-27 13:55:19] [INFO] [::1] Application initialized
+[2025-07-27 17:25:19] [INFO] [::1] Login page accessed
+[2025-07-27 13:55:19] [INFO] [::1] Application initialized
+[2025-07-27 17:25:19] [INFO] [::1] Login page accessed
+[2025-07-27 13:55:19] [INFO] [::1] Application initialized
+[2025-07-27 17:25:19] [INFO] [::1] Login page accessed
+[2025-07-27 13:55:19] [INFO] [::1] Application initialized
+[2025-07-27 17:25:19] [INFO] [::1] Login page accessed
+[2025-07-27 13:55:19] [INFO] [::1] Application initialized
+[2025-07-27 17:25:19] [INFO] [::1] Login page accessed
+[2025-07-27 13:55:27] [INFO] [::1] Application initialized
+[2025-07-27 17:25:27] [INFO] [::1] Login register page accessed
+[2025-07-27 17:25:27] [INFO] [::1] checkMail {"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null}
+[2025-07-27 13:58:19] [INFO] [::1] Application initialized
+[2025-07-27 17:28:19] [INFO] [::1] Login register page accessed
+[2025-07-27 17:28:19] [INFO] [::1] checkMail {"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null}
+[2025-07-27 13:58:19] [INFO] [::1] Application initialized
+[2025-07-27 17:28:19] [INFO] [::1] Login page accessed
+[2025-07-27 13:58:31] [INFO] [::1] Application initialized
+[2025-07-27 17:28:31] [INFO] [::1] Login register page accessed
+[2025-07-27 17:28:31] [INFO] [::1] checkMail {"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null}
+[2025-07-27 13:58:31] [INFO] [::1] Application initialized
+[2025-07-27 17:28:31] [INFO] [::1] Login page accessed
+[2025-07-27 13:58:58] [INFO] [::1] Application initialized
+[2025-07-27 17:28:58] [INFO] [::1] Login page accessed
+[2025-07-27 13:58:59] [INFO] [::1] Application initialized
+[2025-07-27 17:28:59] [INFO] [::1] Login page accessed
+[2025-07-27 13:58:59] [INFO] [::1] Application initialized
+[2025-07-27 17:28:59] [INFO] [::1] Login page accessed
+[2025-07-27 13:58:59] [INFO] [::1] Application initialized
+[2025-07-27 17:28:59] [INFO] [::1] Login page accessed
+[2025-07-27 13:58:59] [INFO] [::1] Application initialized
+[2025-07-27 17:28:59] [INFO] [::1] Login page accessed
+[2025-07-27 13:59:14] [INFO] [::1] Application initialized
+[2025-07-27 17:29:14] [INFO] [::1] Login page accessed
+[2025-07-27 13:59:14] [INFO] [::1] Application initialized
+[2025-07-27 17:29:15] [INFO] [::1] Login page accessed
+[2025-07-27 13:59:15] [INFO] [::1] Application initialized
+[2025-07-27 17:29:15] [INFO] [::1] Login page accessed
+[2025-07-27 13:59:29] [INFO] [::1] Application initialized
+[2025-07-27 17:29:29] [INFO] [::1] Login register page accessed
+[2025-07-27 17:29:29] [INFO] [::1] checkMail {"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null}
+[2025-07-27 13:59:29] [INFO] [::1] Application initialized
+[2025-07-27 17:29:29] [INFO] [::1] Login page accessed
+[2025-07-27 13:59:35] [INFO] [::1] Application initialized
+[2025-07-27 17:29:35] [INFO] [::1] Login register page accessed
+[2025-07-27 17:29:35] [INFO] [::1] email "test@gmail.com"
+[2025-07-27 17:29:35] [INFO] [::1] password "123"
+[2025-07-27 17:29:35] [INFO] [::1] Executed query: SELECT * FROM users WHERE email = 'test@gmail.com'
+[2025-07-27 17:29:35] [INFO] [::1] User Row: {"id":"10","name":"testuser","email":"test@gmail.com","mobile":"1231231231","password":"$2y$10$rasueAUwnwjr1CPsb0V90OOS3Y6ofBYHqY1bSMxdCmauyu4T9ocCm","role":"user","status":"active","reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-27 17:29:29","updated_at":"2025-07-27 17:29:29"}
+[2025-07-27 17:29:35] [INFO] [::1] password verify success
+[2025-07-27 17:29:35] [INFO] [::1] This is session after login: {"user_id":"10","name":"testuser","email":"test@gmail.com","mobile":"1231231231","featured_image":null,"role":"user"}
+[2025-07-27 13:59:35] [INFO] [::1] Application initialized
+[2025-07-27 17:29:35] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 17:29:35] [INFO] [::1] Header included this is SESSION {"user_id":"10","name":"testuser","email":"test@gmail.com","mobile":"1231231231","featured_image":null,"role":"user"}
+[2025-07-27 13:59:38] [INFO] [::1] Application initialized
+[2025-07-27 17:29:38] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 17:29:38] [INFO] [::1] Header included this is SESSION {"user_id":"10","name":"testuser","email":"test@gmail.com","mobile":"1231231231","featured_image":null,"role":"user"}
+[2025-07-27 17:29:38] [INFO] [::1] Dashboard accessed
+[2025-07-27 17:29:38] [INFO] [::1] User ID: 10
+[2025-07-27 17:29:38] [INFO] [::1] Application statistics fetched: {"total_applications":0,"pending_applications":null,"approved_applications":null,"missing_document_applications":null,"rejected_applications":null}
+[2025-07-27 17:29:38] [INFO] [::1] Recent applications fetched: []
+[2025-07-27 13:59:41] [INFO] [::1] Application initialized
+[2025-07-27 17:29:41] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 17:29:41] [INFO] [::1] Header included this is SESSION {"user_id":"10","name":"testuser","email":"test@gmail.com","mobile":"1231231231","featured_image":null,"role":"user"}
+[2025-07-27 13:59:48] [INFO] [::1] Application initialized
+[2025-07-27 17:29:48] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 17:29:48] [INFO] [::1] Header included this is SESSION {"user_id":"10","name":"testuser","email":"test@gmail.com","mobile":"1231231231","featured_image":null,"role":"user"}
+[2025-07-27 13:59:50] [INFO] [::1] Application initialized
+[2025-07-27 17:29:50] [INFO] [::1] base url: http://localhost/web_page/
+[2025-07-27 17:29:50] [INFO] [::1] Header included this is SESSION {"user_id":"10","name":"testuser","email":"test@gmail.com","mobile":"1231231231","featured_image":null,"role":"user"}

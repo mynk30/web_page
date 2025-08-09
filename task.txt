@@ -91,7 +91,15 @@ FRONTEND TASK
 4. profile edit me mobile ko show karana hai edit karte time.
 5. login kare to sessino me uski sari details store karani hai
 6. profile photo upload and show in screen  (absolute path, relative path)
-7. remove name, email, phone -> application table.
+
+7. remove name, email, phone -> application table. (from the database) ---done
+
+ALTER TABLE applications
+DROP COLUMN name,
+DROP COLUMN email,
+DROP COLUMN phone,
+DROP COLUMN address,
+ADD COLUMN application_number VARCHAR(255) AFTER id;
 
 
  
@@ -108,3 +116,15 @@ Screenshot 2025-07-07 181132.png
 
 Screenshot 2025-07-07 181132_20250718135157.png
 Screenshot 2025-07-07 181132_20250718135447.png
+
+000101
+000102
+000103
+000104
+000105
+000106
+000107
+000108
+000109
+000110
+

@@ -8,10 +8,32 @@ header('Content-Type: application/json');
 
 $response = ['success' => false, 'message' => ''];
 
+function generateNewApplicationNumber($conn): string {
+    $query = "SELECT application_number FROM applications ORDER BY id DESC LIMIT 1";
+    $result = $conn->query($query);
+
+    if ($result && $row = $result->fetch_assoc()) {
+        $lastNumber = (int)$row['application_number'];
+        $newNumber = $lastNumber + 1;
+    } else {
+        $newNumber = 1;
+    }
+
+    return str_pad((string)$newNumber, 6, '0', STR_PAD_LEFT);
+}
+
+
+
 try {
     if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
         throw new Exception('Invalid request method');
     }
+
+    $applicationNumber = generateNewApplicationNumber($conn);
+
+    $logger->info('Application number generated: ' . $applicationNumber);
+    $browserLogger->info('Application number generated: ' . $applicationNumber);
+    return;
 
     // Start transaction
     if (!$conn->begin_transaction()) {
