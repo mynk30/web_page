@@ -88,6 +88,10 @@ FRONTEND TASK
 1. Contact form / service form proper inserted.---done
 2. service_form insert to contact_form table.---done
 3. register form add mobile number.  column name mobile rakhna hai---done
+4. profile edit me mobile ko show karana hai edit karte time.---done
+5. login kare to sessino me uski sari details store karani hai --- done
+6. profile photo upload and show in screen  (absolute path, relative path) --- done
+7. remove name, email, phone -> application table. --- done
 4. profile edit me mobile ko show karana hai edit karte time.
 5. login kare to sessino me uski sari details store karani hai
 6. profile photo upload and show in screen  (absolute path, relative path)
@@ -102,8 +106,8 @@ DROP COLUMN address,
 ADD COLUMN application_number VARCHAR(255) AFTER id;
 
 
- 
-session ke variables:
+
+session ke variables:---done
 $SESSION['user_id']
 $SESSION['name']
 $SESSION['email']

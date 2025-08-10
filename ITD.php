@@ -28,7 +28,7 @@
                                 </div>
                                 <h4>File Your ITR</h4>
                                 <p>File your Income Tax Return online quickly and securely through our e-Filing portal.</p>
-                                <a href="#" class=" itd-btn custom-btn">File Now</a>
+                                <a href="https://eportal.incometax.gov.in/iec/foservices/#/login" class=" itd-btn custom-btn">File Now</a>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -38,7 +38,7 @@
                                 </div>
                                 <h4>Tax Calculator</h4>
                                 <p>Estimate your tax liability for the current financial year with our calculator.</p>
-                                <a href="#" class=" itd-btn custom-btn">Calculate Tax</a>
+                                <a href="https://eportal.incometax.gov.in/iec/foservices/#/TaxCalc/calculator" class=" itd-btn custom-btn">Calculate Tax</a>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -48,7 +48,7 @@
                                 </div>
                                 <h4>Track Refund</h4>
                                 <p>Check the status of your income tax refund using your PAN and assessment year.</p>
-                                <a href="#" class="itd-btn custom-btn">Track Now</a>
+                                <a href="https://eportal.incometax.gov.in/iec/foservices/#/login" class="itd-btn custom-btn">Track Now</a>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -164,52 +164,35 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-12">
-                    <h2 class="fw-bold custom-heading custom-line mb-4">Tax Slabs for FY 2023-24</h2>
+            <!-- 24-25 -->
+              <div class="row">
+                <div class="col-12" >
+                    <h2 class="fw-bold custom-heading custom-line mb-4">Tax Slabs for FY 2024-25</h2>
                     <div class="table-responsive">
                         <table class="table table-bordered tax-table">
                             <thead>
                                 <tr>
                                     <th>Income Range (₹)</th>
                                     <th>Tax Rate (Old Regime)</th>
-                                    <th>Tax Rate (New Regime)</th>
+                                    
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Up to 2,50,000</td>
+                                    <td>Up to Rs. 2.5 lakh</td>
                                     <td>Nil</td>
-                                    <td>Nil</td>
+                                    
                                 </tr>
                                 <tr>
-                                    <td>2,50,001 - 5,00,000</td>
+                                    <td>Rs. 2.5 lakh - Rs. 5 lakh</td>
                                     <td>5%</td>
-                                    <td>5%</td>
                                 </tr>
                                 <tr>
-                                    <td>5,00,001 - 7,50,000</td>
-                                    <td>20%</td>
-                                    <td>10%</td>
-                                </tr>
-                                <tr>
-                                    <td>7,50,001 - 10,00,000</td>
-                                    <td>20%</td>
-                                    <td>15%</td>
-                                </tr>
-                                <tr>
-                                    <td>10,00,001 - 12,50,000</td>
-                                    <td>30%</td>
+                                    <td>Rs. 5 lakh - Rs. 10 lakh</td>
                                     <td>20%</td>
                                 </tr>
                                 <tr>
-                                    <td>12,50,001 - 15,00,000</td>
-                                    <td>30%</td>
-                                    <td>25%</td>
-                                </tr>
-                                <tr>
-                                    <td>Above 15,00,000</td>
-                                    <td>30%</td>
+                                    <td>Rs. 10 lakh - Rs. 12 lakh</td>
                                     <td>30%</td>
                                 </tr>
                             </tbody>
@@ -217,6 +200,99 @@
                     </div>
                 </div>
             </div>
+                <!-- 24-25 new -->
+
+                 <div class="row">
+                <div class="col-12" >
+                    <h2 class="fw-bold custom-heading custom-line mb-4">Tax Slabs for FY 2024-25</h2>
+                    <div class="table-responsive">
+                        <table class="table table-bordered tax-table">
+                            <thead>
+                                <tr>
+                                    <th>Income Range (₹)</th>
+                                    <th>Tax Rate (New Regime)</th>
+                                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Up to Rs. 3 lakh</td>
+                                    <td>Nil</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>Rs. 3 lakh - Rs. 7 lakh</td>
+                                    <td>5%</td>
+                                </tr>
+                                <tr>
+                                    <td>Rs. 7 lakh - Rs. 10 lakh</td>
+                                    <td>10%</td>
+                                </tr>
+                                <tr>
+                                    <td>Rs. 10 lakh - Rs. 12 lakh</td>
+                                    <td>15%</td>
+                                </tr>
+                                <tr>
+                                    <td>Rs. 12 lakh - Rs. 15 lakh</td>
+                                    <td>20%</td>
+                                </tr>
+                                <tr>
+                                    <td>Above Rs. 15 lakh</td>
+                                    <td>30%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- 25-26 -->
+            <!-- <div class="row">
+                <div class="col-12" >
+                    <h2 class="fw-bold custom-heading custom-line mb-4">Tax Slabs for FY 2025-26</h2>
+                    <div class="table-responsive">
+                        <table class="table table-bordered tax-table">
+                            <thead>
+                                <tr>
+                                    <th>Income Range (₹)</th>
+                                    <th>Tax Rate (New Regime)</th>
+                                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Up to Rs. 4 lakh</td>
+                                    <td>Nil</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>Rs. 4 lakh - Rs. 8 lakh</td>
+                                    <td>5%</td>
+                                </tr>
+                                <tr>
+                                    <td>Rs. 8 lakh - Rs. 12 lakh</td>
+                                    <td>10%</td>
+                                </tr>
+                                <tr>
+                                    <td>Rs. 12 lakh - Rs. 16 lakh</td>
+                                    <td>15%</td>
+                                </tr>
+                                <tr>
+                                    <td>Rs. 16 lakh - Rs. 20 lakh</td>
+                                    <td>20%</td>
+                                </tr>
+                                <tr>
+                                    <td>Rs. 20 lakh - Rs. 24 lakh</td>
+                                    <td>25%</td>
+                                </tr>
+                                <tr>
+                                    <td>Above Rs. 24 lakh</td>
+                                    <td>30%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div> -->
         </div>
     </main>
 

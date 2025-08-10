@@ -10,7 +10,6 @@ $current_page = basename($_SERVER['PHP_SELF']);
 ?>
 
 <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 250px; min-height: 100vh;">
-    <span class="fs-4 fw-bold mb-3">Free Plan</span>
     <p class="fw-bold">Welcome, <?php echo htmlspecialchars($_SESSION['name'] ?? 'User'); ?></p>
     <ul class="nav nav-pills flex-column mb-auto">
         <li class="nav-item">

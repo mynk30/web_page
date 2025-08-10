@@ -73,7 +73,7 @@ $browserLogger->log("Recent applications fetched: " . json_encode($recentApplica
         </div>
         
         <!-- Main content -->
-        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
             <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                 <h1 class="h2">Dashboard</h1>
                 <div class="btn-toolbar mb-2 mb-md-0">
@@ -86,7 +86,7 @@ $browserLogger->log("Recent applications fetched: " . json_encode($recentApplica
                 </div>
             </div>
             <div class="mb-4">
-                <p class="text-muted">Welcome back, <?php echo htmlspecialchars($_SESSION['user_name'] ?? 'User'); ?>!</p>
+                <p class="text-muted">Welcome back, <?php echo htmlspecialchars($_SESSION['name'] ?? 'User'); ?>!</p>
             </div>
    
 
@@ -226,13 +226,13 @@ $browserLogger->log("Recent applications fetched: " . json_encode($recentApplica
                     </div>
 
                     <div class="mb-3">
-                        <label class="form-label">Email Address</label>
+                        <label class="form-label">Email Address</label> 
                         <input disabled value="<?php echo htmlspecialchars($_SESSION['email']); ?>" type="email" name="email" class="form-control" required>
                     </div>
                 
                     <div class="mb-3">
                         <label class="form-label">Phone Number</label>
-                        <input type="text" name="phone" class="form-control" required>
+                        <input disabled  value="<?php echo htmlspecialchars($_SESSION['mobile']); ?>" type="text" name="phone" class="form-control" required>
                     </div>
 
                     <div class="mb-3">
@@ -249,7 +249,7 @@ $browserLogger->log("Recent applications fetched: " . json_encode($recentApplica
 
                     <div class="mb-3">
                         <label class="form-label">Upload Documents (PDF, JPG, PNG)</label>
-                        <input type="file" name="document[]" class="form-control" multiple required>
+                        <input type="file" name="document[]" class="form-control" multiple >
                     </div>
                 </div>
                 <div class="modal-footer">

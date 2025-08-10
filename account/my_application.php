@@ -165,7 +165,7 @@ try {
                                 <table class="table table-hover mb-0">
                                     <thead class="table-light">
                                         <tr>
-                                            <th>Application #</th>
+                                            <th>Application ID</th>
                                             <th>Customer Name</th>
                                             <th>Service Type</th>
                                             <th>Submitted On</th>
@@ -186,8 +186,8 @@ try {
                                         ?>
                                             <tr>
                                                 <td>
-                                                    <?php if (!empty($app['id'])): ?>
-                                                        #<?php echo str_pad($app['id'], 6, '0', STR_PAD_LEFT); ?>
+                                                    <?php if (!empty($app['application_number'])): ?>
+                                                        <?php echo $app['application_number']; ?>
                                                     <?php else: ?>
                                                         <span class="text-muted">N/A</span>
                                                     <?php endif; ?>
@@ -283,7 +283,7 @@ try {
                 
                     <div class="mb-3">
                         <label class="form-label">Phone Number</label>
-                        <input type="text" name="phone" class="form-control" required>
+                        <input disabled  value="<?php echo htmlspecialchars($_SESSION['mobile']); ?>" type="text" name="phone" class="form-control" required>
                     </div>
 
                     <div class="mb-3">
