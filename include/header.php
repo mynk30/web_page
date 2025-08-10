@@ -1,5 +1,13 @@
 <?php
 session_start();
+// IF THERE IS SESSION['user'] present then set the $_SESSION['user_id'] and $_SESSION['name'] AND $_SESSION['featured_image'] AND $_SESSION['email'] AND SESSION['phone'] FROM THE SESSION['user'] else set the $_SESSION['user_id'] and $_SESSION['name'] AND $_SESSION['featured_image'] AND $_SESSION['email'] AND SESSION['phone'] to null
+if (isset($_SESSION['user'])) {
+    $_SESSION['user_id'] = $_SESSION['user']['user_id'];
+    $_SESSION['name'] = $_SESSION['user']['name'];
+    $_SESSION['featured_image'] = $_SESSION['user']['featured_image'];
+    $_SESSION['email'] = $_SESSION['user']['email'];
+    $_SESSION['phone'] = $_SESSION['user']['phone'];
+}
 global $baseURL;
 $baseURL = "http://" . $_SERVER['HTTP_HOST'] . "/web_page/";
 
@@ -24,8 +32,8 @@ if(isset($_SESSION["user_id"]) && isset($_SESSION["featured_image"])){
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="<?php echo $baseURL; ?>assests/css/bootstrap.min.css" rel="stylesheet" />
-<link rel="stylesheet" href="<?php echo $baseURL; ?>assests/fontawesome-free-6.7.2-web/css/all.min.css"/>
-<link rel="stylesheet" href="<?php echo $baseURL; ?>assests/css/style.css" />
+    <link rel="stylesheet" href="<?php echo $baseURL; ?>assests/fontawesome-free-6.7.2-web/css/all.min.css"/>
+    <link rel="stylesheet" href="<?php echo $baseURL; ?>assests/css/style.css" />
 
     <title>PRAKASH JANGID & ASSOCIATES</title>
   </head>
@@ -103,36 +111,3 @@ if(isset($_SESSION["user_id"]) && isset($_SESSION["featured_image"])){
         </div>
     </nav>
 
-<!-- Add this CSS for better styling -->
-<style>
-/* .dropdown-menu {
-    min-width: 200px;
-}
-
-.dropdown-item {
-    padding: 0.5rem 1rem;
-    display: flex;
-    align-items: center;
-}
-
-.dropdown-item:hover {
-    background-color: #f8f9fa;
-}
-
-.dropdown-item.text-danger:hover {
-    background-color: #f8d7da;
-}
-
-.navbar-nav .dropdown-toggle::after {
-    display: none; /* Hide the default bootstrap dropdown arrow */
-
-
-/* Custom dropdown arrow for user profile */
-#userProfileDropdown::after {
-    content: "\f107"; /* FontAwesome chevron down */
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    margin-left: 0.5rem;
-    border: none;
-} */
-</style>
