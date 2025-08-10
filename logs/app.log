@@ -512,3 +512,293 @@
 [2025-08-05 01:30:20] [INFO] [::1] Application details fetched: 
 [2025-08-04 22:00:28] [INFO] [::1] Application initialized
 [2025-08-05 01:30:28] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-04 22:07:17] [INFO] [::1] Application initialized
+[2025-08-05 01:37:17] [INFO] [::1] Login page accessed
+[2025-08-04 22:07:25] [INFO] [::1] Application initialized
+[2025-08-05 01:37:25] [INFO] [::1] Login register page accessed
+[2025-08-05 01:37:25] [INFO] [::1] email "abhishek@example.com"
+[2025-08-05 01:37:25] [INFO] [::1] password "12345"
+[2025-08-05 01:37:25] [INFO] [::1] Executed query: SELECT * FROM users WHERE email = 'abhishek@example.com'
+[2025-08-05 01:37:25] [INFO] [::1] User Row: {"id":"48","name":"abhishek yadav","email":"abhishek@example.com","mobile":"2345678556","password":"$2y$10$YCOsDEaaa1tWC9Fve4t3yu7FOFdEc4GDUJAIC33wWrah.XEoFJGrO","role":"user","status":"active","featured_image":"uploads\/profiles\/68910d909c8fe.png","reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-29 11:14:10","updated_at":"2025-08-05 01:14:16","reset_otp":null,"reset_otp_expiry":null}
+[2025-08-05 01:37:25] [INFO] [::1] password verify success
+[2025-08-05 01:37:25] [INFO] [::1] This is session after login: {"user_id":"48","name":"abhishek yadav","email":"abhishek@example.com","mobile":"2345678556","featured_image":"uploads\/profiles\/68910d909c8fe.png","role":"user"}
+[2025-08-04 22:07:25] [INFO] [::1] Application initialized
+[2025-08-05 01:37:25] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-04 22:07:29] [INFO] [::1] Application initialized
+[2025-08-05 01:37:29] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-05 01:37:29] [INFO] [::1] Dashboard accessed
+[2025-08-05 01:37:29] [INFO] [::1] User ID: 48
+[2025-08-05 01:37:29] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-05 01:37:29] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-04 22:07:31] [INFO] [::1] Application initialized
+[2025-08-05 01:37:31] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-04 22:07:33] [INFO] [::1] Application initialized
+[2025-08-05 01:37:33] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-05 01:37:33] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-05 01:37:33] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-04 22:07:36] [INFO] [::1] Application initialized
+[2025-08-05 01:37:36] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-05 01:37:36] [INFO] [::1] Dashboard accessed
+[2025-08-05 01:37:36] [INFO] [::1] User ID: 48
+[2025-08-05 01:37:36] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-05 01:37:36] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-05 09:11:52] [INFO] [::1] Application initialized
+[2025-08-05 12:41:52] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-05 09:11:54] [INFO] [::1] Application initialized
+[2025-08-05 12:41:54] [INFO] [::1] Login page accessed
+[2025-08-05 09:12:03] [INFO] [::1] Application initialized
+[2025-08-05 12:42:03] [INFO] [::1] Login register page accessed
+[2025-08-05 12:42:03] [INFO] [::1] email "abhishek@example.com"
+[2025-08-05 12:42:03] [INFO] [::1] password "12345"
+[2025-08-05 12:42:03] [INFO] [::1] Executed query: SELECT * FROM users WHERE email = 'abhishek@example.com'
+[2025-08-05 12:42:03] [INFO] [::1] User Row: {"id":"48","name":"abhishek yadav","email":"abhishek@example.com","mobile":"2345678556","password":"$2y$10$YCOsDEaaa1tWC9Fve4t3yu7FOFdEc4GDUJAIC33wWrah.XEoFJGrO","role":"user","status":"active","featured_image":"uploads\/profiles\/68910d909c8fe.png","reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-29 11:14:10","updated_at":"2025-08-05 01:14:16","reset_otp":null,"reset_otp_expiry":null}
+[2025-08-05 12:42:03] [INFO] [::1] password verify success
+[2025-08-05 12:42:03] [INFO] [::1] This is session after login: {"user_id":"48","name":"abhishek yadav","email":"abhishek@example.com","mobile":"2345678556","featured_image":"uploads\/profiles\/68910d909c8fe.png","role":"user"}
+[2025-08-05 09:12:03] [INFO] [::1] Application initialized
+[2025-08-05 12:42:03] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-05 09:13:52] [INFO] [::1] Application initialized
+[2025-08-05 12:43:52] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-05 12:43:52] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-05 12:43:52] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-05 09:14:34] [INFO] [::1] Application initialized
+[2025-08-05 12:44:34] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-05 09:14:36] [INFO] [::1] Application initialized
+[2025-08-05 12:44:36] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-05 12:44:36] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-05 12:44:36] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-05 09:14:38] [INFO] [::1] Application initialized
+[2025-08-05 12:44:38] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-05 12:44:38] [INFO] [::1] Dashboard accessed
+[2025-08-05 12:44:38] [INFO] [::1] User ID: 48
+[2025-08-05 12:44:38] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-05 12:44:38] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-05 09:15:33] [INFO] [::1] Application initialized
+[2025-08-05 12:45:33] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-05 12:45:33] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-05 12:45:33] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-05 09:15:35] [INFO] [::1] Application initialized
+[2025-08-05 12:45:35] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-05 09:15:41] [INFO] [::1] Application initialized
+[2025-08-05 12:45:41] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-05 12:45:41] [INFO] [::1] Dashboard accessed
+[2025-08-05 12:45:41] [INFO] [::1] User ID: 
+[2025-08-05 12:45:41] [INFO] [::1] Application statistics fetched: {"total_applications":0,"pending_applications":null,"approved_applications":null,"missing_document_applications":null,"rejected_applications":null}
+[2025-08-05 12:45:41] [INFO] [::1] Recent applications fetched: []
+[2025-08-05 09:15:44] [INFO] [::1] Application initialized
+[2025-08-05 12:45:44] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-05 12:45:44] [INFO] [::1] Dashboard accessed
+[2025-08-05 12:45:44] [INFO] [::1] User ID: 
+[2025-08-05 12:45:44] [INFO] [::1] Application statistics fetched: {"total_applications":0,"pending_applications":null,"approved_applications":null,"missing_document_applications":null,"rejected_applications":null}
+[2025-08-05 12:45:44] [INFO] [::1] Recent applications fetched: []
+[2025-08-05 09:16:01] [INFO] [::1] Application initialized
+[2025-08-05 12:46:01] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-05 09:31:57] [INFO] [::1] Application initialized
+[2025-08-05 13:01:57] [INFO] [::1] Login page accessed
+[2025-08-05 09:32:04] [INFO] [::1] Application initialized
+[2025-08-05 13:02:04] [INFO] [::1] Login register page accessed
+[2025-08-05 13:02:04] [INFO] [::1] email "anjalikushwaha@gmail.com"
+[2025-08-05 13:02:04] [INFO] [::1] password "123"
+[2025-08-05 13:02:04] [INFO] [::1] Executed query: SELECT * FROM users WHERE email = 'anjalikushwaha@gmail.com'
+[2025-08-05 13:02:04] [INFO] [::1] No user found with email: anjalikushwaha@gmail.com
+[2025-08-05 09:32:04] [INFO] [::1] Application initialized
+[2025-08-05 13:02:04] [INFO] [::1] Login page accessed
+[2025-08-05 09:32:11] [INFO] [::1] Application initialized
+[2025-08-05 13:02:11] [INFO] [::1] Login register page accessed
+[2025-08-05 13:02:11] [INFO] [::1] email "abhishek@example.com"
+[2025-08-05 13:02:11] [INFO] [::1] password "12345"
+[2025-08-05 13:02:11] [INFO] [::1] Executed query: SELECT * FROM users WHERE email = 'abhishek@example.com'
+[2025-08-05 13:02:11] [INFO] [::1] User Row: {"id":"48","name":"abhishek yadav","email":"abhishek@example.com","mobile":"2345678556","password":"$2y$10$YCOsDEaaa1tWC9Fve4t3yu7FOFdEc4GDUJAIC33wWrah.XEoFJGrO","role":"user","status":"active","featured_image":"uploads\/profiles\/68910d909c8fe.png","reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-29 11:14:10","updated_at":"2025-08-05 01:14:16","reset_otp":null,"reset_otp_expiry":null}
+[2025-08-05 13:02:11] [INFO] [::1] password verify success
+[2025-08-05 13:02:11] [INFO] [::1] This is session after login: {"user_id":"48","name":"abhishek yadav","email":"abhishek@example.com","mobile":"2345678556","featured_image":"uploads\/profiles\/68910d909c8fe.png","role":"user"}
+[2025-08-05 09:32:11] [INFO] [::1] Application initialized
+[2025-08-05 13:02:11] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-05 09:32:16] [INFO] [::1] Application initialized
+[2025-08-05 13:02:16] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-05 13:02:16] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-05 13:02:16] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-05 09:32:24] [INFO] [::1] Application initialized
+[2025-08-05 13:02:24] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-05 13:02:24] [INFO] [::1] Dashboard accessed
+[2025-08-05 13:02:24] [INFO] [::1] User ID: 48
+[2025-08-05 13:02:24] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-05 13:02:24] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-05 09:33:48] [INFO] [::1] Application initialized
+[2025-08-05 13:03:48] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-05 13:03:48] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-05 13:03:48] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-05 09:33:50] [INFO] [::1] Application initialized
+[2025-08-05 13:03:50] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-05 09:34:01] [INFO] [::1] Application initialized
+[2025-08-05 13:04:01] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-05 13:04:01] [INFO] [::1] Dashboard accessed
+[2025-08-05 13:04:01] [INFO] [::1] User ID: 2
+[2025-08-05 13:04:01] [INFO] [::1] Application statistics fetched: {"total_applications":0,"pending_applications":null,"approved_applications":null,"missing_document_applications":null,"rejected_applications":null}
+[2025-08-05 13:04:01] [INFO] [::1] Recent applications fetched: []
+[2025-08-05 09:34:02] [INFO] [::1] Application initialized
+[2025-08-05 13:04:02] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-05 09:34:05] [INFO] [::1] Application initialized
+[2025-08-05 13:04:05] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-05 13:04:05] [INFO] [::1] Dashboard accessed
+[2025-08-05 13:04:05] [INFO] [::1] User ID: 2
+[2025-08-05 13:04:05] [INFO] [::1] Application statistics fetched: {"total_applications":0,"pending_applications":null,"approved_applications":null,"missing_document_applications":null,"rejected_applications":null}
+[2025-08-05 13:04:05] [INFO] [::1] Recent applications fetched: []
+[2025-08-05 20:05:50] [INFO] [::1] Application initialized
+[2025-08-05 23:35:50] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-05 23:35:50] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-05 23:35:50] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/user-avatar.png
+[2025-08-05 20:10:50] [INFO] [::1] Application initialized
+[2025-08-05 23:40:50] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-05 23:40:50] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-05 23:40:50] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/user-avatar.png
+[2025-08-05 20:10:52] [INFO] [::1] Application initialized
+[2025-08-05 23:40:52] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-05 20:10:54] [INFO] [::1] Application initialized
+[2025-08-05 23:40:54] [INFO] [::1] Login page accessed
+[2025-08-05 20:11:00] [INFO] [::1] Application initialized
+[2025-08-05 23:41:00] [INFO] [::1] Login register page accessed
+[2025-08-05 23:41:00] [INFO] [::1] email "abhishek@example.com"
+[2025-08-05 23:41:00] [INFO] [::1] password "12345"
+[2025-08-05 23:41:00] [INFO] [::1] Executed query: SELECT * FROM users WHERE email = 'abhishek@example.com'
+[2025-08-05 23:41:00] [INFO] [::1] User Row: {"id":"48","name":"abhishek yadav","email":"abhishek@example.com","mobile":"2345678556","password":"$2y$10$YCOsDEaaa1tWC9Fve4t3yu7FOFdEc4GDUJAIC33wWrah.XEoFJGrO","role":"user","status":"active","featured_image":"uploads\/profiles\/68910d909c8fe.png","reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-29 11:14:10","updated_at":"2025-08-05 01:14:16","reset_otp":null,"reset_otp_expiry":null}
+[2025-08-05 23:41:00] [INFO] [::1] password verify success
+[2025-08-05 23:41:00] [INFO] [::1] This is session after login: {"user_id":"48","name":"abhishek yadav","email":"abhishek@example.com","mobile":"2345678556","featured_image":"uploads\/profiles\/68910d909c8fe.png","role":"user"}
+[2025-08-05 20:11:00] [INFO] [::1] Application initialized
+[2025-08-05 23:41:00] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-05 20:11:04] [INFO] [::1] Application initialized
+[2025-08-05 23:41:04] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-05 23:41:04] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-05 23:41:04] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-05 20:11:12] [INFO] [::1] Application initialized
+[2025-08-05 23:41:12] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-05 23:41:12] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-05 23:41:12] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-05 20:11:14] [INFO] [::1] Application initialized
+[2025-08-05 23:41:14] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-05 23:41:14] [INFO] [::1] Dashboard accessed
+[2025-08-05 23:41:14] [INFO] [::1] User ID: 48
+[2025-08-05 23:41:14] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-05 23:41:14] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-05 20:11:15] [INFO] [::1] Application initialized
+[2025-08-05 23:41:15] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-05 20:11:16] [INFO] [::1] Application initialized
+[2025-08-05 23:41:16] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-05 23:41:16] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-05 23:41:16] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-05 20:11:17] [INFO] [::1] Application initialized
+[2025-08-05 23:41:17] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-05 23:41:17] [INFO] [::1] Dashboard accessed
+[2025-08-05 23:41:17] [INFO] [::1] User ID: 48
+[2025-08-05 23:41:17] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-05 23:41:17] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-05 20:11:19] [INFO] [::1] Application initialized
+[2025-08-05 23:41:19] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-05 20:11:21] [INFO] [::1] Application initialized
+[2025-08-05 23:41:21] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-05 23:41:21] [INFO] [::1] Dashboard accessed
+[2025-08-05 23:41:21] [INFO] [::1] User ID: 48
+[2025-08-05 23:41:21] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-05 23:41:21] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-05 20:17:06] [INFO] [::1] Application initialized
+[2025-08-05 23:47:06] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-05 23:47:06] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-05 23:47:06] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/user-avatar.png
+[2025-08-05 20:20:46] [INFO] [::1] Application initialized
+[2025-08-05 23:50:46] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-05 23:50:46] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-05 23:50:46] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/user-avatar.png
+[2025-08-05 20:20:47] [INFO] [::1] Application initialized
+[2025-08-05 23:50:47] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-05 20:20:51] [INFO] [::1] Application initialized
+[2025-08-05 23:50:51] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-05 20:41:00] [INFO] [::1] Application initialized
+[2025-08-06 00:11:01] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-05 20:41:07] [INFO] [::1] Application initialized
+[2025-08-06 00:11:07] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-06 00:11:07] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-06 00:11:07] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/user-avatar.png
+[2025-08-07 08:32:18] [INFO] [::1] Application initialized
+[2025-08-07 12:02:18] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-07 12:02:18] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-07 12:02:18] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/user-avatar.png
+[2025-08-07 08:32:21] [INFO] [::1] Application initialized
+[2025-08-07 12:02:21] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-08 09:03:15] [INFO] [::1] Application initialized
+[2025-08-08 12:33:15] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-08 13:32:21] [INFO] [::1] Application initialized
+[2025-08-08 17:02:21] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-08 13:32:26] [INFO] [::1] Application initialized
+[2025-08-08 17:02:26] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-08 18:58:01] [INFO] [::1] Application initialized
+[2025-08-08 22:28:01] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-08 18:58:03] [INFO] [::1] Application initialized
+[2025-08-08 22:28:03] [INFO] [::1] Login page accessed
+[2025-08-08 18:58:11] [INFO] [::1] Application initialized
+[2025-08-08 22:28:11] [INFO] [::1] Login register page accessed
+[2025-08-08 22:28:11] [INFO] [::1] email "abhishek@example.com"
+[2025-08-08 22:28:11] [INFO] [::1] password "12345"
+[2025-08-08 22:28:11] [INFO] [::1] Executed query: SELECT * FROM users WHERE email = 'abhishek@example.com'
+[2025-08-08 22:28:11] [INFO] [::1] User Row: {"id":"48","name":"abhishek yadav","email":"abhishek@example.com","mobile":"2345678556","password":"$2y$10$YCOsDEaaa1tWC9Fve4t3yu7FOFdEc4GDUJAIC33wWrah.XEoFJGrO","role":"user","status":"active","featured_image":"uploads\/profiles\/68910d909c8fe.png","reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-29 11:14:10","updated_at":"2025-08-05 01:14:16","reset_otp":null,"reset_otp_expiry":null}
+[2025-08-08 22:28:12] [INFO] [::1] password verify success
+[2025-08-08 22:28:12] [INFO] [::1] This is session after login: {"user_id":"48","name":"abhishek yadav","email":"abhishek@example.com","mobile":"2345678556","featured_image":"uploads\/profiles\/68910d909c8fe.png","role":"user"}
+[2025-08-08 18:58:12] [INFO] [::1] Application initialized
+[2025-08-08 22:28:12] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-08 18:58:17] [INFO] [::1] Application initialized
+[2025-08-08 22:28:17] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-08 22:28:17] [INFO] [::1] Dashboard accessed
+[2025-08-08 22:28:17] [INFO] [::1] User ID: 48
+[2025-08-08 22:28:17] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-08 22:28:17] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-09 18:29:39] [INFO] [::1] Application initialized
+[2025-08-09 21:59:39] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-09 18:29:40] [INFO] [::1] Application initialized
+[2025-08-09 21:59:40] [INFO] [::1] Login page accessed
+[2025-08-09 18:29:45] [INFO] [::1] Application initialized
+[2025-08-09 21:59:45] [INFO] [::1] Login register page accessed
+[2025-08-09 21:59:45] [INFO] [::1] email "kushwahanjali89@gmail.com"
+[2025-08-09 21:59:45] [INFO] [::1] password "123456"
+[2025-08-09 21:59:45] [INFO] [::1] Executed query: SELECT * FROM users WHERE email = 'kushwahanjali89@gmail.com'
+[2025-08-09 21:59:45] [INFO] [::1] No user found with email: kushwahanjali89@gmail.com
+[2025-08-09 18:29:45] [INFO] [::1] Application initialized
+[2025-08-09 21:59:45] [INFO] [::1] Login page accessed
+[2025-08-09 18:30:56] [INFO] [::1] Application initialized
+[2025-08-09 22:00:56] [INFO] [::1] Login register page accessed
+[2025-08-09 22:00:56] [INFO] [::1] email "priti@gmail.com"
+[2025-08-09 22:00:56] [INFO] [::1] password "123"
+[2025-08-09 22:00:56] [INFO] [::1] Executed query: SELECT * FROM users WHERE email = 'priti@gmail.com'
+[2025-08-09 22:00:56] [INFO] [::1] User Row: {"id":"45","name":"priti sharma","email":"priti@gmail.com","mobile":"2345678876","password":"$2y$10$WaOcwIxSpIASnuVodk4ReemxhJB2W08asuzDw7Csmtgp5H3qN34Z.","role":"user","status":"active","featured_image":"uploads\/profiles\/68886d41bba55.jpg","reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-29 02:17:45","updated_at":"2025-07-29 12:12:09","reset_otp":null,"reset_otp_expiry":null}
+[2025-08-09 22:00:56] [INFO] [::1] Invalid password.
+[2025-08-09 18:30:56] [INFO] [::1] Application initialized
+[2025-08-09 22:00:56] [INFO] [::1] Login page accessed
+[2025-08-09 18:48:52] [INFO] [::1] Application initialized
+[2025-08-09 22:18:52] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-09 19:01:42] [INFO] [::1] Application initialized
+[2025-08-09 22:31:42] [INFO] [::1] Login page accessed
+[2025-08-09 19:02:53] [INFO] [::1] Application initialized
+[2025-08-09 22:32:53] [INFO] [::1] Login register page accessed
+[2025-08-09 22:32:53] [INFO] [::1] email "one@gmail.com"
+[2025-08-09 22:32:53] [INFO] [::1] password "123"
+[2025-08-09 22:32:53] [INFO] [::1] Executed query: SELECT * FROM users WHERE email = 'one@gmail.com'
+[2025-08-09 22:32:53] [INFO] [::1] User Row: {"id":"41","name":"one","email":"one@gmail.com","mobile":"07770958768","password":"$2y$10$rftuPOwwuSr8PC2yM33GMex6vcGFUL7YON51BDefAuiWz9gyIl1ii","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-29 02:08:23","updated_at":"2025-07-29 02:08:23","reset_otp":null,"reset_otp_expiry":null}
+[2025-08-09 22:32:53] [INFO] [::1] Invalid password.
+[2025-08-09 19:02:53] [INFO] [::1] Application initialized
+[2025-08-09 22:32:53] [INFO] [::1] Login page accessed
+[2025-08-09 19:02:59] [INFO] [::1] Application initialized
+[2025-08-09 22:32:59] [INFO] [::1] Login register page accessed
+[2025-08-09 22:32:59] [INFO] [::1] email "one@gmail.com"
+[2025-08-09 22:32:59] [INFO] [::1] password "12345"
+[2025-08-09 22:32:59] [INFO] [::1] Executed query: SELECT * FROM users WHERE email = 'one@gmail.com'
+[2025-08-09 22:32:59] [INFO] [::1] User Row: {"id":"41","name":"one","email":"one@gmail.com","mobile":"07770958768","password":"$2y$10$rftuPOwwuSr8PC2yM33GMex6vcGFUL7YON51BDefAuiWz9gyIl1ii","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-29 02:08:23","updated_at":"2025-07-29 02:08:23","reset_otp":null,"reset_otp_expiry":null}
+[2025-08-09 22:32:59] [INFO] [::1] password verify success
+[2025-08-09 22:32:59] [INFO] [::1] This is session after login: {"user_id":"41","name":"one","email":"one@gmail.com","mobile":"07770958768","featured_image":null,"role":"user"}
+[2025-08-09 19:02:59] [INFO] [::1] Application initialized
+[2025-08-09 22:32:59] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-09 19:05:31] [INFO] [::1] Application initialized
+[2025-08-09 22:35:31] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-09 19:05:54] [INFO] [::1] Application initialized
+[2025-08-09 22:35:54] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-09 19:06:03] [INFO] [::1] Application initialized
+[2025-08-09 22:36:03] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-09 22:36:03] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-09 22:36:03] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/user-avatar.png
+[2025-08-10 07:43:44] [INFO] [::1] Application initialized
+[2025-08-10 11:13:44] [INFO] [::1] base usr is in header: http://localhost/web_page/
