@@ -261,7 +261,43 @@ function calculateTDS() {
         });
 // --------------------------login -------------------------------------
 
-function showForm(formId) {
-    document.querySelectorAll(".form-box").forEach(form => form.classList.remove("active"));
-    document.getElementById(formId).classList.add("active");
-}
+// --------------------------login -------------------------------------
+document.addEventListener('DOMContentLoaded', function() {
+    // Unique class names for login/register forms
+    const loginForm = document.querySelector(".auth-form-box#login-form");
+    const registerForm = document.querySelector(".auth-form-box#register-form");
+    
+    function showAuthForm(formId) {
+        // Hide all auth forms
+        document.querySelectorAll(".auth-form-box").forEach(form => {
+            form.classList.remove("auth-form-active");
+        });
+        
+        // Show the requested form
+        const formToShow = document.getElementById(formId);
+        if (formToShow) {
+            formToShow.classList.add("auth-form-active");
+        }
+    }
+
+    // Add click handlers for login/register links
+    document.querySelectorAll("[data-auth-form-toggle]").forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetForm = this.getAttribute('data-auth-form-toggle');
+            showAuthForm(targetForm);
+        });
+    });
+
+    // Initialize the correct form
+    if (loginForm && registerForm) {
+        // Check which form should be active initially
+        if (loginForm.classList.contains("auth-form-active") || 
+            registerForm.classList.contains("auth-form-active")) {
+            // Already initialized
+        } else {
+            // Default to showing login form
+            loginForm.classList.add("auth-form-active");
+        }
+    }
+});

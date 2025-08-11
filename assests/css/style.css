@@ -2124,3 +2124,21 @@ left: 0;
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
+
+
+/* Login */
+/* In style.css */
+
+#auth-form-container{
+  width: 50%;
+}
+
+.auth-form-container .auth-form-box {
+  width: 50%;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.auth-form-container .auth-form-box-auth-form-active {
+  display: block;
+}
