@@ -259,45 +259,101 @@ function calculateTDS() {
                 alert('User profile options would appear here');
             });
         });
-// --------------------------login -------------------------------------
+        // --------------------------login -------------------------------------
+  
+// document.addEventListener('DOMContentLoaded', function() {
+//     // Unique class names for login/register forms
+//     const loginForm = document.querySelector(".auth-form-box#login-form");
+//     const registerForm = document.querySelector(".auth-form-box#register-form");
 
-// --------------------------login -------------------------------------
-document.addEventListener('DOMContentLoaded', function() {
-    // Unique class names for login/register forms
-    const loginForm = document.querySelector(".auth-form-box#login-form");
-    const registerForm = document.querySelector(".auth-form-box#register-form");
+//     function showAuthForm(formId) {
+//         // Hide all auth forms
+//         document.querySelectorAll(".auth-form-box").forEach(form => {
+//             form.classList.remove("auth-form-active");
+//         });
+
+//         // Show the requested form
+//         const formToShow = document.getElementById(formId);
+//         if (formToShow) {
+//             formToShow.classList.add("auth-form-active");
+//         }
+//     }
+
+
+//     // Add click handlers for login/register links
+//     document.querySelectorAll("[data-auth-form-toggle]").forEach(link => {
+//         link.addEventListener('click', function(e) {
+//             e.preventDefault();
+//             const targetForm = this.getAttribute('data-auth-form-toggle');
+//             showAuthForm(targetForm);
+//         });
+//     });
+
+//     // Initialize the correct form
+//     if (loginForm && registerForm) {
+//         // Check which form should be active initially
+//         if (loginForm.classList.contains("auth-form-active") || 
+//             registerForm.classList.contains("auth-form-active")) {
+//             // Already initialized
+//         } else {
+//             // Default to showing login form
+//             loginForm.classList.add("auth-form-active");
+//         }
+//     }
+// });
+
+// -----------------change_password-------------
+
+// Toggle password visibility
+function togglePassword(fieldId) {
+    const field = document.getElementById(fieldId);
+    const icon = document.getElementById(fieldId + '_icon');
     
-    function showAuthForm(formId) {
-        // Hide all auth forms
-        document.querySelectorAll(".auth-form-box").forEach(form => {
-            form.classList.remove("auth-form-active");
-        });
-        
-        // Show the requested form
-        const formToShow = document.getElementById(formId);
-        if (formToShow) {
-            formToShow.classList.add("auth-form-active");
-        }
+    if (field.type === 'password') {
+        field.type = 'text';
+        icon.classList.remove('fa-eye');
+        icon.classList.add('fa-eye-slash');
+    } else {
+        field.type = 'password';
+        icon.classList.remove('fa-eye-slash');
+        icon.classList.add('fa-eye');
+    }
+}
+
+
+// Check if passwords match
+function checkPasswordMatch() {
+    const newPassword = document.getElementById('new_password').value;
+    const confirmPassword = document.getElementById('confirm_password').value;
+    const matchIndicator = document.getElementById('match-indicator');
+    const submitBtn = document.getElementById('submitBtn');
+    
+    if (confirmPassword === '') {
+        matchIndicator.innerHTML = '';
+        submitBtn.disabled = false;
+        return;
+    }
+    
+    if (newPassword === confirmPassword) {
+        matchIndicator.innerHTML = '<i class="fas fa-check me-1"></i>Passwords match';
+        matchIndicator.className = 'match-indicator match-success';
+        submitBtn.disabled = false;
+    } else {
+        matchIndicator.innerHTML = '<i class="fas fa-times me-1"></i>Passwords do not match';
+        matchIndicator.className = 'match-indicator match-error';
+        submitBtn.disabled = true;
+    }
+}
+
+// Form submission validation
+document.getElementById('passwordForm').addEventListener('submit', function(e) {
+    const newPassword = document.getElementById('new_password').value;
+    const confirmPassword = document.getElementById('confirm_password').value;
+    
+    if (newPassword !== confirmPassword) {
+        e.preventDefault();
+        alert('Passwords do not match!');
+        return false;
     }
 
-    // Add click handlers for login/register links
-    document.querySelectorAll("[data-auth-form-toggle]").forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetForm = this.getAttribute('data-auth-form-toggle');
-            showAuthForm(targetForm);
-        });
-    });
-
-    // Initialize the correct form
-    if (loginForm && registerForm) {
-        // Check which form should be active initially
-        if (loginForm.classList.contains("auth-form-active") || 
-            registerForm.classList.contains("auth-form-active")) {
-            // Already initialized
-        } else {
-            // Default to showing login form
-            loginForm.classList.add("auth-form-active");
-        }
-    }
 });

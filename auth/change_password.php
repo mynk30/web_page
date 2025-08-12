@@ -1,6 +1,6 @@
 <?php 
 include '../include/header.php'; 
-// Check if user is logged in
+
 if (!isset($_SESSION['user_id'])) {
     header('Location: ' . $baseURL . 'auth/login.php');
     exit();
@@ -73,38 +73,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Change Password</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <style>
-        .password-strength {
-            height: 4px;
-            margin-top: 5px;
-            border-radius: 2px;
-            transition: all 0.3s;
-        }
-        .strength-weak { background-color: #dc3545; }
-        .strength-medium { background-color: #ffc107; }
-        .strength-strong { background-color: #198754; }
-        .match-indicator {
-            font-size: 0.875rem;
-            margin-top: 5px;
-        }
-        .match-success { color: #198754; }
-        .match-error { color: #dc3545; }
-        .card .card-header {
-            background-color: var(--primary-color) !important;
-            border: none;
-            color: white;
-        }
-    </style>
-</head>
-<body>
+
 
 <div class="container-fluid">
     <div class="row">
@@ -211,90 +180,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
 </div>
 
-<!-- Minimal JavaScript for password matching and validation -->
-<script>
-// Toggle password visibility
-function togglePassword(fieldId) {
-    const field = document.getElementById(fieldId);
-    const icon = document.getElementById(fieldId + '_icon');
-    
-    if (field.type === 'password') {
-        field.type = 'text';
-        icon.classList.remove('fa-eye');
-        icon.classList.add('fa-eye-slash');
-    } else {
-        field.type = 'password';
-        icon.classList.remove('fa-eye-slash');
-        icon.classList.add('fa-eye');
-    }
-}
-
-// Check password strength
-function checkPasswordStrength() {
-//     const password = document.getElementById('new_password').value;
-//     const strengthBar = document.getElementById('strength-bar');
-    
-    // let strength = 0;
-    // if (password.length >= 8) strength++;
-    // if (/[A-Z]/.test(password)) strength++;
-    // if (/[a-z]/.test(password)) strength++;
-    // if (/[0-9]/.test(password)) strength++;
-    // if (/[^A-Za-z0-9]/.test(password)) strength++;
-    
-    // strengthBar.className = 'password-strength';
-    // if (strength <= 2) {
-    //     strengthBar.classList.add('strength-weak');
-    // } else if (strength <= 3) {
-    //     strengthBar.classList.add('strength-medium');
-    // } else {
-    //     strengthBar.classList.add('strength-strong');
-    // }
-}
-
-// Check if passwords match
-function checkPasswordMatch() {
-    const newPassword = document.getElementById('new_password').value;
-    const confirmPassword = document.getElementById('confirm_password').value;
-    const matchIndicator = document.getElementById('match-indicator');
-    const submitBtn = document.getElementById('submitBtn');
-    
-    if (confirmPassword === '') {
-        matchIndicator.innerHTML = '';
-        submitBtn.disabled = false;
-        return;
-    }
-    
-    if (newPassword === confirmPassword) {
-        matchIndicator.innerHTML = '<i class="fas fa-check me-1"></i>Passwords match';
-        matchIndicator.className = 'match-indicator match-success';
-        submitBtn.disabled = false;
-    } else {
-        matchIndicator.innerHTML = '<i class="fas fa-times me-1"></i>Passwords do not match';
-        matchIndicator.className = 'match-indicator match-error';
-        submitBtn.disabled = true;
-    }
-}
-
-// Form submission validation
-document.getElementById('passwordForm').addEventListener('submit', function(e) {
-    const newPassword = document.getElementById('new_password').value;
-    const confirmPassword = document.getElementById('confirm_password').value;
-    
-    if (newPassword !== confirmPassword) {
-        e.preventDefault();
-        alert('Passwords do not match!');
-        return false;
-    }
-    
-    // if (newPassword.length < 8) {
-    //     e.preventDefault();
-    //     alert('Password must be at least 8 characters long!');
-    //     return false;
-    // }
-});
-</script>
-
-</body>
-</html>
 
 <?php include '../include/footer.php'; ?>

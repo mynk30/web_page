@@ -48,6 +48,8 @@
       </div>
   </footer>
 
+  
+  
   <script src="<?php echo $baseURL; ?>assests/js/script.js"></script>
     <script src="<?php echo $baseURL; ?>assests/js/bootstrap.bundle.min.js"></script>
 </body>

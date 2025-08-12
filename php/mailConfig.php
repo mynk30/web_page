@@ -15,20 +15,20 @@ function sendMail(string $mailTemplate, string $subject, array $data, string $to
         $twig = new Environment($loader);
 
         // Render the email HTML with dynamic data
-        $fullTemplatePath = $mailTemplate . '.html.twig';
-        $emailBody = $twig->render($fullTemplatePath, $data);
+        $fullTemplateName = $mailTemplate . '.html.twig';
+        $emailBody = $twig->render($fullTemplateName, $data);
 
         // SMTP settings
         $mail->isSMTP();
         $mail->Host       = 'smtp.ethereal.email';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'keely.trantow@ethereal.email'; // replace with your SMTP username
-        $mail->Password   = 'WN6EDBK75ThWDHmpnN';           // replace with your SMTP password
+        $mail->Username   = 'cletus44@ethereal.email'; // replace with your SMTP username
+        $mail->Password   = 'WMEtXeAXkcQ5E7vswj';           // replace with your SMTP password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port       = 587;
 
         // Email setup
-        $mail->setFrom('john@example.com', 'Your Name');  // replace as needed
+        $mail->setFrom('anjali@gmail.com', 'Admin');  // replace as needed
         $mail->addAddress($toEmail, $toName);
 
         $mail->isHTML(true);

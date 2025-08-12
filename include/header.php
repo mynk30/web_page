@@ -95,9 +95,6 @@ if(isset($_SESSION["user_id"]) && isset($_SESSION["featured_image"])){
                             <li><a class="dropdown-item" href="<?php echo $baseURL; ?>account/my_application.php">
                                 <i class="fas fa-file-alt me-2"></i>My Applications
                             </a></li>
-                            <li><a class="dropdown-item" href="<?php echo $baseURL; ?>account/change_password.php">
-                                <i class="fas fa-key me-2"></i>Change Password
-                            </a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item text-danger" href="<?php echo $baseURL; ?>auth/logout.php">
                                 <i class="fas fa-sign-out-alt me-2"></i>Logout

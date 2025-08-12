@@ -28,11 +28,6 @@ $current_page = basename($_SERVER['PHP_SELF']);
             </a>
         </li>
         <li>
-            <a href="/web_page/account/change_password.php" class="nav-link <?php echo ($current_page === 'change_password.php') ? 'active' : 'link-dark'; ?>">
-                <i class="fas fa-key me-2"></i> Change Password
-            </a>
-        </li>
-        <li>
             <a href="/web_page/auth/logout.php" class="nav-link link-danger">
                 <i class="fas fa-sign-out-alt me-2"></i> Logout
             </a>
