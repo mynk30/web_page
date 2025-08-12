@@ -74,7 +74,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['otp']) && isset($_SES
     if ($user !== null) {
         $_SESSION['otp_verified'] = true;
         
-        $logger->info("OTP verified successfully for email================: " . $email);
+        $logger->info("OTP verified successfully for email: " . $email);
         header('Location: ' . $baseURL . 'auth/resetPassword.php?email=' . $email);
         exit;
     } else {

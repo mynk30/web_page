@@ -20,15 +20,15 @@ function sendMail(string $mailTemplate, string $subject, array $data, string $to
 
         // SMTP settings
         $mail->isSMTP();
-        $mail->Host       = 'smtp.ethereal.email';
+        $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'cletus44@ethereal.email'; // replace with your SMTP username
-        $mail->Password   = 'WMEtXeAXkcQ5E7vswj';           // replace with your SMTP password
+        $mail->Username   = 'anjalikushwah1207@gmail.com'; // replace with your SMTP username
+        $mail->Password   = 'fbkm ldiw qdbm vfsu';           // replace with your SMTP password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port       = 587;
 
         // Email setup
-        $mail->setFrom('anjali@gmail.com', 'Admin');  // replace as needed
+        $mail->setFrom('anjalikushwah1207@gmail.com', 'Admin');  // replace as needed
         $mail->addAddress($toEmail, $toName);
 
         $mail->isHTML(true);

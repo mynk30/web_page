@@ -9,7 +9,7 @@ global $logger;
 $response = ['success' => false, 'message' => ''];
 
 function generateNewApplicationNumber($conn): string {
-<<<<<<< HEAD
+// <<<<<<< HEAD
     $query = "SELECT application_number FROM applications ORDER BY id DESC LIMIT 1";
     $result = $conn->query($query);
 
@@ -25,7 +25,7 @@ function generateNewApplicationNumber($conn): string {
 
 
 
-=======
+// =======
     try {
         $query = "SELECT application_number FROM applications ORDER BY id DESC LIMIT 1";
         $result = $conn->query($query);
@@ -41,9 +41,9 @@ function generateNewApplicationNumber($conn): string {
     } catch (Exception $e) {
         return '000101'; 
     }
-}
 
->>>>>>> upstream/main
+
+// >>>>>>> upstream/main
 try {
     if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
         throw new Exception('Invalid request method');
@@ -53,7 +53,7 @@ try {
 
     $logger->info('Application number generated: ' . $applicationNumber);
     $browserLogger->info('Application number generated: ' . $applicationNumber);
-    return;
+    
 
     // Start transaction
     if (!$conn->begin_transaction()) {
@@ -77,7 +77,7 @@ try {
    
 
     $logger->info("User ID: " . $userId);
-    $logger->info("I AM HERE...................");
+    // $logger->info("I AM HERE...................");
     if (!$userId) {
         throw new Exception('User not logged in');
     }
@@ -87,11 +87,15 @@ try {
 
     $logger->info("AFTER....");
     // Insert application
-    $stmt = $conn->prepare("INSERT INTO applications (application_number, user_id, service_type, created_at, updated_at) VALUES (?, ?, ?, NOW(), NOW())");
 
-    if (!$stmt || !$stmt->bind_param("sis", $applicationNumber, $userId, $serviceType) || !$stmt->execute()) {
+    $stmt = $conn->prepare("INSERT INTO applications (application_number, user_id, service_type, payment_status, created_at, updated_at) VALUES (?, ?, ?, ?, NOW(), NOW())");
+
+    $paymentStatus = 'pending'; // Jab nayi application submit ho to payment pending rahe
+    
+    if (!$stmt || !$stmt->bind_param("siss", $applicationNumber, $userId, $serviceType, $paymentStatus) || !$stmt->execute()) {
         throw new Exception('Failed to insert application');
     }
+    
 
     $applicationId = $conn->insert_id;
 
@@ -140,15 +144,16 @@ try {
     exit();
 } catch (Exception $e) {
     $conn->rollback();
-    $response = [
-        'success' => false,
-        'message' => 'Error: ' . $e->getMessage()
-    ];
-    header('Location: ' . $response['redirect']);
     $logger->info("This is error : " . $e->getMessage());
 
+    $response = [
+        'success' => false,
+        'message' => 'Error: ' . $e->getMessage(),
+        'redirect' => 'my_application.php' 
+    ];
+
+    header('Location: ' . $response['redirect']);
     exit();
 }
-
 echo json_encode($response);
 ?>

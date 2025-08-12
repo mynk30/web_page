@@ -1,104 +1,19 @@
-[2025-08-11 20:40:17] [INFO] [::1] Application initialized
-[2025-08-12 00:10:17] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-08-12 00:10:17] [INFO] [::1] Password reset request initiated for email: one@gmail.com
-[2025-08-12 00:10:17] [INFO] [::1] Password reset successfully for email: PASSWORD RESET HO GAYA HAIone@gmail.com
-[2025-08-12 00:10:17] [INFO] [::1] yaah pr redirect kar dooo
-[2025-08-11 20:41:20] [INFO] [::1] Application initialized
-[2025-08-12 00:11:20] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-08-12 00:11:20] [INFO] [::1] Login page accessed
-[2025-08-11 20:41:29] [INFO] [::1] Application initialized
-[2025-08-12 00:11:29] [INFO] [::1] Login register page accessed
-[2025-08-12 00:11:29] [INFO] [::1] email "one@gmail.com"
-[2025-08-12 00:11:29] [INFO] [::1] password "123456"
-[2025-08-12 00:11:29] [INFO] [::1] Executed query: SELECT * FROM users WHERE email = 'one@gmail.com'
-[2025-08-12 00:11:29] [INFO] [::1] User Row: {"id":"41","name":"one","email":"one@gmail.com","mobile":"07770958768","password":"$2y$10$k1biiP5wsHb0ZMbfAlKmpeeQMdNZPpJqcrfJ7nyVLat2XiPWKaAuG","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-29 02:08:23","updated_at":"2025-08-12 00:10:17","otp":null,"otp_expiry":null}
-[2025-08-12 00:11:29] [INFO] [::1] password verify success
-[2025-08-12 00:11:29] [INFO] [::1] This is session after login: {"success":"Password has been reset successfully. You can now login with your new password.","user_id":"41","name":"one","email":"one@gmail.com","mobile":"07770958768","featured_image":null,"role":"user"}
-[2025-08-11 20:41:29] [INFO] [::1] Application initialized
-[2025-08-12 00:11:29] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-08-11 20:42:29] [INFO] [::1] Application initialized
-[2025-08-12 00:12:29] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-08-11 20:42:34] [INFO] [::1] Application initialized
-[2025-08-12 00:12:34] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-08-12 00:12:34] [INFO] [::1] Login page accessed
-[2025-08-11 20:42:38] [INFO] [::1] Application initialized
-[2025-08-12 00:12:38] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-08-11 20:42:59] [INFO] [::1] Application initialized
-[2025-08-12 00:12:59] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-08-12 00:12:59] [INFO] [::1] User found: with email one@gmail.com and {"id":41,"name":"one","email":"one@gmail.com","mobile":"07770958768","password":"$2y$10$k1biiP5wsHb0ZMbfAlKmpeeQMdNZPpJqcrfJ7nyVLat2XiPWKaAuG","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-29 02:08:23","updated_at":"2025-08-12 00:10:17","otp":null,"otp_expiry":null}
-[2025-08-12 00:12:59] [INFO] [::1] OTP generated for email: one@gmail.com and OTP is: 2022
-[2025-08-12 00:12:59] [INFO] [::1] OTP expiry for email: one@gmail.com and OTP expiry is: 2025-08-12 00:22:59
-[2025-08-11 20:43:04] [INFO] [::1] Application initialized
-[2025-08-12 00:13:04] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-08-11 20:43:25] [INFO] [::1] Application initialized
-[2025-08-12 00:13:25] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-08-12 00:13:25] [INFO] [::1] OTP verified successfully for email================: one@gmail.com
-[2025-08-11 20:43:25] [INFO] [::1] Application initialized
-[2025-08-12 00:13:25] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-08-11 20:43:44] [INFO] [::1] Application initialized
-[2025-08-12 00:13:44] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-08-12 00:13:44] [INFO] [::1] Password reset request initiated for email: one@gmail.com
-[2025-08-12 00:13:44] [INFO] [::1] Password reset successfully for email: PASSWORD RESET HO GAYA HAIone@gmail.com
-[2025-08-12 00:13:44] [INFO] [::1] yaah pr redirect kar dooo
-[2025-08-11 20:43:44] [INFO] [::1] Application initialized
-[2025-08-12 00:13:44] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-08-12 00:13:44] [INFO] [::1] Login page accessed
-[2025-08-11 20:43:55] [INFO] [::1] Application initialized
-[2025-08-12 00:13:55] [INFO] [::1] Login register page accessed
-[2025-08-12 00:13:55] [INFO] [::1] email "one@gmail.com"
-[2025-08-12 00:13:55] [INFO] [::1] password "111111"
-[2025-08-12 00:13:55] [INFO] [::1] Executed query: SELECT * FROM users WHERE email = 'one@gmail.com'
-[2025-08-12 00:13:55] [INFO] [::1] User Row: {"id":"41","name":"one","email":"one@gmail.com","mobile":"07770958768","password":"$2y$10$admNAXhmv8OXFiDpCPP0..0oXg7v3otVBWWK\/z5GcXYnqASQ5Mu\/m","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-29 02:08:23","updated_at":"2025-08-12 00:13:44","otp":null,"otp_expiry":null}
-[2025-08-12 00:13:55] [INFO] [::1] password verify success
-[2025-08-12 00:13:55] [INFO] [::1] This is session after login: {"success":"Password has been reset successfully. You can now login with your new password.","user_id":"41","name":"one","email":"one@gmail.com","mobile":"07770958768","featured_image":null,"role":"user"}
-[2025-08-11 20:43:55] [INFO] [::1] Application initialized
-[2025-08-12 00:13:55] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-08-12 07:27:03] [INFO] [::1] Application initialized
-[2025-08-12 10:57:03] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-08-12 07:27:06] [INFO] [::1] Application initialized
-[2025-08-12 10:57:06] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-08-12 10:57:06] [INFO] [::1] Login page accessed
-[2025-08-12 07:27:09] [INFO] [::1] Application initialized
-[2025-08-12 10:57:09] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-08-12 07:27:27] [INFO] [::1] Application initialized
-[2025-08-12 10:57:27] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-08-12 10:57:27] [INFO] [::1] User found: with email ashis@gmaail.com and {"id":44,"name":"ashis","email":"ashis@gmaail.com","mobile":"2345677899","password":"$2y$10$3JPeM0LXSSNvrSUC7783Suj0uiHG1Ydpksj48tT4cqVsoJFvOyv2i","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-29 02:16:45","updated_at":"2025-07-29 02:16:45","otp":null,"otp_expiry":null}
-[2025-08-12 10:57:27] [INFO] [::1] OTP generated for email: ashis@gmaail.com and OTP is: 5069
-[2025-08-12 10:57:27] [INFO] [::1] OTP expiry for email: ashis@gmaail.com and OTP expiry is: 2025-08-12 11:07:27
-[2025-08-12 07:27:30] [INFO] [::1] Application initialized
-[2025-08-12 10:57:30] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-08-12 07:27:44] [INFO] [::1] Application initialized
-[2025-08-12 10:57:44] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-08-12 10:57:44] [INFO] [::1] OTP verified successfully for email================: ashis@gmaail.com
-[2025-08-12 07:27:44] [INFO] [::1] Application initialized
-[2025-08-12 10:57:44] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-08-12 07:27:56] [INFO] [::1] Application initialized
-[2025-08-12 10:57:56] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-08-12 10:57:56] [INFO] [::1] Password reset request initiated for email: ashis@gmaail.com
-[2025-08-12 10:57:56] [INFO] [::1] Password reset successfully for email: PASSWORD RESET HO GAYA HAIashis@gmaail.com
-[2025-08-12 10:57:56] [INFO] [::1] yaah pr redirect kar dooo
-[2025-08-12 07:27:56] [INFO] [::1] Application initialized
-[2025-08-12 10:57:56] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-08-12 10:57:56] [INFO] [::1] Login page accessed
-[2025-08-12 07:28:09] [INFO] [::1] Application initialized
-[2025-08-12 10:58:09] [INFO] [::1] Login register page accessed
-[2025-08-12 10:58:09] [INFO] [::1] email "ashis@gmaail.com"
-[2025-08-12 10:58:09] [INFO] [::1] password "123456"
-[2025-08-12 10:58:09] [INFO] [::1] Executed query: SELECT * FROM users WHERE email = 'ashis@gmaail.com'
-[2025-08-12 10:58:09] [INFO] [::1] User Row: {"id":"44","name":"ashis","email":"ashis@gmaail.com","mobile":"2345677899","password":"$2y$10$xahwDbHDG17edQuJTlP2CedoZJYt2pFq53KC\/AJ4\/YdU3m9S575Je","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-29 02:16:45","updated_at":"2025-08-12 10:57:56","otp":null,"otp_expiry":null}
-[2025-08-12 10:58:09] [INFO] [::1] password verify success
-[2025-08-12 10:58:09] [INFO] [::1] This is session after login: {"success":"Password has been reset successfully. You can now login with your new password.","user_id":"44","name":"ashis","email":"ashis@gmaail.com","mobile":"2345677899","featured_image":null,"role":"user"}
-[2025-08-12 07:28:09] [INFO] [::1] Application initialized
-[2025-08-12 10:58:09] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-08-12 07:28:13] [INFO] [::1] Application initialized
-[2025-08-12 10:58:13] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-08-12 10:58:13] [INFO] [::1] Dashboard accessed
-[2025-08-12 10:58:13] [INFO] [::1] User ID: 44
-[2025-08-12 10:58:13] [INFO] [::1] Application statistics fetched: {"total_applications":0,"pending_applications":null,"approved_applications":null,"missing_document_applications":null,"rejected_applications":null}
-[2025-08-12 10:58:13] [INFO] [::1] Recent applications fetched: []
-[2025-08-12 07:28:16] [INFO] [::1] Application initialized
-[2025-08-12 10:58:16] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-08-12 10:58:16] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
-[2025-08-12 10:58:16] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/user-avatar.png
-[2025-08-12 07:28:17] [INFO] [::1] Application initialized
-[2025-08-12 10:58:17] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-12 21:45:52] [INFO] [::1] Application initialized
+[2025-08-13 01:15:52] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-13 01:15:52] [INFO] [::1] Dashboard accessed
+[2025-08-13 01:15:52] [INFO] [::1] User ID: 56
+[2025-08-13 01:15:52] [INFO] [::1] Application statistics fetched: {"total_applications":0,"pending_applications":null,"approved_applications":null,"missing_document_applications":null,"rejected_applications":null}
+[2025-08-13 01:15:52] [INFO] [::1] Recent applications fetched: []
+[2025-08-12 21:45:53] [INFO] [::1] Application initialized
+[2025-08-13 01:15:53] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-13 01:15:53] [INFO] [::1] Dashboard accessed
+[2025-08-13 01:15:53] [INFO] [::1] User ID: 56
+[2025-08-13 01:15:53] [INFO] [::1] Application statistics fetched: {"total_applications":0,"pending_applications":null,"approved_applications":null,"missing_document_applications":null,"rejected_applications":null}
+[2025-08-13 01:15:53] [INFO] [::1] Recent applications fetched: []
+[2025-08-12 21:49:04] [INFO] [::1] Application initialized
+[2025-08-13 01:19:04] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-13 01:19:04] [INFO] [::1] Dashboard accessed
+[2025-08-13 01:19:04] [INFO] [::1] User ID: 56
+[2025-08-13 01:19:04] [INFO] [::1] Application statistics fetched: {"total_applications":0,"pending_applications":null,"approved_applications":null,"missing_document_applications":null,"rejected_applications":null}
+[2025-08-13 01:19:04] [INFO] [::1] Recent applications fetched: []
+[2025-08-12 21:49:33] [INFO] [::1] Application initialized

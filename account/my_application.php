@@ -106,15 +106,6 @@ try {
                         Application Form
                         </button>
                 </div>
-
-                <?php if (isset($_SESSION['success'])): ?>
-                    <div class="alert alert-success"><?php echo htmlspecialchars($_SESSION['success']); unset($_SESSION['success']); ?></div>
-                <?php endif; ?>
-                
-                <?php if (isset($_SESSION['error'])): ?>
-                    <div class="alert alert-danger"><?php echo htmlspecialchars($_SESSION['error']); unset($_SESSION['error']); ?></div>
-                <?php endif; ?>
-
                 <!-- Filters and Search -->
                 <div class="card mb-4">
                     <div class="card-body">
