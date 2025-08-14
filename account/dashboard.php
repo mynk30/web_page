@@ -73,330 +73,136 @@ $browserLogger->log("Recent applications fetched: " . json_encode($recentApplica
         </div>
         
         <!-- Main content -->
-    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+    <div class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
             <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                 <h1 class="h2">Dashboard</h1>
                 <div class="btn-toolbar mb-2 mb-md-0">
                     <div class="d-flex flex-column flex-sm-row gap-2">
                         <a href="my_application.php" class="btn btn-sm custom-btn">View All Applications</a>
-                        <button type="button" class="btn btn-sm custom-btn" data-bs-toggle="modal" data-bs-target="#applicationFormModal">
-                        Application Form
-                        </button>
                     </div>
                 </div>
             </div>
+
             <div class="mb-4">
                 <p class="text-muted">Welcome back, <?php echo htmlspecialchars($_SESSION['name'] ?? 'User'); ?>!</p>
             </div>
    
 
-    <div class="row">
-        <div class="col-md-6 col-lg-2 mb-4">
-            <div class="card stat-card h-100 text-center">
-                <div class="card-body">
-                    <div class="stat-icon">
-                        <i class="fas fa-file-alt"></i>
+            <div class="row">
+                <div class="col-md-6 col-lg-2 mb-4">
+                    <div class="card stat-card h-100 text-center">
+                        <div class="card-body">
+                            <div class="stat-icon">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <div class="stat-count"><?php echo $stats['total_applications']; ?></div>
+                            <div class="stat-title">Total Applications</div>
+                        </div>
                     </div>
-                    <div class="stat-count"><?php echo $stats['total_applications']; ?></div>
-                    <div class="stat-title">Total Applications</div>
+                </div>
+                <div class="col-md-6 col-lg-2 mb-4">
+                    <div class="card stat-card h-100 text-center">
+                        <div class="card-body">
+                            <div class="stat-icon text-warning">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="stat-count"><?php echo $stats['pending_applications']; ?></div>
+                            <div class="stat-title">Pending</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-2 mb-4">
+                    <div class="card stat-card h-100 text-center">
+                        <div class="card-body">
+                            <div class="stat-icon text-success">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="stat-count"><?php echo $stats['approved_applications']; ?></div>
+                            <div class="stat-title">Approved</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-2 mb-4">
+                    <div class="card stat-card h-100 text-center">
+                        <div class="card-body">
+                            <div class="stat-icon text-info">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </div>
+                            <div class="stat-count"><?php echo $stats['missing_document_applications']; ?></div>
+                            <div class="stat-title">Missing Docs</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-2 mb-4">
+                    <div class="card stat-card h-100 text-center">
+                        <div class="card-body">
+                            <div class="stat-icon text-danger">
+                                <i class="fas fa-times-circle"></i>
+                            </div>
+                            <div class="stat-count"><?php echo $stats['rejected_applications']; ?></div>
+                            <div class="stat-title">Rejected</div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-6 col-lg-2 mb-4">
-            <div class="card stat-card h-100 text-center">
-                <div class="card-body">
-                    <div class="stat-icon text-warning">
-                        <i class="fas fa-clock"></i>
-                    </div>
-                    <div class="stat-count"><?php echo $stats['pending_applications']; ?></div>
-                    <div class="stat-title">Pending</div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6 col-lg-2 mb-4">
-            <div class="card stat-card h-100 text-center">
-                <div class="card-body">
-                    <div class="stat-icon text-success">
-                        <i class="fas fa-check-circle"></i>
-                    </div>
-                    <div class="stat-count"><?php echo $stats['approved_applications']; ?></div>
-                    <div class="stat-title">Approved</div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6 col-lg-2 mb-4">
-            <div class="card stat-card h-100 text-center">
-                <div class="card-body">
-                    <div class="stat-icon text-info">
-                        <i class="fas fa-exclamation-triangle"></i>
-                    </div>
-                    <div class="stat-count"><?php echo $stats['missing_document_applications']; ?></div>
-                    <div class="stat-title">Missing Docs</div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6 col-lg-2 mb-4">
-            <div class="card stat-card h-100 text-center">
-                <div class="card-body">
-                    <div class="stat-icon text-danger">
-                        <i class="fas fa-times-circle"></i>
-                    </div>
-                    <div class="stat-count"><?php echo $stats['rejected_applications']; ?></div>
-                    <div class="stat-title">Rejected</div>
-                </div>
-            </div>
-        </div>
-    </div>
 
 
-    <div class="card mt-4">
-        <div class="card-header text-white d-flex justify-content-between align-items-center">
-            <h5 class="mb-0">Recent Applications</h5>
-            <a href="my_application.php" class="btn btn-sm btn-outline-light">View All</a>
-        </div>
-        <div class="card-body p-0">
-            <div class="table-responsive">
-                <table class="table table-hover mb-0">
-                    <thead class="table-light">
-                        <tr>
-                            <th>Sr. No.</th>
-                            <th>Service Type</th>
-                            <th>Status</th>
-                            <th>Created At</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php if (empty($recentApplications)): ?>
-                        <tr>
-                            <td colspan="5" class="text-center text-muted py-4">No applications found</td>
-                        </tr>
-                        <?php else: ?>
-                        <?php $srNo = 1; ?>
-                        <?php foreach ($recentApplications as $app): ?>
-                        <tr>
-                            <td><?php echo $srNo++; ?></td>
-                            <td><?php echo htmlspecialchars($app['service_type']); ?></td>
-                            <td>
-                                <?php
-                                $statusClass = 'bg-secondary';
-                                switch ($app['status']) {
-                                    case 'pending': $statusClass = 'bg-warning'; break;
-                                    case 'approved': $statusClass = 'bg-success'; break;
-                                    case 'missing_document': $statusClass = 'bg-info'; break;
-                                    case 'rejected': $statusClass = 'bg-danger'; break;
-                                }
-                                ?>
-                                <span class="badge <?php echo $statusClass; ?>">
-                                    <?php echo $app['status'] === 'missing_document' ? 'Missing Document' : ucfirst(str_replace('_', ' ', $app['status'])); ?>
-                                </span>
-                            </td>
-                            <td><?php echo date('M d, Y', strtotime($app['created_at'])); ?></td>
-                            <td>
-                                <a href="view_application.php?id=<?php echo $app['id']; ?>" class="btn btn-sm btn-outline-primary">View</a>
-                            </td>
-                        </tr>
-                        <?php endforeach; ?>
-                        <?php endif; ?>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        </main>
-    </div>
+            <div class="card mt-4">
+                <div class="card-header text-white d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">Recent Applications</h5>
+                    <a href="my_application.php" class="btn btn-sm btn-outline-light">View All</a>
+                </div>
+                <div class="card-body p-0">
+                    <div class="table-responsive">
+                        <table class="table table-hover mb-0">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Sr. No.</th>
+                                    <th>Service Type</th>
+                                    <th>Status</th>
+                                    <th>Created At</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php if (empty($recentApplications)): ?>
+                                <tr>
+                                    <td colspan="5" class="text-center text-muted py-4">No applications found</td>
+                                </tr>
+                                <?php else: ?>
+                                <?php $srNo = 1; ?>
+                                <?php foreach ($recentApplications as $app): ?>
+                                <tr>
+                                    <td><?php echo $srNo++; ?></td>
+                                    <td><?php echo htmlspecialchars($app['service_type']); ?></td>
+                                    <td>
+                                        <?php
+                                        $statusClass = 'bg-secondary';
+                                        switch ($app['status']) {
+                                            case 'pending': $statusClass = 'bg-warning'; break;
+                                            case 'approved': $statusClass = 'bg-success'; break;
+                                            case 'missing_document': $statusClass = 'bg-info'; break;
+                                            case 'rejected': $statusClass = 'bg-danger'; break;
+                                        }
+                                        ?>
+                                        <span class="badge <?php echo $statusClass; ?>">
+                                            <?php echo $app['status'] === 'missing_document' ? 'Missing Document' : ucfirst(str_replace('_', ' ', $app['status'])); ?>
+                                        </span>
+                                    </td>
+                                    <td><?php echo date('M d, Y', strtotime($app['created_at'])); ?></td>
+                                    <td>
+                                        <a href="view_application.php?id=<?php echo $app['id']; ?>" class="btn btn-sm custom-btn">View</a>
+                                    </td>
+                                </tr>
+                                <?php endforeach; ?>
+                                <?php endif; ?>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                                    </div>
+          
 </div>
-<div class="modal fade" id="applicationFormModal" tabindex="-1" aria-labelledby="applicationFormModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <?php if (isset($_SESSION['error'])): ?>
-                <div class="alert alert-danger m-3"><?php echo htmlspecialchars($_SESSION['error']); unset($_SESSION['error']); ?></div>
-            <?php endif; ?>
-
-            <form action="../account/submit_application.php" method="POST" enctype="multipart/form-data" id="applicationForm">
-                <div class="modal-header">
-                    <h5 class="modal-title text-white">Application Form</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-
-                <div class="modal-body">
-                    <!-- Step 1: Basic Info -->
-                    <div id="step1">
-                        <div class="mb-3">
-                            <label class="form-label">Full Name</label>
-                            <input disabled value="<?php echo htmlspecialchars($_SESSION['name']); ?>" type="text" class="form-control">
-                        </div>
-
-                        <div class="mb-3">
-                            <label class="form-label">Email Address</label> 
-                            <input disabled value="<?php echo htmlspecialchars($_SESSION['email']); ?>" type="email" class="form-control">
-                        </div>
-
-                        <div class="mb-3">
-                            <label class="form-label">Phone Number</label>
-                            <input disabled value="<?php echo htmlspecialchars($_SESSION['mobile']); ?>" type="text" class="form-control">
-                        </div>
-
-                        <div class="mb-3">
-                            <label class="form-label">Application Type</label>
-                            <select name="application_type" id="application_type" class="form-select" required>
-                                <option disabled selected>-- Select Application Type --</option>
-                                <option value="GST Registration">GST Registration</option>
-                                <option value="Digital Signature">Digital Signature</option>
-                                <option value="MSME Registration">MSME Registration</option>
-                                <option value="Income Tax Filing">Income Tax Filing</option>
-                                <option value="Trademark Registration">Trademark Registration</option>
-                            </select>
-                        </div>
-
-                        <!-- Dynamic document fields will appear here -->
-                        <div id="documentFields"></div>
-                    </div>
-
-                    <!-- Step 2: Extra Details + Payment -->
-                    <div id="step2" style="display:none;">
-                        <div class="mb-3">
-                            <label class="form-label">Application Fee</label>
-                            <input type="text" id="serviceAmount" class="form-control" readonly>
-                        </div>
-
-                        <div class="mb-3">
-                            <button type="button" class="btn btn-success" id="payBtn">Pay Now</button>
-                            <span id="paymentStatus" class="ms-2 text-danger">Payment Pending</span>
-                        </div>
-
-                        <div class="mb-3">
-                            <label class="form-label">Additional Notes</label>
-                            <textarea name="notes" class="form-control" rows="3"></textarea>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" id="prevBtn" style="display:none;">Previous</button>
-                    <button type="button" class="btn custom-btn" id="nextBtn" disabled>Next</button>
-                    <button type="submit" class="btn custom-btn" id="submitBtn" style="display:none;" disabled>Submit Application</button>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
-
-<script>
-const appTypeSelect = document.getElementById("application_type");
-const docContainer = document.getElementById("documentFields");
-const nextBtn = document.getElementById("nextBtn");
-const prevBtn = document.getElementById("prevBtn");
-const submitBtn = document.getElementById("submitBtn");
-const payBtn = document.getElementById("payBtn");
-const paymentStatus = document.getElementById("paymentStatus");
-const serviceAmount = document.getElementById("serviceAmount");
-
-let selectedAmount = 0;
-let paymentDone = false;
-
-const servicePrices = {
-    "GST Registration": 1200,
-    "Digital Signature": 800,
-    "MSME Registration": 600,
-    "Income Tax Filing": 1500,
-    "Trademark Registration": 2000
-};
-
-// जब सर्विस सेलेक्ट होगी तब डॉक्यूमेंट फील्ड आ जाएँ और अमाउंट सेट हो जाए
-appTypeSelect.addEventListener("change", function() {
-    const appType = this.value;
-    docContainer.innerHTML = "";
-    nextBtn.disabled = true; 
-    paymentDone = false;
-
-    if(servicePrices[appType]) {
-        selectedAmount = servicePrices[appType];
-    }
-
-    let docs = [];
-    if (appType === "GST Registration") {
-        docs = ["PAN Card", "Aadhar Card", "Bank Statement"];
-    } else if (appType === "Digital Signature") {
-        docs = ["Aadhar Card", "Passport Size Photo"];
-    } else if (appType === "MSME Registration") {
-        docs = ["Business Proof", "Owner ID Proof"];
-    } else if (appType === "Income Tax Filing") {
-        docs = ["Form 16", "Aadhar Card", "PAN Card"];
-    } else if (appType === "Trademark Registration") {
-        docs = ["Business Proof", "Logo Image"];
-    }
-
-    // docs.forEach(doc => {
-    //     docContainer.innerHTML += `
-    //         <div class="mb-3">
-    //             <label class="form-label">${doc}</label>
-    //             <input type="file" name="document[${doc}]" class="form-control doc-input" required>
-    //         </div>
-    //     `;
-    // });
-
-    docs.forEach(doc => {
-    const safeName = doc.replace(/\s+/g, '_').toLowerCase(); // spaces -> underscore
-    docContainer.innerHTML += `
-        <div class="mb-3">
-            <label class="form-label">${doc}</label>
-            <input type="file" name="document[${safeName}]" class="form-control doc-input" required>
-        </div>
-    `;
-});
-
-    const fileInputs = document.querySelectorAll(".doc-input");
-    fileInputs.forEach(input => {
-        input.addEventListener("change", checkDocsFilled);
-    });
-
-    function checkDocsFilled() {
-        let allFilled = true;
-        fileInputs.forEach(inp => {
-            if (!inp.files.length) {
-                allFilled = false;
-            }
-        });
-        nextBtn.disabled = !allFilled;
-    }
-});
-
-// Next बटन → Step 2 पर जाए
-nextBtn.addEventListener("click", function() {
-    document.getElementById("step1").style.display = "none";
-    document.getElementById("step2").style.display = "block";
-    serviceAmount.value = "₹ " + selectedAmount;
-    nextBtn.style.display = "none";
-    prevBtn.style.display = "inline-block";
-    submitBtn.style.display = "inline-block";
-    submitBtn.disabled = true; // Payment होने तक disable
-    paymentStatus.textContent = "Payment Pending";
-    paymentStatus.classList.remove("text-success");
-    paymentStatus.classList.add("text-danger");
-});
-
-// Previous बटन → Step 1 पर जाए
-prevBtn.addEventListener("click", function() {
-    document.getElementById("step2").style.display = "none";
-    document.getElementById("step1").style.display = "block";
-    prevBtn.style.display = "none";
-    submitBtn.style.display = "none";
-    nextBtn.style.display = "inline-block";
-});
-
-// पेमेंट बटन क्लिक
-payBtn.addEventListener("click", function() {
-    // यहां पर Razorpay/Stripe API कॉल कर सकते हो
-    // डेमो के लिए payment success मान लेते हैं
-    setTimeout(() => {
-        paymentDone = true;
-        paymentStatus.textContent = "Payment Successful";
-        paymentStatus.classList.remove("text-danger");
-        paymentStatus.classList.add("text-success");
-        submitBtn.disabled = false;
-    }, 1000);
-});
-</script>
 
 
 <?php include '../include/footer.php'; ?>

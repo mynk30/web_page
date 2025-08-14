@@ -45,115 +45,161 @@ function generateNewApplicationNumber($conn): string {
 
 // >>>>>>> upstream/main
 try {
+    // Check if request method is POST
     if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
         throw new Exception('Invalid request method');
     }
 
-    $applicationNumber = generateNewApplicationNumber($conn);
-
-    $logger->info('Application number generated: ' . $applicationNumber);
-    $browserLogger->info('Application number generated: ' . $applicationNumber);
+    // Get user ID from session
+    $userId = $_SESSION['user_id'];
     
-
-    // Start transaction
-    if (!$conn->begin_transaction()) {
-        throw new Exception('Failed to start transaction'); 
-    }
+    // Validate required fields
+    $requiredFields = ['application_type'];
+    $missingFields = [];
     
-
-    // Validate phone and application_type
-  
-    $serviceType = trim($_POST['application_type'] ?? '');
-    $logger->info("Service type: " . $serviceType);
-
-    if (empty($serviceType)) {
-        throw new Exception('Application type is required');
-    }
-
-    $logger->info("session...." . json_encode($_SESSION));
-    // Get data from session
-    $userId = $_SESSION['user_id'] ?? null;
-
-   
-
-    $logger->info("User ID: " . $userId);
-    // $logger->info("I AM HERE...................");
-    if (!$userId) {
-        throw new Exception('User not logged in');
-    }
-
-    $applicationNumber = generateNewApplicationNumber($conn);
-    $logger->info("Application number: " . $applicationNumber);
-
-    $logger->info("AFTER....");
-    // Insert application
-
-    $stmt = $conn->prepare("INSERT INTO applications (application_number, user_id, service_type, payment_status, created_at, updated_at) VALUES (?, ?, ?, ?, NOW(), NOW())");
-
-    $paymentStatus = 'pending'; // Jab nayi application submit ho to payment pending rahe
-    
-    if (!$stmt || !$stmt->bind_param("siss", $applicationNumber, $userId, $serviceType, $paymentStatus) || !$stmt->execute()) {
-        throw new Exception('Failed to insert application');
-    }
-    
-
-    $applicationId = $conn->insert_id;
-
-    // Upload files
-    $uploadedFiles = [];
-    $targetDir = "../uploads/";
-    if (!file_exists($targetDir)) {
-        mkdir($targetDir, 0777, true);
-    }
-
-    if (isset($_FILES['document']['name']) && is_array($_FILES['document']['name'])) {
-        foreach ($_FILES['document']['name'] as $key => $originalName) {
-            if (empty($originalName)) continue;
-
-            $timestamp = date('YmdHis');
-            $ext = pathinfo($originalName, PATHINFO_EXTENSION);
-            $base = pathinfo($originalName, PATHINFO_FILENAME);
-            $uniqueName = $base . '_' . $timestamp . '.' . $ext;
-            $targetPath = $targetDir . $uniqueName;
-
-            if (!move_uploaded_file($_FILES['document']['tmp_name'][$key], $targetPath)) {
-                throw new Exception('Failed to upload file: ' . $originalName);
-            }
-
-            $fileSize = filesize($targetPath);
-            $modelType = 'application';
-
-            $stmt = $conn->prepare("INSERT INTO files (original_name, file_name, file_path, file_size, model_type, model_id) VALUES (?, ?, ?, ?, ?, ?)");
-            // FIXED: Changed "ssssssi" to "sssisi" to match 6 parameters: string, string, string, integer, string, integer
-            if (!$stmt || !$stmt->bind_param("sssisi", $originalName, $uniqueName, $targetPath, $fileSize, $modelType, $applicationId) || !$stmt->execute()) {
-                throw new Exception('Failed to save file: ' . $originalName);
-            }
-
-            $uploadedFiles[] = $uniqueName;
+    foreach ($requiredFields as $field) {
+        if (empty($_POST[$field])) {
+            $missingFields[] = $field;
         }
     }
-
-    $conn->commit();
-
-    $response = [
-        'success' => true,
-        'message' => 'Application submitted successfully!',
-        'redirect' => 'my_application.php'
-    ];
-    header('Location: ' . $response['redirect']);
-    exit();
+    
+    if (!empty($missingFields)) {
+        throw new Exception('Missing required fields: ' . implode(', ', $missingFields));
+    }
+    
+    // Generate application number (format: APP-YYYYMMDD-XXXXXX)
+    $appNumber = 'APP-' . date('Ymd') . '-' . strtoupper(substr(uniqid(), -6));
+    
+    // Get form data
+    $applicationType = $_POST['application_type'];
+    $status = 'pending';
+    $paymentStatus = 'pending'; // Default payment status
+    
+    // Start database transaction
+    $conn->begin_transaction();
+    
+    try {
+        // Insert application record
+        $stmt = $conn->prepare("INSERT INTO applications (user_id, application_number, service_type, status, payment_status) VALUES (?, ?, ?, ?, ?)");
+        $stmt->bind_param('issss', $userId, $appNumber, $applicationType, $status, $paymentStatus);
+        
+        if (!$stmt->execute()) {
+            throw new Exception('Failed to create application: ' . $stmt->error);
+        }
+        
+        $applicationId = $conn->insert_id;
+        
+        // Handle file uploads if any
+        if (!empty($_FILES['document'])) {
+            $uploadDir = __DIR__ . '/../uploads/applications/' . $applicationId . '/';
+            
+            // Create upload directory if it doesn't exist
+            if (!file_exists($uploadDir)) {
+                if (!mkdir($uploadDir, 0755, true)) {
+                    throw new Exception('Failed to create upload directory');
+                }
+            }
+            
+            // Check if documents were uploaded
+            if (is_array($_FILES['document']['name'])) {
+                // Process each uploaded file
+                foreach ($_FILES['document']['name'] as $index => $name) {
+                    if ($_FILES['document']['error'][$index] === UPLOAD_ERR_OK) {
+                        $tmpName = $_FILES['document']['tmp_name'][$index];
+                        $fileType = $_FILES['document']['type'][$index];
+                        $fileSize = $_FILES['document']['size'][$index];
+                        $error = $_FILES['document']['error'][$index];
+                        
+                        // Basic file validation
+                        if ($error !== UPLOAD_ERR_OK) {
+                            throw new Exception('File upload error: ' . $error);
+                        }
+                        
+                        // Generate secure filename
+                        $fileName = generateSecureFilename($name);
+                        $filePath = $uploadDir . $fileName;
+                        
+                        // Verify file is an actual file
+                        if (!is_uploaded_file($tmpName)) {
+                            throw new Exception('Possible file upload attack');
+                        }
+                        
+                        // Verify file size (max 5MB)
+                        $maxFileSize = 5 * 1024 * 1024; // 5MB
+                        if ($fileSize > $maxFileSize) {
+                            throw new Exception('File size exceeds maximum allowed size of 5MB');
+                        }
+                        
+                        // Allow only specific file types
+                        $allowedTypes = ['application/pdf', 'image/jpeg', 'image/png', 'image/jpg'];
+                        if (!in_array($fileType, $allowedTypes)) {
+                            throw new Exception('Invalid file type. Only PDF, JPG, and PNG files are allowed.');
+                        }
+                        
+                        // Move uploaded file
+                        if (move_uploaded_file($tmpName, $filePath)) {
+                            // Insert file record into database
+                            $stmt = $conn->prepare("INSERT INTO files (application_id, file_name, file_path, file_type, file_size) VALUES (?, ?, ?, ?, ?)");
+                            $relativePath = 'uploads/applications/' . $applicationId . '/' . $fileName;
+                            $stmt->bind_param('isssi', $applicationId, $name, $relativePath, $fileType, $fileSize);
+                            
+                            if (!$stmt->execute()) {
+                                throw new Exception('Failed to save file information: ' . $stmt->error);
+                            }
+                        } else {
+                            throw new Exception('Failed to move uploaded file');
+                        }
+                    }
+                }
+            }
+        }
+        
+        // Commit transaction
+        $conn->commit();
+        
+        $response = [
+            'success' => true,
+            'message' => 'Application submitted successfully',
+            'application_id' => $applicationId,
+            'application_number' => $appNumber,
+            'redirect' => 'my_application.php'
+        ];
+        
+        // Log successful submission
+        $logger->info("Application submitted successfully", [
+            'application_id' => $applicationId,
+            'user_id' => $userId,
+            'application_number' => $appNumber
+        ]);
+        
+        // Set success message in session
+        $_SESSION['success'] = 'Application submitted successfully!';
+        
+    } catch (Exception $e) {
+        // Rollback transaction on error
+        $conn->rollback();
+        throw $e;
+    }
+    
 } catch (Exception $e) {
-    $conn->rollback();
-    $logger->info("This is error : " . $e->getMessage());
-
+    http_response_code(400);
     $response = [
         'success' => false,
         'message' => 'Error: ' . $e->getMessage(),
-        'redirect' => 'my_application.php' 
+        'error' => $e->getMessage()
     ];
-
-    header('Location: ' . $response['redirect']);
-    exit();
+    
+    // Log error
+    $logger->error("Application submission failed", [
+        'error' => $e->getMessage(),
+        'trace' => $e->getTraceAsString(),
+        'post_data' => $_POST,
+        'files' => $_FILES
+    ]);
+    
+    // Set error message in session
+    $_SESSION['error'] = 'Failed to submit application: ' . $e->getMessage();
 }
+
+// Return JSON response
 echo json_encode($response);
-?>

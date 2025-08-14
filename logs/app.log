@@ -1,19 +1,1653 @@
-[2025-08-12 21:45:52] [INFO] [::1] Application initialized
-[2025-08-13 01:15:52] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-08-13 01:15:52] [INFO] [::1] Dashboard accessed
-[2025-08-13 01:15:52] [INFO] [::1] User ID: 56
-[2025-08-13 01:15:52] [INFO] [::1] Application statistics fetched: {"total_applications":0,"pending_applications":null,"approved_applications":null,"missing_document_applications":null,"rejected_applications":null}
-[2025-08-13 01:15:52] [INFO] [::1] Recent applications fetched: []
-[2025-08-12 21:45:53] [INFO] [::1] Application initialized
-[2025-08-13 01:15:53] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-08-13 01:15:53] [INFO] [::1] Dashboard accessed
-[2025-08-13 01:15:53] [INFO] [::1] User ID: 56
-[2025-08-13 01:15:53] [INFO] [::1] Application statistics fetched: {"total_applications":0,"pending_applications":null,"approved_applications":null,"missing_document_applications":null,"rejected_applications":null}
-[2025-08-13 01:15:53] [INFO] [::1] Recent applications fetched: []
-[2025-08-12 21:49:04] [INFO] [::1] Application initialized
-[2025-08-13 01:19:04] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-08-13 01:19:04] [INFO] [::1] Dashboard accessed
-[2025-08-13 01:19:04] [INFO] [::1] User ID: 56
-[2025-08-13 01:19:04] [INFO] [::1] Application statistics fetched: {"total_applications":0,"pending_applications":null,"approved_applications":null,"missing_document_applications":null,"rejected_applications":null}
-[2025-08-13 01:19:04] [INFO] [::1] Recent applications fetched: []
-[2025-08-12 21:49:33] [INFO] [::1] Application initialized
+[2025-08-14 07:49:36] [INFO] [::1] Application initialized
+[2025-08-14 11:19:37] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 07:49:37] [INFO] [::1] Application initialized
+[2025-08-14 11:19:37] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:19:37] [INFO] [::1] Login page accessed
+[2025-08-14 07:49:42] [INFO] [::1] Application initialized
+[2025-08-14 11:19:42] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:19:42] [INFO] [::1] Login page accessed
+[2025-08-14 07:49:50] [INFO] [::1] Application initialized
+[2025-08-14 11:19:50] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 07:49:50] [INFO] [::1] Application initialized
+[2025-08-14 11:19:50] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:19:50] [INFO] [::1] Login page accessed
+[2025-08-14 07:50:50] [INFO] [::1] Application initialized
+[2025-08-14 11:20:50] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 07:50:50] [INFO] [::1] Application initialized
+[2025-08-14 11:20:50] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:20:50] [INFO] [::1] Login page accessed
+[2025-08-14 07:51:25] [INFO] [::1] Application initialized
+[2025-08-14 11:21:25] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:21:25] [INFO] [::1] Login page accessed
+[2025-08-14 07:53:17] [INFO] [::1] Application initialized
+[2025-08-14 11:23:17] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:23:17] [INFO] [::1] Login page accessed
+[2025-08-14 07:58:10] [INFO] [::1] Application initialized
+[2025-08-14 11:28:10] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:28:10] [INFO] [::1] Login page accessed
+[2025-08-14 07:58:11] [INFO] [::1] Application initialized
+[2025-08-14 11:28:11] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:28:11] [INFO] [::1] Login page accessed
+[2025-08-14 07:58:11] [INFO] [::1] Application initialized
+[2025-08-14 11:28:11] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:28:11] [INFO] [::1] Login page accessed
+[2025-08-14 07:58:56] [INFO] [::1] Application initialized
+[2025-08-14 11:28:56] [INFO] [::1] Login register page accessed
+[2025-08-14 11:28:56] [INFO] [::1] email "ashis@gmaail.com"
+[2025-08-14 11:28:56] [INFO] [::1] password "12345"
+[2025-08-14 11:28:56] [INFO] [::1] Executed query: SELECT * FROM users WHERE email = 'ashis@gmaail.com'
+[2025-08-14 11:28:56] [INFO] [::1] User Row: {"id":"44","name":"ashis","email":"ashis@gmaail.com","mobile":"2345677899","password":"$2y$10$xahwDbHDG17edQuJTlP2CedoZJYt2pFq53KC\/AJ4\/YdU3m9S575Je","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-29 02:16:45","updated_at":"2025-08-12 10:57:56","otp":null,"otp_expiry":null}
+[2025-08-14 11:28:56] [INFO] [::1] Invalid password.
+[2025-08-14 07:58:56] [INFO] [::1] Application initialized
+[2025-08-14 11:28:56] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:28:56] [INFO] [::1] Login page accessed
+[2025-08-14 07:59:59] [INFO] [::1] Application initialized
+[2025-08-14 11:29:59] [INFO] [::1] Login register page accessed
+[2025-08-14 11:29:59] [INFO] [::1] email "abhishek@example.com"
+[2025-08-14 11:29:59] [INFO] [::1] password "12345"
+[2025-08-14 11:29:59] [INFO] [::1] Executed query: SELECT * FROM users WHERE email = 'abhishek@example.com'
+[2025-08-14 11:29:59] [INFO] [::1] User Row: {"id":"48","name":"abhishek yadav","email":"abhishek@example.com","mobile":"2345678556","password":"$2y$10$YCOsDEaaa1tWC9Fve4t3yu7FOFdEc4GDUJAIC33wWrah.XEoFJGrO","role":"user","status":"active","featured_image":"uploads\/profiles\/68910d909c8fe.png","reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-29 11:14:10","updated_at":"2025-08-05 01:14:16","otp":null,"otp_expiry":null}
+[2025-08-14 11:29:59] [INFO] [::1] password verify success
+[2025-08-14 11:29:59] [INFO] [::1] This is session after login: {"recipientEmail":"kushwahanjali89@gmail.com","user_id":"48","name":"abhishek yadav","email":"abhishek@example.com","mobile":"2345678556","featured_image":"uploads\/profiles\/68910d909c8fe.png","role":"user"}
+[2025-08-14 07:59:59] [INFO] [::1] Application initialized
+[2025-08-14 11:29:59] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 08:00:03] [INFO] [::1] Application initialized
+[2025-08-14 11:30:03] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:30:03] [INFO] [::1] Dashboard accessed
+[2025-08-14 11:30:03] [INFO] [::1] User ID: 48
+[2025-08-14 11:30:03] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 11:30:03] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 08:00:07] [INFO] [::1] Application initialized
+[2025-08-14 11:30:07] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:30:07] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 11:30:07] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 08:03:07] [INFO] [::1] Application initialized
+[2025-08-14 11:33:07] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:33:07] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 11:33:07] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 08:03:16] [INFO] [::1] Application initialized
+[2025-08-14 11:33:16] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:33:16] [INFO] [::1] Name: abhishek yadav
+[2025-08-14 11:33:16] [INFO] [::1] Email: abhishek@example.com
+[2025-08-14 11:33:16] [INFO] [::1] Mobile: 123456789
+[2025-08-14 11:33:16] [INFO] [::1] Has Error: No
+[2025-08-14 11:33:16] [INFO] [::1] File uploaded: No
+[2025-08-14 11:33:16] [INFO] [::1] Session image path updated successfully.
+[2025-08-14 11:33:16] [INFO] [::1] Complete session information after update profile: {"recipientEmail":"kushwahanjali89@gmail.com","user_id":"48","name":"abhishek yadav","email":"abhishek@example.com","mobile":"2345678556","featured_image":"uploads\/profiles\/68910d909c8fe.png","role":"user"}
+[2025-08-14 08:03:16] [INFO] [::1] Application initialized
+[2025-08-14 11:33:16] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:33:16] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 11:33:16] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 08:03:26] [INFO] [::1] Application initialized
+[2025-08-14 11:33:26] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:33:26] [INFO] [::1] Dashboard accessed
+[2025-08-14 11:33:26] [INFO] [::1] User ID: 48
+[2025-08-14 11:33:26] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 11:33:26] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 08:03:30] [INFO] [::1] Application initialized
+[2025-08-14 11:33:30] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 08:03:40] [INFO] [::1] Application initialized
+[2025-08-14 11:33:40] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:33:40] [INFO] [::1] Dashboard accessed
+[2025-08-14 11:33:40] [INFO] [::1] User ID: 48
+[2025-08-14 11:33:40] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 11:33:40] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 08:09:42] [INFO] [::1] Application initialized
+[2025-08-14 11:39:42] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:39:42] [INFO] [::1] Dashboard accessed
+[2025-08-14 11:39:42] [INFO] [::1] User ID: 48
+[2025-08-14 11:39:42] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 11:39:42] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 08:09:44] [INFO] [::1] Application initialized
+[2025-08-14 11:39:44] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 08:09:51] [INFO] [::1] Application initialized
+[2025-08-14 11:39:51] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:39:51] [INFO] [::1] Dashboard accessed
+[2025-08-14 11:39:51] [INFO] [::1] User ID: 48
+[2025-08-14 11:39:51] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 11:39:51] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 08:09:53] [INFO] [::1] Application initialized
+[2025-08-14 11:39:53] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 08:10:49] [INFO] [::1] Application initialized
+[2025-08-14 11:40:49] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 08:10:51] [INFO] [::1] Application initialized
+[2025-08-14 11:40:51] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:40:51] [INFO] [::1] Dashboard accessed
+[2025-08-14 11:40:51] [INFO] [::1] User ID: 48
+[2025-08-14 11:40:51] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 11:40:51] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 08:13:02] [INFO] [::1] Application initialized
+[2025-08-14 11:43:02] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:43:02] [INFO] [::1] Dashboard accessed
+[2025-08-14 11:43:02] [INFO] [::1] User ID: 48
+[2025-08-14 11:43:02] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 11:43:02] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 08:13:03] [INFO] [::1] Application initialized
+[2025-08-14 11:43:03] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 08:15:19] [INFO] [::1] Application initialized
+[2025-08-14 11:45:19] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:45:19] [INFO] [::1] Dashboard accessed
+[2025-08-14 11:45:19] [INFO] [::1] User ID: 48
+[2025-08-14 11:45:19] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 11:45:19] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 08:15:20] [INFO] [::1] Application initialized
+[2025-08-14 11:45:20] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:45:20] [INFO] [::1] Dashboard accessed
+[2025-08-14 11:45:20] [INFO] [::1] User ID: 48
+[2025-08-14 11:45:20] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 11:45:20] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 08:16:04] [INFO] [::1] Application initialized
+[2025-08-14 11:46:04] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:46:04] [INFO] [::1] Dashboard accessed
+[2025-08-14 11:46:04] [INFO] [::1] User ID: 48
+[2025-08-14 11:46:04] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 11:46:04] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 08:16:43] [INFO] [::1] Application initialized
+[2025-08-14 11:46:43] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:46:43] [INFO] [::1] Dashboard accessed
+[2025-08-14 11:46:43] [INFO] [::1] User ID: 48
+[2025-08-14 11:46:43] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 11:46:43] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 08:16:45] [INFO] [::1] Application initialized
+[2025-08-14 11:46:45] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 08:17:30] [INFO] [::1] Application initialized
+[2025-08-14 11:47:30] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 08:18:23] [INFO] [::1] Application initialized
+[2025-08-14 11:48:23] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 08:18:38] [INFO] [::1] Application initialized
+[2025-08-14 11:48:38] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:48:38] [INFO] [::1] Dashboard accessed
+[2025-08-14 11:48:38] [INFO] [::1] User ID: 48
+[2025-08-14 11:48:38] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 11:48:38] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 08:22:26] [INFO] [::1] Application initialized
+[2025-08-14 11:52:26] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:52:26] [INFO] [::1] Dashboard accessed
+[2025-08-14 11:52:26] [INFO] [::1] User ID: 48
+[2025-08-14 11:52:26] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 11:52:26] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 08:22:27] [INFO] [::1] Application initialized
+[2025-08-14 11:52:27] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 08:22:30] [INFO] [::1] Application initialized
+[2025-08-14 11:52:30] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 08:22:36] [INFO] [::1] Application initialized
+[2025-08-14 11:52:36] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:52:36] [INFO] [::1] Dashboard accessed
+[2025-08-14 11:52:36] [INFO] [::1] User ID: 48
+[2025-08-14 11:52:36] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 11:52:36] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 08:23:06] [INFO] [::1] Application initialized
+[2025-08-14 11:53:06] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:53:06] [INFO] [::1] Dashboard accessed
+[2025-08-14 11:53:06] [INFO] [::1] User ID: 48
+[2025-08-14 11:53:06] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 11:53:06] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 08:23:08] [INFO] [::1] Application initialized
+[2025-08-14 11:53:08] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 08:23:16] [INFO] [::1] Application initialized
+[2025-08-14 11:53:16] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:53:16] [INFO] [::1] Dashboard accessed
+[2025-08-14 11:53:16] [INFO] [::1] User ID: 48
+[2025-08-14 11:53:16] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 11:53:16] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 08:23:19] [INFO] [::1] Application initialized
+[2025-08-14 11:53:19] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 08:23:20] [INFO] [::1] Application initialized
+[2025-08-14 11:53:20] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 08:23:55] [INFO] [::1] Application initialized
+[2025-08-14 11:53:55] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 08:24:12] [INFO] [::1] Application initialized
+[2025-08-14 11:54:12] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 08:24:57] [INFO] [::1] Application initialized
+[2025-08-14 11:54:57] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 08:26:06] [INFO] [::1] Application initialized
+[2025-08-14 11:56:06] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:56:06] [INFO] [::1] Dashboard accessed
+[2025-08-14 11:56:06] [INFO] [::1] User ID: 48
+[2025-08-14 11:56:06] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 11:56:06] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 08:26:42] [INFO] [::1] Application initialized
+[2025-08-14 11:56:42] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:56:42] [INFO] [::1] Dashboard accessed
+[2025-08-14 11:56:42] [INFO] [::1] User ID: 48
+[2025-08-14 11:56:42] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 11:56:42] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 08:26:44] [INFO] [::1] Application initialized
+[2025-08-14 11:56:44] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 08:28:48] [INFO] [::1] Application initialized
+[2025-08-14 11:58:48] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 08:29:30] [INFO] [::1] Application initialized
+[2025-08-14 11:59:30] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 08:58:10] [INFO] [::1] Application initialized
+[2025-08-14 12:28:10] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 08:58:16] [INFO] [::1] Application initialized
+[2025-08-14 12:28:16] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 12:28:16] [INFO] [::1] Dashboard accessed
+[2025-08-14 12:28:16] [INFO] [::1] User ID: 48
+[2025-08-14 12:28:16] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 12:28:16] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 11:00:45] [INFO] [::1] Application initialized
+[2025-08-14 14:30:45] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:00:47] [INFO] [::1] Application initialized
+[2025-08-14 14:30:47] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:01:59] [INFO] [::1] Application initialized
+[2025-08-14 14:31:59] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:02:07] [INFO] [::1] Application initialized
+[2025-08-14 14:32:07] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:07:46] [INFO] [::1] Application initialized
+[2025-08-14 14:37:46] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:09:33] [INFO] [::1] Application initialized
+[2025-08-14 14:39:33] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:09:33] [INFO] [::1] Application initialized
+[2025-08-14 14:39:33] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:09:34] [INFO] [::1] Application initialized
+[2025-08-14 14:39:34] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:09:41] [INFO] [::1] Application initialized
+[2025-08-14 14:39:41] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:10:03] [INFO] [::1] Application initialized
+[2025-08-14 14:40:03] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:13:06] [INFO] [::1] Application initialized
+[2025-08-14 14:43:06] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:13:07] [INFO] [::1] Application initialized
+[2025-08-14 14:43:07] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:13:07] [INFO] [::1] Application initialized
+[2025-08-14 14:43:07] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:13:07] [INFO] [::1] Application initialized
+[2025-08-14 14:43:07] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:13:08] [INFO] [::1] Application initialized
+[2025-08-14 14:43:08] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:13:08] [INFO] [::1] Application initialized
+[2025-08-14 14:43:08] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:13:08] [INFO] [::1] Application initialized
+[2025-08-14 14:43:08] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:13:08] [INFO] [::1] Application initialized
+[2025-08-14 14:43:08] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:13:14] [INFO] [::1] Application initialized
+[2025-08-14 14:43:14] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:13:42] [INFO] [::1] Application initialized
+[2025-08-14 14:43:42] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:15:51] [INFO] [::1] Application initialized
+[2025-08-14 14:45:51] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:15:52] [INFO] [::1] Application initialized
+[2025-08-14 14:45:52] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:15:52] [INFO] [::1] Application initialized
+[2025-08-14 14:45:52] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:15:52] [INFO] [::1] Application initialized
+[2025-08-14 14:45:52] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:15:52] [INFO] [::1] Application initialized
+[2025-08-14 14:45:52] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:15:53] [INFO] [::1] Application initialized
+[2025-08-14 14:45:53] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:16:17] [INFO] [::1] Application initialized
+[2025-08-14 14:46:17] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:16:18] [INFO] [::1] Application initialized
+[2025-08-14 14:46:18] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:16:18] [INFO] [::1] Application initialized
+[2025-08-14 14:46:18] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:16:32] [INFO] [::1] Application initialized
+[2025-08-14 14:46:32] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:16:33] [INFO] [::1] Application initialized
+[2025-08-14 14:46:33] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:16:33] [INFO] [::1] Application initialized
+[2025-08-14 14:46:33] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:20:35] [INFO] [::1] Application initialized
+[2025-08-14 14:50:35] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:20:36] [INFO] [::1] Application initialized
+[2025-08-14 14:50:36] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:28:04] [INFO] [::1] Application initialized
+[2025-08-14 14:58:04] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:29:45] [INFO] [::1] Application initialized
+[2025-08-14 14:59:45] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:29:46] [INFO] [::1] Application initialized
+[2025-08-14 14:59:46] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:30:25] [INFO] [::1] Application initialized
+[2025-08-14 15:00:25] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:30:52] [INFO] [::1] Application initialized
+[2025-08-14 15:00:52] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:32:13] [INFO] [::1] Application initialized
+[2025-08-14 15:02:13] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 15:02:13] [INFO] [::1] Dashboard accessed
+[2025-08-14 15:02:13] [INFO] [::1] User ID: 48
+[2025-08-14 15:02:13] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 15:02:13] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 11:32:15] [INFO] [::1] Application initialized
+[2025-08-14 15:02:15] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 15:02:15] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 15:02:15] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 11:32:16] [INFO] [::1] Application initialized
+[2025-08-14 15:02:16] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:32:33] [INFO] [::1] Application initialized
+[2025-08-14 15:02:33] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:32:45] [INFO] [::1] Application initialized
+[2025-08-14 15:02:45] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:32:47] [INFO] [::1] Application initialized
+[2025-08-14 15:02:47] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:33:18] [INFO] [::1] Application initialized
+[2025-08-14 15:03:18] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 15:03:18] [INFO] [::1] Dashboard accessed
+[2025-08-14 15:03:18] [INFO] [::1] User ID: 48
+[2025-08-14 15:03:18] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 15:03:18] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 11:33:20] [INFO] [::1] Application initialized
+[2025-08-14 15:03:20] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 15:03:20] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 15:03:20] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 11:33:20] [INFO] [::1] Application initialized
+[2025-08-14 15:03:20] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:33:21] [INFO] [::1] Application initialized
+[2025-08-14 15:03:21] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 15:03:21] [INFO] [::1] Dashboard accessed
+[2025-08-14 15:03:21] [INFO] [::1] User ID: 48
+[2025-08-14 15:03:21] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 15:03:21] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 11:33:26] [INFO] [::1] Application initialized
+[2025-08-14 15:03:26] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 15:03:26] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 15:03:26] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 11:33:27] [INFO] [::1] Application initialized
+[2025-08-14 15:03:27] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:33:28] [INFO] [::1] Application initialized
+[2025-08-14 15:03:28] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 15:03:28] [INFO] [::1] Dashboard accessed
+[2025-08-14 15:03:28] [INFO] [::1] User ID: 48
+[2025-08-14 15:03:28] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 15:03:28] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 11:33:29] [INFO] [::1] Application initialized
+[2025-08-14 15:03:29] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 15:03:29] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 15:03:29] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 11:33:29] [INFO] [::1] Application initialized
+[2025-08-14 15:03:29] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:33:34] [INFO] [::1] Application initialized
+[2025-08-14 15:03:34] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 15:03:34] [INFO] [::1] Dashboard accessed
+[2025-08-14 15:03:34] [INFO] [::1] User ID: 48
+[2025-08-14 15:03:34] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 15:03:34] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 11:33:35] [INFO] [::1] Application initialized
+[2025-08-14 15:03:35] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 15:03:35] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 15:03:35] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 11:33:35] [INFO] [::1] Application initialized
+[2025-08-14 15:03:35] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:33:41] [INFO] [::1] Application initialized
+[2025-08-14 15:03:41] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 15:03:41] [INFO] [::1] Dashboard accessed
+[2025-08-14 15:03:41] [INFO] [::1] User ID: 48
+[2025-08-14 15:03:41] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 15:03:41] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 11:33:43] [INFO] [::1] Application initialized
+[2025-08-14 15:03:43] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 15:03:43] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 15:03:43] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 11:33:44] [INFO] [::1] Application initialized
+[2025-08-14 15:03:44] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:33:45] [INFO] [::1] Application initialized
+[2025-08-14 15:03:45] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 15:03:45] [INFO] [::1] Dashboard accessed
+[2025-08-14 15:03:45] [INFO] [::1] User ID: 48
+[2025-08-14 15:03:45] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 15:03:45] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 11:34:35] [INFO] [::1] Application initialized
+[2025-08-14 15:04:35] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 15:04:35] [INFO] [::1] Dashboard accessed
+[2025-08-14 15:04:35] [INFO] [::1] User ID: 48
+[2025-08-14 15:04:35] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 15:04:35] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 11:34:48] [INFO] [::1] Application initialized
+[2025-08-14 15:04:48] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:54:06] [INFO] [::1] Application initialized
+[2025-08-14 15:24:06] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 11:59:22] [INFO] [::1] Application initialized
+[2025-08-14 15:29:22] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 12:05:37] [INFO] [::1] Application initialized
+[2025-08-14 15:35:37] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 12:05:55] [INFO] [::1] Application initialized
+[2025-08-14 15:35:55] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 12:08:58] [INFO] [::1] Application initialized
+[2025-08-14 15:38:58] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 12:09:16] [INFO] [::1] Application initialized
+[2025-08-14 15:39:16] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 12:14:47] [INFO] [::1] Application initialized
+[2025-08-14 15:44:47] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 12:14:47] [INFO] [::1] Application initialized
+[2025-08-14 15:44:47] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 12:18:28] [INFO] [::1] Application initialized
+[2025-08-14 15:48:28] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 12:21:36] [INFO] [::1] Application initialized
+[2025-08-14 15:51:36] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 12:24:46] [INFO] [::1] Application initialized
+[2025-08-14 15:54:46] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 12:25:47] [INFO] [::1] Application initialized
+[2025-08-14 15:55:47] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 15:55:47] [ERROR] [::1] Application submission failed: Unknown column 'notes' in 'field list'
+[2025-08-14 12:27:14] [INFO] [::1] Application initialized
+[2025-08-14 15:57:14] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 15:57:15] [ERROR] [::1] Application submission failed: Unknown column 'notes' in 'field list'
+[2025-08-14 12:29:46] [INFO] [::1] Application initialized
+[2025-08-14 15:59:46] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 15:59:46] [ERROR] [::1] Application submission failed: Unknown column 'notes' in 'field list'
+[2025-08-14 12:30:21] [INFO] [::1] Application initialized
+[2025-08-14 16:00:21] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:00:21] [ERROR] [::1] Application submission failed: Unknown column 'notes' in 'field list'
+[2025-08-14 12:31:05] [INFO] [::1] Application initialized
+[2025-08-14 16:01:05] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:01:05] [ERROR] [::1] Application submission failed: Unknown column 'notes' in 'field list'
+[2025-08-14 12:36:45] [INFO] [::1] Application initialized
+[2025-08-14 16:06:45] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:06:45] [ERROR] [::1] Application submission failed: Unknown column 'notes' in 'field list'
+[2025-08-14 12:37:17] [INFO] [::1] Application initialized
+[2025-08-14 16:07:17] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:07:17] [ERROR] [::1] Application submission failed: Unknown column 'notes' in 'field list'
+[2025-08-14 12:39:43] [INFO] [::1] Application initialized
+[2025-08-14 16:09:43] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:09:43] [ERROR] [::1] Application submission failed: Data truncated for column 'payment_status' at row 1
+[2025-08-14 12:39:45] [INFO] [::1] Application initialized
+[2025-08-14 16:09:45] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:09:45] [ERROR] [::1] Application submission failed: Data truncated for column 'payment_status' at row 1
+[2025-08-14 12:39:47] [INFO] [::1] Application initialized
+[2025-08-14 16:09:47] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:09:47] [ERROR] [::1] Application submission failed: Data truncated for column 'payment_status' at row 1
+[2025-08-14 12:40:00] [INFO] [::1] Application initialized
+[2025-08-14 16:10:00] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:10:00] [ERROR] [::1] Application submission failed: Data truncated for column 'payment_status' at row 1
+[2025-08-14 12:40:01] [INFO] [::1] Application initialized
+[2025-08-14 16:10:01] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:10:01] [ERROR] [::1] Application submission failed: Data truncated for column 'payment_status' at row 1
+[2025-08-14 12:40:01] [INFO] [::1] Application initialized
+[2025-08-14 16:10:01] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:10:01] [ERROR] [::1] Application submission failed: Data truncated for column 'payment_status' at row 1
+[2025-08-14 12:40:03] [INFO] [::1] Application initialized
+[2025-08-14 16:10:03] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:10:03] [ERROR] [::1] Application submission failed: Data truncated for column 'payment_status' at row 1
+[2025-08-14 12:40:15] [INFO] [::1] Application initialized
+[2025-08-14 16:10:15] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 12:40:17] [INFO] [::1] Application initialized
+[2025-08-14 16:10:17] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 12:41:22] [INFO] [::1] Application initialized
+[2025-08-14 16:11:22] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 12:41:26] [INFO] [::1] Application initialized
+[2025-08-14 16:11:26] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 12:41:29] [INFO] [::1] Application initialized
+[2025-08-14 16:11:29] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 12:41:44] [INFO] [::1] Application initialized
+[2025-08-14 16:11:44] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 12:43:56] [INFO] [::1] Application initialized
+[2025-08-14 16:13:56] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:13:56] [INFO] [::1] Dashboard accessed
+[2025-08-14 16:13:56] [INFO] [::1] User ID: 48
+[2025-08-14 16:13:56] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 16:13:56] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 12:44:17] [INFO] [::1] Application initialized
+[2025-08-14 16:14:17] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 12:45:59] [INFO] [::1] Application initialized
+[2025-08-14 16:15:59] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 12:47:14] [INFO] [::1] Application initialized
+[2025-08-14 16:17:14] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:17:14] [ERROR] [::1] Application submission failed: Data truncated for column 'payment_status' at row 1
+[2025-08-14 12:47:34] [INFO] [::1] Application initialized
+[2025-08-14 16:17:34] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 12:48:04] [INFO] [::1] Application initialized
+[2025-08-14 16:18:04] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:18:04] [INFO] [::1] Dashboard accessed
+[2025-08-14 16:18:04] [INFO] [::1] User ID: 48
+[2025-08-14 16:18:04] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 16:18:04] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 12:49:52] [INFO] [::1] Application initialized
+[2025-08-14 16:19:52] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:19:52] [INFO] [::1] Dashboard accessed
+[2025-08-14 16:19:52] [INFO] [::1] User ID: 48
+[2025-08-14 16:19:52] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 16:19:52] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 12:50:03] [INFO] [::1] Application initialized
+[2025-08-14 16:20:03] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 12:50:08] [INFO] [::1] Application initialized
+[2025-08-14 16:20:08] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 12:50:09] [INFO] [::1] Application initialized
+[2025-08-14 16:20:09] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:20:09] [INFO] [::1] Dashboard accessed
+[2025-08-14 16:20:09] [INFO] [::1] User ID: 48
+[2025-08-14 16:20:09] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 16:20:09] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 12:50:17] [INFO] [::1] Application initialized
+[2025-08-14 16:20:17] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 12:50:19] [INFO] [::1] Application initialized
+[2025-08-14 16:20:19] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:20:19] [INFO] [::1] Dashboard accessed
+[2025-08-14 16:20:19] [INFO] [::1] User ID: 48
+[2025-08-14 16:20:19] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 16:20:19] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 12:51:12] [INFO] [::1] Application initialized
+[2025-08-14 16:21:12] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:21:12] [INFO] [::1] Dashboard accessed
+[2025-08-14 16:21:12] [INFO] [::1] User ID: 48
+[2025-08-14 16:21:12] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 16:21:12] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 12:51:23] [INFO] [::1] Application initialized
+[2025-08-14 16:21:23] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:21:23] [INFO] [::1] Dashboard accessed
+[2025-08-14 16:21:23] [INFO] [::1] User ID: 48
+[2025-08-14 16:21:23] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 16:21:23] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 12:51:30] [INFO] [::1] Application initialized
+[2025-08-14 16:21:30] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 12:51:33] [INFO] [::1] Application initialized
+[2025-08-14 16:21:33] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:21:33] [INFO] [::1] Dashboard accessed
+[2025-08-14 16:21:33] [INFO] [::1] User ID: 48
+[2025-08-14 16:21:33] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 16:21:33] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 12:51:35] [INFO] [::1] Application initialized
+[2025-08-14 16:21:35] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 12:51:37] [INFO] [::1] Application initialized
+[2025-08-14 16:21:37] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:21:37] [INFO] [::1] Dashboard accessed
+[2025-08-14 16:21:37] [INFO] [::1] User ID: 48
+[2025-08-14 16:21:37] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 16:21:37] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 12:51:41] [INFO] [::1] Application initialized
+[2025-08-14 16:21:41] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 12:51:44] [INFO] [::1] Application initialized
+[2025-08-14 16:21:44] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:21:44] [INFO] [::1] this is application id: 
+[2025-08-14 16:21:44] [INFO] [::1] Application details fetched: 
+[2025-08-14 12:51:53] [INFO] [::1] Application initialized
+[2025-08-14 16:21:53] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:21:53] [INFO] [::1] Dashboard accessed
+[2025-08-14 16:21:53] [INFO] [::1] User ID: 48
+[2025-08-14 16:21:53] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 16:21:53] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 12:51:55] [INFO] [::1] Application initialized
+[2025-08-14 16:21:55] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:21:55] [INFO] [::1] this is application id: 
+[2025-08-14 16:21:55] [INFO] [::1] Application details fetched: 
+[2025-08-14 12:51:57] [INFO] [::1] Application initialized
+[2025-08-14 16:21:57] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:21:57] [INFO] [::1] Dashboard accessed
+[2025-08-14 16:21:57] [INFO] [::1] User ID: 48
+[2025-08-14 16:21:57] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 16:21:57] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 12:52:23] [INFO] [::1] Application initialized
+[2025-08-14 16:22:23] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:22:23] [INFO] [::1] Dashboard accessed
+[2025-08-14 16:22:23] [INFO] [::1] User ID: 48
+[2025-08-14 16:22:23] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 16:22:23] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 12:53:59] [INFO] [::1] Application initialized
+[2025-08-14 16:23:59] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:23:59] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 16:23:59] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 12:54:00] [INFO] [::1] Application initialized
+[2025-08-14 16:24:00] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 12:54:02] [INFO] [::1] Application initialized
+[2025-08-14 16:24:02] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:24:02] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 16:24:02] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 12:54:03] [INFO] [::1] Application initialized
+[2025-08-14 16:24:03] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 12:54:07] [INFO] [::1] Application initialized
+[2025-08-14 16:24:07] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:24:07] [INFO] [::1] Dashboard accessed
+[2025-08-14 16:24:07] [INFO] [::1] User ID: 48
+[2025-08-14 16:24:07] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 16:24:07] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 12:54:48] [INFO] [::1] Application initialized
+[2025-08-14 16:24:48] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 12:54:50] [INFO] [::1] Application initialized
+[2025-08-14 16:24:50] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:24:50] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 16:24:50] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 12:54:52] [INFO] [::1] Application initialized
+[2025-08-14 16:24:52] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 12:54:53] [INFO] [::1] Application initialized
+[2025-08-14 16:24:53] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:24:53] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 16:24:53] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 12:54:55] [INFO] [::1] Application initialized
+[2025-08-14 16:24:55] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 12:54:57] [INFO] [::1] Application initialized
+[2025-08-14 16:24:57] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:24:57] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 16:24:57] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 12:55:00] [INFO] [::1] Application initialized
+[2025-08-14 16:25:00] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 12:55:03] [INFO] [::1] Application initialized
+[2025-08-14 16:25:03] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:25:03] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 16:25:03] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 12:55:05] [INFO] [::1] Application initialized
+[2025-08-14 16:25:05] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 12:55:06] [INFO] [::1] Application initialized
+[2025-08-14 16:25:06] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:25:06] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 16:25:06] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 12:55:08] [INFO] [::1] Application initialized
+[2025-08-14 16:25:08] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 12:55:10] [INFO] [::1] Application initialized
+[2025-08-14 16:25:10] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:25:10] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 16:25:10] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 12:55:12] [INFO] [::1] Application initialized
+[2025-08-14 16:25:12] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 12:55:16] [INFO] [::1] Application initialized
+[2025-08-14 16:25:16] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:25:16] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 16:25:16] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 12:55:17] [INFO] [::1] Application initialized
+[2025-08-14 16:25:17] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 12:55:18] [INFO] [::1] Application initialized
+[2025-08-14 16:25:18] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:25:18] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 16:25:18] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 12:55:19] [INFO] [::1] Application initialized
+[2025-08-14 16:25:19] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 12:55:21] [INFO] [::1] Application initialized
+[2025-08-14 16:25:21] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:25:21] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 16:25:21] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 12:55:22] [INFO] [::1] Application initialized
+[2025-08-14 16:25:22] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 12:55:23] [INFO] [::1] Application initialized
+[2025-08-14 16:25:23] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:25:23] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 16:25:23] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 12:55:24] [INFO] [::1] Application initialized
+[2025-08-14 16:25:24] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 12:55:25] [INFO] [::1] Application initialized
+[2025-08-14 16:25:25] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:25:25] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 16:25:25] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 12:55:26] [INFO] [::1] Application initialized
+[2025-08-14 16:25:26] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 12:55:27] [INFO] [::1] Application initialized
+[2025-08-14 16:25:27] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:25:27] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 16:25:27] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 12:55:28] [INFO] [::1] Application initialized
+[2025-08-14 16:25:28] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 12:55:29] [INFO] [::1] Application initialized
+[2025-08-14 16:25:29] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:25:29] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 16:25:29] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 12:55:30] [INFO] [::1] Application initialized
+[2025-08-14 16:25:30] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 12:55:32] [INFO] [::1] Application initialized
+[2025-08-14 16:25:32] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:25:32] [INFO] [::1] Dashboard accessed
+[2025-08-14 16:25:32] [INFO] [::1] User ID: 48
+[2025-08-14 16:25:32] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 16:25:32] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 12:55:33] [INFO] [::1] Application initialized
+[2025-08-14 16:25:33] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 12:55:35] [INFO] [::1] Application initialized
+[2025-08-14 16:25:35] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:25:35] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 16:25:35] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 12:55:37] [INFO] [::1] Application initialized
+[2025-08-14 16:25:37] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 12:55:39] [INFO] [::1] Application initialized
+[2025-08-14 16:25:39] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:25:39] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 16:25:39] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 12:55:47] [INFO] [::1] Application initialized
+[2025-08-14 16:25:47] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 12:56:39] [INFO] [::1] Application initialized
+[2025-08-14 16:26:39] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:26:39] [ERROR] [::1] Application submission failed: Data truncated for column 'payment_status' at row 1
+[2025-08-14 12:56:55] [INFO] [::1] Application initialized
+[2025-08-14 16:26:55] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 12:57:32] [INFO] [::1] Application initialized
+[2025-08-14 16:27:32] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:27:32] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 16:27:32] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 12:57:37] [INFO] [::1] Application initialized
+[2025-08-14 16:27:37] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 12:58:15] [INFO] [::1] Application initialized
+[2025-08-14 16:28:15] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:28:15] [INFO] [::1] this is application id: 
+[2025-08-14 16:28:15] [INFO] [::1] Application details fetched: 
+[2025-08-14 12:58:18] [INFO] [::1] Application initialized
+[2025-08-14 16:28:18] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:28:18] [INFO] [::1] Dashboard accessed
+[2025-08-14 16:28:18] [INFO] [::1] User ID: 48
+[2025-08-14 16:28:18] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 16:28:18] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 12:58:43] [INFO] [::1] Application initialized
+[2025-08-14 16:28:43] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:28:43] [INFO] [::1] Dashboard accessed
+[2025-08-14 16:28:43] [INFO] [::1] User ID: 48
+[2025-08-14 16:28:43] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 16:28:43] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 12:58:44] [INFO] [::1] Application initialized
+[2025-08-14 16:28:44] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:28:44] [INFO] [::1] Dashboard accessed
+[2025-08-14 16:28:44] [INFO] [::1] User ID: 48
+[2025-08-14 16:28:44] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 16:28:44] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 12:58:45] [INFO] [::1] Application initialized
+[2025-08-14 16:28:45] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:28:45] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 16:28:45] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 12:58:46] [INFO] [::1] Application initialized
+[2025-08-14 16:28:46] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 12:58:47] [INFO] [::1] Application initialized
+[2025-08-14 16:28:47] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:28:47] [INFO] [::1] Dashboard accessed
+[2025-08-14 16:28:47] [INFO] [::1] User ID: 48
+[2025-08-14 16:28:47] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 16:28:47] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 12:59:43] [INFO] [::1] Application initialized
+[2025-08-14 16:29:43] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:29:43] [INFO] [::1] Dashboard accessed
+[2025-08-14 16:29:43] [INFO] [::1] User ID: 48
+[2025-08-14 16:29:43] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 16:29:43] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 12:59:52] [INFO] [::1] Application initialized
+[2025-08-14 16:29:52] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:00:23] [INFO] [::1] Application initialized
+[2025-08-14 16:30:23] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:00:36] [INFO] [::1] Application initialized
+[2025-08-14 16:30:36] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:30:36] [INFO] [::1] Dashboard accessed
+[2025-08-14 16:30:36] [INFO] [::1] User ID: 48
+[2025-08-14 16:30:36] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 16:30:36] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 13:00:42] [INFO] [::1] Application initialized
+[2025-08-14 16:30:42] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:00:50] [INFO] [::1] Application initialized
+[2025-08-14 16:30:50] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:00:52] [INFO] [::1] Application initialized
+[2025-08-14 16:30:52] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:00:54] [INFO] [::1] Application initialized
+[2025-08-14 16:30:54] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:00:57] [INFO] [::1] Application initialized
+[2025-08-14 16:30:57] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:30:57] [INFO] [::1] Dashboard accessed
+[2025-08-14 16:30:57] [INFO] [::1] User ID: 48
+[2025-08-14 16:30:57] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 16:30:57] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 13:01:31] [INFO] [::1] Application initialized
+[2025-08-14 16:31:31] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:02:44] [INFO] [::1] Application initialized
+[2025-08-14 16:32:44] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:02:46] [INFO] [::1] Application initialized
+[2025-08-14 16:32:46] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:32:46] [INFO] [::1] Dashboard accessed
+[2025-08-14 16:32:46] [INFO] [::1] User ID: 48
+[2025-08-14 16:32:46] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 16:32:46] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 13:02:47] [INFO] [::1] Application initialized
+[2025-08-14 16:32:47] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:32:47] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 16:32:47] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 13:02:54] [INFO] [::1] Application initialized
+[2025-08-14 16:32:54] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:03:01] [INFO] [::1] Application initialized
+[2025-08-14 16:33:01] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:33:01] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 16:33:01] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 13:03:56] [INFO] [::1] Application initialized
+[2025-08-14 16:33:56] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:33:56] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 16:33:56] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 13:03:57] [INFO] [::1] Application initialized
+[2025-08-14 16:33:57] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:33:57] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 16:33:57] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 13:03:58] [INFO] [::1] Application initialized
+[2025-08-14 16:33:58] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:33:58] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 16:33:58] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 13:03:58] [INFO] [::1] Application initialized
+[2025-08-14 16:33:58] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:33:58] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 16:33:58] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 13:04:03] [INFO] [::1] Application initialized
+[2025-08-14 16:34:03] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:34:03] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 16:34:03] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 13:04:42] [INFO] [::1] Application initialized
+[2025-08-14 16:34:42] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:34:42] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 16:34:42] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 13:04:43] [INFO] [::1] Application initialized
+[2025-08-14 16:34:43] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:05:51] [INFO] [::1] Application initialized
+[2025-08-14 16:35:51] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:35:51] [INFO] [::1] Dashboard accessed
+[2025-08-14 16:35:51] [INFO] [::1] User ID: 48
+[2025-08-14 16:35:51] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 16:35:51] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 13:05:57] [INFO] [::1] Application initialized
+[2025-08-14 16:35:57] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:35:57] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 16:35:57] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 13:06:00] [INFO] [::1] Application initialized
+[2025-08-14 16:36:00] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:36:00] [INFO] [::1] Dashboard accessed
+[2025-08-14 16:36:00] [INFO] [::1] User ID: 48
+[2025-08-14 16:36:00] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 16:36:00] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 13:06:04] [INFO] [::1] Application initialized
+[2025-08-14 16:36:04] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:36:04] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 16:36:04] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 13:06:07] [INFO] [::1] Application initialized
+[2025-08-14 16:36:07] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:36:07] [INFO] [::1] Dashboard accessed
+[2025-08-14 16:36:07] [INFO] [::1] User ID: 48
+[2025-08-14 16:36:07] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 16:36:07] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 13:06:24] [INFO] [::1] Application initialized
+[2025-08-14 16:36:24] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:36:24] [INFO] [::1] Dashboard accessed
+[2025-08-14 16:36:24] [INFO] [::1] User ID: 48
+[2025-08-14 16:36:24] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 16:36:24] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 13:06:31] [INFO] [::1] Application initialized
+[2025-08-14 16:36:31] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:36:31] [INFO] [::1] Dashboard accessed
+[2025-08-14 16:36:31] [INFO] [::1] User ID: 48
+[2025-08-14 16:36:31] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 16:36:31] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 13:06:37] [INFO] [::1] Application initialized
+[2025-08-14 16:36:37] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:06:46] [INFO] [::1] Application initialized
+[2025-08-14 16:36:46] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:36:46] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 16:36:46] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 13:06:47] [INFO] [::1] Application initialized
+[2025-08-14 16:36:47] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:06:48] [INFO] [::1] Application initialized
+[2025-08-14 16:36:48] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:36:48] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 16:36:48] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 13:06:50] [INFO] [::1] Application initialized
+[2025-08-14 16:36:50] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:06:52] [INFO] [::1] Application initialized
+[2025-08-14 16:36:52] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:36:52] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 16:36:52] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 13:06:53] [INFO] [::1] Application initialized
+[2025-08-14 16:36:53] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:06:54] [INFO] [::1] Application initialized
+[2025-08-14 16:36:54] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:36:54] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 16:36:54] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 13:06:55] [INFO] [::1] Application initialized
+[2025-08-14 16:36:55] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:06:56] [INFO] [::1] Application initialized
+[2025-08-14 16:36:56] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:36:56] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 16:36:56] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 13:06:58] [INFO] [::1] Application initialized
+[2025-08-14 16:36:58] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:08:06] [INFO] [::1] Application initialized
+[2025-08-14 16:38:06] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:08:07] [INFO] [::1] Application initialized
+[2025-08-14 16:38:08] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:08:51] [INFO] [::1] Application initialized
+[2025-08-14 16:38:51] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:13:06] [INFO] [::1] Application initialized
+[2025-08-14 16:43:06] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:43:06] [INFO] [::1] Dashboard accessed
+[2025-08-14 16:43:06] [INFO] [::1] User ID: 48
+[2025-08-14 16:43:06] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 16:43:06] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 13:29:25] [INFO] [::1] Application initialized
+[2025-08-14 16:59:25] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 16:59:25] [ERROR] [::1] Application submission failed: Data truncated for column 'payment_status' at row 1
+[2025-08-14 13:30:56] [INFO] [::1] Application initialized
+[2025-08-14 17:00:56] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:35:48] [INFO] [::1] Application initialized
+[2025-08-14 17:05:48] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:36:20] [INFO] [::1] Application initialized
+[2025-08-14 17:06:20] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:06:20] [ERROR] [::1] Application submission failed: Data truncated for column 'payment_status' at row 1
+[2025-08-14 13:36:23] [INFO] [::1] Application initialized
+[2025-08-14 17:06:23] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:37:08] [INFO] [::1] Application initialized
+[2025-08-14 17:07:08] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:07:08] [ERROR] [::1] Application submission failed: Data truncated for column 'payment_status' at row 1
+[2025-08-14 13:37:11] [INFO] [::1] Application initialized
+[2025-08-14 17:07:11] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:37:33] [INFO] [::1] Application initialized
+[2025-08-14 17:07:33] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:37:35] [INFO] [::1] Application initialized
+[2025-08-14 17:07:35] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:38:03] [INFO] [::1] Application initialized
+[2025-08-14 17:08:03] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:08:03] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 17:08:03] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 13:38:04] [INFO] [::1] Application initialized
+[2025-08-14 17:08:04] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:08:04] [INFO] [::1] Dashboard accessed
+[2025-08-14 17:08:04] [INFO] [::1] User ID: 48
+[2025-08-14 17:08:04] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 17:08:04] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 13:39:34] [INFO] [::1] Application initialized
+[2025-08-14 17:09:34] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:39:40] [INFO] [::1] Application initialized
+[2025-08-14 17:09:40] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:09:40] [INFO] [::1] Dashboard accessed
+[2025-08-14 17:09:40] [INFO] [::1] User ID: 48
+[2025-08-14 17:09:40] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 17:09:40] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 13:39:46] [INFO] [::1] Application initialized
+[2025-08-14 17:09:46] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:39:50] [INFO] [::1] Application initialized
+[2025-08-14 17:09:50] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:09:50] [INFO] [::1] Dashboard accessed
+[2025-08-14 17:09:50] [INFO] [::1] User ID: 48
+[2025-08-14 17:09:50] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 17:09:50] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 13:39:54] [INFO] [::1] Application initialized
+[2025-08-14 17:09:54] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:39:57] [INFO] [::1] Application initialized
+[2025-08-14 17:09:57] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:09:57] [INFO] [::1] Dashboard accessed
+[2025-08-14 17:09:57] [INFO] [::1] User ID: 48
+[2025-08-14 17:09:57] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 17:09:57] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 13:40:02] [INFO] [::1] Application initialized
+[2025-08-14 17:10:02] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:10:02] [INFO] [::1] this is application id: 
+[2025-08-14 17:10:02] [INFO] [::1] Application details fetched: 
+[2025-08-14 13:40:26] [INFO] [::1] Application initialized
+[2025-08-14 17:10:26] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:10:26] [INFO] [::1] Dashboard accessed
+[2025-08-14 17:10:26] [INFO] [::1] User ID: 48
+[2025-08-14 17:10:26] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 17:10:26] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 13:42:36] [INFO] [::1] Application initialized
+[2025-08-14 17:12:36] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:12:36] [INFO] [::1] Dashboard accessed
+[2025-08-14 17:12:36] [INFO] [::1] User ID: 48
+[2025-08-14 17:12:36] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 17:12:36] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 13:42:37] [INFO] [::1] Application initialized
+[2025-08-14 17:12:37] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:43:06] [INFO] [::1] Application initialized
+[2025-08-14 17:13:06] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:43:12] [INFO] [::1] Application initialized
+[2025-08-14 17:13:12] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:13:12] [INFO] [::1] Dashboard accessed
+[2025-08-14 17:13:12] [INFO] [::1] User ID: 48
+[2025-08-14 17:13:12] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 17:13:12] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 13:43:32] [INFO] [::1] Application initialized
+[2025-08-14 17:13:32] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:13:32] [INFO] [::1] Dashboard accessed
+[2025-08-14 17:13:32] [INFO] [::1] User ID: 48
+[2025-08-14 17:13:32] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 17:13:32] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 13:43:33] [INFO] [::1] Application initialized
+[2025-08-14 17:13:33] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:44:14] [INFO] [::1] Application initialized
+[2025-08-14 17:14:14] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:14:14] [INFO] [::1] Dashboard accessed
+[2025-08-14 17:14:14] [INFO] [::1] User ID: 48
+[2025-08-14 17:14:14] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 17:14:14] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 13:49:39] [INFO] [::1] Application initialized
+[2025-08-14 17:19:39] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:19:39] [INFO] [::1] Dashboard accessed
+[2025-08-14 17:19:39] [INFO] [::1] User ID: 48
+[2025-08-14 17:19:39] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 17:19:39] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 13:49:42] [INFO] [::1] Application initialized
+[2025-08-14 17:19:42] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:49:44] [INFO] [::1] Application initialized
+[2025-08-14 17:19:44] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:50:02] [INFO] [::1] Application initialized
+[2025-08-14 17:20:02] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:50:09] [INFO] [::1] Application initialized
+[2025-08-14 17:20:09] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:20:09] [INFO] [::1] Dashboard accessed
+[2025-08-14 17:20:09] [INFO] [::1] User ID: 48
+[2025-08-14 17:20:09] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 17:20:09] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 13:50:12] [INFO] [::1] Application initialized
+[2025-08-14 17:20:12] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:50:14] [INFO] [::1] Application initialized
+[2025-08-14 17:20:14] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:20:14] [INFO] [::1] Dashboard accessed
+[2025-08-14 17:20:14] [INFO] [::1] User ID: 48
+[2025-08-14 17:20:14] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 17:20:14] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 13:50:16] [INFO] [::1] Application initialized
+[2025-08-14 17:20:16] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:50:18] [INFO] [::1] Application initialized
+[2025-08-14 17:20:18] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:20:18] [INFO] [::1] Dashboard accessed
+[2025-08-14 17:20:18] [INFO] [::1] User ID: 48
+[2025-08-14 17:20:18] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 17:20:18] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 13:50:20] [INFO] [::1] Application initialized
+[2025-08-14 17:20:20] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:50:24] [INFO] [::1] Application initialized
+[2025-08-14 17:20:24] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:20:24] [INFO] [::1] Dashboard accessed
+[2025-08-14 17:20:24] [INFO] [::1] User ID: 48
+[2025-08-14 17:20:24] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 17:20:24] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 13:50:26] [INFO] [::1] Application initialized
+[2025-08-14 17:20:26] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:50:29] [INFO] [::1] Application initialized
+[2025-08-14 17:20:29] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:20:29] [INFO] [::1] Dashboard accessed
+[2025-08-14 17:20:29] [INFO] [::1] User ID: 48
+[2025-08-14 17:20:29] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 17:20:29] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 13:51:36] [INFO] [::1] Application initialized
+[2025-08-14 17:21:36] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:51:40] [INFO] [::1] Application initialized
+[2025-08-14 17:21:40] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:51:57] [INFO] [::1] Application initialized
+[2025-08-14 17:21:57] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:52:13] [INFO] [::1] Application initialized
+[2025-08-14 17:22:13] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:52:15] [INFO] [::1] Application initialized
+[2025-08-14 17:22:15] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:22:15] [INFO] [::1] Dashboard accessed
+[2025-08-14 17:22:15] [INFO] [::1] User ID: 48
+[2025-08-14 17:22:15] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 17:22:15] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 13:52:18] [INFO] [::1] Application initialized
+[2025-08-14 17:22:18] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:52:21] [INFO] [::1] Application initialized
+[2025-08-14 17:22:21] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:22:21] [INFO] [::1] Dashboard accessed
+[2025-08-14 17:22:21] [INFO] [::1] User ID: 48
+[2025-08-14 17:22:21] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 17:22:21] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 13:52:22] [INFO] [::1] Application initialized
+[2025-08-14 17:22:22] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:52:24] [INFO] [::1] Application initialized
+[2025-08-14 17:22:24] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:22:24] [INFO] [::1] Dashboard accessed
+[2025-08-14 17:22:24] [INFO] [::1] User ID: 48
+[2025-08-14 17:22:24] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 17:22:24] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 13:52:49] [INFO] [::1] Application initialized
+[2025-08-14 17:22:49] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:22:49] [INFO] [::1] Dashboard accessed
+[2025-08-14 17:22:49] [INFO] [::1] User ID: 48
+[2025-08-14 17:22:49] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 17:22:49] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 13:52:50] [INFO] [::1] Application initialized
+[2025-08-14 17:22:50] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:22:50] [INFO] [::1] Dashboard accessed
+[2025-08-14 17:22:50] [INFO] [::1] User ID: 48
+[2025-08-14 17:22:50] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 17:22:50] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 13:52:50] [INFO] [::1] Application initialized
+[2025-08-14 17:22:50] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:22:50] [INFO] [::1] Dashboard accessed
+[2025-08-14 17:22:50] [INFO] [::1] User ID: 48
+[2025-08-14 17:22:50] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 17:22:50] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 13:52:50] [INFO] [::1] Application initialized
+[2025-08-14 17:22:50] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:22:50] [INFO] [::1] Dashboard accessed
+[2025-08-14 17:22:50] [INFO] [::1] User ID: 48
+[2025-08-14 17:22:50] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 17:22:50] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 13:52:50] [INFO] [::1] Application initialized
+[2025-08-14 17:22:50] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:22:50] [INFO] [::1] Dashboard accessed
+[2025-08-14 17:22:50] [INFO] [::1] User ID: 48
+[2025-08-14 17:22:50] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 17:22:50] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 13:52:51] [INFO] [::1] Application initialized
+[2025-08-14 17:22:51] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:22:51] [INFO] [::1] Dashboard accessed
+[2025-08-14 17:22:51] [INFO] [::1] User ID: 48
+[2025-08-14 17:22:51] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 17:22:51] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 13:52:54] [INFO] [::1] Application initialized
+[2025-08-14 17:22:54] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:53:23] [INFO] [::1] Application initialized
+[2025-08-14 17:23:23] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:53:41] [INFO] [::1] Application initialized
+[2025-08-14 17:23:41] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:53:45] [INFO] [::1] Application initialized
+[2025-08-14 17:23:45] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:53:48] [INFO] [::1] Application initialized
+[2025-08-14 17:23:48] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:53:52] [INFO] [::1] Application initialized
+[2025-08-14 17:23:52] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:53:55] [INFO] [::1] Application initialized
+[2025-08-14 17:23:55] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:53:56] [INFO] [::1] Application initialized
+[2025-08-14 17:23:56] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:53:59] [INFO] [::1] Application initialized
+[2025-08-14 17:23:59] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:54:02] [INFO] [::1] Application initialized
+[2025-08-14 17:24:02] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:54:12] [INFO] [::1] Application initialized
+[2025-08-14 17:24:12] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:24:12] [ERROR] [::1] Error fetching applications: Unknown column 'a.name' in 'where clause'
+[2025-08-14 13:54:18] [INFO] [::1] Application initialized
+[2025-08-14 17:24:18] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:24:18] [ERROR] [::1] Error fetching applications: Unknown column 'a.name' in 'where clause'
+[2025-08-14 13:54:19] [INFO] [::1] Application initialized
+[2025-08-14 17:24:19] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:24:19] [ERROR] [::1] Error fetching applications: Unknown column 'a.name' in 'where clause'
+[2025-08-14 13:54:33] [INFO] [::1] Application initialized
+[2025-08-14 17:24:33] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:24:33] [ERROR] [::1] Error fetching applications: Unknown column 'a.name' in 'where clause'
+[2025-08-14 13:54:34] [INFO] [::1] Application initialized
+[2025-08-14 17:24:34] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:24:34] [ERROR] [::1] Error fetching applications: Unknown column 'a.name' in 'where clause'
+[2025-08-14 13:54:39] [INFO] [::1] Application initialized
+[2025-08-14 17:24:39] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:54:46] [INFO] [::1] Application initialized
+[2025-08-14 17:24:46] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:24:46] [ERROR] [::1] Error fetching applications: Unknown column 'a.name' in 'where clause'
+[2025-08-14 13:54:52] [INFO] [::1] Application initialized
+[2025-08-14 17:24:52] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:24:52] [ERROR] [::1] Error fetching applications: Unknown column 'a.name' in 'where clause'
+[2025-08-14 13:54:53] [INFO] [::1] Application initialized
+[2025-08-14 17:24:53] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:24:53] [ERROR] [::1] Error fetching applications: Unknown column 'a.name' in 'where clause'
+[2025-08-14 13:55:01] [INFO] [::1] Application initialized
+[2025-08-14 17:25:01] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:25:01] [ERROR] [::1] Error fetching applications: Unknown column 'a.name' in 'where clause'
+[2025-08-14 13:55:06] [INFO] [::1] Application initialized
+[2025-08-14 17:25:06] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:55:08] [INFO] [::1] Application initialized
+[2025-08-14 17:25:08] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:55:28] [INFO] [::1] Application initialized
+[2025-08-14 17:25:28] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:55:31] [INFO] [::1] Application initialized
+[2025-08-14 17:25:31] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:55:33] [INFO] [::1] Application initialized
+[2025-08-14 17:25:33] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:55:37] [INFO] [::1] Application initialized
+[2025-08-14 17:25:37] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:25:37] [ERROR] [::1] Error fetching applications: Unknown column 'a.name' in 'where clause'
+[2025-08-14 13:55:38] [INFO] [::1] Application initialized
+[2025-08-14 17:25:38] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:25:38] [ERROR] [::1] Error fetching applications: Unknown column 'a.name' in 'where clause'
+[2025-08-14 13:55:38] [INFO] [::1] Application initialized
+[2025-08-14 17:25:38] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:25:38] [ERROR] [::1] Error fetching applications: Unknown column 'a.name' in 'where clause'
+[2025-08-14 13:55:43] [INFO] [::1] Application initialized
+[2025-08-14 17:25:43] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:57:23] [INFO] [::1] Application initialized
+[2025-08-14 17:27:23] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:57:24] [INFO] [::1] Application initialized
+[2025-08-14 17:27:24] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:57:24] [INFO] [::1] Application initialized
+[2025-08-14 17:27:24] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:57:25] [INFO] [::1] Application initialized
+[2025-08-14 17:27:25] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:57:25] [INFO] [::1] Application initialized
+[2025-08-14 17:27:25] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:57:26] [INFO] [::1] Application initialized
+[2025-08-14 17:27:26] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:57:40] [INFO] [::1] Application initialized
+[2025-08-14 17:27:40] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:57:41] [INFO] [::1] Application initialized
+[2025-08-14 17:27:41] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:57:41] [INFO] [::1] Application initialized
+[2025-08-14 17:27:41] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:57:46] [INFO] [::1] Application initialized
+[2025-08-14 17:27:46] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:58:38] [INFO] [::1] Application initialized
+[2025-08-14 17:28:38] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:58:43] [INFO] [::1] Application initialized
+[2025-08-14 17:28:43] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:59:07] [INFO] [::1] Application initialized
+[2025-08-14 17:29:07] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:59:09] [INFO] [::1] Application initialized
+[2025-08-14 17:29:09] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:59:11] [INFO] [::1] Application initialized
+[2025-08-14 17:29:11] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:29:11] [INFO] [::1] Dashboard accessed
+[2025-08-14 17:29:11] [INFO] [::1] User ID: 48
+[2025-08-14 17:29:11] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 17:29:11] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 13:59:13] [INFO] [::1] Application initialized
+[2025-08-14 17:29:13] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:59:17] [INFO] [::1] Application initialized
+[2025-08-14 17:29:17] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:29:17] [INFO] [::1] Dashboard accessed
+[2025-08-14 17:29:17] [INFO] [::1] User ID: 48
+[2025-08-14 17:29:17] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 17:29:17] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 13:59:18] [INFO] [::1] Application initialized
+[2025-08-14 17:29:18] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:59:21] [INFO] [::1] Application initialized
+[2025-08-14 17:29:21] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:29:21] [INFO] [::1] Dashboard accessed
+[2025-08-14 17:29:21] [INFO] [::1] User ID: 48
+[2025-08-14 17:29:21] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 17:29:21] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 13:59:24] [INFO] [::1] Application initialized
+[2025-08-14 17:29:24] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:59:25] [INFO] [::1] Application initialized
+[2025-08-14 17:29:25] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:29:25] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 17:29:25] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 13:59:26] [INFO] [::1] Application initialized
+[2025-08-14 17:29:26] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:59:47] [INFO] [::1] Application initialized
+[2025-08-14 17:29:47] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:59:48] [INFO] [::1] Application initialized
+[2025-08-14 17:29:48] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:59:50] [INFO] [::1] Application initialized
+[2025-08-14 17:29:50] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:59:50] [INFO] [::1] Application initialized
+[2025-08-14 17:29:50] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:59:50] [INFO] [::1] Application initialized
+[2025-08-14 17:29:50] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:59:52] [INFO] [::1] Application initialized
+[2025-08-14 17:29:52] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:29:52] [INFO] [::1] Dashboard accessed
+[2025-08-14 17:29:52] [INFO] [::1] User ID: 48
+[2025-08-14 17:29:52] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 17:29:52] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 13:59:54] [INFO] [::1] Application initialized
+[2025-08-14 17:29:54] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 13:59:55] [INFO] [::1] Application initialized
+[2025-08-14 17:29:55] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:29:55] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 17:29:55] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 14:00:32] [INFO] [::1] Application initialized
+[2025-08-14 17:30:32] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:00:33] [INFO] [::1] Application initialized
+[2025-08-14 17:30:33] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:01:00] [INFO] [::1] Application initialized
+[2025-08-14 17:31:00] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:01:16] [INFO] [::1] Application initialized
+[2025-08-14 17:31:16] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:03:12] [INFO] [::1] Application initialized
+[2025-08-14 17:33:12] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:03:14] [INFO] [::1] Application initialized
+[2025-08-14 17:33:14] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:33:14] [INFO] [::1] Dashboard accessed
+[2025-08-14 17:33:14] [INFO] [::1] User ID: 48
+[2025-08-14 17:33:14] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 17:33:14] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 14:03:15] [INFO] [::1] Application initialized
+[2025-08-14 17:33:15] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:33:15] [INFO] [::1] Dashboard accessed
+[2025-08-14 17:33:15] [INFO] [::1] User ID: 48
+[2025-08-14 17:33:15] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 17:33:15] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 14:03:16] [INFO] [::1] Application initialized
+[2025-08-14 17:33:16] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:04:18] [INFO] [::1] Application initialized
+[2025-08-14 17:34:18] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:34:18] [INFO] [::1] Dashboard accessed
+[2025-08-14 17:34:18] [INFO] [::1] User ID: 48
+[2025-08-14 17:34:18] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 17:34:18] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 14:04:28] [INFO] [::1] Application initialized
+[2025-08-14 17:34:28] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:04:32] [INFO] [::1] Application initialized
+[2025-08-14 17:34:32] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:04:33] [INFO] [::1] Application initialized
+[2025-08-14 17:34:33] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:04:36] [INFO] [::1] Application initialized
+[2025-08-14 17:34:36] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:34:36] [INFO] [::1] this is application id: 
+[2025-08-14 17:34:36] [INFO] [::1] Application details fetched: 
+[2025-08-14 14:04:37] [INFO] [::1] Application initialized
+[2025-08-14 17:34:37] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:34:37] [INFO] [::1] Dashboard accessed
+[2025-08-14 17:34:37] [INFO] [::1] User ID: 48
+[2025-08-14 17:34:37] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 17:34:37] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 14:04:42] [INFO] [::1] Application initialized
+[2025-08-14 17:34:42] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:04:43] [INFO] [::1] Application initialized
+[2025-08-14 17:34:43] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:34:43] [INFO] [::1] Dashboard accessed
+[2025-08-14 17:34:43] [INFO] [::1] User ID: 48
+[2025-08-14 17:34:43] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 17:34:43] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 14:04:49] [INFO] [::1] Application initialized
+[2025-08-14 17:34:49] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:04:52] [INFO] [::1] Application initialized
+[2025-08-14 17:34:52] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:34:52] [INFO] [::1] Dashboard accessed
+[2025-08-14 17:34:52] [INFO] [::1] User ID: 48
+[2025-08-14 17:34:52] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 17:34:52] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 14:05:01] [INFO] [::1] Application initialized
+[2025-08-14 17:35:01] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:35:01] [INFO] [::1] this is application id: 
+[2025-08-14 17:35:01] [INFO] [::1] Application details fetched: 
+[2025-08-14 14:05:04] [INFO] [::1] Application initialized
+[2025-08-14 17:35:04] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:35:04] [INFO] [::1] Dashboard accessed
+[2025-08-14 17:35:04] [INFO] [::1] User ID: 48
+[2025-08-14 17:35:04] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 17:35:04] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 14:05:06] [INFO] [::1] Application initialized
+[2025-08-14 17:35:06] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:05:07] [INFO] [::1] Application initialized
+[2025-08-14 17:35:07] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:35:07] [INFO] [::1] this is application id: 
+[2025-08-14 17:35:07] [INFO] [::1] Application details fetched: 
+[2025-08-14 14:05:09] [INFO] [::1] Application initialized
+[2025-08-14 17:35:09] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:35:09] [INFO] [::1] Dashboard accessed
+[2025-08-14 17:35:09] [INFO] [::1] User ID: 48
+[2025-08-14 17:35:09] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 17:35:09] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 14:05:16] [INFO] [::1] Application initialized
+[2025-08-14 17:35:16] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:05:22] [INFO] [::1] Application initialized
+[2025-08-14 17:35:22] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:35:22] [INFO] [::1] Dashboard accessed
+[2025-08-14 17:35:22] [INFO] [::1] User ID: 48
+[2025-08-14 17:35:22] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 17:35:22] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 14:05:26] [INFO] [::1] Application initialized
+[2025-08-14 17:35:26] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:05:32] [INFO] [::1] Application initialized
+[2025-08-14 17:35:32] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:35:32] [INFO] [::1] Dashboard accessed
+[2025-08-14 17:35:32] [INFO] [::1] User ID: 48
+[2025-08-14 17:35:32] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 17:35:32] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 14:05:36] [INFO] [::1] Application initialized
+[2025-08-14 17:35:36] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:05:45] [INFO] [::1] Application initialized
+[2025-08-14 17:35:45] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:35:45] [INFO] [::1] Dashboard accessed
+[2025-08-14 17:35:45] [INFO] [::1] User ID: 48
+[2025-08-14 17:35:45] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 17:35:45] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 14:05:52] [INFO] [::1] Application initialized
+[2025-08-14 17:35:52] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:05:55] [INFO] [::1] Application initialized
+[2025-08-14 17:35:55] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:35:55] [INFO] [::1] Dashboard accessed
+[2025-08-14 17:35:55] [INFO] [::1] User ID: 48
+[2025-08-14 17:35:55] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 17:35:55] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 14:05:58] [INFO] [::1] Application initialized
+[2025-08-14 17:35:58] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:06:05] [INFO] [::1] Application initialized
+[2025-08-14 17:36:05] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:36:05] [INFO] [::1] Dashboard accessed
+[2025-08-14 17:36:05] [INFO] [::1] User ID: 48
+[2025-08-14 17:36:05] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 17:36:05] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 14:06:06] [INFO] [::1] Application initialized
+[2025-08-14 17:36:06] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:06:09] [INFO] [::1] Application initialized
+[2025-08-14 17:36:09] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:07:50] [INFO] [::1] Application initialized
+[2025-08-14 17:37:50] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:07:54] [INFO] [::1] Application initialized
+[2025-08-14 17:37:54] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:07:55] [INFO] [::1] Application initialized
+[2025-08-14 17:37:55] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:37:55] [INFO] [::1] Dashboard accessed
+[2025-08-14 17:37:55] [INFO] [::1] User ID: 48
+[2025-08-14 17:37:55] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 17:37:55] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 14:08:06] [INFO] [::1] Application initialized
+[2025-08-14 17:38:06] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:38:06] [INFO] [::1] Dashboard accessed
+[2025-08-14 17:38:06] [INFO] [::1] User ID: 48
+[2025-08-14 17:38:06] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 17:38:06] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 14:08:09] [INFO] [::1] Application initialized
+[2025-08-14 17:38:09] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:08:10] [INFO] [::1] Application initialized
+[2025-08-14 17:38:10] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:08:23] [INFO] [::1] Application initialized
+[2025-08-14 17:38:23] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:08:24] [INFO] [::1] Application initialized
+[2025-08-14 17:38:24] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:38:24] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 17:38:24] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 14:08:26] [INFO] [::1] Application initialized
+[2025-08-14 17:38:26] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:08:27] [INFO] [::1] Application initialized
+[2025-08-14 17:38:28] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:08:28] [INFO] [::1] Application initialized
+[2025-08-14 17:38:28] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:08:30] [INFO] [::1] Application initialized
+[2025-08-14 17:38:30] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:09:32] [INFO] [::1] Application initialized
+[2025-08-14 17:39:32] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:09:41] [INFO] [::1] Application initialized
+[2025-08-14 17:39:41] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:09:49] [INFO] [::1] Application initialized
+[2025-08-14 17:39:49] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:09:58] [INFO] [::1] Application initialized
+[2025-08-14 17:39:58] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:12:18] [INFO] [::1] Application initialized
+[2025-08-14 17:42:18] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:12:22] [INFO] [::1] Application initialized
+[2025-08-14 17:42:22] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:42:22] [INFO] [::1] Dashboard accessed
+[2025-08-14 17:42:22] [INFO] [::1] User ID: 48
+[2025-08-14 17:42:22] [INFO] [::1] Application statistics fetched: {"total_applications":1,"pending_applications":"1","approved_applications":"0","missing_document_applications":"0","rejected_applications":"0"}
+[2025-08-14 17:42:22] [INFO] [::1] Recent applications fetched: [{"id":40,"application_number":"000003","user_id":48,"service_type":"Digital Signature","status":"pending","payment_status":"pending","reviewed_by":null,"reviewed_at":null,"created_at":"2025-07-29 11:14:54","updated_at":"2025-07-29 11:14:54","required_documents":null}]
+[2025-08-14 14:12:29] [INFO] [::1] Application initialized
+[2025-08-14 17:42:29] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:12:31] [INFO] [::1] Application initialized
+[2025-08-14 17:42:31] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:12:33] [INFO] [::1] Application initialized
+[2025-08-14 17:42:33] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:12:34] [INFO] [::1] Application initialized
+[2025-08-14 17:42:34] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:12:36] [INFO] [::1] Application initialized
+[2025-08-14 17:42:36] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:12:37] [INFO] [::1] Application initialized
+[2025-08-14 17:42:37] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:12:38] [INFO] [::1] Application initialized
+[2025-08-14 17:42:38] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:12:39] [INFO] [::1] Application initialized
+[2025-08-14 17:42:39] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:12:41] [INFO] [::1] Application initialized
+[2025-08-14 17:42:41] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:12:43] [INFO] [::1] Application initialized
+[2025-08-14 17:42:43] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:12:44] [INFO] [::1] Application initialized
+[2025-08-14 17:42:44] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:12:44] [INFO] [::1] Application initialized
+[2025-08-14 17:42:44] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:12:46] [INFO] [::1] Application initialized
+[2025-08-14 17:42:46] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:42:46] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 17:42:46] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 14:17:12] [INFO] [::1] Application initialized
+[2025-08-14 17:47:12] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:47:12] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 17:47:12] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 14:17:20] [INFO] [::1] Application initialized
+[2025-08-14 17:47:20] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:47:20] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 17:47:20] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 14:17:33] [INFO] [::1] Application initialized
+[2025-08-14 17:47:33] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:47:33] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 17:47:33] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 14:17:34] [INFO] [::1] Application initialized
+[2025-08-14 17:47:34] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:47:34] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 17:47:34] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 14:17:34] [INFO] [::1] Application initialized
+[2025-08-14 17:47:34] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:47:34] [INFO] [::1] base usr is in eift profile: http://localhost/web_page/
+[2025-08-14 17:47:34] [INFO] [::1] Image src: http://localhost/web_page/uploads/profiles/68910d909c8fe.png
+[2025-08-14 14:17:45] [INFO] [::1] Application initialized
+[2025-08-14 17:47:45] [INFO] [::1] Attempting to delete user profile ID: 48
+[2025-08-14 14:17:45] [INFO] [::1] Application initialized
+[2025-08-14 17:47:45] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:17:50] [INFO] [::1] Application initialized
+[2025-08-14 17:47:50] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:17:52] [INFO] [::1] Application initialized
+[2025-08-14 17:47:52] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:17:53] [INFO] [::1] Application initialized
+[2025-08-14 17:47:53] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:18:15] [INFO] [::1] Application initialized
+[2025-08-14 17:48:15] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:18:15] [INFO] [::1] Application initialized
+[2025-08-14 17:48:15] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:18:16] [INFO] [::1] Application initialized
+[2025-08-14 17:48:16] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:18:19] [INFO] [::1] Application initialized
+[2025-08-14 17:48:19] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:48:19] [INFO] [::1] Login page accessed
+[2025-08-14 14:18:27] [INFO] [::1] Application initialized
+[2025-08-14 17:48:27] [INFO] [::1] Login register page accessed
+[2025-08-14 17:48:27] [INFO] [::1] email "abhishek@example.com"
+[2025-08-14 17:48:27] [INFO] [::1] password "12345"
+[2025-08-14 17:48:27] [INFO] [::1] Executed query: SELECT * FROM users WHERE email = 'abhishek@example.com'
+[2025-08-14 17:48:27] [INFO] [::1] No user found with email: abhishek@example.com
+[2025-08-14 14:18:27] [INFO] [::1] Application initialized
+[2025-08-14 17:48:27] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:48:27] [INFO] [::1] Login page accessed
+[2025-08-14 14:18:36] [INFO] [::1] Application initialized
+[2025-08-14 17:48:36] [INFO] [::1] Login register page accessed
+[2025-08-14 17:48:36] [INFO] [::1] email "abhishek@example.com"
+[2025-08-14 17:48:36] [INFO] [::1] password "123456789"
+[2025-08-14 17:48:36] [INFO] [::1] Executed query: SELECT * FROM users WHERE email = 'abhishek@example.com'
+[2025-08-14 17:48:36] [INFO] [::1] No user found with email: abhishek@example.com
+[2025-08-14 14:18:36] [INFO] [::1] Application initialized
+[2025-08-14 17:48:36] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:48:36] [INFO] [::1] Login page accessed
+[2025-08-14 14:18:41] [INFO] [::1] Application initialized
+[2025-08-14 17:48:41] [INFO] [::1] Login register page accessed
+[2025-08-14 17:48:41] [INFO] [::1] email "abhishek@example.com"
+[2025-08-14 17:48:41] [INFO] [::1] password "123"
+[2025-08-14 17:48:41] [INFO] [::1] Executed query: SELECT * FROM users WHERE email = 'abhishek@example.com'
+[2025-08-14 17:48:41] [INFO] [::1] No user found with email: abhishek@example.com
+[2025-08-14 14:18:41] [INFO] [::1] Application initialized
+[2025-08-14 17:48:41] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:48:41] [INFO] [::1] Login page accessed
+[2025-08-14 14:18:47] [INFO] [::1] Application initialized
+[2025-08-14 17:48:47] [INFO] [::1] Login register page accessed
+[2025-08-14 17:48:47] [INFO] [::1] email "abhishek@example.com"
+[2025-08-14 17:48:47] [INFO] [::1] password "123"
+[2025-08-14 17:48:47] [INFO] [::1] Executed query: SELECT * FROM users WHERE email = 'abhishek@example.com'
+[2025-08-14 17:48:47] [INFO] [::1] No user found with email: abhishek@example.com
+[2025-08-14 14:18:47] [INFO] [::1] Application initialized
+[2025-08-14 17:48:47] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:48:47] [INFO] [::1] Login page accessed
+[2025-08-14 14:18:55] [INFO] [::1] Application initialized
+[2025-08-14 17:48:55] [INFO] [::1] Login register page accessed
+[2025-08-14 17:48:55] [INFO] [::1] email "abhishek@example.com"
+[2025-08-14 17:48:55] [INFO] [::1] password "12345"
+[2025-08-14 17:48:55] [INFO] [::1] Executed query: SELECT * FROM users WHERE email = 'abhishek@example.com'
+[2025-08-14 17:48:55] [INFO] [::1] No user found with email: abhishek@example.com
+[2025-08-14 14:18:55] [INFO] [::1] Application initialized
+[2025-08-14 17:48:55] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:48:55] [INFO] [::1] Login page accessed
+[2025-08-14 14:19:03] [INFO] [::1] Application initialized
+[2025-08-14 17:49:03] [INFO] [::1] Login register page accessed
+[2025-08-14 17:49:03] [INFO] [::1] email "abhishek@example.com"
+[2025-08-14 17:49:03] [INFO] [::1] password "123456789"
+[2025-08-14 17:49:03] [INFO] [::1] Executed query: SELECT * FROM users WHERE email = 'abhishek@example.com'
+[2025-08-14 17:49:03] [INFO] [::1] No user found with email: abhishek@example.com
+[2025-08-14 14:19:03] [INFO] [::1] Application initialized
+[2025-08-14 17:49:03] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:49:03] [INFO] [::1] Login page accessed
+[2025-08-14 14:19:15] [INFO] [::1] Application initialized
+[2025-08-14 17:49:15] [INFO] [::1] Login register page accessed
+[2025-08-14 17:49:15] [INFO] [::1] email "one@gmail.com"
+[2025-08-14 17:49:15] [INFO] [::1] password "123"
+[2025-08-14 17:49:15] [INFO] [::1] Executed query: SELECT * FROM users WHERE email = 'one@gmail.com'
+[2025-08-14 17:49:15] [INFO] [::1] User Row: {"id":"41","name":"one","email":"one@gmail.com","mobile":"07770958768","password":"$2y$10$admNAXhmv8OXFiDpCPP0..0oXg7v3otVBWWK\/z5GcXYnqASQ5Mu\/m","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-29 02:08:23","updated_at":"2025-08-12 00:13:44","otp":null,"otp_expiry":null}
+[2025-08-14 17:49:15] [INFO] [::1] Invalid password.
+[2025-08-14 14:19:15] [INFO] [::1] Application initialized
+[2025-08-14 17:49:15] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:49:15] [INFO] [::1] Login page accessed
+[2025-08-14 14:19:22] [INFO] [::1] Application initialized
+[2025-08-14 17:49:22] [INFO] [::1] Login register page accessed
+[2025-08-14 17:49:22] [INFO] [::1] email "one@gmail.com"
+[2025-08-14 17:49:22] [INFO] [::1] password "12345678"
+[2025-08-14 17:49:22] [INFO] [::1] Executed query: SELECT * FROM users WHERE email = 'one@gmail.com'
+[2025-08-14 17:49:22] [INFO] [::1] User Row: {"id":"41","name":"one","email":"one@gmail.com","mobile":"07770958768","password":"$2y$10$admNAXhmv8OXFiDpCPP0..0oXg7v3otVBWWK\/z5GcXYnqASQ5Mu\/m","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-29 02:08:23","updated_at":"2025-08-12 00:13:44","otp":null,"otp_expiry":null}
+[2025-08-14 17:49:22] [INFO] [::1] Invalid password.
+[2025-08-14 14:19:22] [INFO] [::1] Application initialized
+[2025-08-14 17:49:22] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:49:22] [INFO] [::1] Login page accessed
+[2025-08-14 14:19:48] [INFO] [::1] Application initialized
+[2025-08-14 17:49:48] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:49:48] [INFO] [::1] Dashboard accessed
+[2025-08-14 17:49:48] [INFO] [::1] User ID: 
+[2025-08-14 17:49:48] [INFO] [::1] Application statistics fetched: {"total_applications":0,"pending_applications":null,"approved_applications":null,"missing_document_applications":null,"rejected_applications":null}
+[2025-08-14 17:49:48] [INFO] [::1] Recent applications fetched: []
+[2025-08-14 14:19:49] [INFO] [::1] Application initialized
+[2025-08-14 17:49:49] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:49:49] [INFO] [::1] Dashboard accessed
+[2025-08-14 17:49:49] [INFO] [::1] User ID: 
+[2025-08-14 17:49:49] [INFO] [::1] Application statistics fetched: {"total_applications":0,"pending_applications":null,"approved_applications":null,"missing_document_applications":null,"rejected_applications":null}
+[2025-08-14 17:49:49] [INFO] [::1] Recent applications fetched: []
+[2025-08-14 14:19:50] [INFO] [::1] Application initialized
+[2025-08-14 17:49:50] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:19:50] [INFO] [::1] Application initialized
+[2025-08-14 17:49:50] [INFO] [::1] Login register page accessed
+[2025-08-14 14:19:53] [INFO] [::1] Application initialized
+[2025-08-14 17:49:53] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:19:54] [INFO] [::1] Application initialized
+[2025-08-14 17:49:54] [INFO] [::1] Login register page accessed
+[2025-08-14 14:19:56] [INFO] [::1] Application initialized
+[2025-08-14 17:49:56] [INFO] [::1] Login register page accessed
+[2025-08-14 14:19:59] [INFO] [::1] Application initialized
+[2025-08-14 17:49:59] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:20:01] [INFO] [::1] Application initialized
+[2025-08-14 17:50:01] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:50:01] [INFO] [::1] Login page accessed
+[2025-08-14 14:20:07] [INFO] [::1] Application initialized
+[2025-08-14 17:50:07] [INFO] [::1] Login register page accessed
+[2025-08-14 17:50:07] [INFO] [::1] email "riya@gmail.com"
+[2025-08-14 17:50:07] [INFO] [::1] password "123"
+[2025-08-14 17:50:07] [INFO] [::1] Executed query: SELECT * FROM users WHERE email = 'riya@gmail.com'
+[2025-08-14 17:50:07] [INFO] [::1] User Row: {"id":"39","name":"riya gupta","email":"riya@gmail.com","mobile":"07770958768","password":"$2y$10$Y4q6mB309iKRMdJcbid6pufJoKU9gR2s.\/q944p6LJDnqYS5MPOmu","role":"user","status":"active","featured_image":"uploads\/profiles\/688772c98ccc6.jpg","reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-27 17:32:18","updated_at":"2025-07-29 11:16:09","otp":null,"otp_expiry":null}
+[2025-08-14 17:50:07] [INFO] [::1] Invalid password.
+[2025-08-14 14:20:07] [INFO] [::1] Application initialized
+[2025-08-14 17:50:07] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:50:07] [INFO] [::1] Login page accessed
+[2025-08-14 14:20:16] [INFO] [::1] Application initialized
+[2025-08-14 17:50:16] [INFO] [::1] Login register page accessed
+[2025-08-14 17:50:16] [INFO] [::1] email "kushwahanjali89@gmail.com"
+[2025-08-14 17:50:16] [INFO] [::1] password "12345678"
+[2025-08-14 17:50:16] [INFO] [::1] Executed query: SELECT * FROM users WHERE email = 'kushwahanjali89@gmail.com'
+[2025-08-14 17:50:16] [INFO] [::1] User Row: {"id":"56","name":"Anjali Kushwah","email":"kushwahanjali89@gmail.com","mobile":"07770958768","password":"$2y$10$ScmKCEjGp\/EIz\/8HUmMgUOOHgoEAP2a4.EqWBpcn\/U\/r\/RYjgJu4m","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-08-12 15:55:09","updated_at":"2025-08-14 08:56:34","otp":"6316","otp_expiry":"2025-08-14 09:06:34"}
+[2025-08-14 17:50:17] [INFO] [::1] Invalid password.
+[2025-08-14 14:20:17] [INFO] [::1] Application initialized
+[2025-08-14 17:50:17] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:50:17] [INFO] [::1] Login page accessed
+[2025-08-14 14:20:22] [INFO] [::1] Application initialized
+[2025-08-14 17:50:22] [INFO] [::1] Login register page accessed
+[2025-08-14 17:50:22] [INFO] [::1] email "kushwahanjali89@gmail.com"
+[2025-08-14 17:50:22] [INFO] [::1] password "123456"
+[2025-08-14 17:50:22] [INFO] [::1] Executed query: SELECT * FROM users WHERE email = 'kushwahanjali89@gmail.com'
+[2025-08-14 17:50:22] [INFO] [::1] User Row: {"id":"56","name":"Anjali Kushwah","email":"kushwahanjali89@gmail.com","mobile":"07770958768","password":"$2y$10$ScmKCEjGp\/EIz\/8HUmMgUOOHgoEAP2a4.EqWBpcn\/U\/r\/RYjgJu4m","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-08-12 15:55:09","updated_at":"2025-08-14 08:56:34","otp":"6316","otp_expiry":"2025-08-14 09:06:34"}
+[2025-08-14 17:50:22] [INFO] [::1] Invalid password.
+[2025-08-14 14:20:22] [INFO] [::1] Application initialized
+[2025-08-14 17:50:22] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:50:22] [INFO] [::1] Login page accessed
+[2025-08-14 14:20:36] [INFO] [::1] Application initialized
+[2025-08-14 17:50:36] [INFO] [::1] Login register page accessed
+[2025-08-14 17:50:36] [INFO] [::1] email "kushwahanjali89@gmail.com"
+[2025-08-14 17:50:36] [INFO] [::1] password "123456789"
+[2025-08-14 17:50:36] [INFO] [::1] Executed query: SELECT * FROM users WHERE email = 'kushwahanjali89@gmail.com'
+[2025-08-14 17:50:36] [INFO] [::1] User Row: {"id":"56","name":"Anjali Kushwah","email":"kushwahanjali89@gmail.com","mobile":"07770958768","password":"$2y$10$ScmKCEjGp\/EIz\/8HUmMgUOOHgoEAP2a4.EqWBpcn\/U\/r\/RYjgJu4m","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-08-12 15:55:09","updated_at":"2025-08-14 08:56:34","otp":"6316","otp_expiry":"2025-08-14 09:06:34"}
+[2025-08-14 17:50:36] [INFO] [::1] password verify success
+[2025-08-14 17:50:36] [INFO] [::1] This is session after login: {"user_id":"56","name":"Anjali Kushwah","email":"kushwahanjali89@gmail.com","mobile":"07770958768","featured_image":null,"role":"user"}
+[2025-08-14 14:20:36] [INFO] [::1] Application initialized
+[2025-08-14 17:50:36] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:20:39] [INFO] [::1] Application initialized
+[2025-08-14 17:50:39] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 17:50:39] [INFO] [::1] Dashboard accessed
+[2025-08-14 17:50:39] [INFO] [::1] User ID: 56
+[2025-08-14 17:50:39] [INFO] [::1] Application statistics fetched: {"total_applications":0,"pending_applications":null,"approved_applications":null,"missing_document_applications":null,"rejected_applications":null}
+[2025-08-14 17:50:39] [INFO] [::1] Recent applications fetched: []
+[2025-08-14 14:20:43] [INFO] [::1] Application initialized
+[2025-08-14 17:50:43] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 14:20:46] [INFO] [::1] Application initialized
+[2025-08-14 17:50:46] [INFO] [::1] base usr is in header: http://localhost/web_page/

@@ -1,9 +1,8 @@
 
 <?php
-// Start output buffering to handle redirects
+
 ob_start();
 
-// Include header first (this starts the session)
 include '../include/header.php';
 require_once '../php/db.php';
 require_once '../php/config.php';

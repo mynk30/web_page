@@ -28,6 +28,11 @@ $current_page = basename($_SERVER['PHP_SELF']);
             </a>
         </li>
         <li>
+            <a href="/web_page/account/new_form.php" class="nav-link <?php echo ($current_page === 'new_application.php') ? 'active' : 'link-dark'; ?>">
+                <i class="fas fa-file-alt me-2"></i> New Application
+            </a>
+        </li>
+        <li>
             <a href="/web_page/auth/logout.php" class="nav-link link-danger">
                 <i class="fas fa-sign-out-alt me-2"></i> Logout
             </a>

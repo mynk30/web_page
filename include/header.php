@@ -14,6 +14,7 @@ $baseURL = "http://" . $_SERVER['HTTP_HOST'] . "/web_page/";
 
 
 require_once __DIR__ . '/../php/config.php';
+require_once __DIR__ . '/../php/db.php';
 global $logger, $browserLogger;
 
 $logger->info("base usr is in header: ". $baseURL);
@@ -91,14 +92,18 @@ if(isset($_SESSION["user_id"]) && isset($_SESSION["featured_image"])){
                             </a></li>
                             <li><a class="dropdown-item" href="<?php echo $baseURL; ?>account/profile.php">
                                 <i class="fas fa-user me-2"></i>Profile
-                            </a></li>
+                            </a>
+                            </li>
                             <li><a class="dropdown-item" href="<?php echo $baseURL; ?>account/my_application.php">
                                 <i class="fas fa-file-alt me-2"></i>My Applications
-                            </a></li>
-                            <li><hr class="dropdown-divider"></li>
+                            </a>
+                        </li>
+                                            
+
                             <li><a class="dropdown-item text-danger" href="<?php echo $baseURL; ?>auth/logout.php">
                                 <i class="fas fa-sign-out-alt me-2"></i>Logout
                             </a></li>
+
                         </ul>
                     </div>
                 <?php else: ?>
