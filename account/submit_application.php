@@ -91,7 +91,7 @@ try {
         
         // Handle file uploads if any
         if (!empty($_FILES['document'])) {
-            $uploadDir = __DIR__ . '/../uploads/applications/' . $applicationId . '/';
+            $uploadDir = __DIR__ . '/../uploads';
             
             // Create upload directory if it doesn't exist
             if (!file_exists($uploadDir)) {

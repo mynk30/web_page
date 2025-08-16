@@ -20,7 +20,7 @@ function sendMail(string $mailTemplate, string $subject, array $data, string $to
 
         // SMTP settings
         $mail->isSMTP();
-        $mail->Host       = 'smtp.gmail.com';
+        $mail->Host       = 'smtp.ethereal.email'; // 'smtp.gmail.com'; 
         $mail->SMTPAuth   = true;
         $mail->Username   = 'cletus44@ethereal.email'; // replace with your SMTP username
         $mail->Password   = 'WMEtXeAXkcQ5E7vswj';           // replace with your SMTP password

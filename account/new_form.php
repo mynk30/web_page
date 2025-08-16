@@ -9,11 +9,12 @@ if (!isset($_SESSION['user_id'])) {
     exit();
 }
 
+
 // Initialize success/error messages
 $success = $_SESSION['success'] ?? null;
 $error = $_SESSION['error'] ?? null;
 
-// Clear the messages
+// Clear the messages.
 unset($_SESSION['success']);
 unset($_SESSION['error']);
 
@@ -65,6 +66,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
         }
 
+       
+
         // Validate payment status
         if ($_POST['payment_status'] !== 'completed') {
             throw new Exception('Payment not completed');
@@ -87,6 +90,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $_POST['application_type']
         );
 
+      
         if (!$stmt->execute()) {
             throw new Exception('Failed to save application: ' . $stmt->error);
         }
@@ -125,7 +129,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     // Move uploaded file
                     if (move_uploaded_file($tmpName, $targetPath)) {
                         // Save file info to database
-                        $docStmt = $conn->prepare("INSERT INTO application_documents 
+                        $docStmt = $conn->prepare("INSERT INTO application 
                             (application_id, document_name, file_path, file_type) 
                             VALUES (?, ?, ?, ?)");
                         $docStmt->bind_param('isss', 
@@ -207,7 +211,7 @@ if (empty($_SESSION['csrf_token'])) {
                     <h1 class="h2">Application Form</h1>
                 </div>
             
-                <form id="applicationForm" method="post" enctype="multipart/form-data" class="needs-validation" novalidate>
+                <form id="applicationForm" action="submit_application.php" method="post" enctype="multipart/form-data" class="needs-validation" novalidate>
                     <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
                     <input type="hidden" name="payment_status" id="paymentStatusField" value="pending">
                     
