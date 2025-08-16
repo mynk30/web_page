@@ -34,121 +34,135 @@ $requiredDocuments = [
 ];
 
 // Common function to handle file upload
-function uploadDocument($file, $uploadDir, $docName)
+function uploadDocument($file, $uploadDir, $docName, $fileTitle)
 {
     // wrap the complete function in try catch and log the error
     try {
         global $conn;
         global $logger;
 
-    if ($file['error'] !== UPLOAD_ERR_OK) {
-        // Create a custom error message based on the error code
-        switch ($file['error']) {
-            case UPLOAD_ERR_INI_SIZE:
-                $message = "The uploaded file exceeds the upload_max_filesize directive in php.ini.";
-                break;
-            case UPLOAD_ERR_FORM_SIZE:
-                $message = "The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in the HTML form.";
-                break;
-            case UPLOAD_ERR_PARTIAL:
-                $message = "The uploaded file was only partially uploaded.";
-                break;
-            case UPLOAD_ERR_NO_FILE:
-                $message = "No file was uploaded.";
-                break;
-            case UPLOAD_ERR_NO_TMP_DIR:
-                $message = "Missing a temporary folder.";
-                break;
-            case UPLOAD_ERR_CANT_WRITE:
-                $message = "Failed to write file to disk.";
-                break;
-            case UPLOAD_ERR_EXTENSION:
-                $message = "A PHP extension stopped the file upload.";
-                break;
-            default:
-                $message = "Unknown upload error.";
-                break;
-        }
-        throw new Exception("Failed to upload $docName: $message");
-    }
-
-    $originalName = basename($file['name']);
-    $fileExt = strtolower(pathinfo($originalName, PATHINFO_EXTENSION));
-
-    // Validate file type
-    $allowedTypes = ['pdf', 'jpg', 'jpeg', 'png'];
-    if (!in_array($fileExt, $allowedTypes)) {
-        throw new Exception("Invalid file type for $docName. Only PDF, JPG, and PNG files are allowed.");
-    }
-
-    // Validate file size (5MB max)
-    if ($file['size'] > 5 * 1024 * 1024) {
-        throw new Exception("File too large for $docName. Maximum size is 5MB.");
-    }
-
-    // Create unique filename
-    $newFilename = preg_replace('/[^a-zA-Z0-9]+/', '-', strtolower($docName)) . '_' . uniqid() . '.' . $fileExt;
-    $targetPath = $uploadDir . DIRECTORY_SEPARATOR . $newFilename;
-
-    // define fileDetails here
-    $fileDetails = [];
-    if (move_uploaded_file($file['tmp_name'], $targetPath)) {
-        // insert file details into the array
-        $fileDetails = [
-            'original_name' => $originalName,
-            'filename' => $newFilename,
-            'size' => $file['size'],
-            'file_path' => $targetPath,
-            'file_type' => mime_content_type($targetPath)
-        ];
-    }
-
-    // here now log the file upload details
-    $logger->info("File uploaded successfully: " . json_encode($fileDetails));
-    // and the db return result
-   
-      // SQL query to insert the details in the files table
-        $sql = "INSERT INTO files (original_name, filename, file_size, file_path, model_type, model_id) VALUES (?, ?, ?, ?, ?, ?)";
-        $stmt = $conn->prepare($sql);
-        
-        // Check if prepare was successful
-        if (!$stmt) {
-            throw new Exception("Failed to prepare statement: " . $conn->error);
+        if ($file['error'] !== UPLOAD_ERR_OK) {
+            // Create a custom error message based on the error code
+            switch ($file['error']) {
+                case UPLOAD_ERR_INI_SIZE:
+                    $message = "The uploaded file exceeds the upload_max_filesize directive in php.ini.";
+                    break;
+                case UPLOAD_ERR_FORM_SIZE:
+                    $message = "The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in the HTML form.";
+                    break;
+                case UPLOAD_ERR_PARTIAL:
+                    $message = "The uploaded file was only partially uploaded.";
+                    break;
+                case UPLOAD_ERR_NO_FILE:
+                    $message = "No file was uploaded.";
+                    break;
+                case UPLOAD_ERR_NO_TMP_DIR:
+                    $message = "Missing a temporary folder.";
+                    break;
+                case UPLOAD_ERR_CANT_WRITE:
+                    $message = "Failed to write file to disk.";
+                    break;
+                case UPLOAD_ERR_EXTENSION:
+                    $message = "A PHP extension stopped the file upload.";
+                    break;
+                default:
+                    $message = "Unknown upload error.";
+                    break;
+            }
+            throw new Exception("Failed to upload $docName: $message");
         }
 
-        $result = $stmt->bind_param(
-            "ssissi", 
-            $fileDetails['original_name'], // string
-            $fileDetails['filename'],      // string
-            $fileDetails['size'],          // int
-            $fileDetails['file_path'],     // string
-            'application',                 // string
-            $_SESSION['temp_application']['id'] // int
-        );
+        $originalName = basename($file['name']);
+        $fileExt = strtolower(pathinfo($originalName, PATHINFO_EXTENSION));
 
-        if (!$result) {
-            throw new Exception("Failed to bind parameters: " . $stmt->error);
+        // Validate file type
+        $allowedTypes = ['pdf', 'jpg', 'jpeg', 'png'];
+        if (!in_array($fileExt, $allowedTypes)) {
+            throw new Exception("Invalid file type for $docName. Only PDF, JPG, and PNG files are allowed.");
         }
 
-        if (!$stmt->execute()) {
-            throw new Exception("Failed to insert file details: " . $stmt->error);
+        // Validate file size (5MB max)
+        if ($file['size'] > 5 * 1024 * 1024) {
+            throw new Exception("File too large for $docName. Maximum size is 5MB.");
         }
 
-        $insertId = $stmt->insert_id;
-        $stmt->close();
+        // Create new filename: original_name + unix_timestamp + extension
+        $timestamp = time();
+        $originalNameWithoutExt = pathinfo($originalName, PATHINFO_FILENAME);
+        $newFilename = $originalNameWithoutExt . '_' . $timestamp . '.' . $fileExt;
+        $targetPath = $uploadDir . '/' . $newFilename;
 
-        // Log the file upload details
-        $logger->info("File uploaded successfully: " . json_encode($fileDetails));
-        // Log the database insert result
-        $logger->info("File details inserted into database with ID: " . $insertId);
+        // define fileDetails here
+        $fileDetails = [];
+        if (move_uploaded_file($file['tmp_name'], $targetPath)) {
+            // Normalize path for consistent storage (convert backslashes to forward slashes)
+            $normalizedPath = str_replace('\\', '/', $targetPath);
+            
+            // insert file details into the array
+            $fileDetails = [
+                'original_name' => $originalName,
+                'filename' => $newFilename,
+                'size' => $file['size'],
+                'file_path' => $normalizedPath,
+                'file_type' => mime_content_type($targetPath),
+                'file_title' => $fileTitle
+            ];
 
+            // here now log the file upload details
+            $logger->info("File uploaded successfully: " . json_encode($fileDetails));
 
-    return false;
-}
-catch (Exception $e) {
-    $logger->info("Error occurred: " . $e->getMessage());
-    return false;
-}
+            // SQL query to insert the details in the files table (assuming you have file_title column)
+            $sql = "INSERT INTO files (original_name, file_name, file_size, file_path, file_title, model_type, model_id) VALUES (?, ?, ?, ?, ?, ?, ?)";
+            $stmt = $conn->prepare($sql);
+            
+            // Check if prepare was successful
+            if (!$stmt) {
+                throw new Exception("Failed to prepare statement: " . $conn->error);
+            }
+
+            // Extract variables for bind_param (required for pass by reference)
+            $originalName = $fileDetails['original_name'];
+            $filename = $fileDetails['filename'];
+            $fileSize = $fileDetails['size'];
+            $filePath = $fileDetails['file_path'];
+            $fileTitle = $fileDetails['file_title'];
+            $modelType = 'application';
+            $modelId = $_SESSION['temp_application']['id'];
+
+            $result = $stmt->bind_param(
+                "ssisssi", 
+                $originalName,  // string
+                $filename,      // string
+                $fileSize,      // int
+                $filePath,      // string
+                $fileTitle,     // string
+                $modelType,     // string
+                $modelId        // int
+            );
+
+            if (!$result) {
+                throw new Exception("Failed to bind parameters: " . $stmt->error);
+            }
+
+            if (!$stmt->execute()) {
+                throw new Exception("Failed to insert file details: " . $stmt->error);
+            }
+
+            $insertId = $stmt->insert_id;
+            $stmt->close();
+
+            // Log the database insert result
+            $logger->info("File details inserted into database with ID: " . $insertId);
+
+            return $fileDetails;
+        } else {
+            throw new Exception("Failed to move uploaded file to destination");
+        }
+
+    } catch (Exception $e) {
+        $logger->info("Error occurred: " . $e->getMessage());
+        return false;
+    }
 }
 
 // Handle form submission for Step 2 (Payment)
@@ -157,13 +171,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['proceed_payment'])) {
         if (empty($_POST) && empty($_FILES)) {
             throw new Exception('No data received. This might be due to server file size limits. Please check your server configuration (post_max_size, upload_max_filesize).');
         }
+        
         // Validate required fields
         if (empty($_POST['application_type'])) {
             throw new Exception('Please select an application type');
         }
 
-
-        // geneate new application number
+        // Generate new application number
         $sql = "SELECT application_number FROM applications ORDER BY id DESC LIMIT 1";
         $result = $conn->query($sql);
 
@@ -190,14 +204,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['proceed_payment'])) {
             'application_number' => $newApplicationNumber
         ];
 
-
-
-
-
         $logger->info("Application data stored in session: " . json_encode($_SESSION['temp_application']));
 
-
-        // create application
+        // Create application
         $sql = "INSERT INTO applications (user_id, application_number, service_type) VALUES (?, ?, ?)";
         $stmt = $conn->prepare($sql);
         $stmt->bind_param("sss", $_SESSION['temp_application']['user_id'], $_SESSION['temp_application']['application_number'], $_SESSION['temp_application']['application_type']);
@@ -205,34 +214,34 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['proceed_payment'])) {
             throw new Exception("Failed to create application: " . $stmt->error);
         }
 
-        // log the actual result that i get from the db in the stmt object
+        // Log the actual result that i get from the db in the stmt object
         $logger->info("Application created successfully: " . json_encode($stmt->insert_id));
 
         $_SESSION['temp_application']['id'] = $stmt->insert_id;
 
-        
-
         // Create upload directory
-        $tempUploadDir = '..' . DIRECTORY_SEPARATOR . 'uploads' . DIRECTORY_SEPARATOR . 'applications';
+        $tempUploadDir = '../uploads/applications';
+
+        $logger->info("Temporary upload directory created: " . $tempUploadDir);
+
         if (!file_exists($tempUploadDir)) {
-            if (!mkdir($tempUploadDir, 0755, true)) {
+            if (!mkdir($tempUploadDir, 0755, recursive: true)) {
                 throw new Exception('Failed to create upload directory');
             }
         }
 
-
-        
         // Handle file uploads
         $uploadedFiles = [];
         $requiredDocs = $requiredDocuments[$_POST['application_type']];
+        $logger->info("Required documents for application type: " . json_encode($requiredDocs));
         $docNames = $_POST['document_names'] ?? [];
-
+        $fileTitles = $_POST['file_titles'] ?? [];
+        $logger->info("Document names from form: " . json_encode($docNames));
+        $logger->info("File titles from form: " . json_encode($fileTitles));
 
         $logger->info("Uploaded files array: " . json_encode($_FILES['documents']));
 
         if (isset($_FILES['documents'])) {
-
-            
             $logger->info("Uploaded files array: " . json_encode($_FILES['documents']));
 
             // Re-structure the $_FILES array to be more intuitive
@@ -249,12 +258,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['proceed_payment'])) {
 
             foreach ($files as $index => $file) {
                 $docName = $docNames[$index] ?? 'document'; // Fallback name
+                $fileTitle = $fileTitles[$index] ?? $docName; // Use file title or fallback to docName
+
+                $logger->info("Processing file for document: " . $docName . " with title: " . $fileTitle);
 
                 if ($file['error'] === UPLOAD_ERR_NO_FILE) {
                     throw new Exception("Please upload the required file for: $docName");
                 }
 
-                $uploadResult = uploadDocument($file, $tempUploadDir, $docName);
+                // Log file, tempupload dir and docname
+                $logger->info("File details: " . json_encode($file));
+                $logger->info("Temporary upload directory: " . $tempUploadDir);
+                $logger->info("Document name: " . $docName);
+
+                $uploadResult = uploadDocument($file, $tempUploadDir, $docName, $fileTitle);
 
                 if (!$uploadResult) {
                     throw new Exception("Failed to upload $docName");
@@ -269,16 +286,32 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['proceed_payment'])) {
             throw new Exception('No files were uploaded.');
         }
 
-
         // Store uploaded files info in session
         $_SESSION['temp_application']['uploaded_files'] = $uploadedFiles;
+        $_SESSION['temp_application']['service_type'] = $_POST['service_type'] ?? '';
 
         $logger->info("Successfully processed and stored uploaded files in session: " . json_encode($uploadedFiles));
 
-        return;
-        // Redirect to Razorpay payment page
-        $logger->info("Redirecting to payment page.");
-        header('Location: razorpay_payment.php');
+        // // Create order in database with unpaid status
+        // $sql = "INSERT INTO orders (user_id, application_id, amount, order_id, payment_status, created_at) VALUES (?, ?, ?, ?, ?, NOW())";
+        // $stmt = $conn->prepare($sql);
+        // $orderIdDb = 'order_' . uniqid();
+        // $paymentStatus = 'unpaid';
+        
+        // $stmt->bind_param("iidss", $_SESSION['user_id'], $_SESSION['temp_application']['id'], $_SESSION['temp_application']['amount'], $orderIdDb, $paymentStatus);
+        
+        // if (!$stmt->execute()) {
+        //     throw new Exception("Failed to create order: " . $stmt->error);
+        // }
+        
+        // $orderId = $stmt->insert_id;
+        // $_SESSION['temp_application']['order_id'] = $orderId;
+        // $_SESSION['temp_application']['order_id_db'] = $orderIdDb;
+        
+        // $logger->info("Order created successfully with ID: " . $orderId);
+
+        // Use JavaScript redirect instead of header redirect to avoid "headers already sent" error
+        echo "<script>window.location.href = 'payment_handler.php';</script>";
         exit();
 
     } catch (Exception $e) {
@@ -300,10 +333,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['proceed_payment'])) {
                 <h1 class="h2">Application Form</h1>
             </div>
 
-            <?php if ($success): ?>`
+            <?php if ($success): ?>
                 <div class="alert alert-success"><?php echo htmlspecialchars($success); ?></div>
             <?php endif; ?>
 
+            <?php if ($error): ?>
+                <div class="alert alert-danger"><?php echo htmlspecialchars($error); ?></div>
+            <?php endif; ?>
 
             <form id="applicationForm" method="post" enctype="multipart/form-data">
                 <div id="step1">
@@ -505,6 +541,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['proceed_payment'])) {
                     </div>
                     <div class="input-group">
                         <input type="hidden" name="document_names[]" value="${doc}">
+                        <input type="hidden" name="file_titles[]" value="${doc}">
                         <input type="file" name="documents[]" class="form-control doc-input" id="doc-${safeName}" accept=".pdf,.jpg,.jpeg,.png" required>
                         <label class="input-group-text" for="doc-${safeName}"><i class="fas fa-upload"></i></label>
                     </div>
@@ -520,7 +557,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['proceed_payment'])) {
 
             checkAllDocumentsUploaded();
         }
-
 
         // Application type selection handler
         appTypeSelect.addEventListener('change', function () {
