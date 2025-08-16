@@ -17,3 +17,19 @@
 [2025-08-13 01:19:04] [INFO] [::1] Application statistics fetched: {"total_applications":0,"pending_applications":null,"approved_applications":null,"missing_document_applications":null,"rejected_applications":null}
 [2025-08-13 01:19:04] [INFO] [::1] Recent applications fetched: []
 [2025-08-12 21:49:33] [INFO] [::1] Application initialized
+[2025-08-14 04:50:37] [INFO] [::1] Application initialized
+[2025-08-14 04:50:50] [INFO] [::1] Application initialized
+[2025-08-14 08:20:50] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 04:50:53] [INFO] [::1] Application initialized
+[2025-08-14 08:20:53] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-14 08:20:53] [INFO] [::1] Login page accessed
+[2025-08-14 04:50:56] [INFO] [::1] Application initialized
+[2025-08-14 08:20:56] [INFO] [::1] Login register page accessed
+[2025-08-14 08:20:56] [INFO] [::1] email "one@gmail.com"
+[2025-08-14 08:20:56] [INFO] [::1] password "12345"
+[2025-08-14 08:20:56] [INFO] [::1] Executed query: SELECT * FROM users WHERE email = 'one@gmail.com'
+[2025-08-14 08:20:56] [INFO] [::1] User Row: {"id":"41","name":"one","email":"one@gmail.com","mobile":"07770958768","password":"$2y$10$rftuPOwwuSr8PC2yM33GMex6vcGFUL7YON51BDefAuiWz9gyIl1ii","role":"user","status":"active","featured_image":"uploads\/profiles\/6898829a18456.jpg","reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-29 02:08:23","updated_at":"2025-08-10 23:27:04","otp":"3315","otp_expiry":"2025-08-10 23:37:04"}
+[2025-08-14 08:20:56] [INFO] [::1] password verify success
+[2025-08-14 08:20:56] [INFO] [::1] This is session after login: {"user_id":"41","name":"one","email":"one@gmail.com","mobile":"07770958768","featured_image":"uploads\/profiles\/6898829a18456.jpg","role":"user"}
+[2025-08-14 04:50:56] [INFO] [::1] Application initialized
+[2025-08-14 08:20:56] [INFO] [::1] base usr is in header: http://localhost/web_page/
