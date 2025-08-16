@@ -1,12 +1,9 @@
-[2025-08-15 21:55:41] [INFO] [::1] Application initialized
-[2025-08-16 01:25:41] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-08-15 21:57:11] [INFO] [::1] Application initialized
-[2025-08-16 01:27:11] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-08-15 21:57:39] [INFO] [::1] Application initialized
-[2025-08-16 01:27:39] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-08-15 21:58:01] [INFO] [::1] Application initialized
-[2025-08-16 01:28:01] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-08-15 22:02:25] [INFO] [::1] Application initialized
-[2025-08-16 01:32:25] [INFO] [::1] base usr is in header: http://localhost/web_page/
-[2025-08-15 22:02:55] [INFO] [::1] Application initialized
-[2025-08-16 01:32:55] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-16 04:11:14] [INFO] [::1] Application initialized
+[2025-08-16 07:41:14] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-16 04:11:45] [INFO] [::1] Application initialized
+[2025-08-16 07:41:45] [INFO] [::1] base usr is in header: http://localhost/web_page/
+[2025-08-16 07:41:45] [INFO] [::1] Application data stored in session: {"user_id":"39","name":"riya gupta","email":"riya@gmail.com","mobile":"07770958768","application_type":"Income Tax Filing","amount":999}
+[2025-08-16 07:41:45] [INFO] [::1] Required documents: ["PAN Card","Aadhaar Card","Form 16","Bank Statements","Investment Proofs"]
+[2025-08-16 07:41:45] [INFO] [::1] Uploaded files: {"document":{"name":{"pancard":"Samgra ID.pdf","aadhaarcard":"Samgra ID.pdf","form16":"Samgra ID.pdf","bankstatements":"Samgra ID.pdf","investmentproofs":"Result 12 th.pdf"},"full_path":{"pancard":"Samgra ID.pdf","aadhaarcard":"Samgra ID.pdf","form16":"Samgra ID.pdf","bankstatements":"Samgra ID.pdf","investmentproofs":"Result 12 th.pdf"},"type":{"pancard":"application\/pdf","aadhaarcard":"application\/pdf","form16":"application\/pdf","bankstatements":"application\/pdf","investmentproofs":"application\/pdf"},"tmp_name":{"pancard":"C:\\xampp\\tmp\\php57F3.tmp","aadhaarcard":"C:\\xampp\\tmp\\php57F4.tmp","form16":"C:\\xampp\\tmp\\php57F5.tmp","bankstatements":"C:\\xampp\\tmp\\php5805.tmp","investmentproofs":"C:\\xampp\\tmp\\php5806.tmp"},"error":{"pancard":0,"aadhaarcard":0,"form16":0,"bankstatements":0,"investmentproofs":0},"size":{"pancard":183962,"aadhaarcard":183962,"form16":183962,"bankstatements":183962,"investmentproofs":1322534}}}
+[2025-08-16 07:41:45] [INFO] [::1] Required document: PAN Card
+[2025-08-16 07:41:45] [INFO] [::1] Safe name: pancard

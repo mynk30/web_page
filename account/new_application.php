@@ -88,32 +88,48 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['proceed_payment'])) {
             'application_type' => $_POST['application_type'],
             'amount' => $servicePrices[$_POST['application_type']]
         ];
+
+        $logger->info("Application data stored in session: " . json_encode($_SESSION['temp_application']));
+        
         
         // Create upload directory
-        $tempUploadDir = '../uploads' . session_id() . '/';
+        $tempUploadDir = '../uploads/applications' ;
         if (!file_exists($tempUploadDir)) {
             if (!mkdir($tempUploadDir, 0755, true)) {
                 throw new Exception('Failed to create upload directory');
             }
         }
+
+   
         
         // Handle file uploads
         $uploadedFiles = [];
         $requiredDocs = $requiredDocuments[$_POST['application_type']];
+
+        $logger->info("Required documents: " . json_encode($requiredDocs));
+
+        // log the uploaded files
+        $logger->info("Uploaded files: " . json_encode($_FILES));
+
         
         foreach ($requiredDocs as $doc) {
+            // write log for each line 
+            $logger->info("Required document: " . $doc);
             $safeName = strtolower(preg_replace('/[^a-zA-Z0-9]+/', '', $doc));
-            
+            $logger->info("Safe name: " . $safeName);
             if (!isset($_FILES['document'][$safeName]) || $_FILES['document'][$safeName]['error'] === UPLOAD_ERR_NO_FILE) {
                 throw new Exception("Please upload $doc");
             }
             
             $uploadResult = uploadDocument($_FILES['document'][$safeName], $tempUploadDir, $safeName);
+            $logger->info("Upload result: " . json_encode($uploadResult));
             if (!$uploadResult) {
                 throw new Exception("Failed to upload $doc");
             }
             
             $uploadedFiles[$doc] = $uploadResult;
+            $logger->info("Uploaded files: " . json_encode($uploadedFiles));
+            return;
         }
         
         // Store uploaded files info in session
@@ -349,6 +365,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         checkAllDocumentsUploaded();
     }
+
     
     // Application type selection handler
     appTypeSelect.addEventListener('change', function() {
