@@ -14,6 +14,13 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: var(--dark-color);
 }
+
+/* Nav Pills Active State */
+.nav-pills .nav-link.active, 
+.nav-pills .show>.nav-link {
+    color: var(--bs-nav-pills-link-active-color);
+    background-color: #0a1945;
+}
 .custom-heading {
   font-weight: 500;
   color: var(--heading-color);
@@ -2266,7 +2273,7 @@ left: 0;
   .forgot-password-title {
       font-size: 1.5rem;
   }
-} */
+} 
 
 /* --------------change_password---------------- */
 

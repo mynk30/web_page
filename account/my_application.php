@@ -1,7 +1,7 @@
 <?php
 include '../include/header.php';
-require_once '../php/db.php';
-require_once '../php/config.php';
+// require_once '../php/db.php';
+// require_once '../php/config.php';
 
 // Check if user is logged in
 if (!isset($_SESSION['user_id'])) {
@@ -102,9 +102,7 @@ try {
             <div class="container">
                 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                     <h2>My Applications</h2>
-                    <button type="button" class="btn btn-sm custom-btn" data-bs-toggle="modal" data-bs-target="#applicationFormModal">
-                        Application Form
-                        </button>
+                 
                 </div>
                 <!-- Filters and Search -->
                 <div class="card mb-4">
@@ -153,6 +151,10 @@ try {
                             </div>
                         <?php else: ?>
                             <div class="table-responsive">
+                            <div class="card-header text-white d-flex justify-content-between align-items-center">
+                                <h5 class="mb-0">My Applications</h5>
+                                
+                            </div>
                                 <table class="table table-hover mb-0">
                                     <thead class="table-light">
                                         <tr>
@@ -250,58 +252,6 @@ try {
 </div>
 
 
-<div class="modal fade" id="applicationFormModal" tabindex="-1" aria-labelledby="applicationFormModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <?php if (isset($_SESSION['error'])): ?>
-                <div class="alert alert-danger m-3"><?php echo htmlspecialchars($_SESSION['error']); unset($_SESSION['error']); ?></div>
-            <?php endif; ?>
-            <form action="./submit_application.php" method="POST" enctype="multipart/form-data" id="applicationForm">
-                <div class="modal-header">
-                    <h5 class="modal-title text-white">Application Form</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="mb-3">
-                        <label class="form-label">Full Name</label>
-                        <input disabled value="<?php echo htmlspecialchars($_SESSION['name']); ?>" type="text" name="name" class="form-control" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label">Email Address</label>
-                        <input disabled value="<?php echo htmlspecialchars($_SESSION['email']); ?>" type="email" name="email" class="form-control" required>
-                    </div>
-                
-                    <div class="mb-3">
-                        <label class="form-label">Phone Number</label>
-                        <input disabled  value="<?php echo htmlspecialchars($_SESSION['mobile']); ?>" type="text" name="phone" class="form-control" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label">Application Type</label>
-                        <select name="application_type" class="form-select" required>
-                            <option disabled selected>-- Select Application Type --</option>
-                            <option value="GST Registration">GST Registration</option>
-                            <option value="Digital Signature">Digital Signature</option>
-                            <option value="MSME Registration">MSME Registration</option>
-                            <option value="Income Tax Filing">Income Tax Filing</option>
-                            <option value="Trademark Registration">Trademark Registration</option>
-                        </select>
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label">Upload Documents (PDF, JPG, PNG)</label>
-                        <input type="file" name="document[]" class="form-control" multiple required>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn custom-btn" data-bs-dismiss="modal">Cancel</button>
-                    <button type="submit" class="btn custom-btn">Submit Application</button>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
 
 <!-- Delete Confirmation Modal -->
 <div class="modal fade" id="deleteConfirmationModal" tabindex="-1" aria-hidden="true">
@@ -326,7 +276,7 @@ try {
 </div>
 
 <script>
-    // meet kar lo
+
 // Enhanced delete functionality with fallback
 function handleDeleteClick(e) {
     e.preventDefault();
