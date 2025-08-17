@@ -5,6 +5,7 @@ ALTER TABLE `users` CHANGE `reset_otp` `otp` INT(4) NULL DEFAULT NULL, CHANGE `r
 2. form me QR code add karna payment 
 3. admin document upload karega application comlete hone ke bad certificat vo user ke es me show hona chaiye 
 
+// add this changes in the database
 ALTER TABLE applications ADD UNIQUE (application_number);
 
 CREATE TABLE orders (
